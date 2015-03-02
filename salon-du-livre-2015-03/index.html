@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" prefix="talk: http://w3c.github.io/epubweb/presentation/index.html?full#1 ore: http://www.openarchives.org/ore/terms/">
-    <head about="talk:" lang="fr">
-        <meta content="text/html; charset=utf-8" http-equiv="content-type">
-        <title property="dc:title">
-         Publications numériques et les standards du web
-        </title>
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <link rel="ore:describes" resource="talk:#talk">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="width=792, user-scalable=no">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <link rel="stylesheet" href="shower/themes/w3c/styles/screen.css">
-        <link rel="stylesheet" href="shower/themes/w3c/styles/w3c-shower.css">
-        <style type="text/css">
+<html prefix="talk: http://w3c.github.io/epubweb/presentation/index.html?full#1 ore: http://www.openarchives.org/ore/terms/" lang="fr">
+  <head about="talk:" lang="fr">
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title property="dc:title">Livres numériques / Web : construire la convergence 
+    </title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="ore:describes" resource="talk:#talk">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=792, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="shower/themes/w3c/styles/screen.css">
+    <link rel="stylesheet" href="shower/themes/w3c/styles/w3c-shower.css">
+    <style type="text/css">
             .slide:after {
               padding: 60px 0 0 !important;
               height: 150px ;
@@ -48,707 +47,660 @@
                 left: 15px;
             }
         </style>
-    </head>
-    <body class="list" about="talk:#talk" prefix="bibo: http://purl.org/ontology/bibo/" typeof="cc:Work bibo:Slideshow">
-        <header class="caption">
-            <h1 property="dc:title" rel="dc:subject" resource="http://id.loc.gov/authorities/subjects/sh85042368#concept">
-                Publications numériques et les standards du web
-            </h1>
-                <h3>2015-03-19</h3>
-            <h2> 
-                <span rel="bibo:authorList" inlist="">
-                    <span resource="http://www.ivan-herman.net/foaf#me" typeof="foaf:Person"> <span property="foaf:name">Ivan Herman</span>, 
-                        <span property="rdfs:seeAlso" resource="http://www.ivan-herman.net/foaf">W3C</span></span>
-                </span>
-            </h2>
-            <p class="c1"><a href="http://creativecommons.org/licenses/by-nd/3.0/"><img class="plain" alt="Creative Commons License in French" src="figures/80x15.png"></a>&nbsp;Cette œuvre est mise à disposition selon les termes de la Licence <a rel="cc:license" href="http://creativecommons.org/licenses/by-nd/3.0/fr/">«&nbsp;Creative Commons Attribution—Pas de Modification 3.0&nbsp»</a>, avec attribution à W3C</p>
-            <p>
-                Copyright<sup>©</sup> 2015 W3C<sup>®</sup> (MIT, ERCIM, Keio, Beihang)
-            </p>
-        </header>
-        <section class="slide titlepage">
-            <div>
-                <h2>
-                    L’ePub 3 et les standards du Web
-                </h2>
-                 <h3> 
-                    <span rel="bibo:authorList" inlist="">
-                        <span resource="http://www.ivan-herman.net/foaf#me" typeof="foaf:Person"> <span property="foaf:name">Ivan Herman</span>, 
-                            <span property="rdfs:seeAlso" resource="http://www.ivan-herman.net/foaf">W3C</span></span>
-                    </span>
-                </h3>
-                <h3>
-                    Assises du livre numérique, Paris, France
-                </h3>
-                <h3>2015-03-19</h3>
-                <p style="margin-top:10em;"><a href="http://creativecommons.org/licenses/by-nd/3.0/"><img  class="plain" alt="Creative Commons License in French" src="figures/80x15.png"></a>&nbsp;Cette œuvre est mise à disposition selon les termes de la Licence <a rel="cc:license" href="http://creativecommons.org/licenses/by-nd/3.0/fr/">«&nbsp;Creative Commons Attribution—Pas de Modification 3.0&nbsp»</a>, avec attribution à <a rel="cc:attributionURL" href="http://www.w3.org" property="cc:attributionName">W3C</a><br/>Copyright<sup>©</sup> 2015 W3C<sup>®</sup> (MIT, ERCIM, Keio, Beihang)</p>
+  </head>
+  <body class="list" about="talk:#talk" prefix="bibo: http://purl.org/ontology/bibo/"
 
-           </div>
-        </section>
+    typeof="cc:Work bibo:Slideshow">
+    <header class="caption">
+      <h1 property="dc:title" rel="dc:subject" resource="http://id.loc.gov/authorities/subjects/sh85042368#concept">
+        Livres numériques / Web : construire la convergence </h1>
+      <h3>19 mars 2015</h3>
+      <h2> <span rel="bibo:authorList" inlist=""> <span resource="http://www.ivan-herman.net/foaf#me"
 
-        <section class="slide">
-            <div>
-                <h2>
-                    DPUB IG Origins 
-                </h2>
-                <ul>
-                    <li>The publishing industry is, probably, the most important user of W3C’s Web technologies after (traditional) browsers:
-                        <ul>
-                            <li>almost <em>all</em> journals, magazines, etc, have an online version these days</li>
-                            <li>scholarly publishing cannot exist without the Web any more</li>
-                            <li>EPUB is, essentially, a frozen and packaged Web site</li>
-                        </ul>
-                    </li>
-                    <li>The quality requirements of the publishing industry are very high:
-                        <ul>
-                            <li>high quality typesetting, graphics, etc.</li>
-                            <li>new forms of publishing will be based on high level of interactions, rich media,…</li>
-                            <li>common document and data publishing comes to the fore</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        
+            typeof="foaf:Person"> <span property="foaf:name">Ivan Herman</span>,
+            <span property="rdfs:seeAlso" resource="http://www.ivan-herman.net/foaf">W3C</span></span>
+        </span> </h2>
+      <p class="c1"><a href="http://creativecommons.org/licenses/by-nd/3.0/"><img
 
-        <section class="slide">
-            <div>
-                <h2>
-                    DPUB IG Origins (cont.)
-                </h2>
-                <ul> 
-                    <li>But… the publishing industry had been in an entirely “passive” mode v.a.v. Web technologies
-                        <ul>
-                            <li>no participation in the development of fundamental Web technologies</li>
-                            <li>W3C (and other standard bodies) hardly know about the requirements that this industry may have</li>
-                            <li>the potential synergy between Web developers and publishers is missed out</li>
-                        </ul>
-                    </li>
-                    <li>consequence: Working Groups at W3C set their priorities without knowing about, and considering, the publishing industry</li> 
-                </ul>
-            </div>
-        </section>
-        
-        <section class="slide">
-            <div>
-                <h2>
-                    DPUB IG Origins (cont.)
-                </h2>
-                <ul>
-                    <li>W3C and IDPF organized a series of exploratory workshops in 2012 to create a missing synergy among communities</li>
-                    <li>the W3C <a href = "http://www.w3.org/dpub/">Digital Publishing Activity</a>  and the <a href="https://www.w3.org/dpub/IG/">Digital Publishing Interest Group</a> was formally <a href="http://www.w3.org/2013/02/digpubig.html">chartered</a> in May 2013</li>
-                    <li>DPUB IG has weekly teleconferences and annual face to face meetings</li>
-                </ul>
-            </div>
-        </section>
-        
-        <section class="slide">
-            <div>
-                <h2>
-                    DPUB IG Mission 
-                </h2>
-             <blockquote>The mission of the Digital Publishing Interest Group (DPUB IG)&nbsp;[…]&nbsp;a forum for experts in the digital publishing ecosystem&nbsp;[…]&nbsp;for technical discussions, gathering use cases and requirements to align the existing formats and technologies (e.g., for electronic books) with those used by the Open Web Platform&nbsp;[…]&nbsp;</blockquote>
-                </div>
-        </section>
-      
-        <section class="slide">
-            <div>
-                <h2>
-                    DPUB IG Mission Explained
-                </h2>
-                <ul>
-                    <li>experts familiar with the ins and outs of digital publishing and its associated industry groups identify issues that are not addressed by the Open Web Platform</li>
-                    <li>our goal is to raise issues to W3C working groups who can update (or develop) specs based on our information. We often delegate members to the WGs as well</li>
-                    <li>DPUB IG has task forces with leads to focus attention on specific issues and collaborate with other WGs</li>
-                     </ul>
-                <p>See our <a href="https://www.w3.org/dpub/IG/wiki/Main_Page">website</a> for more detail.</p>
-            </div>
-        </section>
-   
-        <section class="slide shout">
-            <div>
-                <h2>
-                    So, who does the work?
-                </h2>
-                </div>
-        </section>
-        
-        <section class="slide">
-            <div>
-                <h2>
-                    Everybody Does the Work!
-                </h2>
-                <ul>
-                    <li>IDPF has been writing specs for digital publishing for 15+ years, using W3C standards as a basis</li>
-                    <li>DPUB IG highlights issues in OWP (W3C) that do not support the needs of digital publishing and learns from the W3C</li>
-                    <li>W3C WGs update specs as needed to reflect needs of digital publishing and the broader web community</li>
-                </ul>
-                </div>
-        </section>
+            class="plain" alt="Creative Commons License in French" src="figures/80x15.png"></a>&nbsp;Cette
+        œuvre est mise à disposition selon les termes de la Licence <a rel="cc:license"
 
-        <section class="slide">
-            <div>
-                <h2>
-                    (Current) DPUB IG Task Forces
-                </h2>
-                <ul>
-                    <li><i>Annotations:</i> led by Rob Sanderson</li>
-                    <li><i>Layout and Styling (aka Pagination):</i> led by Dave Cramer</li>
-                    <li><i>Metadata:</i> led by Bill Kasdorf and Madi Solomon</li>
-                    <li><i>Content and Markup:</i> led by Tzviya Siegman</li>
-                    <li><i>Accessibility:</i> led by Deborah Kaplan and Charles LaPierre</li>
-                    <li><i>STEM:</i> led by Peter Krautzberger</li>
-                </ul>    
-            </div>
-        </section>
+          href="http://creativecommons.org/licenses/by-nd/3.0/fr/">«&nbsp;Creative
+          Commons Attribution—Pas de Modification 3.0&nbsp;»</a>, attribution au<span
 
-        <section class="slide">
-            <div>
-                <h2>
-                    Examples For the Task Force Activities
-                </h2>
-                <ul>
-                    <li>Layout and Styling (aka Pagination)
-                        <ul><li>requirements for print and digital publishing from HTML and CSS using the Latin alphabet</li>
-                            <li>looking at standard ways to implement pagination</li>
-                        </ul>
-                    </li>
-                    <li>Content and Markup
-                        <ul>
-                            <li>provide a standard way to add a logical structure on top of HTML</li>
-                            <li>working with a W3C Working Group that develops similar structures for accessibility</li>
-                        </ul> 
-                    </li>
-                    <li>Metadata
-                        <ul>
-                            <li>interviewed experts in publishing metadata, and issued the findings in a separate report</li>
-                        </ul>
-                    </li>
-                </ul>    
-            </div>
-        </section>
+          style="color: red;"></span> W3C. La présente traduction a été réalisée
+        par le SNE.</p>
+      <p> Copyright<sup>©</sup> 2015 W3C<sup>®</sup> (MIT, ERCIM, Keio, Beihang)
+      </p>
+    </header>
+    <section class="slide titlepage">
+      <div>
+        <h2>Livres numériques / Web : construire la convergence </h2>
+        <h3> <span rel="bibo:authorList" inlist=""> <span resource="http://www.ivan-herman.net/foaf#me"
 
-         <section class="slide">
-            <div>
-                <h2>Lot Has Been Done</h2>
-                <figure style="text-align: center">
-                    <img class="plain" src="figures/achievements.png" width="90%" alt="Screen dumps of various documents produced by the IG"/>
-                </figure>
-            </div>
-        </section>
-        
-        <section class="slide">
-            <div>
-                <h2>What’s Next?</h2>
-                <ul>
-                    <li>Continue our task forces with targeted deadlines and deliverables</li>
-                    <li><em>Involve DPUB IG members in the planning and development of <a href= "http://w3c.github.io/epubweb/">EPUB-WEB</a></em>
-                        <ul>
-                            <li>this may lead to the creation of new task forces</li>
-                        </ul>
+              typeof="foaf:Person"> <span property="foaf:name">Ivan Herman</span>,
+              <span property="rdfs:seeAlso" resource="http://www.ivan-herman.net/foaf">W3C</span></span>
+          </span> </h3>
+        <h3> Assises du livre numérique, Paris, France </h3>
+        <h3>19 mars 2015</h3>
+        <p style="margin-top:8em;"><a href="http://creativecommons.org/licenses/by-nd/3.0/"><img
 
-                    </li>
-                </ul>
-            </div>
-        </section>
+              class="plain" alt="Creative Commons License in French" src="figures/80x15.png"></a>&nbsp;Cette
+          œuvre est mise à disposition selon les termes de la Licence <a rel="cc:license"
 
-        <section class="slide">
-            <div>
-                <h2>What’s Next? EPUB-WEB</h2>
-                <ul>
-                    <li>IDPF and W3C published joint vision of future of digital publishing in a white paper entitled <i>“Advancing Portable Documents for the Open Web Platform: EPUB-WEB”</i>
-                        <ul>
-                            <li>White Paper is available at <a href="http://w3c.github.io/epubweb/"><code>http://w3c.github.io/epubweb/</code></a></li>
-                            <li>provide feedback at <a href="https://github.com/w3c/epubweb/issues"><code>https://github.com/w3c/epubweb/issues</code></a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </section>
+            href="http://creativecommons.org/licenses/by-nd/3.0/fr/">«&nbsp;Creative
+            Commons Attribution—Pas de Modification 3.0&nbsp;»</a>, attribution
+          au <a rel="cc:attributionURL" href="http://www.w3.org" property="cc:attributionName">W3C</a>.
+          La présente traduction a été réalisée par le SNE.<br>
+          Copyright<sup>©</sup> 2015 W3C<sup>®</sup> (MIT, ERCIM, Keio, Beihang)</p>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Avant-propos&nbsp;: les organisations et termes au quels je ferai reference</h2>
+        <dl>
+          <dt>W3C&nbsp;: World Wide Web Consortium</dt>
+          <dd>consortium international chargé de développer les standards du Web tels que HTML, XML, CSS, RDF, etc. </dd>
+          <dt>OWP&nbsp;: Open Web Plat­form</dt>
+          <dd>regroupe un ensemble de tech­no­lo­gies du web déve­loppé par le W3C, comme HTML5, CSS3, etc., utilisé par les application du web, tel que les navigateurs</dd>
+          <dt>IDPF&nbsp;: International Digital Publishing Forum</dt>
+          <dd>consortium international à l’origine du format de livre numérique&nbsp;ePub.</dd>
+        </dl>
+      </div>
+    </section>
 
-        <section class="slide">
-            <div>
-                <h2>EPUB-WEB is a Vision for the Future</h2>
-                <figure  style="text-align: center">
-                    <img src="figures/epubweb.png" width="99%" alt="EPUB-WEB at a glance"/>
-                </figure>
-             </div>
-        </section>
-        
-        <section class="slide">
-            <div>
-                <h2>The Vision</h2>
-                <ul>
-                    <li>Portable documents are fully native citizen of the Web</li>
-                    <li>Separation between online (i.e., the “Web”) and portable (i.e., “EPUB”) is diminished to zero</li>
-                    <li>This means:
-                        <ul>
-                            <li>content authored for primarily offline use can be used online by loading it into a browser</li>
-                            <li>content authored for primarily online use can be easily saved as a portable document for offline use</li>
-                            <li>these should be doable smoothly, solely based on the user’s interaction</li>
-                        </ul> 
-                    </li>                   
-                </ul>
-            </div>
-        </section>
- 
+    <section class="slide">
+      <div>
+        <h2> Historique du groupe DPUB IG 1/4</h2>
+        <ul>
+          <li>Au delà des navigateurs Internet eux-mêmes, les éditeurs sont vraisemblablement les plus grands utilisateurs des technologies du Web développées par le W3C :<br>
+            <ul>
+              <li>La quasi-totalité des journaux et magazines publient désormais une version en ligne&nbsp;;</li>
+              <li>L’édition scolaire ne pourrait plus exister aujourd‘hui sans le Web&nbsp;;</li>
+              <li>Le format ePub est, dans sa structure, un site Web figé regroupé dans un fichier.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2> Historique du groupe DPUB IG 2/4</h2>
+        <ul>
+          <li>Les exigences en terme de qualité du monde de l’édition sont très élevées&nbsp;:<br>
+            <ul>
+              <li>Il y a une grande attention portée à la composition du texte, aux graphiques, etc.&nbsp;;</li>
+              <li>Les nouvelles formes de publications reposent et reposeront sur un niveau élevé d‘interactivité, sur l‘enrichissement par des contenus média, etc.&nbsp;;</li>
+              <li>Les «&nbsp;publications&nbsp;» contenant aussi des données, des vidéos, etc., deviennent importants.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Historique du groupe DPUB IG 3/4</h2>
+        <ul>
+          <li>Mais… le secteur de l‘édition est resté jusqu‘à aujourd‘hui dans une attitude passive vis-à-vis des standards du Web&nbsp;:<br>
+            <ul>
+              <li>Il n‘est pas acteur du développement des technologies fondamentales du Web&nbsp;;</li>
+              <li>Le W3C (et les autres instances de développement des standards) connaît très mal les besoins de ce secteur&nbsp;;</li>
+              <li>La synergie qui pourrait naître de la collaboration entre les développeurs du Web et les éditeurs n‘est pas exploitée.</li>
+            </ul>
+          </li>
+          <li><i>Conséquence&nbsp;: les groupes de travail du W3C établissent leurs priorités sans connaître, et donc sans prendre en considération, les impacts de leurs développements pour l‘industrie du livre.</i></li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Historique du groupe DPUB IG 4/4</h2>
+        <ul>
+          <li>Le W3C et l‘IDPF ont organisé, en 2012, plusieurs réunions de travail pour créer cette synergie manquante entre les communautés&nbsp;;</li>
+          <li>La création du groupe de travail <a href="https://www.w3.org/dpub/IG/" lang="en">Digital Publishing Interest Group</a> (DPUB IG) a été officiellement créé<a target="_blank" href="http://www.w3.org/2013/02/digpubig.html">actée</a> en mai 2013&nbsp;;</li>
+          <li>Le DPUB IG organise des téléconférences hebdomadaires et des rencontres annuelles entre ses membres.</li>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2> La mission du DPUB IG </h2>
+        <blockquote>La mission du <span lang="en">Digital Publishing Interest Group (DPUB IG)</span> est un forum animé par les experts de l‘écosystème numérique de l‘édition […]. [Ce forum est] dédié aux discussions techniques, il recense les cas concrets d‘utilisation et les besoins de l‘industrie pour faire coïncider les formats et les technologies existants (pour les livres numériques) avec ceux utilisés par l‘Open Web Platform […].<br>
+        </blockquote>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2> Précisions sur la mission du DPUB IG </h2>
+        <ul>
+          <li>Les experts de l‘édition numérique identifient les enjeux qui ne sont pas traités par l‘Open Web Platform&nbsp;;</li>
+          <li>Notre objectif est de faire émerger les technologies que les groupes de travail du W3C pourraient mettre à jour (ou développer) à partir des informations que nous leur fournissons&nbsp;;</li>
+          <li>Nous nous organisons à travers de sous-groupes de travail pour se concentrer sur un sujet précis.</li>
+        </ul>
+        <p>Consulter le <a href="https://www.w3.org/dpub/IG/wiki/Main_Page">site web</a> pour plus de details.</p>
+      </div>
+    </section>
+    <section class="slide shout">
+      <div>
+        <h2> Qui accomplit donc le travail&nbsp;?</h2>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Tout le monde !</h2>
+        <ul>
+          <li>L‘IDPF écrit des spécifications informatiques («&nbsp;specs&nbsp;») depuis
+            plus de 15 ans, basées sur les standards du W3C.</li>
+          <li>Le DPUB IG met en lumière des problématiques de l‘OWP qui ne
+            prennent pas en compte les besoins de l‘édition numérique</li>
+          <li>Les groupes de travail du W3C mettent à jour les specs en fonction
+            à la fois des besoins de l‘édition numérique et de ceux de la vaste
+            communauté du Web.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2> Les sous-groupes de travail du DPUB IG (actuellement) </h2>
+        <ul>
+          <li><i>Annotations&nbsp;:</i> dirigé par Rob Sanderson, <span lang="en">Library of Stanford</span></li>
+          <li><i>Mise en page et Styles (Pagination)&nbsp;:</i> dirigé par Dave Cramer, Hachette</li>
+          <li><i>Métadonnées&nbsp;:</i> dirigé par Bill Kasdorf (Apex)</li>
+          <li><i>Contenus et typographies&nbsp;:</i> dirigé par Tzviya Siegman (Wiley)</li>
+          <li><i>Accessibilité&nbsp;:</i> dirigé par Deborah Kaplan (O‘Reilly) et Charles LaPierre (Benetech)</li>
+          <li><i>STEM&nbsp;:</i> dirigé par Peter Krautzberger (MathJax)</li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2> Exemples de leurs activités </h2>
+        <ul>
+          <li>Mise en page et Styles (Pagination)
+            <ul>
+              <li>Besoins de l‘édition, aussi bien pour imprimerie classiqeu que numérique, par rapport à l‘HTML
+                et CSS&nbsp;;</li>
+              <li>Recherche d‘une méthode standard pour le contrôle de pagination.</li>
+            </ul>
+          </li>
+          <li>Contenus et typographies
+            <ul>
+              <li>Recherche d‘une méthode standard pour ajouter une structure logique additionel à celui d‘HTML&nbsp;; </li>
+              <li>Travail en concertation avec le Groupe de Travail du W3C qui développe des structures similaires pour l‘accessibilité. </li>
+            </ul>
+          </li>
+          <li>Métadonnées
+            <ul>
+              <li>Interviews d‘experts de la publication de métadonnées&nbsp;;</li>
+              <li>Analyse des enjeux dégagés dans un rapport.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Un vrai travail déjà accompli</h2>
+        <figure style="text-align: center"> <img class="plain" src="figures/achievements.png"
 
-        <section class="slide">
-            <div>
-                <h2>
-                    The Vision
-                </h2>
+            alt="Screen dumps of various documents produced by the IG" width="90%">
+        </figure>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Et après ?</h2>
+        <ul>
+          <li>Poursuivre le travail en fixant un planning de publications de ces
+            travaux.</li>
+          <li><em>Impliquer les membres de DPUB IG dans le développement de <a href="http://w3c.github.io/epubweb/">EPUB-WEB&nbsp;</a></em>
+            <ul>
+              <li>Cela pourrait conduire à la création de nouveaux sous-groupes de travail.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Et après&nbsp;? EPUB-WEB</h2>
+        <ul>
+          <li>L‘IDPF et le W3C ont developé leur vision commune pour le futur de l‘édition numérique dans un document intitulé <i lang="en">«&nbsp;Advancing Portable Documents for the Open Web Platform: EPUB-WEB&nbsp;»</i>
+            <ul>
+              <li>Le document est disponible en ligne&nbsp;: <a href="http://w3c.github.io/epubweb/"><code>http://w3c.github.io/epubweb/</code></a></li>
+              <li>Les commentaires publiques peuvent être aussi postés en ligne&nbsp;: <a href="https://github.com/w3c/epubweb/issues"><code>https://github.com/w3c/epubweb/issues</code></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>EPUB-WEB est une vision pour le futur</h2>
+        <figure> <img src="figures/epubweb.png" alt="EPUB-WEB at a glance" width="100%">
+        </figure>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Quelle est cette vision&nbsp;? 1/3</h2>
+        <ul>
+          <li>Les fichiers adaptés aux appareils de lecture (dits «&nbsp;mobiles&nbsp;»), sont des citoyens à part entière du Web.</li>
+          <li>La séparation entre les formats en ligne («&nbsp;Web&nbsp;») et ceux («&nbsp;EPUB&nbsp;») devient obsolète.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Quelle est cette vision&nbsp;? 1/3</h2>
+        <ul>
+          <li>Autrement dit :
+            <ul>
+              <li>Les contenus édités pour un usage mobile et hors connexion peuvent être consultés en ligne dans un navigateur&nbsp; </li>
+              <li>Les contenus édités pour un usage en ligne peuvent facilement être enregistrés en tant que document mobile pour un usage hors connexion&nbsp;;</li>
+              <li>Ces transitions se font facilement, par le biais d‘une interaction de l‘utilisateur/lecteur. </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Quelle est cette vision&nbsp;? 3/3</h2>
+        <ul>
+          <li>Les éditeurs peuvent choisir d‘utiliser l‘un ou les deux modes de publication&nbsp;; </li>
+          <li>Les utilisateurs peuvent choisir l‘un ou les deux modes de lecture&nbsp;; </li>
+          <li>On retrouve les fonctionalités de lecture essentielles de façon
+            identique dans les deux modes, comme&nbsp;:
+            <ul>
+              <li>renvoi à des références, annotations, accès aux données en ligne&nbsp;;</li>
+              <li>autorisations et gestion des droits&nbsp;;</li>
+              <li>etc.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide shout">
+      <div>
+        <h2>Pourquoi&nbsp;? </h2>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2> Exemple d‘un livre affiché dans un navigateur 1/2</h2>
+        <figure class="right"> <img src="figures/joseph-web.png" alt="Extrait du livre de Joseph Reagle sur le web" width="98%"> 
+          <figcaption><a href="http://reagle.org/joseph/2010/gfc/chapter-4.html">Extrait du livre de Joseph Reagle</a> sur le web</figcaption> 
+        </figure>
+        <ul>
+          <li>Sur un ordinateur, je veux lire un livre à la manière d‘une page Internet&nbsp;:
+            <ul>
+              <li>liens hypertextes pour «&nbsp;sortir&nbsp;» facilement du livre&nbsp;;</li>
+              <li>créer un marque-page «&nbsp;à l‘intérieur&nbsp;» du livre&nbsp;;</li>
+              <li>utiliser des plugins et des outils installés dans mon navigateur&nbsp;;</li>
+              <li>ajouter des annotations.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Exemple du même livre affiché dans une liseuse</h2>
+        <figure class="right"> <img src="figures/joseph-book.png" alt="Extrait du livre de Joseph Reagle comme ePUB" width="80%"> 
+          <figcaption><a href="http://reagle.org/joseph/2010/gfc/chapter-4.html">Extrait du livre de Joseph Reagle</a> comme ePUB</figcaption> 
+        </figure>
+        <ul>
+          <li>Mais :</li>
+          <ul>
+            <li>je peux avoir besoin de la puissance informatique de mon ordinateur pour afficher des contenus interactifs en 3D par
+              exemple&nbsp;;</li>
+            <li>à d‘autres moments je veux lire le livre à la plage avec une liseuse… </li>
+          </ul>
+          <li>Cela devient possible pour <em>le même</em> livre (aucune conversion requise d‘un format à l‘autre&nbsp;!)</li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2> Exemple d‘un lecteur sans connexion… </h2>
+        <figure class="right"> <img src="figures/commute.jpg" alt="Person sitting in a station with a mobile in hand" width="100%"> 
+          <figcaption>Photo&nbsp;: <a href="http://j.mp/1t7BxJN">Bryan
+              Ong</a>, Flickr</figcaption> 
+            </figure>
+        <ul>
+          <li>Je peux trouver un article sur l‘Internet que je veux revoir, annoter, etc., pendant que je rentre chez moi en train&nbsp;;</li>
+          <li>Je voudrais que mes annontations attérissent en ligne quand je me reconnecterai à Internet.</li>
+          <ul>
+            <li>D‘ailleurs&nbsp;: certains navigateurs permettent d‘«&nbsp;archiver&nbsp;» une page, mais pas d‘une manière interopérable.
+              <ul>
+                <li>le contenu risque de ne pas être lisible sur un petite liseuse, par exemple.</li>
+              </ul>
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Exemple d‘édition scientifique </h2>
+        <figure class="right"> <img src="figures/f1000.png" alt="Page d'un article sur le site F1000" width="98%"> 
+          <figcaption>Image de l‘article <a href="http://bit.ly/1wFcfWC">“Sub-strains of Drosophila Canton-S…”</a> sur F1000</figcaption> 
+        </figure>
+        <ul>
+          <li>Mon article est publié en ligne mais des utilisateurs veulent le télécharger.</li>
+          <li>Le format de ce document doit s‘adapter à mon environnement de lecture&nbsp;:
+            <ul>
+              <li>p.e., ne pas afficher deux colonnes, pas de mise en page fixe…</li>
+            </ul>
+          </li>
+          <li>Mon document peut aussi contenir des vidéos, de l‘audio, des données, des programmes…
+            <ul>
+              <li>l‘édition scientifique est devenue plus qu‘une édition d‘un texte linéaire&nbsp;!</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2> Exemple de publications dans les entreprises</h2>
+        <figure class="right"><img src="figures/manuals.jpg" alt="Etagères avec des fichiers de documents" width="100%"> 
+          <figcaption>Photo&nbsp;: <a href="http://j.mp/1t7B4HH">Petdro Agüera</a>, Flickr</figcaption> 
+        </figure>
+        <ul>
+          <li>Les grandes sociétés (IBM, Intel, Boeing, FAO, Renault,…) publient une énorme quantité de documentation&nbsp;;</li>
+          <li>Il n‘est plus question de les diffuser en format papier&nbsp;;</li>
+          <li>Ils ont besoin de pouvoir la mettre à jour à tout moment&nbsp;;</li>
+          <li>Le <em>même</em> document doit être disponible offline et online&nbsp;: il ne devrait pas y
+            avoir de différence entre les deux.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2> Exemple du matériel éducatif</h2>
+        <figure class="right"><img src="figures/auditorium.jpg" alt="Amphitéatre avec des étudiants avec, pour la pluspart, de tablettes" width="90%"> 
+          <figcaption>Photo: <a href="http://j.mp/1t7Gpie">Merrill College of Journalism</a>, Flickr</figcaption> 
+        </figure>
+        <ul>
+          <li>Qu‘est-ce qu‘une publication éducative&nbsp;?</li>
+          <ul>
+            <li><em>Un livre</em> avec des textes plus ou moin longs et qui nécessitent accessible sur une liseuse&nbsp;?</li>
+            <li><em>Une application</em> avec des tests interactifs et des exemples animés&nbsp;?</li>
+            <li><em>Un client sur le web</em> qui se relie à des services sur le web pour obtenir les résultats du test, pour consulter une encyclopédie,…&nbsp;?</li>
+            <li><em>Un conteneur de données interactif</em> entreposant différentes données pour, par exemple, réaliser une demonstration&nbsp;?</li>
+          </ul>
+          <li>La frontière entre un «&nbsp;livre&nbsp;» et une «&nbsp;application&nbsp;» devient ténue&nbsp;!</li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide shout">
+      <div>
+        <h2>Les effets synergiques de la convergence</h2>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Avantages pour la communauté des éditeurs </h2>
+        <figure class="right"> <img src="figures/javascript.jpg" alt="Photo de deux livres sur javascript" width="100%"> 
+          <figcaption>Photo&nbsp;: <a href="http://j.mp/1CP4M41">Nathan Smith</a>, Flickr</figcaption> 
+        </figure>
+        <ul style="width: 57%">
+          <li>Les éditeurs désirent se concentrer sur ce qu‘<em>ils</em> savent faire de mieux&nbsp;: produire et éditer un contenu de qualité. </li>
+          <li>Les éditeurs ne sont <em>pas</em> des entreprises technologiques, et n‘entendent pas le devenir&nbsp;: ils veulent en revanche s‘appuyer sur la dynamique communauté du Web&nbsp;!</li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Avantages pour la communauté du Web</h2>
+        <figure class="right"> <img src="figures/manuscript.jpg" alt="photo d'un manuscript médiéval" width="80%"> 
+          <figcaption>Photo&nbsp;: <a href="http://j.mp/ZMp3KM">e-codices</a>, Flickr</figcaption> 
+        </figure>
+        <ul>
+          <li>Les éditeurs ont une longue expérience à partager sur l‘érgonomie, la pagination, la mise en page complexe, etc.&nbsp;;</li>
+          <li>La communauté du Web peut tirer profit de leur expertise en matière de publication de textes longs, assortis d‘une esthétique, de lisibilité, structure, etc.&nbsp;;</li>
+          <li>La maîtrise des éditeurs de la chaîne complète de production de contenu peut devenir un atout pour la conception des pages web. </li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Plusieurs communautés pourraient etre impactées</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td>Editeurs « classique »</td>
+              <td>Editeurs scientifiques</td>
+            </tr>
+            <tr>
+              <td>Navigateurs</td>
+              <td>Grandes sociétés</td>
+            </tr>
+            <tr>
+              <td>Corps gouvernementaux</td>
+              <td>Institutions internationales</td>
+            </tr>
+            <tr>
+              <td>Lecteurs numériques</td>
+              <td>Auteurs de contenus éducatifs</td>
+            </tr>
+            <tr>
+              <td>Concepteurs de sites web</td>
+              <td>Archivistes</td>
+            </tr>
+            <tr>
+              <td>Développeurs informatiques</td>
+              <td>Chaînes de publication</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="slide shout">
+      <div>
+        <h2> Comment y parvenir&nbsp;? (techniquement parlant) </h2>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Comment parvenir à un EPUB-WEB&nbsp;?</h2>
+        <ul>
+          <li>Avec une forte coopération entre les différentes communautés&nbsp;;</li>
+          <li>En identifiant les défis techniques à aborder.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2> Exemple d‘un défi technologique&nbsp;: le format d‘archivage </h2>
+        <ul>
+          <li>EPUB utilise le format ZIP (format de compression/archivage de fichiers)&nbsp;;</li>
+          <li>Il n‘existe pas actuellement de format d‘archivage standard pour les navigateurs…
+            <ul>
+              <li>bien qu‘on en ait un réel besoin (pour des d‘applications complexes, des données, etc.)&nbsp;;</li>
+              <li>mais le format ZIP n‘est pas nécessairement la bonne approche pour le web.</li>
+            </ul>
+          </li>
+          <li>Il y a un travail en cours au W3C autour d‘un format standard de compression qui pourrait avoir un impact sur EPUB-WEB.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Exemple d‘un défi technologique&nbsp;: les identifiant</h2>
+        <ul>
+          <li>Il est nécessaire d‘avoir un identifiant unique pour le <em>document</em> à travers les différents usages</li>
+          <ul>
+            <li>Autrement dit, qu‘est-ce qui identifie, sur le web…
+              <ul>
+                <li>l‘Hamlet de Shakespeare&nbsp;?</li>
+                <li>son édition numérique publiée par l‘éditeur X&nbsp;?</li>
+                <li>la version que j‘ai acquise et annotée&nbsp;?</li>
+              </ul>
+            </li>
+          </ul>
+          <li>L‘identifiant est nécessaire pour rendre un livre partie intégrale du web.</li>
+          <li>(Un sujet objet de de débats dans les communautés d‘éditeurs et de bibliothécaires…)</li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Exemple d‘un défi technologique&nbsp;: les identifiant</h2>
+        <ul>
+          <li>L‘identification unique du document n‘est pas suffisante&nbsp;;</li>
+          <li>On a aussi besoin d‘un cadre d‘identification pour lier <em>au contenu</em> d‘un document&nbsp;;</li>
+          <li>Il existe de tels identifiants pour différents médias, mais un model universel, valable aussi bien pour les navigateurs que pour les livres numériques, manque toujours
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2> </h2>
+        <h2>Exemple d‘un défi technologique&nbsp;: pagination, numérotation, indexation
+          </h2>
+        <ul>
+          <li>Qu‘est-ce qu‘une <i>«&nbsp;page&nbsp;»</i> pour un contenu numérique&nbsp;?</li>
+          <li>Comment l‘exprimer dans le cadres des technologies comme HTML ou CSS&nbsp;?</li>
+          <li>Les références (pagination, références aux images ou diagrammes, références bibliographiques, etc.) doivent reposer sur des mécanismes robustes</li>
+          <ul>
+            <li>par exemple, la numérotation peut changer de façon dynamique en fonction des interaction du lecteur, p.e. par rapport à la taille de la police</li>
+          </ul>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2> </h2>
+        <h2>Exemple d‘un défi technologique&nbsp;: sécurité, navigation privée, contrôle d‘accès</h2>
+        <ul>
+          <li>Le mécanisme des navigateurs Internet repose sur un contrôle par «&nbsp;site&nbsp;», ou par «&nbsp;page Web&nbsp;», largement basé sur le principe du mot de passe/utilisateur ;</li>
+          <li>Les pratiques actuelles de l‘édition sont différentes : (DRM, watermarking, etc.) ;</li>
+          <li>Une solution faisant consensus devra être trouvée.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Exemple d‘un défi technologique&nbsp;: contrôle de l‘affichage </h2>
+        <ul>
+          <li>Quelles possibilitées offertes a l‘utilisateur pour contrôler la présentation du document&nbsp;? </li>
+          <li>Les traditions du Web et des livres numériques sont différent sur ce
+            point
+            <ul>
+              <li>dans un navigateur, le Web designer est (presque) le seul maître :
                 <ul>
-                    <li>Publishers can choose to utilize either or both of these publishing modes</li>
-                    <li>Users can choose either or both of these consumption modes</li>
-                    <li>Essential features flow seamlessly between on-line and off-line modes, like
-                        <ul>
-                            <li>cross-references, user annotations, access to on-line databases</li>
-                            <li>licensing and rights management</li>
-                            <li>etc.</li>
-                        </ul>
-                    </li>
+                  <li>certains aspects de l‘interface utilisateur peuvent être contrôlés mais uniquement pour le navigateur en général</li>
                 </ul>
-            </div>
-        </section>
-
-        <section class="slide shout">
-            <div>
-                <h2>
-                    Why Bother?
-                </h2>
-            </div>
-        </section>
-      
-        <section class="slide">
-            <div>
-                <h2>
-                    For Example: Book in a Browser
-                </h2>
-                <figure class="right">
-                    <img src="figures/joseph-web.png" width="98%" alt="Joseph Reagle's book as a web page"/>
-                    <figcaption><a href="http://reagle.org/joseph/2010/gfc/chapter-4.html">Extract of Joseph Reagle’s Book</a> as ePUB<figcaption/>
-                </figure>
+              </li>
+              <li>dans une liseuse, l‘utilisateur a plus de libertés&nbsp;:
                 <ul>
-                    <li>On a desktop I may want to read a book just like a Web page:
-                        <ul>
-                            <li>easily follow a link “out” of the book</li>
-                            <li>create bookmarks “into” a page in a book</li>
-                            <li>use useful plugins and tools that my browser may have</li>
-                            <li>create annotations</li>
-                        </ul>
-                    </li>
+                  <li>couleur du texte/de l‘arrière plan</li>
+                  <li>choix des polices</li>
                 </ul>
-            </div>
-        </section>
-        <section class="slide">
-            <div>
-                <h2>
-                    For Example: Book in a Browser (cont.)
-                </h2>
-                <figure class="right">
-                    <img src="figures/joseph-book.png" width="98%" alt="Joseph Reagle's book as an ebook in a browser"/>
-                    <figcaption><a href="http://reagle.org/joseph/2010/gfc/chapter-4.html">Extract of Joseph Reagle’s Book</a> as ePUB</figcaption>
-                </figure>
-                <ul>
-                    <li>But:</li>
-                    <ul>
-                        <li>sometimes I may need the computing power of my desk-top for, e.g., interactive 3D content</li>
-                        <li>at other times I may also want to use a small dedicated reader device to read the book on the beach…</li>
-                    </ul>
-                    <li>All these on <em>the same</em> book (not conversions from one format to the other)!</li>
-                </ul>
-            </div>
-        </section>
- 
-
-        <section class="slide">
-            <div>
-                <h2>
-                    For Example: I May Not Be Online…
-                </h2>
-                <figure class="right">
-                    <img src="figures/commute.jpg" width="98%" alt="Person sitting in a station with a mobile in hand"/>
-                    <figcaption>Photo credit: <a href="http://j.mp/1t7BxJN">Bryan Ong</a>, Flickr</figcaption>
-                </figure>
-                <ul>
-                    <li>I may find an article on the Web that I want to review, annotate, etc., while commuting home on a train</li>
-                    <li>I want the results of the annotations to be back online, when I am back on the Internet</li>
-                    <ul>
-                        <li>Note: some browsers have an “archiving” possibility, but they are not interoperable
-                            <ul><li>the content can definitely no be read on a dedicated reader</li></ul>
-                        </li>
-                    </ul>
-                </ul>
-            </div>
-        </section>
-        <section class="slide">
-            <div>
-                <h2>
-                    For Example: Scholarly Publishing
-                </h2>
-                <figure class="right">
-                    <img src="figures/plos.png" width="98%" alt="Screen dump of a PLOS 1 page"/>
-                    <figcaption>Screen dump of <a href="http://j.mp/ZMowZq">“Web based applications”</a> on PLOS 1</figcaption>
-                </figure>
-                <ul>
-                    <li>My paper is published, primarily, on-line, but people may want to download it for offline use</li>
-                    <li>The format of the paper should be adaptable to my reading environment
-                        <ul>
-                            <li>do not want a two column, fixed layout file that I cannot handle on my iPad…</li>
-                        </ul>
-                    </li>
-                    <li>My “paper” may also contain video, audio, data, programs…
-                        <ul>
-                            <li>scholarly publishing is not text only any more!</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="slide">
-            <div>
-                <h2>
-                    For Example: In-house Publishing
-                </h2>
-                <figure class="right">
-                    <img src="figures/manuals.jpg" width="98%" alt="Bookshelf full of documentation"/>
-                    <figcaption>Photo credit: <a href="http://j.mp/1t7B4HH">Petdro Agüera</a>, Flickr</figcaption>
-                </figure>
-                <ul>
-                    <li>Major companies (IBM, Intel, Boeing, FAO, Renault,…) are specialized publishers through the publication of huge amount of documentation</li>
-                    <li>Delivering it on paper is not an option any more</li>
-                    <li>Fast refresh time is needed</li>
-                    <li>The <em>same</em> document should be available offline (e.g., in the cockpit) or online (e.g., on the work floor): there should be no difference between the two</li>
-                </ul>
-            </div>
-        </section>
-        <section class="slide">
-            <div>
-                <h2>
-                    For Example: Educational Materials
-                </h2>
-                <figure class="right">
-                    <img src="figures/auditorium.jpg" width="98%" alt="University hall with students, most of them with a tablet"/>
-                    <figcaption>Photo credit: <a href="http://j.mp/1t7Gpie">Merrill College of Journalism</a>, Flickr</figcaption>
-                </figure>
-                <ul>
-                    <li>What is an educational publication?</li>
-                    <ul>
-                        <li><em>a book</em> of possibly long texts that requires offline access on dedicated devices?</li>
-                        <li><em>a packaged application</em> with built-in interactive tests, animated examples?</li>
-                        <li><em>a Web client</em> reaching out to Web services for assessing test results, to encyclopedia,&nbsp;…?</li>
-                        <li><em>an interactive data container</em> storing various data for, e.g., demonstrations?</li>
-                    </ul>
-                    <li>The borderline between a “book” and a “(Web) Application” are becoming blurred!</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="slide shout">
-            <div>
-                <h2>
-                    Synergy effects of convergence
-                </h2>
-            </div>
-        </section>
-        <section class="slide">
-            <div>
-                <h2>
-                    Advantage for Publishers‘ Community
-                </h2>
-                <figure class="right">
-                    <img src="figures/javascript.jpg" width="98%" alt="Photo of two javascript books"/>
-                    <figcaption>Photo credit: <a href="http://j.mp/1CP4M41">Nathan Smith</a>, Flickr</figcaption>
-                </figure>
-                <ul style="width: 57%">
-                    <li>Publishers want to concentrate on what <em>they</em> know better: how to produce, edit, curate, etc, great content</li>
-                    <li>Publishers are <em>not</em> technology companies, nor do they intend to be; they want instead to rely on the vibrant Web community!</li>
-                </ul>
-            </div>
-        </section>
-        <section class="slide">
-            <div>
-                <h2>
-                    Advantage for the Web Community
-                </h2>
-                <figure class="right">
-                    <img src="figures/manuscript.jpg" width="90%" alt="image of a medieval manuscript"/>
-                    <figcaption>Photo credit: <a href="http://j.mp/ZMp3KM">e-codices</a>, Flickr</figcaption>
-                </figure>
-                <ul>
-                    <li>Publishers have a long experience in ergonomics, typography, paging, complex layout, etc.</li>
-                    <li>Publishing long texts, with the right aesthetics, readability, structure, etc., is an expertise the Web community can profit from</li>
-                    <li>Experience of publishers in the complete workflow for producing content may become important for Web design</li>
-                </ul>
-            </div>
-        </section>
-        <section class="slide">
-            <div>
-                <h2>Some Communities That May Be Affected</h2>
-                <table>
-                    <tr>
-                        <td>(Trade) Publishers</td><td>STM Publishers</td>
-                    </tr>
-                    <tr>
-                        <td>Browser vendors</td><td>Large companies</td>
-                    </tr>
-                    <tr>
-                        <td>Governmental bodies</td><td>International institutions</td>
-                    </tr>
-                    <tr>
-                        <td>Consumers of ebooks</td><td>Scholarly authors</td>
-                    </tr>
-                   <tr>
-                        <td>Web designers</td><td>Archivists</td>
-                    </tr>
-                   <tr>
-                        <td>Web Developers</td><td>Publishing workflows</td>
-                    </tr>
-                </table>
-            </div>
-        </section>
-
-        <section class="slide shout">
-            <div>
-                <h2>
-                    How do we get there? (Technically)
-                </h2>
-            </div>
-        </section>
-        
-        <section class="slide">
-            <div>
-                <h2>How Do We Get to EPUB-WEB?</h2>
-                <ul>
-                    <li>A strong cooperation between the different communities should be ensured</li>
-                    <li>Technical challenges must be identified</li>
-                </ul>
-            </div>
-        </section>
-
-         <section class="slide">
-            <div>
-                <h2>
-                    Example for a Technical Challenge: Archival Format
-                </h2>
-                <ul>
-                    <li>EPUB is based on ZIP</li>
-                    <li>There is no standard packaging format for browsers yet…
-                        <ul>
-                            <li>although there is a need for, e.g., applications or data sets</li>
-                        </ul>
-                    </li>
-                    <li>… but ZIP may not be the right approach on the Web
-                        <ul>
-                            <li>Multipart Mime may be an alternative</li>
-                        </ul>
-                    </li>
-                    <li>There is a new work item at W3C on packaging standard which may affect EPUB-WEB</li>
-                </ul>
-            </div>
-        </section>
-
-       <section class="slide">
-            <div>
-                <h2>
-                    Example for a Technical Challenge: Identification
-                </h2>
-                <ul>
-                    <li>A consise and unique identification for the <em>document</em> (e.g., the “work”) under various usage patterns is necessary</li>
-                    <ul>
-                        <li>i.e., what is the URI for…
-                            <ul>
-                                <li>Shakespeare's Hamlet?</li>
-                                <li>its digital edition published by Publisher XYZ?</li>
-                                <li>the copy I own and annotate?</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <li>This is necessary to make a book a first-class citizen on the Web</li>
-                </ul>
-                <p>B.t.w., this is already the topic for debates in the publishing and library communities…</p>
-            </div>
-        </section>
-        <section class="slide">
-            <div>
-                <h2>
-                    Example for a Technical Challenge: Identification (cont.)
-                </h2>
-                <ul>
-                    <li>Unique identification of the work is not enough</li>
-                    <li>A fragment identification framework is also necessary to link <em>into</em> the document</li>
-                    <li>There are fragments defined for various media, but a universal model, workable for browsers, is still missing
-                        <ul>
-                            <li>these should be agnostic to offline vs. online state, to media type, etc.</li>
-                        </ul>
-                    </li>
-                </ul>
-                <p>Works are already ongoing within the framework of activities around annotations</p>
-            </div>
-        </section>
-        <section class="slide">
-            <div>
-                <h2>
-                    Example for a Technical Challenge: Pagination, Numbering, Indexing
-                </h2>
-                <ul>
-                    <li>What is a <em>“page”</em> for an electronic content?
-                        <ul>
-                            <li>is this a new CSS concept? Do we need an extension to the DOM?</li>
-                        </ul>
-                    </li>
-                    <li>In general, content may be placed into linked <em>regions</em></li>
-                    <li>References (page numbers, references to pictures or diagrams, bibliographic references, etc.) should have robust mechanism across several documents/regions</li>
-                    <ul>
-                        <li>e.g., if the book’s chapters are stored in different files</li>
-                        <li>page numbers can dynamically change as a result of user interaction, e.g., larger fonts</li>
-                        <li>numbering of items should be automatically continuous across documents</li>
-                    </ul>
-                </ul>
-            </div>
-        </section>
-       <section class="slide">
-            <div>
-                <h2>
-                    Example for a Technical Challenge: Security, Privacy, Access Control
-                </h2>
-                <ul>
-                    <li>The Web/browser mechanism is based on the control per “site”, or a ”web page”, largely based on user/password</li>
-                    <li>Current publishing practices are very divergent (strict DRM, watermarking, social DRM, etc.)</li>
-                    <li>A consensus solution will be needed</li>
-                </ul>
-            </div>
-        </section>
-        <section class="slide">
-            <div>
-                <h2>
-                    Example for a Technical Challenge: Presentation Control
-                </h2>
-                <ul>
-                    <li>What is the level of user control of the presentation?
-                    </li>
-                    <li>The Web and eBook traditions are vastly different:
-                        <ul>
-                            <li>in a browser, the Web designer is in full control
-                                <ul>
-                                    <li>CSS alternate style sheets are hardly in use</li>
-                                    <li>some user interface aspects can be controlled but only for the browser as a whole</li>
-                                </ul>
-                            </li>
-                            <li>in an eBook reader, there is more user control
-                                <ul>
-                                    <li>foreground/background color</li>
-                                    <li>choice of fonts</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>There is a need to reconcile these traditions</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="slide shout">
-            <div>
-                <h2>
-                    How Do We Get there? (Practically)
-                </h2>
-            </div>
-        </section>
-        
-        <section class="slide">
-            <div>
-                <h2>DPUB IG and EPUB-WEB</h2>
-                <ul>
-                    <li>DPUB IG already has task forces dedicated to working on many of the EPUB-WEB issues</li>
-                    <li>The group will contribute to the formulation of the EPUB-WEB technical challenges, to a better understanding of the requirements</li>
-                    <ul>
-                        <li>this may mean new task forces, e.g., for identification or packaging</li>
-                    </ul>
-                    <li>EPUB-WEB will become a guiding principle for the group’s further work</li>
-               </ul>
-            </div>
-        </section>
-
-        <section class="slide">
-            <div>
-                <h2>IDPF, W3C, and others</h2>
-                <ul>
-                    <li>On long term, some EPUB-WEB specification work has to be done
-                        <ul>
-                            <li>this requires a consensus and agreement of different communities</li>
-                        </ul>
-                    </li>
-                    <li>IDPF and W3C (and maybe others?) may create the necessary groups, eventually</li>
-               </ul>
-            </div>
-        </section>
-
-
-        <section class="slide">
-            <div>
-                <h2>However…</h2>
-                <ul>
-                    <li>EPUB-WEB does <em>not</em> replace EPUB3 (and upcoming EPUB3.1) at this moment</li>
-                    <li>Many of the new features will also be part of EPUB3.1 (e.g., structural semantics)</li>
-                    <li>The vision is a convergence of the EPUB3.* specifications and EPUB-WEB, eventually</li>
-                </ul>
-            </div>
-        </section>
-        <section class="slide">
-            <div>
-                <h2>
-                    Conclusion
-                </h2>
-                <ul>
-                    <li>There is a great potential in a convergence between the Open Web Platform and Portable Documents</li>
-                    <li>It will require a common effort and cooperation of both communities</li>
-                    <li>But it is an exciting prospect!</li>
-                </ul>
-                <div style="text-align:center; height:45%; position: relative; top: -45px">
-                  <img src="figures/contents.jpg" width="70%" />
-                </div>
-            </div>
-        </section>
-
-        <section class="slide">
-            <div>
-                <h2>Some references</h2>
-                <dl>
-                    <dt>DPUB IG Wiki</dt>
-                    <dd><a href="https://www.w3.org/dpub/IG/wiki/Main_Page"><code>https://www.w3.org/dpub/IG/wiki/Main_Page</code></a></dd>
-                    <dt>EPUB-WEB White paper:</dt>
-                    <dd><a href="http://w3c.github.io/epubweb/"><code>http://w3c.github.io/epubweb/</code></a></dd>
-                    <dt>EPUB-WEB Issue list:</dt>
-                    <dd><a href="https://github.com/w3c/epubweb/issues"><code>https://github.com/w3c/epubweb/issues</code></a></dd>
-                    <dt>This presentation:</dt>
-                    <dd><a href="http://w3c.github.io/dpub/salon-du-livre-2015-03/"><code>http://w3c.github.io/dpub/salon-du-livre-2015-03/</code></a> (<a href="http://w3c.github.io/dpub/salon-du-livre-2015-03/slides.pdf">PDF is also available</a> for download)</dd>
-                </dl>
-            </div>
-        </section>
-        
-        <section class="slide">
-            <div>
-                <h2>Direct Contact</h2>
-                <dl class="plain">
-                    <dt>Ivan Herman, W3C</dt>
-                    <dd>ivan@w3.org</dd>
-                    <dd><a href="http://www.w3.org/People/Ivan/"><code>http://www.w3.org/People/Ivan/</code></a></dd>
-                </dl>
-            </div>
-        </section>
-        <section class="slide shout">
-            <div>
-                <h2>
-                    Je vous remercie pour votre attention&nbsp;!
-                </h2>
-            </div>
-        </section>
-
-
-
-        <div class="progress"><div></div></div>
-        <script src="shower/shower.min.js"></script>
-    </body>
+              </li>
+            </ul>
+          </li>
+          <li>Il faudra réconcillier ces traditions.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide shout">
+      <div>
+        <h2> </h2>
+        <h2>Comment y parvenir&nbsp;? (au niveau de l‘organisation) </h2>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>DPUB IG et EPUB-WEB</h2>
+        <ul>
+          <li>DPUB IG a déjà des sous-groupes de travail se consacrant à plusieurs enjeux de l‘EPUB-WEB ;</li>
+          <li>Le groupe va contribuer à la formulation des défis techniques
+            posés par EPUB-WEB afin de mieux en définir le travail à effectuer</li>
+          <ul>
+            <li>Cela signifie peut-être la création de nouveaux sous-groupe de
+              travail, par exemple pour l‘identification ou le format de
+              compression&nbsp;;</li>
+          </ul>
+          <li>L‘EPUB-WEB deviendra un principe directeur pour les nouveaux
+            travaux du groupe DPUB IG.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>IDPF, W3C, et les autres</h2>
+        <ul>
+          <li>Sur le long terme, un certain nombre de spécifications pour EPUB-WEB devront être faits
+            <ul>
+              <li>cela requiert un large concensus entre les différentes
+                communautés&nbsp;;</li>
+            </ul>
+          </li>
+          <li>À terme, l‘IDPF et le W3C (et peut-être d‘autres&nbsp;?) vont
+            vraisemblablement créer des groupes de travail requis</li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Cependant…</h2>
+        <ul>
+          <li><em>L‘EPUB-WEB ne remplace pas, pour le moment, EPUB3&nbsp;;</em></li>
+          <li>Beaucoup des nouvelles caractéristiques dont nos avons parlés seront également intégrées dans EPUB3.1 et au delà&nbsp;;</li>
+          <li>Cette vision concerne, a la longue, une convergence d‘EPUB vers EPUB-WEB</li>
+        </ul>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2> Conclusion </h2>
+        <ul>
+          <li>Il y a un potentiel important dans la convergence entre l‘Open Web Platform et les documents adaptés à la lecture «&nbsp;mobile&nbsp;»&nbsp;;</li>
+          <li>Cela requiert un effort commun et une coopération entre nos deux communautés&nbsp;;</li>
+          <li>Mais c‘est une perspective enthousiasmante&nbsp;!</li>
+        </ul>
+        <div style="text-align:center; height:45%; position: relative; top: -45px">
+          <img src="figures/contents.jpg" height="100%" />
+        </div>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Quelques références (en anglais)</h2>
+        <dl>
+          <dt>DPUB IG Wiki</dt>
+          <dd><a href="https://www.w3.org/dpub/IG/wiki/Main_Page"><code>https://www.w3.org/dpub/IG/wiki/Main_Page</code></a></dd>
+          <dt>EPUB-WEB White paper/livre blanc :</dt>
+          <dd><a href="http://w3c.github.io/epubweb/"><code>http://w3c.github.io/epubweb/</code></a></dd>
+          <dt>EPUB-WEB Issue list/listes des enjeux :</dt>
+          <dd><a href="https://github.com/w3c/epubweb/issues"><code>https://github.com/w3c/epubweb/issues</code></a></dd>
+          <dt>La presentation en anglais est disponible ici :</dt>
+          <dd><a href="http://w3c.github.io/dpub/salon-du-livre-2015-03/"><code>http://w3c.github.io/dpub/salon-du-livre-2015-03/</code></a>
+            (<a href="http://w3c.github.io/dpub/salon-du-livre-2015-03/slides.pdf">une version PDF
+              est aussi en ligne</a> )</dd>
+        </dl>
+      </div>
+    </section>
+    <section class="slide">
+      <div>
+        <h2>Contact</h2>
+        <dl class="plain">
+          <dt>Ivan Herman, W3C</dt>
+          <dd>ivan@w3.org</dd>
+          <dd><a href="http://www.w3.org/People/Ivan/"><code>http://www.w3.org/People/Ivan/</code></a></dd>
+        </dl>
+      </div>
+    </section>
+    <section class="slide shout">
+      <div>
+        <h2> Je vous remercie pour votre attention&nbsp;! </h2>
+      </div>
+    </section>
+    <div class="progress"> </div>
+    <script src="shower/shower.min.js"></script>
+  </body>
 </html>
