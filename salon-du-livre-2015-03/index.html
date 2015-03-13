@@ -36,13 +36,16 @@
                 border-radius: 0px; 
                 box-shadow: 0px 0px 0px #888; 
             }
-            figcaption {
+            figcaption, .videocaption  {
                 font-size:25%; 
                 position:relative;
                 top:-15px; 
                 left: 15px;
             }
-        </style>
+            .videocaption{
+                left: 200px;
+            }
+       </style>
   </head>
   <body class="list" about="talk:#talk" prefix="bibo: http://purl.org/ontology/bibo/" typeof="cc:Work bibo:Slideshow">
     <header class="caption">
@@ -51,7 +54,7 @@
       <h3>19 mars 2015</h3>
       <h2> <span rel="bibo:authorList" inlist=""> <span resource="http://www.ivan-herman.net/foaf#me" typeof="foaf:Person"> <span property="foaf:name">Ivan Herman</span>, <span property="rdfs:seeAlso" resource="http://www.ivan-herman.net/foaf">W3C</span></span> </span> </h2>
       <p class="c1"><a href="http://creativecommons.org/licenses/by-nd/3.0/"><img class="plain" alt="Creative Commons License in French" src="figures/80x15.png"></a>&nbsp;Cette œuvre est mise à disposition selon les termes de la Licence <a rel="cc:license"
-          href="http://creativecommons.org/licenses/by-nd/3.0/fr/">«&nbsp;Creative Commons Attribution—Pas de Modification 3.0&nbsp;»</a>, attribution au<span style="color: red;"></span> W3C. La présente traduction a été réalisée par Flore Piacentino, SNE.</p>
+          href="http://creativecommons.org/licenses/by-nd/3.0/fr/">«&nbsp;Creative Commons Attribution—Pas de Modification 3.0&nbsp;»</a>, attribution au<span style="color: red;"></span> W3C. La traduction de la présentation a été réalisée par Flore Piacentino, SNE.</p>
       <p> Copyright<sup>©</sup> 2015 W3C<sup>®</sup> (MIT, ERCIM, Keio, Beihang)
       </p>
     </header>
@@ -61,7 +64,7 @@
         <h3> <span rel="bibo:authorList" inlist=""> <span resource="http://www.ivan-herman.net/foaf#me" typeof="foaf:Person"> <span property="foaf:name">Ivan Herman</span>, <span property="rdfs:seeAlso" resource="http://www.ivan-herman.net/foaf">W3C</span></span> </span> </h3>
         <h3> Assises du livre numérique, Paris, France </h3>
         <h3>19 mars 2015</h3>
-        <p style="margin-top:8em;"><a target="_blank" href="http://creativecommons.org/licenses/by-nd/3.0/"><img class="plain" alt="Creative Commons License in French" src="figures/80x15.png"></a>&nbsp;Cette œuvre est mise à disposition selon les termes de la Licence <a target="_blank" rel="cc:license" href="http://creativecommons.org/licenses/by-nd/3.0/fr/">«&nbsp;Creative Commons Attribution—Pas de Modification 3.0&nbsp;»</a>, attribution au <a target="_blank" rel="cc:attributionURL" href="http://www.w3.org" property="cc:attributionName">W3C</a>. La présente traduction a été réalisée par Flore Piacentino, SNE.<br> Copyright<sup>©</sup> 2015 W3C<sup>®</sup> (MIT, ERCIM, Keio, Beihang)</p>
+        <p style="margin-top:8em;"><a target="_blank" href="http://creativecommons.org/licenses/by-nd/3.0/"><img class="plain" alt="Creative Commons License in French" src="figures/80x15.png"></a>&nbsp;Cette œuvre est mise à disposition selon les termes de la Licence <a target="_blank" rel="cc:license" href="http://creativecommons.org/licenses/by-nd/3.0/fr/">«&nbsp;Creative Commons Attribution—Pas de Modification 3.0&nbsp;»</a>, attribution au <a target="_blank" rel="cc:attributionURL" href="http://www.w3.org" property="cc:attributionName">W3C</a>. La traduction de la présentation a été réalisée par Flore Piacentino, SNE.<br> Copyright<sup>©</sup> 2015 W3C<sup>®</sup> (MIT, ERCIM, Keio, Beihang)</p>
       </div>
     </section>
     <section class="slide">
@@ -151,8 +154,7 @@
         </div>
       </section>
     </a>
-    <section class="slide"><a target="_blank" href="http://w3c.github.io/dpub/salon-du-livre-2015-03/">
-      </a>
+    <section class="slide">
       <div>
           <h2>Historique du groupe DPUB IG</h2>
         </a>
@@ -172,19 +174,6 @@
     <section class="slide">
       <div>
         <h2>La mission du DPUB IG</h2>
-        <blockquote>La mission du <span lang="en">Digital Publishing Interest
-            Group (DPUB IG)</span>&nbsp;[…] [repose sur] un forum animé par les
-          experts de l‘écosystème numérique de l‘édition&nbsp;[…]&nbsp;dédié aux
-          discussions techniques, au recensement de cas concrets d‘utilisation
-          et des besoins de l‘industrie pour recouper les formats et les
-          technologies existants (par exemple pour les livres numériques) avec
-          ceux utilisés par l‘Open Web Platform&nbsp;[…]. </blockquote>
-      </div>
-    </section>
-    <section class="slide">
-      <div>
-        <h2>La mission du DPUB IG<br>
-          (en pratique)</h2>
         <ul>
           <li>Les experts de l‘édition numérique identifient les enjeux qui ne
             sont pas traités par l‘Open Web Platform&nbsp;;</li>
@@ -200,7 +189,7 @@
     </section>
     <section class="slide shout">
       <div>
-        <h2> Et donc, qui accomplit le travail&nbsp;?</h2>
+        <h2> Qui accomplit le travail&nbsp;?</h2>
       </div>
     </section>
     <section class="slide">
@@ -306,15 +295,18 @@
       </div>
     </section>
     <section class="slide">
-      <div>
-        <h2>EPUB-WEB est une vision pour le futur</h2>
-        <figure> <img src="figures/epubweb.png" alt="EPUB-WEB at a glance" width="100%">
-        </figure>
-      </div>
+        <div>
+        <div>
+            <h2>Un livre&nbsp;? Un site Web&nbsp;?</h2>
+            <div style="text-align: center">
+                <video controls="controls" width="50%" src="figures/JavaBook.ogv"></video>
+            </div>
+            <p class="videocaption">Extrait de «&nbsp;Big Java&nbsp;», par Cay Horstmann, John Wiley &amp; Sons, 2013</p> 
+         </div>
     </section>
     <section class="slide">
       <div>
-        <h2>Quelle est cette vision&nbsp;?</h2>
+        <h2>La vision d’EPUB-WEB</h2>
         <ul>
           <li>Faire en sorte que :
             <ul>
@@ -330,7 +322,7 @@
     </section>
     <section class="slide">
       <div>
-        <h2>Quelle est cette vision&nbsp;?</h2>
+        <h2>La vision d’EPUB-WEB</h2>
         <ul>
           <li>Autrement dit :
             <ul>
@@ -348,7 +340,7 @@
     </section>
     <section class="slide">
       <div>
-        <h2>Quelle est cette vision&nbsp;?</h2>
+        <h2>La vision d’EPUB-WEB</h2>
         <ul>
           <li>Les éditeurs peuvent choisir d‘utiliser l‘un ou les deux modes de
             publication&nbsp;; </li>
