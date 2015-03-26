@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html
+  xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+    <title>Digital Publishing Interest Group</title>
+    <link rel="stylesheet" href="http://www.w3.org/2005/10/w3cdoc.css" type="text/css"
+      media="screen" />
+    <link rel="stylesheet" type="text/css" href="http://www.w3.org/Guide/pubrules-style.css" />
+    <link rel="stylesheet" type="text/css" href="http://www.w3.org/2006/02/charter-style.css" />
+    <style type="text/css">
+#warning {  
+  font-size: 124%;  -epub-text-transform: lowercase;
+  text-transform: lowercase;  
+  font-variant: small-caps;  
+  border-top-width: medium;  
+  border-right-width: medium;  
+  border-bottom-width: medium;  
+  border-left-width: medium;  
+  border-top-style: ridge;  
+  border-right-style: ridge;  
+  border-bottom-style: ridge;  
+  border-left-style: ridge;  
+  padding-top: 0.5em;  
+  padding-right: 0.5em;  
+  padding-bottom: 0.5em;  
+  padding-left: 0.5em;  -webkit-box-shadow: 5px 5px 0px 0px gray;
+  box-shadow: 5px 5px 0px 0px gray;  
+  margin-right: 10em;
+}
+
+.todo {
+  font-style: italic;
+  background: yellow;
+}
+.todo:before, .todo:after { content: "@@@@";}
+
+li, dd {  
+  padding-top: 0em;  
+  padding-right: 0em;  
+  padding-bottom: 0.5em;  
+  padding-left: 0em;
+}
+      
+ul#navbar li {
+  padding-bottom: 0em;
+}
+
+</style> </head>
+  <body>
+    <p id="warning">DRAFT, under discussion, without any commitment that this charter would be ever accepted!</p>
+    <div id="template">
+      <ul id="navbar" style="font-size: small">
+        <li><a href="#scope">Scope</a></li>
+        <li><a href="#deliverables">Deliverables</a></li>
+        <li><a href="#coordination">Dependencies and Liaisons</a></li>
+        <li><a href="#participation">Participation</a></li>
+        <li><a href="#communication">Communication</a></li>
+        <li><a href="#decisions">Decision Policy</a></li>
+        <li><a href="#patentpolicy">Patent Disclosures </a></li>
+        <li><a href="#about">About this Charter</a></li>
+      </ul>
+      <p><a href="http://www.w3.org/" shape="rect"><img width="72" height="48" alt="W3C"
+            src="http://www.w3.org/Icons/w3c_home" /></a> <a class="domainlogo"
+          href="/TandS/" shape="rect"><img src="http://www.w3.org/Icons/tands" alt="Technology and Society Domain" /></a>
+      </p>
+      <h1 id="title">Digital Publishing Interest Group Charter</h1>
+      <p class="mission">The <strong>mission</strong> of the Digital Publishing Interest Group, part of the Digital Publishing Activity, is to provide a forum for experts in the digital publishing ecosystem of electronic journals, magazines, news, or book publishing (authors, creators, publishers, news organizations, booksellers, accessibility and internationalization specialists, etc.) for technical discussions towards a future vision of Digital Publishing. This vision has been detailed, and already discussed by the community, in a separate White Paper entitled <a href="http://w3c.github.io/epubweb/">“Advancing Portable Documents for the Open Web Platform: EPUB-WEB”</a>; the main message of that vision is that the current format- and workflow-level separation between offline/portable (e.g., EPUB) and online (Web) document publishing should be diminished to zero. Whilst this Interest Group is not chartered to specify Recommendations, it will provide technical directions, identify technical issues and outline solutions that relevant Working Groups of the W3C will have to finalize as final Web standards. Some of the work will have to be done in a strong cooperation with existing Working Groups at W3C or at IDPF to ensure a full compatibility with the Open Web Platform.</p>
+      <div class="noprint">
+        <p class="join"><a href="https://www.w3.org/2004/01/pp-impl/64149/join">Join
+            the Digital Publishing Interest Group</a><span style="font-style: italic;">.</span><span
+            class="toadd" style="font-style: italic;"><br />
+          </span></p>
+      </div>
+      <table class="summary-table">
+        <tbody>
+          <tr id="Duration">
+            <th rowspan="1" colspan="1">End date</th>
+            <td rowspan="1" colspan="1">1 September 2017</td>
+          </tr>
+          <tr>
+            <th rowspan="1" colspan="1">Confidentiality</th>
+            <td rowspan="1" colspan="1">Proceedings are <a href="/2005/10/Process-20051014/comm.html#confidentiality-levels"
+                shape="rect"> public </a></td>
+          </tr>
+          <tr>
+            <th rowspan="1" colspan="1">Proposed Initial Chairs</th>
+            <td rowspan="1" colspan="1">Markus Gylling (IDPF and the Daisy
+              Consortium)<br />
+              Tzviya Siegman (John Wiley &amp; Sons, Inc.)</td>
+          </tr>
+          <tr>
+            <th rowspan="1" colspan="1">Initial Team Contacts<br />
+              (FTE %: 40)</th>
+            <td rowspan="1" colspan="1">
+              Ivan Herman (0.4fte)</td>
+          </tr>
+          <tr>
+            <th rowspan="1" colspan="1">Usual Meeting Schedule</th>
+            <td rowspan="1" colspan="1">Teleconferences: Weekly <br />
+              Face-to-face: As needed </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="scope">
+        <h2 id="scope">Scope</h2>
+        <p>Today’s digital publishing market is dynamic, fast-changing, and strong. eBooks compete with printed versions, and there is a wide choice of hardware and software available for eBook readers. Journals and magazines are also made available digitally on the Web or in specialized applications and, in some cases, their printed version is even abandoned in favor of a purely digital version. The formats used by eBook readers and tablets for electronic books, magazines, journals and educational resources are largely based on W3C Technologies, such as (X)HTML, CSS, SVG, SMIL, MathML, or various Web API-s.</p>
+
+        <p>The advancement of EPUB3 ensured the introduction of highly dynamic and interactive digital documents whose features resemble more an more to what the Web generally provides. This can be seen through a new breed of interactive books in, e.g., the educational domain, but the same technical possibilities have the potential of revolutionizing such diverse areas as journal and magazine publications (including scholarly journal publishing), archival of Web content, or in-house publishing of documentations by large corporations. The vision for the convergence of digital documents and the Web has been summarized in a separate White Paper entitled <a href="http://w3c.github.io/epubweb/">“Advancing Portable Documents for the Open Web Platform: EPUB-WEB”</a> as follows:</p>
+
+        <blockquote><p>Our vision for EPUB-WEB is that portable documents become fully native citizens of the Open Web Platform. In this vision, the current format- and workflow-level separation between offline/portable (EPUB) and online (Web) document publishing is diminished to zero. These are merely two dynamic manifestations of the same publication: content authored with online use as the primary mode can easily be saved by the user for offline reading in portable document form. Content authored primarily for use as a portable document can be put online, without any need for refactoring the content. Publishers can choose to utilize either or both of these publishing modes, and users can choose either or both of these consumption modes. Essential features flow seamlessly between online and offline modes; examples include cross-references, user annotations, access to online databases, as well as licensing and rights management.</p></blockquote>
+
+        <p>Turning this vision into reality, however, requires significant technical work. Some of the issues are already addressed in existing W3C Working Groups (e.g., the CSS, HTML5, or the Web Applications Working Groups) but it is very important that those activities take into account the specificities, requirements, etc., of the Digital Publishing Industry through feedbacks, comments, and direct participation in those Working Groups. There are also a number of technical challenges specific to this vision that may necessitate targeted specification work. A first set of technical challenges have been identified in the White Paper, and are added here for an easier reference:</p>
+
+      <ul>
+        <li><a href="http://w3c.github.io/epubweb/#generic-archive-format-for-the-portable-offline-state">Generic archive format for the portable/offline state</a></li>
+        <li><a href="http://w3c.github.io/epubweb/#capturing-overall-publication-structure">Capturing overall publication structure</a></li>
+        <li><a href="http://w3c.github.io/epubweb/#document-and-fragment-identification">Document and fragment identification</a></li>
+        <li><a href="http://w3c.github.io/epubweb/#metadata-discovery">Metadata: discovery</a></li>
+        <li><a href="http://w3c.github.io/epubweb/#styling-and-layout-pagination">Styling and Layout, Pagination</a></li>
+        <li><a href="http://w3c.github.io/epubweb/#security-and-privacy-models">Security and privacy models</a></li>
+        <li><a href="http://w3c.github.io/epubweb/#presentation-control-and-personalization">Presentation Control and Personalization</a></li>
+        <li><a href="http://w3c.github.io/epubweb/#models-for-embracing-domain-specific-restrictions-and-extensions">Models for embracing domain-specific restrictions and extensions</a></li>
+      </ul>
+
+
+      <p>However, it is not clear, at this moment, which of these challenges will require targeted work and which should be done in cooperation with existing Working Groups. In light of this, the goal of this Interest Group is to:</p>
+
+      <ul>
+        <li>Provide an in-depth and exhaustive overview of the technical challenges that should be solved to make the EPUB-WEB vision a reality</li>
+        <li>Categorize whether these challenges should be addressed through new Working Groups or whether they should be done in cooperation with other W3C groups</li>
+        <li>Provide feedbacks, comments, and requirements to other W3C Working Groups to ensure the necessary convergence, and encourage members of the Interest Group to actively participate in the work of those Working Groups whenever relevant</li>
+        <li>Outline the technical solutions and necessary specifications for cases where targeted Working Groups should be established; the Interest Group should also actively contribute to the chartering of such groups</li>
+      </ul>
+
+
+      <p>The group is a continuation of the Digital Publishing Interest Group, that started in 2013 and whose <a href="http://www.w3.org/2013/02/digpubig.html">charter</a> expires in September 2015. That group has firmly established the presence of the Digital Publishing Community within W3C and, vice versa, the presence of W3C within the Digital Publishing Community. The results of the previous Interest Group will provide a strong basis for further work.</p> 
+
+
+
+
+         <h3>Success Criteria</h3>
+          <p class="todo">T.B.D.</p>
+
+
+        <div>
+          <h3>Out of Scope</h3>
+          <p>This Interest Group is not chartered to develop final
+            specifications, i.e., Recommendations. That must be done in relevant
+            W3C Working Groups, either pre-existing or newly chartered, with a
+            direct participation of the interested parties.</p>
+          <p>This Interest Group is not chartered to work on issues and use
+            cases that are relevant exclusively to non-W3C standards and
+            specifications (e.g., Unicode), although the evolution of those
+            Specifications should be followed as they may influence the
+            deliverables of the Group.</p>
+        </div>
+      </div>
+      <div>
+        <h2 id="deliverables">Deliverables</h2>
+          <p class="todo">T.B.D.</p>
+        <div>
+          <h3 id="timeline">Timeline</h3>
+          <p class="todo">T.B.D.</p>
+        </div>
+      </div>
+      <div class="dependencies">
+        <h2 id="coordination"><a name="depliaisons"></a>Dependencies and
+          Liaisons</h2>
+        <p class="todo">This section has to be reviewed, it is the list in the previous charter</p>
+        <h3><a name="liaisons">W3C</a> Groups</h3>
+        <p>This is an initial list of the activities and groups the IG will consider when starting its work. The goal of these liaisons is to ensure harmonization of the technical requirements and provide feedbacks. The importance of these will be evaluated during the lifetime of the IG; this also means that some groups may not be contacted if the IG does not find any issues and problems worth raising after all. The list of these groups, with a short description of the technical area of interest, is:</p>
+        <dl>
+          <dt><a href="https://www.w3.org/Style/CSS/members">CSS Working Group</a></dt>
+          <dd>CSS has a fundamental importance in formatting any type of digital
+            publication.</dd>
+          <dt><a href="https://www.w3.org/html/wg/">HTML Working Group</a></dt>
+          <dd>(X)HTML is <span style="font-style: italic;">the</span> document
+            format of choice for electronic books and, of course, for magazines
+            and journals published on the Web, which also includes a general
+            transition towards HTML5 (e.g., in EPUB3).</dd>
+          <dt><a href="https://www.w3.org/Fonts/WG/">WebFonts Working Group</a></dt>
+          <dd>High quality fonts are fundamental for many areas within the
+            digital publication industry.</dd>
+          <dt><a href="https://www.w3.org/Graphics/SVG/WG/">SVG Working Group</a></dt>
+          <dd>The latest publishing standards (e.g., EPUB3) include SVG, also as
+            a possible replacement of HTML as the “top level” format. SVG will
+            play a vital role for, e.g., the educational publishing market,
+            children’s literature, or high quality illustrations in books.</dd>
+          <dt><a href="https://www.w3.org/Math/Group/">MathML Working Group</a></dt>
+          <dd>MathML is part of the EPUB3 standard and is the format of choice
+            to describe mathematical equations.</dd>
+          <dt><a href="https://www.w3.org/2011/webtv/">Web and TV Interest Group</a></dt>
+          <dd>Some electronic books are served as streaming content, with,
+            possibly, embedded video content.</dd>
+          <dt><a href="https://www.w3.org/Voice/">Voice Browser WG</a></dt>
+          <dd>Electronic books may be rendered by voice readers.</dd>
+          <dt><a href="https://www.w3.org/International/core/">Internationalization
+              Working Group</a></dt>
+          <dd>Proper localization and consideration for local typesetting,
+            formatting, etc, tradition can be vital for some publishing markets.</dd>
+          <dt><a href="https://www.w3.org/2006/rwc/">Rich Web Client Activity</a></dt>
+          <dd>On line magazines and journals are increasingly dependent on
+            various API-s to make their content more interactive and appealing;
+            EPUB3 has also introduced the possibility to include scripts in
+            electronic books, which may be important for, e.g., the educational
+            market.</dd>
+          <dt><a href="http://www.w3.org/testing/">Web Testing Activity</a></dt>
+          <dd>Interoperability of electronic book readers is considered to be a
+            major problem by that community; cooperating with the W3C testing
+            activity would also provide specialized use cases to the
+            Recommendations in general.</dd>
+          <dt><a href="https://www.w3.org/2001/sw/">Semantic Web Activity</a></dt>
+          <dd>In case the Interest Group engages in the metadata vocabulary
+            issues, to ensure that the vocabulary development process is in line
+            with the approaches of the Semantic Web Activity.</dd>
+          <dt><a href="https://www.w3.org/2009/dap/">Device APIs Working Group</a></dt>
+          <dd>The main market for digital Magazines, book readers, journals,
+            etc., are on mobile space, like tablets, smart phones, or
+            specialized devices. </dd>
+          <dt><a href="https://www.w3.org/WAI/Technical/">WAI Technical Activity</a></dt>
+          <dd>Accessibility issues for journals and electronic books are of a
+            major importance. Although IDPF has direct relationships to other
+            consortia (e.g., the Daisy Consortium) whose results are reflected
+            by the EPUB3 standard, the various technical work done in the WAI TA
+            are directly relevant to the accessibility of electronic books, too
+            (e.g., the results of the <a href="http://www.w3.org/WAI/IndieUI/">IndieUI
+              Working Group</a>).</dd>
+        </dl>
+        <div>
+          <h3 id="extgroups">External Groups</h3>
+          <dl>
+            <dt><a href="https://idpf.org">IDPF</a></dt>
+            <dd>IDPF is the body where the major eBook standard, EPUB, is
+              developed and maintained. IDPF is also part of a joint (temporary)
+              committee with ISO to work on an ISO version of EPUB3. </dd>
+            <dt><a href="https://www.bisg.org">BISG</a></dt>
+            <dd>BISG's of involvement with Book metadata vocabulary development,
+              as well as their testing/evaluating platforms for EPUB, make them
+              a major player in the electronic books ecosystem.</dd>
+            <dt><a href="http://editeur.org/">EDItEUR</a></dt>
+            <dd>The body responsible for the main metadata vocabulary used by
+              (traditional) books.</dd>
+            <dt><a href="http://www.iptc.org">IPTC</a></dt>
+            <dd>The International Press and Telecommunications Council regroups
+              the news publishing industry.</dd>
+            <dt><a href="http://www.daisy.org">Daisy Consortium</a></dt>
+            <dd>The Daisy Consortium is a global consortium that plays an
+              essential role in ensuring the accessibility of Web sites and of
+              electronic books.</dd>
+            <dt><a href="http://www.niso.org/home/">NISO</a></dt>
+            <dd>The National Information Standard Organization in the USA takes
+              an active role in exploring library and publication metadata
+              issues.</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="participation">
+        <h2 id="participation">Participation</h2>
+        <p>Participation in the Digital Publishing Interest Group is open to all W3C Members. Individuals who wish to participate as Invited Experts (i.e., they do not represent a W3C Member) should refer to the <a href="/2004/08/invexp.html" shape="rect">policy for approval of Invited Experts</a>. Invited Experts in this group are not granted access to Member-only information. Effective participation in the Interest Group is expected to consume one day work per week for each participant. </p>
+        <p>The group may decide to create Task Forces within the Interest Group to concentrate on major relevant constituencies, for example electronic books, journal/magazine publishing, or educational publishing. These Task Forces may organize separate teleconferences, meetings, and may be responsible for one or more deliverables. </p>
+        <p></p>
+        <p>There are no minimum requirements for participation in this group. Participants are strongly encouraged to take advantage of frequent opportunities to review and comment on deliverables from other groups.</p>
+        <p>The Chair may call occasional meetings consistent with the <a href="/Consortium/Process/policies#GeneralMeetings"
+            shape="rect">W3C Process requirements for meetings</a>.</p>
+      </div>
+      <div class="communication">
+        <h2 id="communication">Communication</h2>
+        <p>This group primarily conducts its work on the mailing list<span style="font-style: italic;"> public-digipub-ig@w3.org </span><span class="toadd"></span>with <a href="http://lists.w3.org/Archives/Public/public-digipub-ig/">public archives</a>. Administrative tasks may be conducted in Member-only communications. </p>
+        <p>Information about the group (deliverables, participants, face-to-face meetings, teleconferences, etc.) is available from the <a href="http://www.w3.org/dpub/IG/">Digital Publishing Interest Group home page</a></p>
+        <p>The role of <a href="#depliaisons">dependencies and liaisons</a> with various external groups is fundamental to the success of this Interest Group; the group will therefore set up active liaisons early in the process to ensure that the use cases and requirements are provided to other groups in a timely manner.</p>
+      </div>
+      <div class="decisions">
+        <h2 id="decisions">Decision Policy</h2>
+        <p>As explained in the Process Document (<a href="/Consortium/Process/policies#Consensus">section
+            3.3</a>), this group will seek to make decisions when there is
+          consensus. When the Chair puts a question and observes dissent, after
+          due consideration of different opinions, the Chair should record a
+          decision (possibly after a formal vote) and any objections, and move
+          on. <br />
+          <br />
+          A formal vote should allow for remote asynchronous
+          participation—using, for example, email and/or web-based survey
+          techniques. Any resolution taken in a face-to-face meeting or
+          teleconference is to be considered provisional until 5 working days
+          after the publication of the resolution in draft minutes sent to the
+          group's mailing list. </p>
+        <p>If the group decides to create Task Forces, these may be responsible
+          for one or more deliverables. However, final decisions are taken at
+          the Interest Group level as described above.</p>
+        <p>This charter is written in accordance with <a href="/Consortium/Process/policies#Votes">Section
+            3.4, Votes</a> of the W3C Process Document and includes no voting
+          procedures beyond what the Process Document requires. </p>
+        <p></p>
+      </div>
+      <div class="patent">
+        <h2 id="patentpolicy">Patent Disclosures </h2>
+        <p>The Digital Publishing Interest Group provides an opportunity to
+          share perspectives on the topic addressed by this charter. W3C reminds
+          Interest Group participants of their obligation to comply with patent
+          disclosure obligations as set out in <a href="/Consortium/Patent-Policy/#sec-Disclosure"
+            shape="rect">Section 6</a> of the W3C Patent Policy. While the
+          Interest Group does not produce Recommendation-track documents, when
+          Interest Group participants review Recommendation-track specifications
+          from Working Groups, the patent disclosure obligations do apply.</p>
+        <p></p>
+        <p>For more information about disclosure obligations for this group,
+          please see the <a href="/2004/01/pp-impl/" shape="rect">W3C Patent
+            Policy Implementation</a>.</p>
+      </div>
+      <h2 id="about">About this Charter</h2>
+      <p>This charter for the Digital Publishing Interest Group has been created
+        according to <a href="/Consortium/Process/groups#GAGeneral" shape="rect">section
+          6.2</a> of the <a href="/Consortium/Process" shape="rect">Process
+          Document</a>. In the event of a conflict between this document or the
+        provisions of any charter and the W3C Process, the W3C Process shall
+        take precedence.</p>
+      <hr />
+      <address>
+        Ivan Herman, ivan@w3.org
+      </address>
+      <p class="copyright"><a rel="Copyright" href="/Consortium/Legal/ipr-notice#Copyright"
+          shape="rect">Copyright</a> © 2015 <a href="/" shape="rect"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup>
+        (<a href="http://www.csail.mit.edu/" shape="rect"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>,
+        <a href="http://www.ercim.org/" shape="rect"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>,
+        <a href="http://www.keio.ac.jp/" shape="rect">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>),
+        All Rights Reserved.</p>
+      <p>$Date: 2015-03-26 12:05:05 $</p>
+    </div>
+  </body>
+</html>
