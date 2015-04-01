@@ -50,6 +50,21 @@
              .videocaption{
                 left: 200px;
             }
+
+            .slide table.comparison th {
+                text-align: center;
+            }
+            .slide table.comparison td {
+                padding: 0.3em;
+            }
+            .slide table.comparison {
+                padding-left: 0em !important;
+                margin: 0em !important;
+                margin-bottom: 0.5em !important;
+                font-size: 90%;
+                table-layout: fixed;
+            }
+
       </style>
     </head>
     <body class="list" about="talk:#talk" prefix="bibo: http://purl.org/ontology/bibo/" typeof="cc:Work bibo:Slideshow">
@@ -60,8 +75,8 @@
                 <h3>2015-??-??</h3>
             <h2> 
                 <span rel="bibo:authorList" inlist="">
-                    <span resource="http://www.ivan-herman.net/foaf#me" typeof="foaf:Person"> <span property="foaf:name">Ivan Herman</span>, 
-                        <span property="rdfs:seeAlso" resource="http://www.ivan-herman.net/foaf">W3C</span></span>
+                    <span resource="http://www.ivan-herman.net/foaf#me" typeof="foaf:Person"> <span property="foaf:name">Somebody</span>, 
+                        <span property="rdfs:seeAlso" resource="http://www.ivan-herman.net/foaf">From some institution</span></span>
                 </span>
             </h2>
             <p class="c1"><a href="http://creativecommons.org/licenses/by-nd/3.0/"><img class="plain" alt="Creative Commons License in French" src="figures/80x15.png"></a>&nbsp;This work is licensed under a <a rel="cc:license" href="http://creativecommons.org/licenses/by-nd/3.0/">Creative Commons Attribution 3.0 License</a>, with attribution to <a rel="cc:attributionURL" href="http://www.w3.org" property="cc:attributionName">W3C</a></p>
@@ -76,8 +91,8 @@
                 </h2>
                  <h3> 
                     <span rel="bibo:authorList" inlist="">
-                        <span resource="http://www.ivan-herman.net/foaf#me" typeof="foaf:Person"> <span property="foaf:name">Ivan Herman</span>, 
-                            <span property="rdfs:seeAlso" resource="http://www.ivan-herman.net/foaf">W3C</span></span>
+                        <span resource="http://www.ivan-herman.net/foaf#me" typeof="foaf:Person"> <span property="foaf:name">Somebody</span>, 
+                            <span property="rdfs:seeAlso" resource="http://www.ivan-herman.net/foaf">From some institution</span></span>
                     </span>
                 </h3>
                 <h3>
@@ -89,6 +104,16 @@
            </div>
         </section>
 
+        <section class="slide">
+            <div>
+                <h2>
+                    These Slides are Available on the Web 
+                </h2>
+                <p>See: <br/> <span style="font-size:90%"><a href="http://w3c.github.io/dpub/drafts/IG_EPUB-WEB_slides/index.html"><code>http://w3c.github.io/dpub/drafts/IG_EPUB-WEB_slides/index.html</code></a></span></p>
+                <p>(Slides are in HTML)</p>
+             </div>
+        </section>
+ 
         <section class="slide">
             <div>
                 <h2>
@@ -191,16 +216,50 @@
 
         <section class="slide">
             <div>
+                <h2>IDPF and W3C</h2>
+                <table class="comparison striped">
+                    <tr>
+                        <th>IDPF</th>
+                        <th>W3C</th>
+                    </tr>
+                    <tr>
+                        <td>Standards for the Electronic Publishing and Content Consumption (EPUB)</td>
+                        <td>Standards for the General Web Technologies</td>
+                    </tr>
+                    <tr>
+                        <td>Builds on lower level Web (e.g., W3C) Standards</td>
+                        <td>Builds on lower level Internet (e.g., IETF, ECMA) Standards</td>
+                    </tr>
+                    <tr>
+                        <td>Does <em>not</em> develop standards beyond publishing</td>
+                        <td>Does <em>not</em> develop industry specific standards if there is another home for those</td>
+                </table>
+                <p>The key is <em>collaboration</em>.</p>
+            </div>
+        </section>
+
+        <section class="slide">
+            <div>
                 <h2>
-                    (Current) DPUB IG Task Forces
+                    Current DPUB IG Task Forces
                 </h2>
                 <ul>
-                    <li><i>Annotations:</i> led by Rob Sanderson</li>
                     <li><i>Layout and Styling (aka Pagination):</i> led by Dave Cramer</li>
-                    <li><i>Metadata:</i> led by Bill Kasdorf and Madi Solomon</li>
+                    <li><i>Identification:</i> led by Bill Kasdorf</li>
                     <li><i>Content and Markup:</i> led by Tzviya Siegman</li>
                     <li><i>Accessibility:</i> led by Deborah Kaplan and Charles LaPierre</li>
                     <li><i>STEM:</i> led by Peter Krautzberger</li>
+                </ul>    
+            </div>
+        </section>
+        <section class="slide">
+            <div>
+                <h2>
+                    Past (Closed) DPUB IG Task Forces
+                </h2>
+                <ul>
+                    <li><i>Annotations:</i> led by Rob Sanderson</li>
+                    <li><i>Metadata:</i> led by Bill Kasdorf and Madi Solomon</li>
                 </ul>    
             </div>
         </section>
@@ -222,9 +281,9 @@
                             <li>working with a W3C Working Group that develops similar structures for accessibility</li>
                         </ul> 
                     </li>
-                    <li>Metadata
+                    <li>Identification
                         <ul>
-                            <li>interviewed experts in publishing metadata, and issued the findings in a separate report</li>
+                            <li>work on the general principles of identifying a document as well as its content</li>
                         </ul>
                     </li>
                 </ul>    
@@ -239,6 +298,8 @@
                 </figure>
             </div>
         </section>
+
+
         
         <section class="slide">
             <div>

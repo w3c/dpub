@@ -223,7 +223,7 @@ a {
 .slide blockquote+figcaption {
     margin: -50px 0 50px;
     font-style: italic;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .slide ol,.slide ul {
