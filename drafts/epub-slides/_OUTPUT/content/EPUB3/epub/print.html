@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" id="epb3sldrzr-Print" lang="en-US" xml:lang="en-US">
+    <head>
+        <meta charset="UTF-8"/>
+
+        <meta content="EPUB3-Sliderizer http://github.com/danielweck/epub3-sliderizer" name="description"/>
+        <meta content="EPUB EPUB3 HTML5 XHTML XML Sliderizer slideshow slide deck e-book ebook" name="keywords"/>
+        
+        <title>The Convergence of EPUB and the Web (46) </title>
+        
+        <link href="img/favicon.ico" rel="shortcut icon"/>
+        
+        
+        <style type="text/css">
+        /*<![CDATA[*/
+    
+        body
+        {
+        	text-align: center;
+
+            background-color: #FAFAFA;
+            font: 12pt "Tahoma";
+        }
+        
+        html,
+        body,
+        *,
+        *:before,
+        *:after
+        {
+        	margin: 0;
+        	padding: 0;
+            
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .page
+        {
+            width: 1290px;
+            min-height: 1000px;
+            
+            padding: 0cm;
+            margin: 0cm auto;
+            
+            border: 1px #D3D3D3 solid;
+            
+            border-radius: 5px;
+            
+            background: white;
+            
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        iframe
+        {
+	        	border: none;
+                background-color: yellow;
+                margin: 0;
+                padding: 0;
+        }
+        
+	        .header
+	        {
+	        	margin-top: 2em;
+	        }
+            
+        @page
+        {
+            size: A4;
+            margin: 0cm;
+        }
+        
+        @media print
+        {
+        body
+        {
+background-color: white;
+        }
+	        .header
+	        {
+	        	display: none;
+	        }
+            
+            .page
+            {
+            
+            overflow: hidden;
+            
+            width: 21cm !important;
+            min-height: 29.7cm !important;
+            
+                        margin: 0 auto;
+                        padding: 0;
+                        padding-top: 2cm;
+                        
+                        border: none;
+                        border-radius: 0;
+                        
+                        box-shadow: none;
+                        
+            }
+            
+	        iframe
+	        {
+background: white;
+                        
+                width: 19cm !important;
+                height: 19cm !important;
+                
+                        
+                        page-break-after: always;
+	        }
+        }
+        /*]]>*/
+        </style>
+        
+        <script>
+        //<![CDATA[
+        
+        throttle = function(func, wait, immediate)
+            {
+                var context, args, result;
+                var timeout = null;
+                var previous = 0;
+                var later = function()
+                {
+                    previous = new Date();
+                    timeout = null;
+                    result = func.apply(context, args);
+                };
+
+                return function()
+                {
+                    var now = new Date();
+                    if (!previous && immediate === false)
+                    {
+                        previous = now;
+                    }
+                    var remaining = wait - (now - previous);
+                    context = this;
+                    args = arguments;
+        
+                    if (remaining <= 0)
+                    {
+                        clearTimeout(timeout);
+                        timeout = null;
+                        previous = now;
+                        result = func.apply(context, args);
+                    }
+                    else if (!timeout)
+                    {
+                        timeout = setTimeout(later, remaining);
+                    }
+        
+                    return result;
+                };
+            }
+                
+        document.addEventListener("DOMContentLoaded", function()
+        {
+            
+            var printing = false;
+            
+            //window.print();
+var beforePrint = function() {
+        console.log('before printing.');
+        printing = true;
+    };
+    var afterPrint = function() {
+        console.log('after printing');
+        printing = false;
+    };
+
+    if (window.matchMedia) {
+        var mediaQueryList = window.matchMedia('print');
+        mediaQueryList.addListener(function(mql) {
+            if (mql.matches) {
+                beforePrint();
+            } else {
+                afterPrint();
+            }
+        });
+    }
+
+    window.onbeforeprint = beforePrint;
+    window.onafterprint = afterPrint;
+    
+var func = function()
+            {
+            if (printing) return;
+            
+                var iframes = document.getElementsByTagName("iframe");
+                for (var i = 0; i < iframes.length; i++)
+                {
+                    var iframe = iframes[i];
+                    //iframe.contentDocument.getElementsByTagName("html")[0].style.backgroundColor = "white";
+                    iframe.contentDocument.getElementsByTagName("html")[0].setAttribute("style", "background-color: white;");
+//console.log(iframe.contentDocument.getElementsByTagName("html")[0].style.backgroundColor);
+                    
+                    var ratio = iframe.width / iframe.height;
+                    
+                    var w = window.innerWidth;
+                    var h = w / ratio;
+                    
+                    iframe.setAttribute("width", w);
+                    iframe.setAttribute("height", h);
+
+                    iframe.parentNode.style.width = w + "px";
+                    //iframe.parentNode.style.height = h + "px";
+                    iframe.parentNode.style.minHeight = h + "px";
+
+                    //console.log("W: " + iframe.getAttribute("width"));
+                    //console.log("H: " + iframe.getAttribute("height"));
+                    //console.log("---");
+                }
+            };
+            
+            window.onresize = throttle(func, 200, false);
+            
+            setTimeout(func, 500);
+            
+        }, false);
+        
+        //]]>
+        </script>
+</head>
+<body>
+    
+    <p class="header">1/46 - The Convergence of EPUB and the Web</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_01.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">2/46 - These Slides are Available on the Web</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_02.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">3/46 - DPUB IG Origins</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_03.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">4/46 - DPUB IG Origins (cont.)</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_04.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">5/46 - DPUB IG Origins (cont.)</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_05.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">6/46 - DPUB IG Mission</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_06.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">7/46 - DPUB IG Mission Explained</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_07.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">8/46 - So, who does the work?</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_08.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">9/46 - Everybody Does the Work!</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_09.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">10/46 - IDPF and W3C</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_10.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">11/46 - Current DPUB IG Task Forces</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_11.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">12/46 - Past (Closed) DPUB IG Task Forces</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_12.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">13/46 - Examples For the Task Force Activities</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_13.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">14/46 - Lot Has Been Done</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_14.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">15/46 - What’s Next?</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_15.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">16/46 - What’s Next? EPUB-WEB</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_16.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">17/46 - EPUB-WEB is a Vision for the Future</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_17.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">18/46 - The Vision</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_18.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">19/46 - The Vision</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_19.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">20/46 - Why Bother?</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_20.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">21/46 - For Example: Book in a Browser</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_21.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">22/46 - For Example: Book in a Browser (cont.)</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_22.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">23/46 - For Example: I May Not Be Online…</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_23.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">24/46 - For Example: Scholarly Publishing</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_24.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">25/46 - For Example: In-house Publishing</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_25.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">26/46 - For Example: Educational Materials</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_26.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">27/46 - Synergy effects of convergence</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_27.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">28/46 - Advantage for Publishers‘ Community</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_28.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">29/46 - Advantage for the Web Community</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_29.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">30/46 - Some Communities That May Be Affected</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_30.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">31/46 - How do we get there? (Technically)</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_31.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">32/46 - How Do We Get to EPUB-WEB?</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_32.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">33/46 - Example for a Technical Challenge: Archival Format</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_33.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">34/46 - Example for a Technical Challenge: Identification</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_34.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">35/46 - Example for a Technical Challenge: Identification (cont.)</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_35.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">36/46 - Example for a Technical Challenge: Pagination, Numbering, Indexing</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_36.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">37/46 - Example for a Technical Challenge: Security, Privacy, Access Control</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_37.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">38/46 - Example for a Technical Challenge: Presentation Control</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_38.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">39/46 - How Do We Get there? (Practically)</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_39.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">40/46 - DPUB IG Origins (cont.)</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_40.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">41/46 - IDPF, W3C, and others</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_41.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">42/46 - However…</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_42.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">43/46 - Conclusion</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_43.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">44/46 - Some references</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_44.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">45/46 - Direct Contact</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_45.html?static" width="1290"> </iframe>
+    </div>
+    
+    
+    <p class="header">46/46 - Thank you for your attention!</p>
+    <div class="page">
+    <iframe height="1000" src="html/slide_46.html?static" width="1290"> </iframe>
+    </div>
+    
+</body>
+</html>

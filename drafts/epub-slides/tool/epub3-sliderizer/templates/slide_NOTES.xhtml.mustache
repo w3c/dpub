@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<html
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:epub="http://www.idpf.org/2007/ops"
+    xmlns:m="http://www.w3.org/1998/Math/MathML"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    id="epb3sldrzr-SlideNotes_{{{SLIDE_NUMBER}}}"
+    lang="{{{slideShow.LANGUAGE}}}"
+    xml:lang="{{{slideShow.LANGUAGE}}}"
+    {{#slideShow.REFLOW}}style="background-color: white;"{{/slideShow.REFLOW}}
+    >
+    <head>
+        <meta charset="UTF-8"/>
+
+        <meta content="{{{slideShow.GENERATOR}}}" name="description"/>
+        <meta content="{{{slideShow.KEYWORDS}}}" name="keywords"/>
+        
+        <title>({{{SLIDE_NUMBER}}}/{{{slideShow.slides.size}}}) {{slideShow.TITLE}}{{#slideShow.SUBTITLE}} - {{slideShow.SUBTITLE}}{{/slideShow.SUBTITLE}} / {{TITLE}}{{#SUBTITLE}} - {{SUBTITLE}}{{/SUBTITLE}} (NOTES)</title>
+        
+        <link href="../{{{slideShow.FAVICON_FOLDER}}}/{{{slideShow.FAVICON}}}" rel="shortcut icon"/>
+        
+        {{#slideShow.TOUCHICON}}
+        <link href="../{{{slideShow.FOLDER_IMG}}}/{{{slideShow.FOLDER_CUSTOM}}}/{{{slideShow.TOUCHICON}}}" rel="apple-touch-icon"/>
+        {{/slideShow.TOUCHICON}}
+        
+        {{#slideShow.FIXED}}
+        {{#slideShow.VIEWPORT_WIDTH}}
+        {{#slideShow.VIEWPORT_HEIGHT}}
+        <meta content="width={{{slideShow.VIEWPORT_WIDTH}}}, height={{{slideShow.VIEWPORT_HEIGHT}}}" name="viewport"/>
+        {{/slideShow.VIEWPORT_HEIGHT}}
+        {{/slideShow.VIEWPORT_WIDTH}}
+        {{/slideShow.FIXED}}
+        
+        {{#slideShow.CSS_FONTS}}
+        <link href="{{{slideShow.FOLDER_FONTS}}}/{{{FILE}}}" rel="stylesheet" type="text/css"/>
+        {{/slideShow.CSS_FONTS}}
+        
+        {{#slideShow.CSSs}}
+        <link href="../{{{slideShow.FOLDER_CSS}}}/{{{FILE}}}" rel="stylesheet" type="text/css"/>
+        {{/slideShow.CSSs}}
+        
+        {{#slideShow.xCSSs}}
+        <link href="../{{{slideShow.FOLDER_CSS}}}/{{{slideShow.FOLDER_CUSTOM}}}/{{{.}}}" rel="stylesheet" type="text/css"/>
+        {{/slideShow.xCSSs}}
+        
+        {{#xCSSs}}
+        <link href="../{{{slideShow.FOLDER_CSS}}}/{{{slideShow.FOLDER_CUSTOM}}}/{{{.}}}" rel="stylesheet" type="text/css"/>
+        {{/xCSSs}}
+        
+        {{#slideShow.xCSSs_FONTS}}
+        <link href="{{{slideShow.FOLDER_FONTS}}}/{{{slideShow.FOLDER_CUSTOM}}}/{{{.}}}" rel="stylesheet" type="text/css"/>
+        {{/slideShow.xCSSs_FONTS}}
+        
+        {{#xCSSs_FONTS}}
+        <link href="{{{slideShow.FOLDER_FONTS}}}/{{{slideShow.FOLDER_CUSTOM}}}/{{{.}}}" rel="stylesheet" type="text/css"/>
+        {{/xCSSs_FONTS}}
+        
+        {{#slideShow.FIXED}}
+        {{#slideShow.JSs}}
+        <script src="../{{{slideShow.FOLDER_JS}}}/{{{FILE}}}"> </script>
+        {{/slideShow.JSs}}
+        {{/slideShow.FIXED}}
+        
+        {{#slideShow.xJSs}}
+        <script src="../{{{slideShow.FOLDER_JS}}}/{{{slideShow.FOLDER_CUSTOM}}}/{{{.}}}"> </script>
+        <!-- link href="../{{{slideShow.FOLDER_JS}}}/{{{slideShow.FOLDER_CUSTOM}}}/{{{.}}}" type="text/javascript" rel="script"/ -->
+        {{/slideShow.xJSs}}
+        
+        {{#xJSs}}
+        <script src="../{{{slideShow.FOLDER_JS}}}/{{{slideShow.FOLDER_CUSTOM}}}/{{{.}}}"> </script>
+        <!-- link href="../{{{slideShow.FOLDER_JS}}}/{{{slideShow.FOLDER_CUSTOM}}}/{{{.}}}" type="text/javascript" rel="script"/ -->
+        {{/xJSs}}
+
+        <link href="{{{SLIDE_FILENAME}}}" rel="back"/>
+        
+        <link href="../../../{{{slideShow.EPUB_FILE}}}" rel="epub"/>
+
+        {{#slideShow.CSS_STYLE}}
+        <style type="text/css">
+        /*<![CDATA[*/
+        {{{slideShow.CSS_STYLING}}}
+        /*]]>*/
+        </style>
+        {{/slideShow.CSS_STYLE}}
+
+        {{#CSS_STYLE}}
+        <style type="text/css">
+        /*<![CDATA[*/
+        {{{CSS_STYLING}}}
+        /*]]>*/
+        </style>
+        {{/CSS_STYLE}}
+
+        {{#slideShow.JS_SCRIPT}}
+        <script>
+        //<![CDATA[
+        {{{slideShow.JS_SCRIPT}}}
+        //]]>
+        </script>
+        {{/slideShow.JS_SCRIPT}}
+
+        {{#JS_SCRIPT}}
+        <script>
+        //<![CDATA[
+        {{{JS_SCRIPT}}}
+        //]]>
+        </script>
+        {{/JS_SCRIPT}}
+</head>
+
+{{#slideShow.REFLOW}}<!-- REFLOWABLE LAYOUT -->{{/slideShow.REFLOW}}
+{{#slideShow.FIXED}}<!-- FIXED LAYOUT -->{{/slideShow.FIXED}}
+
+<body epub:type="bodymatter" {{#slideShow.REFLOW}}class="reflow"{{/slideShow.REFLOW}}>
+    <div id="epb3sldrzr-body" {{#slideShow.REFLOW}}style="visibility: visible;"{{/slideShow.REFLOW}}>
+        <div id="epb3sldrzr-root">
+
+            {{#slideShow.LOGO}}
+            <img id="epb3sldrzr-logo"
+                 src="../{{{slideShow.FOLDER_IMG}}}/{{{slideShow.FOLDER_CUSTOM}}}/{{{slideShow.LOGO}}}"
+                 alt=""/>
+            {{/slideShow.LOGO}}
+            
+            <a id="epb3sldrzr-link-noteback" href="{{{SLIDE_FILENAME}}}">Back</a>
+         
+            <section id="epb3sldrzr-content">
+                
+                <div id="epb3sldrzr-anim-overflow">
+
+                    <h1 id="epb3sldrzr-title">{{TITLE}}{{#SUBTITLE}} <span id="epb3sldrzr-subtitle">{{SUBTITLE}}</span>{{/SUBTITLE}}</h1>
+                    
+
+                    <div id="epb3sldrzr-content-wrap">
+                        {{{NOTES_XHTML}}}
+                    </div>
+                </div>
+             </section>
+         </div>
+     </div>
+
+     {{#AUTHORize_NOTES}}
+     <div id="epb3sldrzr-markdown-editor" class="epb3sldrzr-markdown">{{{NOTES_ORIGINAL}}}</div>
+     <textarea id="epb3sldrzr-markdown-src" class="epb3sldrzr-markdown">{{{NOTES_ORIGINAL}}}</textarea>
+     {{/AUTHORize_NOTES}}
+</body>
+</html>

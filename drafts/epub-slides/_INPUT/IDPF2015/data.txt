@@ -1,0 +1,865 @@
+_TITLE
+The Convergence of EPUB and the Web
+
+// --------------------------------------------
+_CREATOR
+Tzviya Siegmann, Wiley, Markus Gylling, IDPF, Ivan Herman, W3C
+
+// --------------------------------------------
+_URL_ROOT
+https://w3c.github.io/dpub/idpf-digital-book-2015-05/
+
+_IDENTIFIER
+IDPF2015
+
+// --------------------------------------------
+_CSS_STYLE
+html#epb3sldrzr-NavDoc img#epb3sldrzr-logo
+{
+    width: 192px;
+    height: 50px;
+}
+html:not(#epb3sldrzr-NavDoc) img#epb3sldrzr-logo
+{
+    width: 192px;
+    height: 50px;
+}
+
+// --------------------------------------------
+_FILE_EPUB
+IDPF2015.epub
+
+// --------------------------------------------
+_FILES_CSS
+assets/pres.css
+
+// --------------------------------------------
+_LOGO
+assets/logos.jpg
+
+// ******************************************************
+// ******************************************************
+// ******************************************************
+-SLIDE
+_TITLE
+The Convergence of EPUB and the Web
+_CONTENT
+NO-MARKDOWN
+
+<h3 style="margin-top:2em"> 
+    Tzviya Siegmann, Wiley, Markus Gylling, IDPF, Ivan Herman, W3C
+</h3>
+<h3 style="margin-top:4em">
+    IDPF Digital Books Conference, New York, USA
+</h3>
+<h3>2015-05-28</h3>
+<p style="margin-top:5em;"><a target="_blank"  style="text-decoration:none" href="http://creativecommons.org/licenses/by-nd/3.0/"><img  class="plain" alt="Creative Commons License" style="width:80; height:15" src="figures/80x15.png"></a>&nbsp;</a>This work is licensed under a <a target="_blank"  rel="cc:license" href="http://creativecommons.org/licenses/by-nd/3.0/">Creative Commons Attribution 3.0 License</a>, with attribution to <a target="_blank" href="http://www.w3.org">W3C</a><br/>Copyright<sup>©</sup> 2015 W3C<sup>®</sup> (MIT, ERCIM, Keio, Beihang)</p>
+
+// ******************************************************
+-SLIDE
+_TITLE
+These Slides are Available on the Web 
+_CONTENT
+NO-MARKDOWN
+
+<p>See: <br/> <span style="font-size:90%"><a href="http://w3c.github.io/dpub/drafts/IG_EPUB-WEB_slides/index.html"><code>http://w3c.github.io/dpub/drafts/IG_EPUB-WEB_slides/index.html</code></a></span></p>
+<p>(Slides are in HTML)</p>
+
+// ******************************************************
+-SLIDE
+_TITLE
+DPUB IG Origins 
+_CONTENT
+NO-MARKDOWN
+<ul>
+    <li>The publishing industry is, probably, the most important user of W3C’s Web technologies after (traditional) browsers:
+        <ul>
+            <li>almost <em>all</em> journals, magazines, etc, have an online version these days</li>
+            <li>scholarly publishing cannot exist without the Web any more</li>
+            <li>EPUB is, essentially, a frozen and packaged Web site</li>
+        </ul>
+    </li>
+    <li>The quality requirements of the publishing industry are very high:
+        <ul>
+            <li>high quality typesetting, graphics, etc.</li>
+            <li>new forms of publishing will be based on high level of interactions, rich media,&nbsp;…</li>
+            <li>common document and data publishing comes to the fore</li>
+        </ul>
+    </li>
+</ul>
+
+// ******************************************************
+-SLIDE
+_TITLE
+DPUB IG Origins (cont.)
+_CONTENT
+NO-MARKDOWN
+<ul> 
+    <li>But… the publishing industry had been in an entirely “passive” mode v.a.v. Web technologies
+        <ul>
+            <li>no participation in the development of fundamental Web technologies</li>
+            <li>W3C (and other standard bodies) hardly know about the requirements that this industry may have</li>
+            <li>the potential synergy between Web developers and publishers is missed out</li>
+        </ul>
+    </li>
+    <li>consequence: Working Groups at W3C set their priorities without knowing about, and considering, the publishing industry</li> 
+</ul>
+
+// ******************************************************
+-SLIDE
+_TITLE
+DPUB IG Origins (cont.)
+_CONTENT
+NO-MARKDOWN
+<ul>
+    <li>W3C and IDPF organized a series of exploratory workshops in 2012 to create a missing synergy among communities</li>
+    <li>the W3C <a target="_blank"  href = "http://www.w3.org/dpub/">Digital Publishing Activity</a>  and the <a target="_blank"  href="https://www.w3.org/dpub/IG/">Digital Publishing Interest Group</a> was formally <a target="_blank"  href="http://www.w3.org/2013/02/digpubig.html">chartered</a> in May 2013</li>
+    <li>DPUB IG has weekly teleconferences and annual face to face meetings</li>
+</ul>
+ 
+// ******************************************************
+-SLIDE
+_TITLE
+DPUB IG Mission 
+_CONTENT
+NO-MARKDOWN
+ <blockquote>The mission of the Digital Publishing Interest Group (DPUB IG)&nbsp;[…]&nbsp;a forum for experts in the digital publishing ecosystem&nbsp;[…]&nbsp;for technical discussions, gathering use cases and requirements to align the existing formats and technologies (e.g., for electronic books) with those used by the Open Web Platform&nbsp;[…]</blockquote>
+
+// ******************************************************
+-SLIDE
+_TITLE
+DPUB IG Mission Explained
+_CONTENT
+NO-MARKDOWN
+<ul>
+    <li>experts familiar with the ins and outs of digital publishing and its associated industry groups identify issues that are not addressed by the Open Web Platform</li>
+    <li>our goal is to raise issues to W3C working groups who can update (or develop) specs based on our information. We often delegate members to the WGs as well</li>
+    <li>DPUB IG has task forces with leads to focus attention on specific issues and collaborate with other WGs</li>
+</ul>
+<p>See our <a target="_blank"  href="https://www.w3.org/dpub/IG/wiki/Main_Page">website</a> for more detail.</p>
+
+// ******************************************************
+-SLIDE
+_TITLE
+So, who does the work?
+_CONTENT
+NO-MARKDOWN
+<div class="shout">
+    <h2>
+        So, who does the work?
+    </h2>
+</div>
+
+_CSS_STYLE
+#epb3sldrzr-title {
+    visibility: hidden;
+}
+
+// ******************************************************
+-SLIDE
+_TITLE
+Everybody Does the Work!
+_CONTENT
+NO-MARKDOWN
+
+<ul>
+    <li>IDPF has been writing specs for digital publishing for 15+ years, using W3C standards as a basis</li>
+    <li>DPUB IG highlights issues in OWP (W3C) that do not support the needs of digital publishing and learns from the W3C</li>
+    <li>W3C WGs update specs as needed to reflect needs of digital publishing and the broader web community</li>
+</ul>
+
+// ******************************************************
+-SLIDE
+_TITLE
+IDPF and W3C
+_CONTENT
+NO-MARKDOWN
+<table class="comparison striped">
+    <tr>
+        <th>IDPF</th>
+        <th>W3C</th>
+    </tr>
+    <tr>
+        <td>Standards for the Electronic Publishing and Content Consumption (EPUB)</td>
+        <td>Standards for the General Web Technologies</td>
+    </tr>
+    <tr>
+        <td>Builds on lower level Web (e.g., W3C) Standards</td>
+        <td>Builds on lower level Internet (e.g., IETF, ECMA) Standards</td>
+    </tr>
+    <tr>
+        <td>Does <em>not</em> develop standards beyond publishing</td>
+        <td>Does <em>not</em> develop industry specific standards if there is another home for those</td>
+</table>
+<p>The key is <em>collaboration</em>.</p>
+
+// ******************************************************
+-SLIDE
+_TITLE
+Current DPUB IG Task Forces
+_CONTENT
+NO-MARKDOWN
+
+<ul>
+    <li><i>Layout and Styling (aka Pagination):</i> led by Dave Cramer</li>
+    <li><i>Identification:</i> led by Bill Kasdorf</li>
+    <li><i>Content and Markup:</i> led by Tzviya Siegman</li>
+    <li><i>Accessibility:</i> led by Deborah Kaplan and Charles LaPierre</li>
+    <li><i>STEM:</i> led by Peter Krautzberger</li>
+</ul>    
+
+// ******************************************************
+-SLIDE
+_TITLE
+Past (Closed) DPUB IG Task Forces
+_CONTENT
+NO-MARKDOWN
+<ul>
+    <li><i>Annotations:</i> led by Rob Sanderson</li>
+    <li><i>Metadata:</i> led by Bill Kasdorf and Madi Solomon</li>
+</ul>    
+
+// ******************************************************
+-SLIDE
+_TITLE
+Examples For the Task Force Activities
+_CONTENT
+NO-MARKDOWN
+<ul>
+    <li>Layout and Styling (aka Pagination)
+        <ul><li>requirements for print and digital publishing from HTML and CSS using the Latin alphabet</li>
+            <li>looking at standard ways to implement pagination</li>
+        </ul>
+    </li>
+    <li>Content and Markup
+        <ul>
+            <li>provide a standard way to add a logical structure on top of HTML</li>
+            <li>working with a W3C Working Group that develops similar structures for accessibility</li>
+        </ul> 
+    </li>
+    <li>Identification
+        <ul>
+            <li>work on the general principles of identifying a document as well as its content</li>
+        </ul>
+    </li>
+</ul>    
+
+ // ******************************************************
+-SLIDE
+_TITLE
+Lot Has Been Done
+_CONTENT
+NO-MARKDOWN
+<figure style="text-align: center">
+    <img class="plain" src="figures/achievements.png" alt="Screen dumps of various documents produced by the IG"/>
+</figure>
+
+
+// ******************************************************
+-SLIDE
+_TITLE
+What’s Next?
+_CONTENT
+NO-MARKDOWN
+<ul>
+    <li>Continue our task forces with targeted deadlines and deliverables</li>
+    <li><em>Involve DPUB IG members in the planning and development of <a target="_blank"  href= "http://w3c.github.io/epubweb/">EPUB-WEB</a></em>
+        <ul>
+            <li>this may lead to the creation of new task forces</li>
+        </ul>
+
+    </li>
+</ul>
+ 
+// ******************************************************
+-SLIDE
+_TITLE
+What’s Next? EPUB-WEB
+_CONTENT
+NO-MARKDOWN
+<ul>
+    <li>IDPF and W3C published joint vision of future of digital publishing in a white paper entitled <i>“Advancing Portable Documents for the Open Web Platform: EPUB-WEB”</i>
+        <ul>
+            <li>White Paper is available at <a target="_blank"  href="http://w3c.github.io/epubweb/"><code>http://w3c.github.io/epubweb/</code></a></li>
+            <li>provide feedback at <a target="_blank"  href="https://github.com/w3c/epubweb/issues"><code>https://github.com/w3c/epubweb/issues</code></a></li>
+        </ul>
+    </li>
+</ul>
+
+// VIDEO is missing...
+
+// ******************************************************
+-SLIDE
+_TITLE
+EPUB-WEB is a Vision for the Future
+_CONTENT
+NO-MARKDOWN
+<figure>
+    <img src="figures/epubweb.png" alt="EPUB-WEB at a glance"/>
+</figure>
+
+// ******************************************************
+-SLIDE
+_TITLE
+The Vision
+_CONTENT
+NO-MARKDOWN
+<ul>
+    <li>Portable documents are fully native citizen of the Web</li>
+    <li>Separation between online (i.e., the “Web”) and portable (i.e., “EPUB”) is diminished to zero</li>
+    <li>This means:
+        <ul>
+            <li>content authored for primarily offline use can be used online by loading it into a browser</li>
+            <li>content authored for primarily online use can be easily saved as a portable document for offline use</li>
+            <li>these should be doable smoothly, solely based on the user’s interaction</li>
+        </ul> 
+    </li>                   
+</ul>
+
+
+// ******************************************************
+-SLIDE
+_TITLE
+The Vision
+_CONTENT
+NO-MARKDOWN
+<ul>
+    <li>Publishers can choose to utilize either or both of these publishing modes</li>
+    <li>Users can choose either or both of these consumption modes</li>
+    <li>Essential features flow seamlessly between on-line and off-line modes, like
+        <ul>
+            <li>cross-references, user annotations, access to on-line databases</li>
+            <li>licensing and rights management</li>
+            <li>etc.</li>
+        </ul>
+    </li>
+</ul>
+
+// ******************************************************
+-SLIDE
+_TITLE
+Why Bother?
+_CONTENT
+NO-MARKDOWN
+<div class="shout">
+<h2>
+    Why Bother?
+</h2>
+</div>
+
+_CSS_STYLE
+#epb3sldrzr-title {
+    visibility: hidden;
+}
+
+
+// ******************************************************
+-SLIDE
+_TITLE
+For Example: Book in a Browser
+_CONTENT
+NO-MARKDOWN
+<figure class="right">
+    <img src="figures/joseph-web.png" alt="Joseph Reagle's book as a web page"/>
+    <figcaption>Extract of Joseph Reagle’s Book as ePUB</figcaption>
+</figure>
+<ul>
+    <li>On a desktop I may want to read a book just like a Web page:
+        <ul>
+            <li>easily follow a link “out” of the book</li>
+            <li>create bookmarks “into” a page in a book</li>
+            <li>use useful plugins and tools that my browser may have</li>
+            <li>create annotations</li>
+        </ul>
+    </li>
+</ul>
+
+
+// ******************************************************
+-SLIDE
+_TITLE
+For Example: Book in a Browser (cont.)
+_CONTENT
+NO-MARKDOWN
+<figure class="right">
+    <img src="figures/joseph-book.png" alt="Joseph Reagle's book as an ebook in reader"/>
+    <figcaption><a target="_blank"  href="http://reagle.org/joseph/2010/gfc/chapter-4.html">Extract of Joseph Reagle’s Book</a> as ePUB</figcaption>
+</figure>
+<ul>
+    <li>But:
+        <ul>
+            <li>sometimes I may need the computing power of my desk-top for, e.g., interactive 3D content</li>
+            <li>at other times I may also want to use a small dedicated reader device to read the book on the beach…</li>
+        </ul>
+    </li>
+    <li>All these on <em>the same</em> book (not conversions from one format to the other)!</li>
+</ul>
+
+
+// ******************************************************
+-SLIDE
+_TITLE
+For Example: I May Not Be Online…
+_CONTENT
+NO-MARKDOWN
+<figure class="right">
+    <img src="figures/commute.jpg" alt="Person sitting in a station with a mobile in hand"/>
+    <figcaption>Photo credit: <a target="_blank"  href="http://j.mp/1t7BxJN">Bryan Ong</a>, Flickr</figcaption>
+</figure>
+<ul>
+    <li>I may find an article on the Web that I want to review, annotate, etc., while commuting home on a train</li>
+    <li>I want the results of the annotations to be back online, when I am back on the Internet
+        <ul>
+            <li>Note: some browsers have an “archiving” possibility, but they are not interoperable
+                <ul><li>the content can definitely not be read on a dedicated reader</li></ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+
+// ******************************************************
+-SLIDE
+_TITLE
+For Example: Scholarly Publishing
+_CONTENT
+NO-MARKDOWN
+<figure class="right">
+    <img src="figures/f1000.png" alt="Screen dump of an article on F1000"/>
+    <figcaption>Screen dump of an article <a target="_blank"  href="http://bit.ly/1wFcfWC">“Sub-strains of Drosophila Canton-S…”</a> on F1000</figcaption>
+</figure>
+<ul>
+    <li>My paper is published, primarily, on-line, but people may want to download it for offline use</li>
+    <li>The format of the paper should be adaptable to my reading environment
+        <ul>
+            <li>do not want a two column, fixed layout file that I cannot handle on my iPad…</li>
+        </ul>
+    </li>
+    <li>My “paper” may also contain video, audio, data, programs…
+        <ul>
+            <li>scholarly publishing is not text only any more!</li>
+        </ul>
+    </li>
+</ul>
+ 
+
+ // ******************************************************
+-SLIDE
+_TITLE
+For Example: In-house Publishing
+_CONTENT
+NO-MARKDOWN
+<figure class="right">
+    <img src="figures/manuals.jpg" alt="Bookshelf full of documentation"/>
+    <figcaption>Photo credit: <a target="_blank"  href="http://j.mp/1t7B4HH">Petdro Agüera</a>, Flickr</figcaption>
+</figure>
+<ul>
+    <li>Major companies (IBM, Intel, Boeing, FAO, Renault,…) are specialized publishers through the publication of huge amount of documentation</li>
+    <li>Delivering it on paper is not an option any more</li>
+    <li>Fast refresh time is needed</li>
+    <li>The <em>same</em> document should be available offline (e.g., in the cockpit) or online (e.g., on the work floor): there should be no difference between the two</li>
+</ul>
+
+
+// ******************************************************
+-SLIDE
+_TITLE
+For Example: Educational Materials
+_CONTENT
+NO-MARKDOWN
+<figure class="right">
+    <img src="figures/auditorium.jpg" alt="University hall with students, most of them with a tablet"/>
+    <figcaption>Photo credit: <a target="_blank"  href="http://j.mp/1t7Gpie">Merrill College of Journalism</a>, Flickr</figcaption>
+</figure>
+<ul>
+    <li>What is an educational publication?
+        <ul>
+            <li><em>a book</em> of possibly long texts that requires offline access on dedicated devices?</li>
+            <li><em>a packaged application</em> with built-in interactive tests, animated examples?</li>
+            <li><em>a Web client</em> reaching out to Web services for assessing test results, to encyclopedia,&nbsp;…?</li>
+            <li><em>an interactive data container</em> storing various data for, e.g., demonstrations?</li>
+        </ul>
+    </li>
+    <li>The borderline between a “book” and a “(Web) Application” are becoming blurred!</li>
+</ul>
+ 
+// ******************************************************
+-SLIDE
+_TITLE
+Synergy effects of convergence
+_CONTENT
+NO-MARKDOWN
+<section class="slide shout">
+    <div>
+        <h2>
+            Synergy effects of convergence
+        </h2>
+    </div>
+</section>
+
+_CSS_STYLE
+#epb3sldrzr-title {
+    visibility: hidden;
+}
+
+// ******************************************************
+-SLIDE
+_TITLE
+Advantage for Publishers‘ Community
+_CONTENT
+NO-MARKDOWN
+<figure class="right">
+    <img src="figures/javascript.jpg" alt="Photo of two javascript books"/>
+    <figcaption>Photo credit: <a target="_blank"  href="http://j.mp/1CP4M41">Nathan Smith</a>, Flickr</figcaption>
+</figure>
+<ul style="width: 57%">
+    <li>Publishers want to concentrate on what <em>they</em> know better: how to produce, edit, curate, etc, great content</li>
+    <li>Publishers are <em>not</em> technology companies, nor do they intend to be; they want instead to rely on the vibrant Web community!</li>
+</ul>
+
+
+// ******************************************************
+-SLIDE
+_TITLE
+Advantage for the Web Community
+_CONTENT
+NO-MARKDOWN
+<figure class="right">
+    <img src="figures/manuscript.jpg" alt="image of a medieval manuscript"/>
+    <figcaption>Photo credit: <a target="_blank"  href="http://j.mp/ZMp3KM">e-codices</a>, Flickr</figcaption>
+</figure>
+<ul>
+    <li>Publishers have a long experience in ergonomics, typography, paging, complex layout, etc.</li>
+    <li>Publishing long texts, with the right aesthetics, readability, structure, etc., is an expertise the Web community can profit from</li>
+    <li>Experience of publishers in the complete workflow for producing content may become important for Web design</li>
+</ul>
+
+
+// ******************************************************
+-SLIDE
+_TITLE
+Some Communities That May Be Affected
+_CONTENT
+NO-MARKDOWN
+<table>
+    <tr>
+        <td>(Trade) Publishers</td><td>STM Publishers</td>
+    </tr>
+    <tr>
+        <td>Browser vendors</td><td>Large companies</td>
+    </tr>
+    <tr>
+        <td>Governmental bodies</td><td>International institutions</td>
+    </tr>
+    <tr>
+        <td>Consumers of ebooks</td><td>Scholarly authors</td>
+    </tr>
+   <tr>
+        <td>Web designers</td><td>Archivists</td>
+    </tr>
+   <tr>
+        <td>Web Developers</td><td>Publishing workflows</td>
+    </tr>
+</table>
+
+// ******************************************************
+-SLIDE
+_TITLE
+How do we get there? (Technically)
+_CONTENT
+NO-MARKDOWN
+<section class="shout">
+    <div>
+        <h2>
+            How do we get there? (Technically)
+        </h2>
+    </div>
+</section>
+
+_CSS_STYLE
+#epb3sldrzr-title {
+    visibility: hidden;
+}
+
+// ******************************************************
+-SLIDE
+_TITLE
+How Do We Get to EPUB-WEB?
+_CONTENT
+NO-MARKDOWN
+<ul>
+    <li>A strong cooperation between the different communities should be ensured</li>
+    <li>Technical challenges must be identified</li>
+</ul>
+
+
+ // ******************************************************
+-SLIDE
+_TITLE
+Example for a Technical Challenge: Archival Format
+_CONTENT
+NO-MARKDOWN
+<ul>
+    <li>EPUB is based on ZIP</li>
+    <li>There is no standard packaging format for browsers yet…
+        <ul>
+            <li>although there is a need for, e.g., applications or data sets</li>
+        </ul>
+    </li>
+    <li>… but ZIP may not be the right approach on the Web
+        <ul>
+            <li>Multipart Mime may be an alternative</li>
+        </ul>
+    </li>
+    <li>There is a new work item at W3C on packaging standard which may affect EPUB-WEB</li>
+</ul>
+
+
+// ******************************************************
+-SLIDE
+_TITLE
+Example for a Technical Challenge: Identification
+_CONTENT
+NO-MARKDOWN
+<ul>
+    <li>A concise and unique identification for the <em>document</em> (e.g., the “work”) under various usage patterns is necessary
+        <ul>
+            <li>i.e., what is the URI for…
+                <ul>
+                    <li>Shakespeare's Hamlet?</li>
+                    <li>its digital edition published by Publisher XYZ?</li>
+                    <li>the copy I own and annotate?</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>This is necessary to make a book a first-class citizen on the Web</li>
+</ul>
+<p>B.t.w., this is already the topic for debates in the publishing and library communities…</p>
+
+
+// ******************************************************
+-SLIDE
+_TITLE
+Example for a Technical Challenge: Identification (cont.)
+_CONTENT
+NO-MARKDOWN
+<ul>
+    <li>Unique identification of the work is not enough</li>
+    <li>A fragment identification framework is also necessary to link <em>into</em> the document</li>
+    <li>There are fragments defined for various media, but a universal model, workable for browsers, is still missing
+        <ul>
+            <li>these should be agnostic to offline vs. online state, to media type, etc.</li>
+        </ul>
+    </li>
+</ul>
+
+
+// ******************************************************
+-SLIDE
+_TITLE
+Example for a Technical Challenge: Pagination, Numbering, Indexing
+_CONTENT
+NO-MARKDOWN
+<ul>
+    <li>What is a <em>“page”</em> for an electronic content?
+        <ul>
+            <li>is this a new CSS concept? Do we need an extension to the DOM?</li>
+        </ul>
+    </li>
+    <li>In general, content may be placed into linked <em>regions</em></li>
+    <li>References (page numbers, references to pictures or diagrams, bibliographic references, etc.) should have robust mechanism across several documents/regions
+        <ul>
+            <li>e.g., if the book’s chapters are stored in different files</li>
+            <li>page numbers can dynamically change as a result of user interaction, e.g., larger fonts</li>
+            <li>numbering of items should be automatically continuous across documents</li>
+        </ul>
+    </li>
+</ul>
+
+
+// ******************************************************
+-SLIDE
+_TITLE
+Example for a Technical Challenge: Security, Privacy, Access Control
+_CONTENT
+NO-MARKDOWN
+
+<ul>
+    <li>The Web/browser mechanism is based on the control per “site”, or a ”web page”, largely based on user/password</li>
+    <li>Current publishing practices are very divergent (strict DRM, watermarking, social DRM, etc.)</li>
+    <li>A consensus solution will be needed</li>
+</ul>
+
+
+// ******************************************************
+-SLIDE
+_TITLE
+Example for a Technical Challenge: Presentation Control
+_CONTENT
+NO-MARKDOWN
+<ul>
+    <li>What is the level of user control of the presentation?
+    </li>
+    <li>The Web and eBook traditions are vastly different:
+        <ul>
+            <li>in a browser, the Web designer is in full control
+                <ul>
+                    <li>CSS alternate style sheets are hardly in use</li>
+                    <li>some user interface aspects can be controlled but only for the browser as a whole</li>
+                </ul>
+            </li>
+            <li>in an eBook reader, there is more user control
+                <ul>
+                    <li>foreground/background color</li>
+                    <li>choice of fonts</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>There is a need to reconcile these traditions</li>
+</ul>
+
+
+// ******************************************************
+-SLIDE
+_TITLE
+How Do We Get there? (Practically)
+_CONTENT
+NO-MARKDOWN
+<section class="slide shout">
+    <div>
+        <h2>
+            How Do We Get there? (Practically)
+        </h2>
+    </div>
+</section>
+
+_CSS_STYLE
+#epb3sldrzr-title {
+    visibility: hidden;
+}
+
+
+// ******************************************************
+-SLIDE
+_TITLE
+DPUB IG Origins (cont.)
+_CONTENT
+NO-MARKDOWN
+<section class="slide">
+    <div>
+        <h2>DPUB IG and EPUB-WEB</h2>
+        <ul>
+            <li>DPUB IG already has task forces dedicated to working on many of the EPUB-WEB issues</li>
+            <li>The group will contribute to the formulation of the EPUB-WEB technical challenges, to a better understanding of the requirements
+                <ul>
+                    <li>this may mean new task forces, e.g., for identification or packaging</li>
+                </ul>
+            </li>
+            <li>EPUB-WEB will become a guiding principle for the group’s further work</li>
+       </ul>
+    </div>
+</section>
+
+
+// ******************************************************
+-SLIDE
+_TITLE
+IDPF, W3C, and others
+_CONTENT
+NO-MARKDOWN
+<ul>
+    <li>On long term, some EPUB-WEB specification work has to be done
+        <ul>
+            <li>this requires a consensus and agreement of different communities</li>
+        </ul>
+    </li>
+    <li>IDPF and W3C (and maybe others?) may create the necessary groups, eventually</li>
+</ul>
+
+
+// ******************************************************
+-SLIDE
+_TITLE
+However…
+_CONTENT
+NO-MARKDOWN
+<ul>
+    <li>EPUB-WEB does <em>not</em> replace EPUB3 (and upcoming EPUB3.1) at this moment</li>
+    <li>Many of the new features will also be part of EPUB3.1 (e.g., structural semantics)</li>
+    <li>The vision is a convergence of the EPUB3.* specifications and EPUB-WEB, eventually</li>
+</ul>
+
+
+// ******************************************************
+-SLIDE
+_TITLE
+Conclusion
+_CONTENT
+NO-MARKDOWN
+<ul>
+    <li>There is a great potential in a convergence between the Open Web Platform and Portable Documents</li>
+    <li>It will require a common effort and cooperation of both communities</li>
+    <li>But it is an exciting prospect!</li>
+</ul>
+<div style="text-align:center; height:45%">
+  <img src="figures/contents.jpg" style="width: 85%" />
+</div>
+
+
+// ******************************************************
+-SLIDE
+_TITLE
+Some references
+_CONTENT
+NO-MARKDOWN
+<dl>
+    <dt>DPUB IG Wiki</dt>
+    <dd><a target="_blank"  href="https://www.w3.org/dpub/IG/wiki/Main_Page"><code>https://www.w3.org/dpub/IG/wiki/Main_Page</code></a></dd>
+    <dt>EPUB-WEB White paper:</dt>
+    <dd><a target="_blank"  href="http://w3c.github.io/epubweb/"><code>http://w3c.github.io/epubweb/</code></a></dd>
+    <dt>EPUB-WEB Issue list:</dt>
+    <dd><a target="_blank"  href="https://github.com/w3c/epubweb/issues"><code>https://github.com/w3c/epubweb/issues</code></a></dd>
+    <dt>This presentation:</dt>
+    <dd><a target="_blank"  href="http://w3c.github.io/dpub/????/"><code>http://w3c.github.io/dpub/????/</code></a> (<a href="http://w3c.github.io/dpub/????/slides.pdf">PDF is also available</a> for download)</dd>
+</dl>
+
+
+// ******************************************************
+-SLIDE
+_TITLE
+Direct Contact
+_CONTENT
+NO-MARKDOWN
+<h2>Direct Contact</h2>
+<dl class="plain">
+    <dt>Tzviya Siegman</dt>
+    <dd>???@???</dt>
+    <dt>Markus Gylling</dt>
+    <dd>??@???</dd>
+    <dt>Ivan Herman, W3C</dt>
+    <dd>ivan@w3.org</dd>
+</dl>
+
+
+// ******************************************************
+-SLIDE
+_TITLE
+Thank you for your attention!
+_CONTENT
+NO-MARKDOWN
+<section class="shout">
+    <div>
+        <h2>
+            Thank you for your attention!
+        </h2>
+    </div>
+</section>
+
+_CSS_STYLE
+#epb3sldrzr-title {
+    visibility: hidden;
+}
+
+
