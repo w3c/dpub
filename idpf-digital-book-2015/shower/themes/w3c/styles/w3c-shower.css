@@ -96,6 +96,14 @@ ul li, ol li    {
     padding-right: 0em;
 }
 
+.slide.shout h3 {
+	padding-top: 2em;
+    border-bottom: none;
+    font-size: 2em;
+    padding-left: 0em;
+    padding-right: 0em;
+}
+
 .slide a {
 	background: transparent;
 }

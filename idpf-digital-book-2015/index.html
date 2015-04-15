@@ -28,16 +28,10 @@
                 width:       40%;
             }
 
-            img {
+            figure.right img {
                 border: 1px solid #CCC; 
                 border-radius: 10px; 
                 box-shadow: 7px 7px 5px #888; 
-            }
-
-            img.plain {
-                border: 0px solid #CCC; 
-                border-radius: 0px; 
-                box-shadow: 0px 0px 0px #888; 
             }
 
             figcaption, .videocaption, .credit {
@@ -502,7 +496,7 @@
     </section>
     <section class="slide">
       <div>
-        <h2> Advantage for Publishers‘ Community </h2>
+        <h2>Advantage for Publishers‘ Community </h2>
         <figure class="right"> <img src="figures/javascript.jpg" alt="Photo of two javascript books"
             width="98%"> <figcaption>Photo credit: <a target="_blank" href="http://j.mp/1CP4M41">Nathan
               Smith</a>, Flickr</figcaption> </figure>
@@ -515,6 +509,22 @@
         </ul>
       </div>
     </section>
+
+    <section class="slide">
+      <div>
+        <h2>Advantage for Publishers‘ Community (cont.)</h2>
+        <ul>
+          <li>OWP is more than “just” HTML, CSS, MathML, etc.</li>
+          <li>It defines, e.g., a large number of facilities that provide access to, e.g., system resources or utilities
+            <ul><li>index database, Web storage, battery status API, real-time communication, geolocation,…</li></ul>
+          </li>
+          <li>aligning on OWP means that publishing oriented devices, software, services, etc, can rely on those
+            <ul><li>instead of possibly re-inventing the wheel…</li></ul>
+          </li>
+        </ul>
+      </div>  
+    </section>
+
     <section class="slide">
       <div>
         <h2> Advantage for the Web Community </h2>
@@ -575,33 +585,111 @@
         <ul>
           <li>A strong cooperation between the different communities should be
             ensured</li>
-          <li>Technical challenges must be identified</li>
+          <li>Technical challenges must be identified
+            <ul>
+              <li>note that some of the challenges are not EPUB-WEB specific, but EPUB in general (e.g., pagination control)
+            </ul>
+          </li>
+          <li>Some examples follow…</li>
         </ul>
       </div>
     </section>
+
+    <section class="slide shout">
+      <div>
+        <h3>Technical Challenge: Archival Format </h3>
+      </div>
+    </section>
+
     <section class="slide">
       <div>
-        <h2> Example for a Technical Challenge: Archival Format </h2>
+        <h2>Rough structure of an EPUB3 file</h2>
+        <figure> <img class="plain" src="figures/EPUB3-Package-Structure.svg" alt="EPUB Packaging structure diagram" width="99%">
+        </figure>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Archival Format </h2>
         <ul>
-          <li>EPUB is based on ZIP</li>
-          <li>There is no standard packaging format for browsers yet…
+          <li>There is now an interest for a Web friendly packaging format:
             <ul>
-              <li>although there is a need for, e.g., applications or data sets</li>
+              <li>should be streamable</li>
+              <li>should rely, as much as possible, on existing Web technologies (e.g., HTTP)</li>
             </ul>
           </li>
-          <li>… but ZIP may not be the right approach on the Web
+          <li>Use cases include:
             <ul>
-              <li>Multipart Mime may be an alternative</li>
+              <li>retrieve an HTML file with related CSS files, images</li>
+              <li>access Web Applications (“Widgets”) with all libraries involved</li>
+              <li><em>EPUB-WEB is a clear use case</em></li>
             </ul>
           </li>
-          <li>There is a new work item at W3C on packaging standard which may
-            affect EPUB-WEB</li>
+          <li>But: current Web Packaging proposal is <em>not</em> ODF based</li>
+          <li>This may lead to a different packaging to EPUB-WEB</li>
         </ul>
       </div>
     </section>
+
     <section class="slide">
       <div>
-        <h2> Example for a Technical Challenge: Identification </h2>
+        <h2>EPUB-WEB packaging structure</h2>
+        <figure> <img class="plain" src="figures/EPUB-WEB-Package-Structure.svg" alt="EPUB-WEB Packaging structure diagram" width="99%">
+        </figure>
+      </div>
+    </section>
+
+    <section class="slide"><div>
+      <h2>Actually…</h2>
+      <ul>
+        <li>Moving to the Web would probably require to rethink the format of the administrative files
+          <ul>
+            <li>E.g., change formats from XML to JSON</li>
+          </ul>
+        </li>
+        <li>Note that this is already considered for EPUB3.1</li>
+      </ul>
+    </div></section>
+
+    <section class="slide">
+      <div>
+        <h2>EPUB-WEB packaging structure</h2>
+        <figure> <img class="plain" src="figures/EPUB-WEB-Package-Structure-2.svg" alt="EPUB-WEB Packaging structure diagram with admin file in JSON" width="99%">
+        </figure>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>The content does not change</h2>
+        <ul>
+          <li>Important to note that the content (HTML, CSS, etc.) does <em>not</em> have to change!</li> 
+          <li>Through EPUB3 the alignment on OWP has already been started, and that pays off here</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Window of opportunity is open now!</h2>
+        <ul>
+          <li>The Web community does not concentrate on the Web Packaging format yet</li>
+          <li>But it may become a hot topic when some other technical challanges are solved</li>
+          <li>The publishing community should get on board <em>now</em> to ensure that a format agreeable for all will be defined</li> 
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide shout">
+      <div>
+        <h3>Technical Challenge: Identification </h3>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Identification </h2>
         <ul>
           <li>A concise and unique identification for the <em>document</em>
             (e.g., the “work”) under various usage patterns is necessary</li>
@@ -622,7 +710,7 @@
     </section>
     <section class="slide">
       <div>
-        <h2> Example for a Technical Challenge: Identification (cont.) </h2>
+        <h2>Identification (cont.) </h2>
         <ul>
           <li>Unique identification of the work is not enough</li>
           <li>A fragment identification framework is also necessary to link <em>into</em>
@@ -637,46 +725,15 @@
         </ul>
       </div>
     </section>
-    <section class="slide">
+
+    <section class="slide shout">
       <div>
-        <h2> Example for a Technical Challenge: Pagination, Numbering, Indexing
-        </h2>
-        <ul>
-          <li>What is a <em>“page”</em> for an electronic content?
-            <ul>
-              <li>is this a new CSS concept? Do we need an extension to the DOM?</li>
-            </ul>
-          </li>
-          <li>In general, content may be placed into linked <em>regions</em></li>
-          <li>References (page numbers, references to pictures or diagrams,
-            bibliographic references, etc.) should have robust mechanism across
-            several documents/regions</li>
-          <ul>
-            <li>e.g., if the book’s chapters are stored in different files</li>
-            <li>page numbers can dynamically change as a result of user
-              interaction, e.g., larger fonts</li>
-            <li>numbering of items should be automatically continuous across
-              documents</li>
-          </ul>
-        </ul>
+        <h3>Technical Challenge: Presentation Control </h3>
       </div>
     </section>
     <section class="slide">
       <div>
-        <h2> Example for a Technical Challenge: Security, Privacy, Access
-          Control </h2>
-        <ul>
-          <li>The Web/browser mechanism is based on the control per “site”, or a
-            ”web page”, largely based on user/password</li>
-          <li>Current publishing practices are very divergent (strict DRM,
-            watermarking, social DRM, etc.)</li>
-          <li>A consensus solution will be needed</li>
-        </ul>
-      </div>
-    </section>
-    <section class="slide">
-      <div>
-        <h2> Example for a Technical Challenge: Presentation Control </h2>
+        <h2>Presentation Control </h2>
         <ul>
           <li>What is the level of user control of the presentation? </li>
           <li>The Web and eBook traditions are vastly different:
@@ -700,6 +757,7 @@
         </ul>
       </div>
     </section>
+
     <section class="slide shout">
       <div>
         <h2> How Do We Get there? (Practically) </h2>
@@ -775,8 +833,8 @@
           <dt>EPUB-WEB Issue list:</dt>
           <dd><a target="_blank" href="https://github.com/w3c/epubweb/issues"><code>https://github.com/w3c/epubweb/issues</code></a></dd>
           <dt>This presentation:</dt>
-          <dd><a target="_blank" href="http://w3c.github.io/dpub/????/"><code>http://w3c.github.io/dpub/????/</code></a>
-            (<a href="http://w3c.github.io/dpub/????/slides.pdf">PDF is also
+          <dd><a target="_blank" href="http://w3c.github.io/dpub/idpf-digital-book-2015/index.html"><code>http://w3c.github.io/dpub/idpf-digital-book-2015/index.html</code></a>
+            (<a href="http://w3c.github.io/dpub/idpf-digital-book-2015/slides.pdf">PDF is also
               available</a> for download)</dd>
         </dl>
       </div>
@@ -785,9 +843,12 @@
       <div>
         <h2>Direct Contact</h2>
         <dl class="plain">
+          <dt>Tzviya Siegman, Wiley</dt>
+          <dd>tsiegman@wiley.com</dd>
+          <dt>Markus Gylling, IDPF</dt>
+          <dd>mgylling@idpf.org</dd>
           <dt>Ivan Herman, W3C</dt>
           <dd>ivan@w3.org</dd>
-          <dd><a target="_blank" href="http://www.w3.org/People/Ivan/"><code>http://www.w3.org/People/Ivan/</code></a></dd>
         </dl>
       </div>
     </section>
