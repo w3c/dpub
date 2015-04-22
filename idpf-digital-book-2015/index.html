@@ -683,46 +683,61 @@
 
     <section class="slide shout">
       <div>
-        <h3>Technical Challenge: Identification </h3>
+        <h3>Technical Challenge: Identification</h3>
       </div>
     </section>
 
     <section class="slide">
       <div>
-        <h2>Identification </h2>
-        <ul>
-          <li>A concise and unique identification for the <em>document</em>
-            (e.g., the “work”) under various usage patterns is necessary</li>
-          <ul>
-            <li>i.e., what is the URI for…
-              <ul>
-                <li>Shakespeare's Hamlet?</li>
-                <li>its digital edition published by Publisher XYZ?</li>
-                <li>the copy I own and annotate?</li>
-              </ul>
-            </li>
-          </ul>
-          <li>This is necessary to make a book a first-class citizen on the Web</li>
-        </ul>
-        <p>B.t.w., this is already the topic for debates in the publishing and
-          library communities…</p>
+        <h2>Identification: EPUB3 case</h2>
+        <figure> <img class="plain" src="figures/EPUB3-identification.svg" alt="EPUB3 identification showing the primary and secondary resourses (the latter with epubcfi)" width="99%">
+        </figure>
       </div>
     </section>
+
     <section class="slide">
       <div>
-        <h2>Identification (cont.) </h2>
-        <ul>
-          <li>Unique identification of the work is not enough</li>
-          <li>A fragment identification framework is also necessary to link <em>into</em>
-            the document</li>
-          <li>There are fragments defined for various media, but a universal
-            model, workable for browsers, is still missing
+        <h2>Two parts of identification</h2>
+        <ol>
+          <li><em>Primary resource:</em>
             <ul>
-              <li>these should be agnostic to offline vs. online state, to media
-                type, etc.</li>
+              <li>This is a major discussion among publishers, libraries, archival organizations</li>
+              <li>i.e., what is the URI for…
+                <ul>
+                  <li>Shakespeare's Hamlet?</li>
+                  <li>its digital edition published by Publisher XYZ?</li>
+                  <li>the copy I own and annotate?</li>
+                </ul>
+              </li>
+              <li>It is <em>not</em> the role of IDPF or W3C to define those URL-s
+                <ul>
+                  <li>though EPUB-WEB would push for much more “webby” URL schemes, i.e., HTTP(S) URLs</li>
+                </ul>
+              </li> 
             </ul>
           </li>
+          <li><em>Secondary resource:</em> IDPF has adopted the CFI standard for that purpose</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Potential issues with CFI</h2>
+        <ul>
+            <li>CFI is deeply rooted in XML; however, EPUB-WEB should probably go for JSON and HTML5 for, e.g., package manifests</li>
+            <li>CFI is bound to the current EPUB3 structures using manifest files</li>
+            <li>CFI can be used with SVG content, but not with audio, video, data,…</li>
         </ul>
+        <p>An EPUB-WEB version for fragments should be prepared to those issues.</p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Identification: the EPUB-WEB case </h2>
+         <figure> <img class="plain" src="figures/EPUB-WEB-identification.svg" alt="EPUB3 identification showing the primary and secondary resourses (the latter with epubcfi)" width="99%">
+        </figure>
       </div>
     </section>
 
