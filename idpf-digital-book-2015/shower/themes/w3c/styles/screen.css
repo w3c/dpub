@@ -678,13 +678,14 @@ a {
     .full .progress div {
         position: absolute;
         left: -20px;
-        top: -10px;
+        top: 0px;
         width: 0;
         height: 0;
-        border: 10px solid transparent;
+        border: 5px solid transparent;
         border-bottom-color: #005a9c;
         -webkit-transition: width .2s linear;
         transition: width .2s linear;
+        z-index 1 !important;
     }
 
     .full .progress div[style$='100%;'] {
