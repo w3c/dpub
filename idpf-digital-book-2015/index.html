@@ -182,7 +182,7 @@
     </section>
     <section class="slide">
       <div>
-        <h2> Past (Closed) DPUB IG Task Forces </h2>
+        <h2>Past (Closed) DPUB IG Task Forces </h2>
         <ul>
           <li><i>Annotations:</i> led by Rob Sanderson</li>
           <li><i>Metadata:</i> led by Bill Kasdorf and Madi Solomon</li>
@@ -216,13 +216,13 @@
     </div></section>
 
     <section class="slide"><div>
-      <h2>Examples: content and markup</h2>
+      <h2>Examples: Content and Markup</h2>
       <ul>
         <li>Goal: identify the semantics of the elements in the HTML source beyond what the basic HTML tags can provide,
           <ul><li>“abstract”, “indexed term”, “footnote”,…</li></ul>
         </li>
-        <li>express structural information (“where can that element be used”)</li>
-        <li>do it in a forward looking way in terms of W3C standards.
+        <li>Express structural information (“where can that element be used”)</li>
+        <li>Do it in a forward looking way in terms of W3C standards.
           <ul>
             <li>i.e., move away from <code>epub:type</code></li>
             <li>the resulting HTML should be valid</li>
@@ -230,6 +230,25 @@
         </li>
       </ul>
     </div></section>
+
+
+    <section class="slide"><div>
+      <h2>Examples: Content and Markup: Possible Approaches</h2>
+
+      <ul>
+        <li>Use an “HTML Extension” in the form of a dedicated HTML5 attribute (e.g., <code>dpub-type</code>)
+          <ul>
+            <li>this has to be agreed upon with the HTML Working Group</li>
+          </ul>
+        </li>
+        <li>Use <a href="http://www.w3.org/TR/wai-aria/">“Accessible Rich Internet Applications (WAI-ARIA)”</a> as a basic mechanism, using the <code>role</code> attribute</li>
+        <li>There are intense discussions as for the direction to follow
+          <ul><li>not clear which approach is appropriate in terms of HTML5</li></ul>
+        </li>
+      </ul>
+    </div></section>
+
+    <!--
 
     <section class="slide"><div>
       <h2>Examples: content and markup: approach chosen</h2>
@@ -259,6 +278,18 @@
    …
 &lt;/section&gt;</pre>  
     </div></section>
+  -->
+
+    <section class="slide"><div>
+      <h2>Examples: Annotations</h2>
+
+      <ul>
+        <li>The Annotation task force has collected 35 use cases in a <a href="http://www.w3.org/TR/dpub-annotation-uc/">W3C Note</a></li>
+        <li>These use cases served as one of the input document for a separate <a href="http://www.w3.org/annotation/">Web Annotation Working Group</a></li> 
+      </ul>
+      <blockquote>The mission of the Web Annotation Working Group [...] is to define a generic data model for annotations, and define the basic infrastructural elements to make it deployable in browsers and reading systems through suitable user interfaces. </blockquote>
+    </div></section>
+
 
     <section class="slide">
       <div>
@@ -518,7 +549,7 @@
           <li>It defines, e.g., a large number of facilities that provide access to, e.g., system resources or utilities
             <ul><li>index database, Web storage, battery status API, real-time communication, geolocation,…</li></ul>
           </li>
-          <li>aligning on OWP means that publishing oriented devices, software, services, etc, can rely on those
+          <li>Aligning on OWP means that publishing oriented devices, software, services, etc, can rely on those
             <ul><li>instead of possibly re-inventing the wheel…</li></ul>
           </li>
         </ul>
@@ -613,7 +644,7 @@
       <div>
         <h2>Archival Format </h2>
         <ul>
-          <li>There is now an interest for a Web friendly packaging format:
+          <li>There is a growing interest at W3C for a Web friendly packaging format:
             <ul>
               <li>should be streamable</li>
               <li>should rely, as much as possible, on existing Web technologies (e.g., HTTP)</li>
@@ -660,6 +691,8 @@
       </div>
     </section>
 
+    <!--
+
     <section class="slide">
       <div>
         <h2>The content does not change</h2>
@@ -669,12 +702,15 @@
         </ul>
       </div>
     </section>
+    -->
 
     <section class="slide">
       <div>
         <h2>Window of opportunity is open now!</h2>
         <ul>
-          <li>The Web community does not concentrate on the Web Packaging format yet</li>
+          <li>The Web community does not concentrate strongly on the Web Packaging format yet
+            <ul><li>some other technologies, like Service Workers, must be clarified first</li></ul>
+          </li>
           <li>But it may become a hot topic when some other technical challanges are solved</li>
           <li>The publishing community should get on board <em>now</em> to ensure that a format agreeable for all will be defined</li> 
         </ul>
@@ -716,7 +752,7 @@
               </li> 
             </ul>
           </li>
-          <li><em>Secondary resource:</em> IDPF has adopted the CFI standard for that purpose</li>
+          <li><em>Secondary resource:</em> IDPF has adopted the CFI standard for EPUB3</li>
         </ol>
       </div>
     </section>
@@ -849,8 +885,8 @@
           <dd><a target="_blank" href="https://github.com/w3c/epubweb/issues"><code>https://github.com/w3c/epubweb/issues</code></a></dd>
           <dt>This presentation:</dt>
           <dd><a target="_blank" href="http://w3c.github.io/dpub/idpf-digital-book-2015/index.html"><code>http://w3c.github.io/dpub/idpf-digital-book-2015/index.html</code></a>
-            (<a href="http://w3c.github.io/dpub/idpf-digital-book-2015/slides.pdf">PDF is also
-              available</a> for download)</dd>
+            (<a href="http://w3c.github.io/dpub/idpf-digital-book-2015/slides.pdf">PDF</a> is also
+              available for download)</dd>
         </dl>
       </div>
     </section>
