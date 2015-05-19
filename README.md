@@ -4,6 +4,7 @@ This repository stores the draft for public presentations and blogs prepared as 
 
 The materials on this repo are:
 
+* [Presentation of Tzviya Siegman, Markus Gylling, and Ivan Herman](./idpf-digital-book-2015/index.html) at the [IDPF Digital Book Conference 2015](http://idpf.org/digital-book-2015) 
 * [Presentation of Ivan Herman](http://w3c.github.io/dpub/salon-du-livre-2015-03/index.html) at the [Assises du livre numérique](http://www.sne.fr/evenement_sne/assises-du-19-mars-2015/), Salon du Livre, Paris. (Sources in ``salon-du-livre-2015-03``.)
 * [Presentation of Tzviya Siegman and Ivan Herman](http://w3c.github.io/dpub/ebookcraft-2015-03/index.html) at the [eBookCraft conference, March 2015, Toronto](http://www.cvent.com/events/tech-forum-2015/agenda-0c06ff814cdd41b2bf8eaf40ea9ef709.aspx). (Sources in ``ebookcraft-2015-03``.)
 * [Presentation of Tzviya Siegman and Ivan Herman](http://w3c.github.io/dpub/edupub-2015-03/index.html) at the [EDUPUB meeting, February 2015, Phoenix](http://www.imsglobal.org/feb2015UofPhoenix.html). (Sources in ``edupub-2015-03``.)
