@@ -43,7 +43,7 @@ table {
 
 body {
     counter-reset: slide;
-    font: 24px/2 "Helvetica Neue",Helvetica,Arial,Verdana,Geneva,sans-serif;
+    /* font: 24px/2 "Helvetica Neue",Helvetica,Arial,Verdana,Geneva,sans-serif; */
 }
 
 @media print {
@@ -67,9 +67,11 @@ a {
     text-shadow: 0 1px 1px #8D8E90;
 }
 
+/*
 .caption h1 {
     font: 700 48px/1 "Helvetica Neue",Helvetica,Arial,Verdana,Geneva,sans-serif;
 }
+*/
 
 .caption a {
     text-shadow: 0 -1px 1px #005a9c;
@@ -160,10 +162,11 @@ a {
     height: 535px;
 }
 
+
 .slide h2 {
     margin: 0 0 37px;
     color: #333;
-    font: 700 48px/1 "Helvetica Neue",Helvetica,Arial,Verdana,Geneva,sans-serif;
+/*     font: 700 48px/1 "Helvetica Neue",Helvetica,Arial,Verdana,Geneva,sans-serif; */
 }
 
 .slide p {
@@ -216,7 +219,7 @@ a {
     position: absolute;
     margin: -16px 0 0 -80px;
     color: #CCC;
-    font: 200px/1 "Helvetica Neue",Helvetica,Arial,Verdana,Geneva,sans-serif;
+    font: 200px/1 "Helvetica Neue",Helvetica,Arial,Verdana,Geneva,sans-serif; 
     content: '\201C';
 }
 
