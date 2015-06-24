@@ -350,13 +350,14 @@ figure.right img {
     box-shadow: 7px 7px 5px #888; 
 }
 
-figcaption, .videocaption, .credit {
-    font-size:25%; 
-    position:relative;
-    top:-15px; 
-    left: 15px;
-}
- .videocaption{
-    left: 200px;
+figcaption.credit {
+    font-size: 25%;
+    padding-top:0;
+    margin-top:0;
+    padding-left:1em;
+    line-height: 0.3em
 }
 
+figcaption.credit::before {
+    content: "Credit: ";
+}
