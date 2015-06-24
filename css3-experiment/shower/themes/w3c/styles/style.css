@@ -103,6 +103,24 @@ hyphenation, on the other hand, justification can look very ugly.
 */
 }
 
+.slide:after {
+    position: absolute;
+    top: 0;
+    right: 119px;
+    padding: 50px 0 0;
+    width: 60px;
+    height: 100px;
+    background: url(../images/ribbon_w3c.svg) no-repeat;
+    color: #FFF;
+    counter-increment: slide;
+    content: counter(slide);
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+
 .slide h1, .slide h2, .slide h3, .slide h4 { 
     margin: 0 0 0px;
     padding-bottom: 2.2px;
