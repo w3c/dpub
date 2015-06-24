@@ -11,11 +11,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="shower/themes/w3c/styles/style.css">
     
+    <!-- These styles should be adapted to the details on where and what ribbon should be used, and how large the copyright is -->
     <style type="text/css">
       .slide:after {
         padding: 60px 0 0 !important;
         height: 150px ;
         background: url(figures/W3C_ribbon.png) no-repeat ;
+      }
+      .titlepage p.copyright {
+        left: 10em;
       }
       </style>
   </head>
@@ -25,18 +29,25 @@
     <header class="caption">
       <h1 property="dc:title" rel="dc:subject" resource="http://id.loc.gov/authorities/subjects/sh85042368#concept">The Convergence of EPUB and the Web</h1>
       <h2> <span rel="bibo:authorList" inlist=""> 
+              <span resource="_:1"
+            typeof="foaf:Person"> <span property="foaf:name">Tzviya Siegman</span>, <span property="rdfs:seeAlso"
+              resource="https://www.linkedin.com/in/tzviya">Wiley</span>, </span> 
+              <span resource="_:2"
+            typeof="foaf:Person"> <span property="foaf:name">Markus Gylling</span>, <span property="rdfs:seeAlso"
+              resource="https://www.linkedin.com/in/mgylling">IDPF</span>, and</span> 
+
               <span resource="http://www.ivan-herman.net/foaf#me"
             typeof="foaf:Person"> <span property="foaf:name">Ivan Herman</span>, <span property="rdfs:seeAlso"
               resource="http://orcid.org/0000-0003-0782-2704">W3C</span></span> 
             </span>
       </h2>
-        <h3 rel="bibo:presentedAt"><span typeof="event:Event bibo:Conference">
+      <h3 rel="bibo:presentedAt"><span typeof="event:Event bibo:Conference">
           <span property="dc:title"><a href="http://www.boersenverein.de/buchtage">Some Event</a></span>, 
           <span property="event:place">At some place</span></h3>
         <h3 property="dc:date">2015-??-??</h3>
       <p class="copyright"><a href="http://creativecommons.org/licenses/by-nd/3.0/">
-        <img class="plain" alt="Creative Commons License in French" src="figures/80x15.png"></a>&nbsp;This work is licensed under a <a rel="cc:license" href="http://creativecommons.org/licenses/by-nd/3.0/">Creative Commons Attribution 3.0 License</a>, with attribution to <a rel="cc:attributionURL" href="http://www.w3.org" property="cc:attributionName">W3C</a></p>
-      <p class="copyright">Copyright <sup>©</sup>2015 W3C<sup>®</sup> (MIT, ERCIM, Keio, Beihang)</p>
+        <img class="plain" alt="Creative Commons License in French" src="figures/80x15.png"></a>&nbsp;This work is licensed under a <a rel="cc:license" href="http://creativecommons.org/licenses/by-nd/3.0/">Creative Commons Attribution 3.0 License</a>, with attribution to <a rel="cc:attributionURL" href="http://www.w3.org" property="cc:attributionName">W3C</a> and <a rel="cc:attributionURL" href="http://www.idpf.org" property="cc:attributionName">IDPF</a></p>
+      <p class="copyright">Copyright <sup>©</sup>2015 IDPF<sup>®</sup> and <sup>©</sup>2015 W3C<sup>®</sup> (MIT, ERCIM, Keio, Beihang)</p>
     </header>
 
     <section class="slide titlepage">
@@ -47,7 +58,7 @@
         <h4>2015-??-??</h4>
 
         <p class="copyright">This work is licensed under a <a target="_blank" href="http://creativecommons.org/licenses/by-nd/3.0/">Creative Commons Attribution 3.0 License</a>, with attribution to <a target="_blank" href="http://www.w3.org">W3C</a> and <a target="_blank" href="http://www.idpf.org">IDPF</a>.
-          Copyright <sup>©</sup>2015 W3C<sup>®</sup> (MIT, ERCIM, Keio, Beihang)</p>
+          Copyright <sup>©</sup>2015&nbsp;IDPF<sup>®</sup> and <sup>©</sup>2015&nbsp;W3C<sup>®</sup> (MIT, ERCIM, Keio, Beihang)</p>
       </div>
     </section>
 
@@ -60,7 +71,7 @@
         <p>(Slides are in HTML)</p>
       </div>
     </section>
-    
+
     <section class="slide">
     <div>
       <h2>About W3C: “Leading the Web to its Full Potential”</h2>
@@ -248,6 +259,51 @@
         <li>Pagination isn’t only books: slides, cards, and other “boxes” use the same functionality.</li>
         <li>The DPUB Community have been involved from the start.</li>
       </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2>Examples: Content and Markup</h2>
+      <ul>
+        <li>Goal: identify the semantics of the elements in the HTML source beyond what the basic HTML tags can provide,
+          <ul><li>“abstract”, “indexed term”, “footnote”,…</li></ul>
+        </li>
+        <li>Express structural information (“where can that element be used”)</li>
+        <li>Do it in a forward looking way in terms of W3C standards.
+          <ul>
+            <li>i.e., move away from <code>epub:type</code></li>
+            <li>the resulting HTML should be valid</li>
+          </ul>
+        </li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2>Examples: content and markup: approach chosen</h2>
+      <ul>
+        <li>Use <a href="http://www.w3.org/TR/wai-aria/">“Accessible Rich Internet Applications (WAI-ARIA)”</a> as a basic mechanism:
+          <ul>
+            <li>use specific attributes in HTML</li>
+            <li>attribute values convey a specific semantics</li>
+          </ul>
+        </li>
+      </ul> 
+      <blockquote>“These semantics are designed to allow an author to properly convey user interface behaviors and structural information to assistive technologies in document-level markup”</blockquote>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2>Examples: content and markup: DPUB ARIA module</h2>
+      <figure class="right"> 
+        <img src="figures/dpub-aria.png" alt="Screen dump of the DPUB ARIA document" width="98%"> 
+      </figure>
+      <ul>
+        <li>A Digital Publishing ARIA module is in development</li>
+        <li>Publishing terms become part of ARIA</li>
+        <li>Extra bonus: these terms directly bind to Assistive Technologies!</li>
+      </ul>
+      <pre>&lt;section role="appendix"&gt;
+  &lt;h1>Appendix A. Historical Timeline&lt;/h1&gt;
+   …
+&lt;/section&gt;</pre>  
     </div></section>
 
     <section class="slide">
