@@ -43,7 +43,7 @@ table {
 
 body {
     counter-reset: slide;
-    font: 24px/2 "Helvetica Neue",Helvetica,Arial,Verdana,Geneva,sans-serif;
+    /* font: 24px/2 "Helvetica Neue",Helvetica,Arial,Verdana,Geneva,sans-serif; */
 }
 
 @media print {
@@ -67,9 +67,11 @@ a {
     text-shadow: 0 1px 1px #8D8E90;
 }
 
+/*
 .caption h1 {
     font: 700 48px/1 "Helvetica Neue",Helvetica,Arial,Verdana,Geneva,sans-serif;
 }
+*/
 
 .caption a {
     text-shadow: 0 -1px 1px #005a9c;
@@ -160,10 +162,11 @@ a {
     height: 535px;
 }
 
+
 .slide h2 {
     margin: 0 0 37px;
     color: #333;
-    font: 700 48px/1 "Helvetica Neue",Helvetica,Arial,Verdana,Geneva,sans-serif;
+/*     font: 700 48px/1 "Helvetica Neue",Helvetica,Arial,Verdana,Geneva,sans-serif; */
 }
 
 .slide p {
@@ -216,7 +219,7 @@ a {
     position: absolute;
     margin: -16px 0 0 -80px;
     color: #CCC;
-    font: 200px/1 "Helvetica Neue",Helvetica,Arial,Verdana,Geneva,sans-serif;
+    font: 200px/1 "Helvetica Neue",Helvetica,Arial,Verdana,Geneva,sans-serif; 
     content: '\201C';
 }
 
@@ -235,7 +238,7 @@ a {
     text-indent: -2em;
 }
 
-.slide ol li:before,.slide ul li:before {
+.slide ol li:before, .slide ul li:before {
     display: inline-block;
     width: 2em;
     color: #BBB;
@@ -367,6 +370,7 @@ a {
     transform: none;
 }
 
+/*
 .slide.shout h2 {
     position: absolute;
     top: 50%;
@@ -379,6 +383,7 @@ a {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+*/
 
 .slide.shout h2 a {
     background: -webkit-gradient(linear,left bottom,left top,from(currentColor),color-stop(.11em,currentColor),color-stop(.11em,transparent),to(transparent))repeat-x;
@@ -678,13 +683,14 @@ a {
     .full .progress div {
         position: absolute;
         left: -20px;
-        top: -10px;
+        top: 0px;
         width: 0;
         height: 0;
-        border: 10px solid transparent;
+        border: 5px solid transparent;
         border-bottom-color: #005a9c;
         -webkit-transition: width .2s linear;
         transition: width .2s linear;
+        z-index 1 !important;
     }
 
     .full .progress div[style$='100%;'] {
