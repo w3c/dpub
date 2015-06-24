@@ -60,26 +60,6 @@ header p, header h1, header h2, header h3   {
     color: snow;
 }
 
-.titlepage h1, .titlepage h2, .titlepage h3, .titlepage h4 {
-    border-bottom:  none !important;
-    text-align: center;
-}
-
-.titlepage h3 {
-    font-size: 1em;
-    margin-top: 2em;
-    text-transform: none;
-}
-
-.titlepage h4 {
-    font-size: 0.8em;
-    margin-top: 1em;
-    text-transform: none;
-}
-
-.titlepage p {
-    font-size: 0.5em;
-}
 
 .caption {
     font-size: 22pt;
@@ -98,18 +78,18 @@ header p, header h1, header h2, header h3   {
 /*  Styles for slides      */
 /* ----------------------- */
 .slide {
-  background: #add9e4;
-  background: -moz-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f7fbfc), color-stop(100%, #add9e4));
-  background: -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-  background: -o-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-  background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-  background: radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-  background-color: #f7fbfc; 
+    background: #add9e4;
+    background: -moz-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f7fbfc), color-stop(100%, #add9e4));
+    background: -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+    background: -o-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+    background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+    background: radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+    background-color: #f7fbfc; 
 
-  font-family: myfont;
-  font-size: 30px;
-  color: #333333; 
+    font-family: myfont;
+    font-size: 30px;
+    color: #333333; 
 
 /* This does not work in Chrome, 'cause it does not do hyphenation. Without
 hyphenation, on the other hand, justification can look very ugly.
@@ -146,13 +126,12 @@ hyphenation, on the other hand, justification can look very ugly.
             transform: translateY(-50%);
 }
 
-
 .slide ol ol,.slide ol ul,.slide ul ol,.slide ul ul {
     margin: 0 0 0 0.5em;
 }
 
 .slide h2 {
-    font-size: 1.3em;
+    font-size: 1.5em;
     text-shadow: 0 1px 1px black; /* #ffff; */ 
 }
 
@@ -218,6 +197,13 @@ hyphenation, on the other hand, justification can look very ugly.
     text-decoration: underline;
 }
 
+.slide ol li:before, .slide ul li:before {
+    display: inline-block;
+    width: 2em;
+    color: #333333; 
+    text-align: right;
+}
+
 .slide table      { 
     border-collapse: separate;
     border-spacing: 0.1em 
@@ -270,6 +256,48 @@ hyphenation, on the other hand, justification can look very ugly.
     -webkit-justify-content: center;
             justify-content: center;
 }
+
+
+/* The first, "title" page */
+.titlepage h1, .titlepage h2, .titlepage h3, .titlepage h4 {
+    border-bottom:  none !important;
+    text-align: center;
+}
+
+.slide.titlepage h2 {
+    font-size: 2em;
+    margin-top:2em;
+    text-shadow: 0 1px 1px black; /* #ffff; */ 
+}
+
+.titlepage h3 {
+    font-size: 1em;
+    text-transform: none;
+    margin-bottom:0.1em;
+}
+
+
+.titlepage h4 {
+    font-size: 0.8em;
+    margin-bottom:0.15em;
+    text-transform: none;
+}
+
+.titlepage p {
+    font-size: 0.5em;
+}
+
+.titlepage p.copyright {
+    position: absolute;
+    bottom: 0.3em;
+    right: 10em;
+    left: 15em;
+    margin-bottom: 0;
+    font-size: 35%;
+    line-height: 1.3em;
+}
+
+/* -------------- */
 
 dt { font-weight: bold;}
 dd { padding-left: 1.5em;}
