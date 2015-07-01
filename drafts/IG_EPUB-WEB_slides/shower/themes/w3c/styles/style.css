@@ -40,7 +40,8 @@
 
 body {
     font-family: myfont;
-    line-height: 3em;
+    /* line-height: 2.8em; */
+    line-height: 1.25;
 }
 
 ul ul li, ol ul li {
