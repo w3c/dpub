@@ -1,0 +1,1 @@
+This is just a placholder for now. This URL will be contain for the presentation site for the talk “The Future of W3C Digital Publishing”, at the [“Día del W3C en España 2015: el futuro de la edición digital”](http://www.w3c.es/Eventos/2015/DiaW3C/), held in Madrid, Spain, on the 14th of October, 2015.
