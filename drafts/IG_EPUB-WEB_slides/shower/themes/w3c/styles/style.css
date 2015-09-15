@@ -5,32 +5,26 @@
 /* Playing with fonts, just for the sake of it...*/
 @font-face {
     font-family: "myfont";
-    src: url("fonts/Roboto-Light-webfont.eot");
-    src: url("fonts/Roboto-Light-webfont.woff") format('woff'),
-         url("fonts/Roboto-Light-webfont.ttf") format('truetype');
+    src: url(fonts/PTSans.woff) format('woff');
     font-weight: normal;
 }
 
 @font-face {
     font-family: "myfont";
-    src: url("fonts/Roboto-Bold-webfont.eot");
-    src: url("fonts/Roboto-Bold-webfont.woff") format('woff'),
-         url("fonts/Roboto-Bold-webfont.ttf") format('truetype');
+    src: url(fonts/PTSans.Bold.woff) format('woff');
     font-weight: bold;
 }
 
 @font-face {
     font-family: "myfont";
-    src: url("fonts/Roboto-Italic-webfont.eot");
-    src: url("fonts/Roboto-Italic-webfont.woff") format('woff');
+    src: url(fonts/PTSans.Bold.Italic.woff) format('woff');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: "myfont";
-    src: url("fonts/Roboto-LightItalic-webfont.eot");
-    src: url("fonts/Roboto-LightItalic-webfont.woff") format('woff');
+    src: url(fonts/PTSans.Italic.woff) format('woff');
     font-style: italic;
 }
 
