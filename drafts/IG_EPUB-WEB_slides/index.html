@@ -623,17 +623,35 @@
     </div></section>
 
     <section class="slide"><div>
-      <h2>Envisioned “states” of a publication</h2>
+      <h2>What kinds of documents are we talking about?</h2>
+      <ul>
+        <li>A <strong><i>Digital Document</i></strong> is a collated set of interrelated Web resources, intended to be seen as a single Web resource, and which can be uniquely addressed on the Web</li>
+        <li>A <strong><i>Portable Digital Document</i></strong> is such that a user agent can render its essential content by relying  on the Web Resources <em>within</em> the same Digital Document</li>
+      </ul>
+    </div></section>
+
+    <section class="slide draftstamp"><div>
+      <h2>What kinds of documents are we talking about?</h2>
+      <ul>
+        <li>A <strong><i>Digital Document</i></strong> is a collated set of interrelated Web resources, intended to be seen as a single Web resource, and which can be uniquely addressed on the Web</li>
+        <li>A <strong><i>Portable Digital Document</i></strong> is such that a user agent can render its essential content by relying  on the Web Resources <em>within</em> the same Digital Document</li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2>What kinds of documents are we talking about? (cont.)</h2>
+      <ul>
+        <li>A dynamic page with advertisements, a gmail site, a social Web site are not Portable Digital Documents</li>
+        <li>A journal or magazine article (together with the relevant CSS, JavaScript files, images, etc.) Is a Portable Digital Document</li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2>Envisioned “states” of a Portable Digital Document</h2>
       <ol>
-        <li><strong><i>Online state</i></strong>
-          <ul><li>a collection of documents on the Web that can be considered as a logical unit</li></ul>
-        </li>
-        <li><strong><i>Cached state</i></strong>
-          <ul><li>a collection of documents in the reading engine, local system, etc., that can be considered as a logical unit and which is mostly indistinguishable from the online state</li></ul>
-        </li>
-        <li><strong><i>Portable state</i></strong>
-        <ul><li>a package, i.e., a collections of documents packed into one unit for, e.g., a file system, network transfer, etc, but whose content is mostly indistinguishable from the online state</li></ul>
-        </li>
+        <li>in <strong><i>Unpacked State</i></strong>: all constituent Web Resources can be directly accessed through standard protocols like HTTP, FTP, etc.</li>
+        <li>in <strong><i>Cached State</i></strong>: all constituents Web Resources are stored in the User Agent, and the final delivery of the resources in the document are otherwise indistinguishable from when in an Unpacked State</li>
+        <li>in <strong><i>Packed State</i></strong>: all constituents Web Resources are combined into one unit for, e.g., storage in a file system, network transfer, etc.</li>
       </ol>
     </div></section>
 
@@ -657,7 +675,7 @@
     </div></section>
 
     <section class="slide"><div>
-      <h2>Envisioned Architecture: <br/>online state</h2>
+      <h2>Envisioned Architecture: <br/>unpacked state</h2>
       <figure> 
         <img class="plain" src="figures/Workers-basic.svg" alt="Document consumed through the Web in a traditional way" width="99%">
       </figure>
@@ -671,7 +689,7 @@
     </div></section>
 
     <section class="slide"><div>
-      <h2>Envisioned Architecture: <br/>portable state</h2>
+      <h2>Envisioned Architecture: <br/>packed state</h2>
       <figure> 
         <img class="plain" src="figures/Workers-package.svg" alt="Document consumed through a Service Worker, possibly unpacked" width="99%">
       </figure>

@@ -275,6 +275,27 @@ hyphenation, on the other hand, justification can look very ugly.
 }
 
 
+.slide.draftstamp h2:after {
+    -webkit-transform-origin:0 100%;
+       -moz-transform-origin:0 100%;
+        -ms-transform-origin:0 100%;
+         -o-transform-origin:0 100%;
+            transform-origin:0 100%;
+    -webkit-transform:rotate(-20deg);
+       -moz-transform:rotate(-20deg);
+        -ms-transform:rotate(-20deg);
+         -o-transform:rotate(-20deg);
+            transform:rotate(-20deg);
+
+    font-size: 4em;
+    letter-spacing: 0.1em;
+    position:absolute;
+    top: 2em;
+    left: 10%;
+    color: hsla(0, 100%, 55%, 1.0);
+    content:'DRAFT!';
+}
+
 /* The first, "title" page */
 .titlepage h1, .titlepage h2, .titlepage h3, .titlepage h4 {
     border-bottom:  none !important;
@@ -292,7 +313,6 @@ hyphenation, on the other hand, justification can look very ugly.
     text-transform: none;
     margin-bottom:0.1em;
 }
-
 
 .titlepage h4 {
     font-size: 0.8em;
