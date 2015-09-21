@@ -458,12 +458,6 @@ a {
     border-spacing: 0
 }
 
-.slide table th,
-.slide table td {
-    background: -webkit-linear-gradient(bottom, #BBB, #BBB .055em, transparent .055em, transparent)repeat-x;
-    background: linear-gradient(to top, #BBB, #BBB .055em, transparent .055em, transparent)repeat-x
-}
-
 .slide table th {
     text-align: left;
     font-weight: 700

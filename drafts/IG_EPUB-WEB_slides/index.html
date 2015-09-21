@@ -2,7 +2,7 @@
 <html prefix="talk: http://w3c.github.io/dpub/idpf-digital-book-2015/index.html ore: http://www.openarchives.org/ore/terms/" lang="en">
   <head about="talk:">
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
-    <title property="dc:title"> Digital Publishing and Web Standards </title>
+    <title property="dc:title">Digital Publishing and Web Standards</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="ore:describes" resource="talk:#talk">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -25,7 +25,7 @@
   <body class="list" about="talk:#talk" prefix="bibo: http://purl.org/ontology/bibo/ event: http://purl.org/NET/c4dm/event.owl#" typeof="cc:Work bibo:Slideshow">
 
     <header class="caption">
-      <h1 property="dc:title" rel="dc:subject" resource="http://id.loc.gov/authorities/subjects/sh85042368#concept">The Convergence of EPUB and the Web</h1>
+      <h1 property="dc:title" rel="dc:subject" resource="http://id.loc.gov/authorities/subjects/sh85042368#concept">Digital Publishing and Web Standards</h1>
       <h2> 
         <span rel="bibo:authorList" inlist=""> 
           <span resource="http://www.ivan-herman.net/foaf#me" typeof="foaf:Person"> <span property="foaf:name">Ivan Herman</span>, <span property="rdfs:seeAlso" resource="http://orcid.org/0000-0003-0782-2704">W3C</span></span> 
@@ -167,7 +167,7 @@
       <ul>
         <li>experts familiar with the ins and outs of digital publishing and its associated industry groups identify issues that are not addressed by the Open Web Platform</li>
         <li>goal is to raise issues to W3C working groups who can update or develop specs based on the needs of the publishing community.</li>
-        <li>work on a future vision of Digital Publishing called “EPUB+WEB”</li>
+        <li>work on a future vision of Digital Publishing called, tentatively, “EPUB+WEB”</li>
       </ul>
       <p>See our <a target="_blank" href="https://www.w3.org/dpub/IG/wiki/Main_Page">website</a> for more detail.</p>
     </div></section>
@@ -227,7 +227,7 @@
     <section class="slide"><div>
       <h2>Priorities for CSS…</h2>
       <figure class="right">
-        <img src="figures/css_priorities.png" alt="Screen dumps of the CSS Priorities' document" width="90%">
+        <img src="figures/css_priorities.png" class="noborder" alt="Screen dumps of the CSS Priorities' document" width="100%">
       </figure>
       <ul>
         <li>Another evolving document: <a href="http://w3c.github.io/dpub-pagination/">“Priorities for CSS from the DPUB IG”</a></li>
@@ -255,15 +255,16 @@
       <h2>Content and Markup</h2>
       <ul>
         <li>Goal: identify the semantics of the elements in the HTML source beyond what the basic HTML tags can provide
-          <ul><li>“abstract”, “indexed term”, “footnote”,…</li></ul>
+          <ul><li>“abstract”, “indexed term”, “footnote”, "chapter", …</li></ul>
         </li>
         <li>Express structural information (“where can that element be used”)</li>
         <li>Do it in a forward looking way in terms of W3C standards.
           <ul>
-            <li>i.e., move away from <code>epub:type</code></li>
+            <li>i.e., move away from <code>epub:type</code> used in EPUB&nbsp;3</li>
             <li>the resulting HTML should be valid</li>
           </ul>
         </li>
+        <li>These terms may be useful for the Web at large!
       </ul>
     </div></section>
 
@@ -299,15 +300,14 @@
     <section class="slide"><div>
       <h2>Annotations</h2>
       <figure class="right">
-          <img src="figures/annotation.jpg" width="80%" alt="Annotatated medieval manuscript"/>
+          <img src="figures/annotation.jpg" width="100%" alt="Annotatated medieval manuscript"/>
       </figure>
       <ul>
         <li>Published an <a target="_blank"  href ="http://w3c.github.io/dpub-annotation/">Annotation Use Cases</a></li>
         <li>Activity and work has shifted to the <a target="_blank"  href="http://www.w3.org/annotation/">Web Annotations Working Group</a>
           <ul>
             <li>the work aims at annotation <em>for all forms of Web Documents</em>, whether in a browser or an eBook</li>
-            <li>the first Working Group at W3C joining forces of both browser and publishing industries from the start</li>
-          </ul>
+           </ul>
         </li>
       </ul>
     </div></section>
@@ -315,7 +315,7 @@
     <section class="slide"><div>
       <h2>Metadata</h2>
       <figure class="right">
-          <img src="figures/metadata_report.png" width="100%" alt="Screen dump of the metadata report"/>
+          <img src="figures/metadata_report.png" class="noborder" width="100%" alt="Screen dump of the metadata report"/>
       </figure>
       <ul>
         <li>Interviewed publishing experts in metadata</li>
@@ -536,10 +536,10 @@
         <h2>Advantage for Publishers‘ Community (cont.)</h2>
         <ul>
           <li>OWP is more than “just” HTML, CSS, MathML, etc.</li>
-          <li>It defines, e.g., a large number of facilities that provide access to, e.g., system resources or utilities
+          <li>It also defines a large number of facilities that provide access to, e.g., system resources or utilities
             <ul><li>index database, Web storage, battery status API, real-time communication, geolocation,…</li></ul>
           </li>
-          <li>Aligning on OWP means that publishing oriented devices, software, services, etc, can rely on those
+          <li>Aligning more on OWP means that publishing oriented devices, software, services, etc, can rely on those
             <ul><li>instead of possibly re-inventing the wheel…</li></ul>
           </li>
         </ul>
@@ -578,7 +578,7 @@
     </div></section>
 
     <section class="slide shout"><div>
-      <h3>But… why not rely only on the Web? <br>(and forget about downloaded content)</h3>
+      <h3>But… why not rely only on the Web? <br>(I.e., forget about downloaded content!)</h3>
     </div></section>
 
     <section class="slide"><div>
@@ -586,7 +586,7 @@
       <ul>
         <li>The future may be that everyone is always connected… but the reality is different
           <ul>
-            <li>slow connections, e.g., in some countries, on a plane or bus</li>
+            <li>slow connections, e.g., or on a plane or bus or even in some areas</li>
             <li>huge roaming prices among countries</li>
           </ul>
         </li>
@@ -615,7 +615,7 @@
     </section>
 
     <section class="slide shout"><div>
-      <h3>Warning: everything I say are just directions!</h3>
+      <h3 style="color:hsla(0,100%,60%,1.0)">Warning: everything I say is subject to change!</h3>
     </div></section>
 
     <section class="slide shout"><div>
@@ -625,35 +625,49 @@
     <section class="slide"><div>
       <h2>What kinds of documents are we talking about?</h2>
       <ul>
-        <li>A <strong><i>Digital Document</i></strong> is a collated set of interrelated Web resources, intended to be seen as a single Web resource, and which can be uniquely addressed on the Web</li>
-        <li>A <strong><i>Portable Digital Document</i></strong> is such that a user agent can render its essential content by relying  on the Web Resources <em>within</em> the same Digital Document</li>
+        <li>A <strong><i>Web Document</i></strong> is a collated set of interrelated Web resources, intended to be seen as a single Web resource, and which can be uniquely addressed on the Web</li>
+        <li>A <strong><i>Portable Web Document</i></strong> is such that a user agent can render its essential content by relying  on the Web Resources <em>within</em> the same Web Document</li>
       </ul>
     </div></section>
 
     <section class="slide draftstamp"><div>
       <h2>What kinds of documents are we talking about?</h2>
       <ul>
-        <li>A <strong><i>Digital Document</i></strong> is a collated set of interrelated Web resources, intended to be seen as a single Web resource, and which can be uniquely addressed on the Web</li>
-        <li>A <strong><i>Portable Digital Document</i></strong> is such that a user agent can render its essential content by relying  on the Web Resources <em>within</em> the same Digital Document</li>
+        <li>A <strong><i>Web Document</i></strong> is a collated set of interrelated Web resources, intended to be seen as a single Web resource, and which can be uniquely addressed on the Web</li>
+        <li>A <strong><i>Portable Web Document</i></strong> is such that a user agent can render its essential content by relying  on the Web Resources <em>within</em> the same Web Document</li>
       </ul>
     </div></section>
 
     <section class="slide"><div>
       <h2>What kinds of documents are we talking about? (cont.)</h2>
       <ul>
-        <li>A dynamic page with advertisements, a gmail site, a social Web site are not Portable Digital Documents</li>
-        <li>A journal or magazine article (together with the relevant CSS, JavaScript files, images, etc.) Is a Portable Digital Document</li>
+        <li>A dynamic page with advertisements, a gmail site, a social Web site are <i>not</i> Portable Digital Documents</li>
+        <li>A journal or magazine article (together with the relevant CSS, JavaScript files, images, etc.) <i>is</i> a Portable Digital Document</li>
       </ul>
     </div></section>
 
     <section class="slide"><div>
-      <h2>Envisioned “states” of a Portable Digital Document</h2>
-      <ol>
-        <li>in <strong><i>Unpacked State</i></strong>: all constituent Web Resources can be directly accessed through standard protocols like HTTP, FTP, etc.</li>
-        <li>in <strong><i>Cached State</i></strong>: all constituents Web Resources are stored in the User Agent, and the final delivery of the resources in the document are otherwise indistinguishable from when in an Unpacked State</li>
-        <li>in <strong><i>Packed State</i></strong>: all constituents Web Resources are combined into one unit for, e.g., storage in a file system, network transfer, etc.</li>
-      </ol>
+      <h2>Envisioned “states” of a Portable Web Document</h2>
+      <table>
+        <tr>
+          <th  class="headerleft" style="width: 20%"></th>
+          <th style="width:40%" class="headertop">File Access</th>
+          <th style="border-left: 1px solid #CCC; border-right: 1px solid #CCC; width:40%" class="headertop">Protocol Access</th>
+        </tr>
+        <tr>
+          <th class="headerleft">Packed</th>
+          <td>PWD as one file on local disc</td>
+          <td>PWD as one file on a server</td>
+        </tr>
+        <tr>
+          <th class="headerleft">Unpacked</th>
+          <td>PWD as files in a folder on local disc</td>
+          <td>PWD as files in a folder on a server, or on local disc accessed through local server</td>
+        </tr>
+      </table>
     </div></section>
+
+
 
     <section class="slide"><div>
       <h2>Advances in modern browsers: Web Workers</h2>
@@ -661,8 +675,9 @@
     </div></section>
 
     <section class="slide"><div>
-      <h2>Advances in modern browsers: Service Workers</h2>
+      <h2>Advances in modern browsers: Web and Service Workers</h2>
       <ul>
+        <li>Web Worker: a truly parallel thread within the browser</li>
         <li>A Service Worker is a special type of Web Worker, with additional features:
           <ul>
             <li>it is a <i>programmable network proxy</i>: the main thread’s network calls are caught and the request/answer can be modified on-the-fly behind the scenes</li>
@@ -670,7 +685,7 @@
             <li>it will stay alive even if the user moves away from the main page, and can be accessed later if he/she returns to it</li>
           </ul>
         </li>
-        <li>(Warning: work in progress!)</li>
+        <li style="font-size: 60%; color: hsl(0,100%,60%)">Warning: work in progress, not all browsers implement this yet</li>
       </ul>
     </div></section>
 
@@ -723,7 +738,7 @@
           </ul>
         </li>
         <li>But: current Web Packaging proposal is <em>not</em> OPF based</li>
-        <li>This may lead to a different packaging to EPUB+WEB</li>
+        <li>This may lead to a different packaging in future, also for Digital Publishing</li>
       </ul>
     </div></section>
 
