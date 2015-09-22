@@ -222,7 +222,8 @@ hyphenation, on the other hand, justification can look very ugly.
 }
 
 .slide table td {
-    border: 1px solid #CCC; padding:0.3em
+    border: 1px solid #CCC; 
+    padding:0.3em
 }
 
 .slide table.striped tr:nth-child(even) {
@@ -303,25 +304,26 @@ hyphenation, on the other hand, justification can look very ugly.
 }
 
 
-.slide.draftstamp h2:after {
-    -webkit-transform-origin:0 100%;
-       -moz-transform-origin:0 100%;
-        -ms-transform-origin:0 100%;
-         -o-transform-origin:0 100%;
-            transform-origin:0 100%;
+.slide .stamp {
+    font-size: 5em;
+    letter-spacing: 0.1em;
+    position:absolute;
+    top: 1.2em;
+    left: 30%;
     -webkit-transform:rotate(-20deg);
        -moz-transform:rotate(-20deg);
         -ms-transform:rotate(-20deg);
          -o-transform:rotate(-20deg);
             transform:rotate(-20deg);
-
-    font-size: 4em;
-    letter-spacing: 0.1em;
-    position:absolute;
-    top: 2em;
-    left: 10%;
     color: hsla(0, 100%, 55%, 1.0);
-    content:'DRAFT!';
+    border-width: 0.08em;
+    border-style: solid;
+    border-radius: 0.2em;
+    padding-left: 0.05em;
+    padding-right: 0.05em;
+    box-shadow: 0.05em 0.05em 0.05em #888; 
+    text-shadow: 0.05em 0.05em 0.05em #888;
+
 }
 
 /* The first, "title" page */
