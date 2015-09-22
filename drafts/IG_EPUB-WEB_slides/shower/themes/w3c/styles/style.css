@@ -303,7 +303,6 @@ hyphenation, on the other hand, justification can look very ugly.
             justify-content: center;
 }
 
-
 .slide .stamp {
     font-size: 5em;
     letter-spacing: 0.1em;
@@ -323,7 +322,14 @@ hyphenation, on the other hand, justification can look very ugly.
     padding-right: 0.05em;
     box-shadow: 0.05em 0.05em 0.05em #888; 
     text-shadow: 0.05em 0.05em 0.05em #888;
+}
 
+.slide .stamp.small {
+    font-size:2.5em; 
+    letter-spacing: 0.1em;
+    position:absolute;
+    top: 3.3em;
+    left: 15%;
 }
 
 /* The first, "title" page */
@@ -421,4 +427,16 @@ figcaption.credit {
 
 figcaption.credit::before {
     content: "Credit: ";
+}
+
+@media print {
+    figure.right img {
+        border: 0px solid #CCC !important; 
+        border-radius: 0px !important; 
+        box-shadow: 0px 0px 0px #888 !important; 
+    }
+    .slide .stamp {
+        box-shadow: 0em 0em 0em #888; 
+        text-shadow: 0em 0em 0em #888;
+    }
 }

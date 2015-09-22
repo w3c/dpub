@@ -165,9 +165,9 @@
     <section class="slide"><div>
       <h2> DPUB IG Mission Explained </h2>
       <ul>
-        <li>experts familiar with the ins and outs of digital publishing and its associated industry groups identify issues that are not addressed by the Open Web Platform</li>
-        <li>goal is to raise issues to W3C working groups who can update or develop specs based on the needs of the publishing community.</li>
-        <li>work on a future vision of Digital Publishing called, tentatively, “EPUB+WEB”</li>
+        <li>Experts familiar with the ins and outs of digital publishing and its associated industry groups identify issues that are not addressed by the Open Web Platform</li>
+        <li>Goal is to raise issues to W3C working groups who can update or develop specs based on the needs of the publishing community.</li>
+        <li>Work on a future vision of Digital Publishing called, tentatively, “EPUB+WEB”</li>
       </ul>
       <p>See our <a target="_blank" href="https://www.w3.org/dpub/IG/wiki/Main_Page">website</a> for more detail.</p>
     </div></section>
@@ -379,8 +379,8 @@
         <img src="figures/epubweb.svg" width="100%" alt="EPUB+WEB at a glance"/>
       </figure>
       <ul>
-        <li>Portable documents are fully native citizen of the Web</li>
-        <li>Separation between online (i.e., the “Web”) and portable (e.g., “EPUB”) is diminished to zero</li>
+        <li>Portable Web documents are fully native citizen of the Web</li>
+        <li>Separation between online Web sites and offline/packaged (e.g., “EPUB”) is diminished to zero</li>
         <li>This means:
           <ul>
             <li>content authored for primarily offline use can be used online by loading it into a browser</li>
@@ -668,11 +668,18 @@
       </table>
     </div></section>
 
-
-
     <section class="slide"><div>
-      <h2>Advances in modern browsers: Web Workers</h2>
-      <blockquote>A Web Workers […] define an API that allows Web application authors to spawn background workers running scripts <i>in parallel</i> to their main page. This allows for thread-like operation with message-passing as the coordination mechanism.</blockquote>
+      <h2>Advances in modern browsers: Web and Service Workers</h2>
+      <ul>
+        <li>Web Worker: a truly parallel thread within the browser</li>
+        <li>A Service Worker is a special type of Web Worker, with additional features:
+          <ul>
+            <li>it is a <i>programmable network proxy</i>: the main thread’s network calls are caught and the request/answer can be modified on-the-fly behind the scenes</li>
+            <li>it has an interface to handle a local cache for networked data</li>
+            <li>it will stay alive even if the user moves away from the main page, and can be accessed later if he/she returns to it</li>
+          </ul>
+        </li>
+      </ul>
     </div></section>
 
     <section class="slide"><div>
@@ -686,8 +693,8 @@
             <li>it will stay alive even if the user moves away from the main page, and can be accessed later if he/she returns to it</li>
           </ul>
         </li>
-        <li style="font-size: 60%; color: hsl(0,100%,60%)">Warning: work in progress, not all browsers implement this yet</li>
       </ul>
+      <p class="stamp small" >Work in progress</p>
     </div></section>
 
     <section class="slide"><div>
@@ -710,6 +717,14 @@
         <img class="plain" src="figures/Workers-package.svg" alt="Document consumed through a Service Worker, possibly unpacked" width="99%">
       </figure>
     </div></section>
+
+    <section class="slide"><div>
+      <h2>Envisioned Architecture: <br/>packed state</h2>
+      <figure> 
+        <img class="plain" src="figures/Workers-package.svg" alt="Document consumed through a Service Worker, possibly unpacked" width="99%">
+      </figure>
+       <p class="stamp" style="left:20%">Draft…</p>
+   </div></section>
 
     <section class="slide shout"><div>
       <h3>Technical Challenge: Archival Format </h3>
@@ -881,7 +896,7 @@
     <section class="slide"><div>
       <h2>Conclusion</h2>
       <ul>
-        <li>There is a great potential in a convergence between the Open Web Platform and Portable Documents</li>
+        <li>There is a great potential in a convergence between the Open Web Platform and Portable Web Documents</li>
         <li>It will require a common effort and cooperation of both communities</li>
         <li>But it is an exciting prospect!</li>
       </ul>
