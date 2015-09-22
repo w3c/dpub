@@ -303,6 +303,10 @@ hyphenation, on the other hand, justification can look very ugly.
             justify-content: center;
 }
 
+.slide.cover img {
+    width: 100%;
+}
+
 .slide .stamp {
     font-size: 5em;
     letter-spacing: 0.1em;
@@ -417,6 +421,17 @@ figure.right img.noborder {
     box-shadow: 0px 0px 0px #888 !important; 
 }
 
+.slide.cover .credit {
+    margin-top: 3em;
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+    font-size: 40%;
+    position: absolute;
+    left: 5px;
+    bottom: 0px;
+    color:snow;
+}
+
 figcaption.credit {
     font-size: 25%;
     padding-top:0;
@@ -425,7 +440,7 @@ figcaption.credit {
     line-height: 0.3em
 }
 
-figcaption.credit::before {
+figcaption.credit::before, .credit::before {
     content: "Credit: ";
 }
 
