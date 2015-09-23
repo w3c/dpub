@@ -163,6 +163,11 @@ hyphenation, on the other hand, justification can look very ugly.
 
 }
 
+.slide .notitle {
+    margin-top:3em
+}
+
+
 .slide.shout h2, .slide.shout h3 {
     text-shadow: 0 1px 1px black; /* #ffff; */ 
     font-size: 3em;
@@ -425,7 +430,7 @@ figure.right img.noborder {
     margin-top: 3em;
     margin-bottom: 0px;
     padding-bottom: 15px;
-    font-size: 40%;
+    font-size: 23%;
     position: absolute;
     left: 5px;
     bottom: 0px;
