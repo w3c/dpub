@@ -219,7 +219,7 @@ hyphenation, on the other hand, justification can look very ugly.
     text-align: right;
 }
 
-.slide table      { 
+.slide table  { 
     border-collapse: separate;
     border-spacing: 0.1em 
     border: none !important;
