@@ -167,7 +167,7 @@
       <ul>
         <li>Experts familiar with the ins and outs of digital publishing and its associated industry groups identify issues that are not addressed by the Open Web Platform</li>
         <li>Goal is to raise issues to W3C working groups who can update or develop specs based on the needs of the publishing community.</li>
-        <li>Work on a future vision of Digital Publishing called, tentatively, “Portable Web Publications (PWP)”</li>
+        <li>Work on a future vision of Digital Publishing called “Portable Web Publications (PWP)”</li>
       </ul>
       <p>See our <a target="_blank" href="https://www.w3.org/dpub/IG/wiki/Main_Page">website</a> for more detail.</p>
     </div></section>
@@ -257,7 +257,7 @@
     <section class="slide"><div>
       <h2>Content and Markup</h2>
       <ul>
-        <li>Goal: identify the semantics of the elements in the HTML source beyond what the basic HTML tags can provide
+        <li>Goal: identify the semantics of the HTML elements
           <ul><li>“abstract”, “indexed term”, “footnote”, "chapter", …</li></ul>
         </li>
         <li>Express structural information (“where can that element be used”)</li>
@@ -292,7 +292,7 @@
       <ul>
         <li>A Digital Publishing ARIA module is in development</li>
         <li>Publishing terms become part of ARIA</li>
-        <li>Extra bonus: these terms directly bound to Assistive Technologies!</li>
+        <li>Extra bonus: these terms directly mapped on Assistive Technologies interfaces!</li>
       </ul>
       <pre>&lt;section <mark>role="dpub-appendix"</mark>&gt;
   &lt;h1>Appendix A. Historical Timeline&lt;/h1&gt;
@@ -712,7 +712,7 @@
         <li>Web Worker: a truly parallel thread within the browser</li>
         <li>A Service Worker is a special type of Web Worker, with additional features:
           <ul>
-            <li>it is a <i>programmable network proxy</i>: the main thread’s network calls are caught and the request/answer can be modified on-the-fly behind the scenes</li>
+            <li>it is a <i>programmable network proxy</i>: the renderer’s network calls are caught and the request/answer can be modified on-the-fly behind the scenes</li>
             <li>it has an interface to handle a local cache for networked data</li>
             <li>it will stay alive even if the user moves away from the main page, and can be accessed later if he/she returns to it</li>
           </ul>
@@ -783,11 +783,14 @@
           <ul>
             <li>retrieve an HTML file with related CSS files, images</li>
             <li>access Web Applications (“Widgets”) with all libraries involved</li>
-            <li><em>Portable Web Documents are a clear use case</em></li>
+            <li><em>Portable Web Publications are a clear use case</em></li>
           </ul>
         </li>
-        <li>But: current Web Packaging proposal is <em>not</em> OPF based</li>
-        <li>This may lead to a different packaging in future, also for Digital Publishing</li>
+        <li>But: current Web Packaging proposal is <em>not</em> OPF based
+          <ul>
+             <li>this may lead to a different packaging in future for Digital Publishing</li>
+          </ul>
+        </li>
       </ul>
     </div></section>
 
@@ -942,7 +945,7 @@
       <h2>However…</h2>
       <ul>
         <li>PWP does <em>not</em> replace EPUB&nbsp;3 (and upcoming EPUB&nbsp;3.1) at this moment</li>
-        <li>Many of the new features will also be part of EPUB&nbsp;3.1 (e.g., structural semantics)</li>
+        <li>Many of the new features may also be part of EPUB&nbsp;3.1 (e.g., structural semantics)</li>
         <li>The vision is a convergence of the EPUB&nbsp;3.* specifications and PWP, eventually</li>
       </ul>
     </div></section>
