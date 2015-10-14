@@ -667,17 +667,53 @@
     </div></section>
 
     <section class="slide"><div>
-      <h2>What kinds of documents are we talking about?</h2>
+      <h2>Web Publications</h2>
+      <ul>
+        <li>On the current web one has the notion of a Web “page”:
+          <ul>
+            <li>conceptually, a single entity that displays some content</li>
+            <li>has its own URI, and that is the only thing that <em>really</em> counts</li>
+          </ul>
+        </li>
+        <li>But publishers need the concept of a <i>(Web) Publication</i>:
+          <ul>
+            <li>a collection of pages, CSS files, images, video, etc.</li>
+            <li>it is the <em>collection</em> that has a distinct identity, not its constituents.</li>
+          </ul>
+        </li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2>Formally</h2>
       <ul>
         <li>A <strong><i>Web Publication</i></strong> is an aggregated set of interrelated Web resources, intended to be seen as a single Web resource, and which <i>can be uniquely addressed</i> on the Web</li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2>Portable Web Publications</h2>
+      <ul>
+        <li>A Web Publication may consist of resources spread all over the place (HTML on one site, CSS somewhere else)
+          <ul><li>importantly: the owner of the Web Publication is only an external user and not the owner of some of those resources!</li></ul>
+        </li>
+        <li>But a publishers may want to “move” the publication around, again as a single unit</li>
+        <li>The Web Publication should be, in some sense, “self consistent”, not rely on external entities.</li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2>Formally</h2>
+      <ul>
         <li>A <strong><i>Portable Web Publication</i></strong> is such that a user agent can render its essential content by relying  on the Web Resources <em>within</em> the same Web Publication</li>
       </ul>
     </div></section>
 
     <section class="slide"><div>
-      <h2>What kinds of documents are we talking about? (cont.)</h2>
+      <h2>What kinds of documents are we talking about?</h2>
       <ul>
-        <li>A dynamic page with advertisements, a gmail site, a social Web site are <i>not</i> Portable Web Publication</li>
+        <li>A dynamic page with advertisements, a gmail site, a social Web site are <i>not</i> really a Web Publication (although that is a fuzzy borderline)</li>
+        <li>A dynamic magazine page that depends on, say, a Javascript library hosted somewhere on the cloud is <i>not</i> Portable Web Publication either (although it is a genuine Web Publication</li>
         <li>A journal or magazine article (together with the relevant CSS, JavaScript files, images, etc.) <i>is</i> a Portable Web Publication</li>
       </ul>
     </div></section>
