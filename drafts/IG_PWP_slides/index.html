@@ -733,6 +733,36 @@
     </div></section>
 
     <section class="slide"><div>
+      <h2>Advances in modern browsers: Web and Service Workers (Simplified)</h2>
+      <ul>
+        <li>A browser has a “hidden“, <i>truly parallel</i> engine behind it (“Web Worker”)</li>
+        <li>That engine “catches” all calls out to the Web (“Service Worker”), and:
+          <ul>
+            <li>either lets it through and the original request happens;</li>
+            <li>or performs local processing (e.g., gets content from a cache) and returns the content</li>
+          </ul>
+        </li>
+        <li>The “main” rendering engine is unaware of the underlying process; the world looks just like the traditional Web</li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2>Advances in modern browsers: Web and Service Workers (Simplified)</h2>
+      <ul>
+        <li>A browser has a “hidden“, <i>truly parallel</i> engine behind it (“Web Worker”)</li>
+        <li>That engine “catches” all calls out to the Web (“Service Worker”), and:
+          <ul>
+            <li>either lets it through and the original request happens;</li>
+            <li>or performs local processing (e.g., gets content from a cache) and returns the content</li>
+          </ul>
+        </li>
+        <li>The “main” rendering engine is unaware of the underlying process; the world looks just like the traditional Web</li>
+      </ul>
+      <p class="stamp small" >Work in progress</p>
+    </div></section>
+
+
+    <section class="slide"><div>
       <h2>Envisioned Architecture: <br/>unpacked state</h2>
       <figure>
         <img class="plain" src="figures/Workers-basic.svg" alt="Document consumed through the Web in a traditional way" width="99%">
