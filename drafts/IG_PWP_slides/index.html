@@ -367,39 +367,48 @@
       </div>
     </div></section>
 
-    <!--
-    <section class="slide"><div>
-      <h2>Portable Web Publications</h2>
-      <ul>
-        <li><i>“Portable Web Publications for the Open Web Platform”</i>
-          <ul>
-            <li>Draft is available at <a target="_blank" href="http://w3c.github.io/dpub-pwp/"><code>http://w3c.github.io/dpub-pwp/</code></a></li>
-            <li>provide feedback at <a target="_blank" href="http://w3c.github.io/dpub-pwp/issues"><code>http://w3c.github.io/dpub-pwp/issues</code></a></li>
-          </ul>
-        </li>
-      </ul>
-    </div></section>
-    -->
-
-    <section class="slide"><div>
-      <h2>PWP is a Vision for the Future</h2>
-      <figure>
-        <img src="figures/pwp.svg" alt="Portable Web Publication at a glance" width="100%">
-      </figure>
+    <section class="slide shout"><div>
+        <h3>The main message:</h3>
     </div></section>
 
+    <section class="slide shout cover"><div id="webpubl">
+      <img src="covers/blackboard.jpg">
+      <h2>Web = Publishing!</h2>
+      <style type="text/css">
+      #webpubl h2 {
+        color: snow;
+        font-style: italic;
+      }
+      </style>
+    </div></section>
+
+    <section class="slide shout"><div>
+        <h3>put it another way…</h3>
+    </div></section>
+
+    <section class="slide shout cover"><div id="publweb">
+      <img src="covers/blackboard.jpg">
+      <h2>Publishing = Web!</h2>
+      <style type="text/css">
+      #publweb h2 {
+        color: snow;
+        font-style: italic;
+      }
+      </style>
+    </div></section>
+
     <section class="slide"><div>
-      <h2>The Vision</h2>
+      <h2>What does this mean?</h2>
       <figure class="right">
         <img src="figures/pwp.svg" width="100%" alt="Portable Web Publication at a glance"/>
       </figure>
       <ul>
-        <li>Portable Web Publication are fully native citizen of the Web</li>
-        <li>Separation between online Web sites and offline/packaged (e.g., “EPUB”) is diminished to zero</li>
+        <li>Separation between publishing “online”, as Web sites, and offline/packaged is diminished to zero</li>
         <li>This means:
           <ul>
             <li>content authored for primarily offline use can be used online by loading it into a browser</li>
             <li>content authored for primarily online use can be easily saved as a portable document for offline use</li>
+            <li>contents are mostly authored regardless of where they are used </li>
             <li>these should be doable smoothly, solely based on the user’s interaction</li>
           </ul>
         </li>
@@ -407,21 +416,10 @@
     </div></section>
 
     <section class="slide"><div>
-      <h2>The Vision</h2>
-      <figure class="right">
-        <img src="figures/pwp.svg" width="100%" alt="Portable Web Publication at a glance"/>
+      <h2>What does this mean?</h2>
+      <figure>
+        <img src="figures/pwp.svg" alt="Portable Web Publication at a glance" width="100%">
       </figure>
-      <ul>
-        <li>Publishers can choose to utilize either or both of these publishing modes</li>
-        <li>Users can choose either or both of these consumption modes</li>
-        <li>Essential features flow seamlessly between on-line and off-line modes, like
-          <ul>
-            <li>cross-references, user annotations, access to on-line databases</li>
-            <li>licensing and rights management</li>
-            <li>etc.</li>
-          </ul>
-        </li>
-      </ul>
     </div></section>
 
     <section class="slide shout cover"><div>
@@ -601,7 +599,7 @@
     </div></section>
 
     <section class="slide shout"><div>
-      <h3>But… why not rely only on the Web? <br>(I.e., forget about downloaded content!)</h3>
+      <h3>But… why not rely <em>only</em> on the Web? <br>(I.e., forget about downloaded content!)</h3>
     </div></section>
 
     <section class="slide"><div>
@@ -672,13 +670,13 @@
         <li>On the current web one has the notion of a Web “page”:
           <ul>
             <li>conceptually, a single entity that displays some content</li>
-            <li>has its own URI, and that is the only thing that <em>really</em> counts</li>
+            <li>has its own URI, and that is the only identifier that <em>really</em> counts</li>
           </ul>
         </li>
-        <li>But publishers need the concept of a <i>(Web) Publication</i>:
+        <li>But publishers need the concept of a <em>(Web) Publication</em>:
           <ul>
-            <li>a collection of pages, CSS files, images, video, etc.</li>
-            <li>it is the <em>collection</em> that has a distinct identity, not its constituents.</li>
+            <li>a <em>collection</em> of pages, CSS files, images, video, etc.</li>
+            <li>it is the <i>collection</i> that has a distinct identity, not its constituents</li>
           </ul>
         </li>
       </ul>
@@ -695,10 +693,11 @@
       <h2>Portable Web Publications</h2>
       <ul>
         <li>A Web Publication may consist of resources spread all over the place (HTML on one site, CSS somewhere else)
-          <ul><li>importantly: the owner of the Web Publication is only an external user and not the owner of some of those resources!</li></ul>
+          <ul><li>the owner of the Web Publication is only an external user and not necessarily the owner of all resources!</li></ul>
         </li>
-        <li>But a publishers may want to “move” the publication around, again as a single unit</li>
-        <li>The Web Publication should be, in some sense, “self consistent”, not rely on external entities.</li>
+        <li>But a publishers may want to, create, curate, move the <i>whole</i> publication around, as a single unit</li>
+        <li>The Web Publication should be, in some sense, “self consistent”, not relying on external entities.</li>
+        <li>A “self-consistent” Web Publication is <em>Portable</em></li>
       </ul>
     </div></section>
 
@@ -712,9 +711,19 @@
     <section class="slide"><div>
       <h2>What kinds of documents are we talking about?</h2>
       <ul>
-        <li>A dynamic page with advertisements, a gmail site, a social Web site are <i>not</i> really a Web Publication (although that is a fuzzy borderline)</li>
-        <li>A dynamic magazine page that depends on, say, a Javascript library hosted somewhere on the cloud is <i>not</i> Portable Web Publication either (although it is a genuine Web Publication</li>
-        <li>A journal or magazine article (together with the relevant CSS, JavaScript files, images, etc.) <i>is</i> a Portable Web Publication</li>
+        <li>A journal or magazine article, including the relevant CSS files and images</li>
+        <li>An educational article, including the JavaScript to do interactive exersizes</li>
+        <li>A novel or a poem on the Web, including the necessary fonts, CSS files, etc, to provide the required aesthetics</li>
+      </ul>
+    </div></section>
+
+
+    <section class="slide"><div>
+      <h2>What kinds of documents are we <em>not</em> talking about?</h2>
+      <ul>
+        <li>A Web mail application</li>
+        <li>A social Web site like Facebook or Renren</li>
+        <li>A dynamic page that depends on, say, a Javascript library hosted somewhere on the cloud</li>
       </ul>
     </div></section>
 
@@ -771,32 +780,35 @@
     <section class="slide"><div>
       <h2>Advances in modern browsers: Web and Service Workers (Simplified)</h2>
       <ul>
-        <li>A browser has a “hidden“, <i>truly parallel</i> engine behind it (“Web Worker”)</li>
-        <li>That engine “catches” all calls out to the Web (“Service Worker”), and:
+        <li>A browser has a hidden, <i>truly parallel</i> engine attached to it</li>
+        <li>That engine “catches” all calls out to the Web, and:
           <ul>
             <li>either lets it through and the original request happens;</li>
-            <li>or performs local processing (e.g., gets content from a cache) and returns the content</li>
+            <li>or performs local processing (e.g., gets content from a cache) and returns that content instead</li>
           </ul>
         </li>
-        <li>The “main” rendering engine is unaware of the underlying process; the world looks just like the traditional Web</li>
+        <li>The “main” rendering engine is unaware of the underlying proxy process
+        <ul><li>it operates as if it was connected to the Web in a traditional way</li></ul>
+        </li>
       </ul>
     </div></section>
 
     <section class="slide"><div>
       <h2>Advances in modern browsers: Web and Service Workers (Simplified)</h2>
       <ul>
-        <li>A browser has a “hidden“, <i>truly parallel</i> engine behind it (“Web Worker”)</li>
-        <li>That engine “catches” all calls out to the Web (“Service Worker”), and:
+        <li>A browser has a hidden, <i>truly parallel</i> engine attached to it</li>
+        <li>That engine “catches” all calls out to the Web, and:
           <ul>
             <li>either lets it through and the original request happens;</li>
-            <li>or performs local processing (e.g., gets content from a cache) and returns the content</li>
+            <li>or performs local processing (e.g., gets content from a cache) and returns that content instead</li>
           </ul>
         </li>
-        <li>The “main” rendering engine is unaware of the underlying process; the world looks just like the traditional Web</li>
+        <li>The “main” rendering engine is unaware of the underlying proxy process
+        <ul><li>it operates as if it was connected to the Web in a traditional way</li></ul>
+        </li>
       </ul>
       <p class="stamp small" >Work in progress</p>
     </div></section>
-
 
     <section class="slide"><div>
       <h2>Envisioned Architecture: <br/>unpacked state</h2>
