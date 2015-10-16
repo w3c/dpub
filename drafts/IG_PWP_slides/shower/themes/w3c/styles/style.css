@@ -178,6 +178,8 @@ hyphenation, on the other hand, justification can look very ugly.
     margin-top: 1em;
     text-align: center;
     line-height: 1;
+    padding-right: 0em;
+    padding-left: 0em;       
 }
 
 .slide.shout h2 {
