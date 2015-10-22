@@ -60,7 +60,7 @@
     </div></section>
 
     <section class="slide shout cover"><div id="major">
-      <img src="covers/future.jpg">
+      <img src="covers/recap.jpg">
       <h3>Reminders on PWP and its states</h3>
       <style type="text/css">
         #major h3 {
@@ -144,6 +144,17 @@
       <figure>
         <img class="plain" src="figures/PWP-Package-Structure-2.svg" alt="PWP Packaging structure diagram with admin file in JSON" width="99%">
       </figure>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>EPUB 3.1 work</h2>
+        <ul>
+          <li>There is an IDPF WG to define EPUB 3.1</li>
+          <li>In line of the PWP development, but must be backward compatible</li>
+          <li>Some issues explored by that group (e.g., “browser friendly manifestation") is very close
+            <ul><li>whatever we do, we will have to synhronize the groups</li></ul>
+          </li>
+        </ul> 
     </div></section>
 
 
@@ -260,11 +271,15 @@
           <ul><li>a specific section, an image area, time interval…</li></ul>
         </li>
         <li>This is where fragment id-s come into the picture
-          <ul><li><code>http://ex.org/book.pwp!chapter1.html@section2</code></li></ul>
+          <ul>
+            <li><code>http://ex.org/book.pwp/chapter1.html@section2</code></li>
+            <li><code>http://ex.org/book.pwp/image1.jpg#xywh=percent:25,25,50,50</code></li>
+            <li><code>http://ex.org/book.pwp/video1.ogv#track=audio&t=10,20</code></li>
+          </ul>
         </li>
         <li>Luckily, this is a widely deployed approach
           <ul>
-            <li>we should avoid defining PWP specific approaches</li>
+            <li>we should avoid defining PWP specific approaches, just reuse what is out there</li>
             <li>but we may influence others to define such fragments, e.g., for the <code>findText API</code></li>
           </ul>
         </li>
@@ -287,6 +302,7 @@
       <ul>
         <li>Develop some detailed usage scenarios with all four possible states on how an engine should work</li>
         <li>Align with a possible POM work</li>
+        <li>Align with relevant EPUB 3.1 work at IDPF</li>
       </ul>
     </div></section>
 
