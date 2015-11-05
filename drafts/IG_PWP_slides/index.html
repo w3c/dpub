@@ -681,7 +681,7 @@
         <li>On the current web one has the notion of a Web “page”:
           <ul>
             <li>conceptually, a single entity that displays some content</li>
-            <li>has its own URI, and that is the only identifier that <em>really</em> counts</li>
+            <li>has its own URL</li>
           </ul>
         </li>
         <li>But publishers need the concept of a <em>(Web) Publication</em>:
@@ -696,7 +696,7 @@
     <section class="slide"><div>
       <h2>Formally</h2>
       <ul>
-        <li>A <strong><i>Web Publication</i></strong> is an aggregated set of interrelated Web resources, intended to be seen as a single Web resource, and which <i>can be uniquely addressed</i> on the Web</li>
+        <li>A <strong><i>Web Publication</i></strong> is an aggregated set of interrelated Web Resources, and which is intended to be considered as a single, and which <i>can be addressed</i> on the Web as a unit (is itself a Web Resource)</li>
       </ul>
     </div></section>
 
@@ -704,16 +704,16 @@
       <h2>Portable Web Publications</h2>
       <ul>
         <li>A Web Publication may consist of resources spread all over the place (HTML on one site, CSS somewhere else)
-          <ul><li>the owner of the Web Publication is only an external user and not necessarily the owner of all resources!</li></ul>
+          <ul><li>the owner of the Web Publication is only a “user” and not necessarily the owner of all resources!</li></ul>
         </li>
-        <li>But a publishers may want to, create, curate, move the <i>whole</i> publication around, as a single unit</li>
+        <li>But a publishers may want to, create, curate, move the <em>whole</em> publication, as a single unit</li>
         <li>The Web Publication should be, in some sense, “self consistent”, not relying on external entities.</li>
         <li>A “self-consistent” Web Publication is <em>Portable</em></li>
       </ul>
     </div></section>
 
     <section class="slide"><div>
-      <h2>Formally</h2>
+      <h2>More Formally</h2>
       <ul>
         <li>A <strong><i>Portable Web Publication</i></strong> is such that a user agent can render its essential content by relying  on the Web Resources <em>within</em> the same Web Publication</li>
       </ul>
@@ -733,7 +733,7 @@
       <h2>What kinds of documents are we <em>not</em> talking about?</h2>
       <ul>
         <li>A Web mail application</li>
-        <li>A social Web site like Facebook or Renren</li>
+        <li>A social Web site like Facebook, Renren, or Twitter</li>
         <li>A dynamic page that depends on, say, a Javascript library hosted somewhere on the cloud</li>
       </ul>
     </div></section>
@@ -785,7 +785,7 @@
           </ul>
         </li>
       </ul>
-      <p class="stamp small" >Work in progress</p>
+      <p class="stamp small">Work in progress</p>
     </div></section>
 
     <section class="slide"><div>
@@ -818,7 +818,7 @@
         <ul><li>it operates as if it was connected to the Web in a traditional way</li></ul>
         </li>
       </ul>
-      <p class="stamp small" >Work in progress</p>
+      <p class="stamp small">Work in progress</p>
     </div></section>
 
     <section class="slide"><div>
@@ -847,7 +847,20 @@
       <figure>
         <img class="plain" src="figures/Workers-package.svg" alt="Document consumed through a Service Worker, possibly unpacked" width="99%">
       </figure>
-       <p class="stamp" style="left:20%">Draft…</p>
+       <p class="stamp small" style="left:30%">Draft…</p>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2>But…</h2>
+      <ul>
+        <li>Some prior art exists (e.g., experimentation by the Readium Consortium with Service Workers)</li>
+        <li>An early mock-up of the current architecture is available
+          <ul>
+            <li>caveat for now: current Service Worker specification does not allow for direct, local file access</li>
+            <li>some extra tricks have to be found</li>
+          </ul>
+        </li>
+      </ul>
     </div></section>
 
     <section class="slide shout cover" id="pack"><div>
