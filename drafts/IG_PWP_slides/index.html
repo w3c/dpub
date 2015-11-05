@@ -847,14 +847,14 @@
       <figure>
         <img class="plain" src="figures/Workers-package.svg" alt="Document consumed through a Service Worker, possibly unpacked" width="99%">
       </figure>
-       <p class="stamp small" style="left:30%">Draft…</p>
+       <p class="stamp" style="left:20%">Draft…</p>
     </div></section>
 
     <section class="slide"><div>
       <h2>But…</h2>
       <ul>
         <li>Some prior art exists (e.g., experimentation by the Readium Consortium with Service Workers)</li>
-        <li>An early mock-up of the current architecture is available
+        <li>An early mock-up of the current architecture has also be done
           <ul>
             <li>caveat for now: current Service Worker specification does not allow for direct, local file access</li>
             <li>some extra tricks have to be found</li>
@@ -886,7 +886,7 @@
     <section class="slide"><div>
       <h2>Archival Format </h2>
       <ul>
-        <li>There is a growing interest at W3C for a Web friendly packaging format:
+        <li>There is an interest among some W3C members for a Web friendly packaging format:
           <ul>
             <li>should be streamable</li>
             <li>should rely, as much as possible, on existing Web technologies (e.g., HTTP)</li>
@@ -901,7 +901,7 @@
         </li>
         <li>But: current Web Packaging proposal is <em>not</em> OPF based
           <ul>
-             <li>this may lead to a different packaging in future for Digital Publishing</li>
+             <li>this <i>may</i> lead to a different packaging in future for Digital Publishing</li>
           </ul>
         </li>
       </ul>
@@ -932,11 +932,14 @@
     </div></section>
 
     <section class="slide"><div>
-      <h2>Window of opportunity is open now!</h2>
+      <h2>However…</h2>
       <ul>
-        <li>The Web community does <i>not</i> concentrate strongly on the Web Packaging format yet</li>
-        <li>But it <i>may</i> become a hot topic when some other technical challanges are solved</li>
-        <li>The publishing community should get on board to ensure that a format agreeable for all will be defined</li>
+        <li>There isn‘t yet a full agreement to develop such Web Packaging format
+          <ul><li>for some a caching architecture based on Service Workers is enough for the use cases</li></ul>
+        </li>
+        <li>If that happens, the Publishing Community may not move away from OPF
+          <ul><li>technical advantages of a new format must be weighted against existing deployment</li></ul>
+        </li>
       </ul>
     </div></section>
 
