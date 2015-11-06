@@ -945,7 +945,7 @@
 
     <section class="slide shout cover" id="ident"><div>
       <img src="covers/library.jpg">
-      <h3>Technical Challenge: Identification</h3>
+      <h3>Technical Challenge: Addressing, identification</h3>
       <style type="text/css">
         #ident h3 {
           color:snow;
@@ -955,41 +955,70 @@
     </div></section>
 
     <section class="slide"><div>
-      <h2>Identification: EPUB3 case</h2>
-      <figure>
-        <img class="plain" src="figures/EPUB3-identification.svg" alt="EPUB3 identification showing the primary and secondary resourses (the latter with epubcfi)" width="99%">
-      </figure>
-    </div></section>
-
-    <section class="slide"><div>
-      <h2>Two parts of identification</h2>
-      <ol>
-        <li><em>Primary resource:</em>
+      <h2>Is it "Addressing" or is it "Identification"?</h2>
+      <ul>
+        <li>These are not the same:
           <ul>
-            <li>This is a major discussion among publishers, libraries, archival organizations</li>
-            <li>i.e., what is the URI for…
-              <ul>
-                <li>Shakespeare’s Hamlet?</li>
-                <li>its digital edition published by Publisher XYZ?</li>
-                <li>the copy I own and annotate?</li>
-              </ul>
-            </li>
-            <li>It is <i>not</i> the role of W3C to define those URI-s
-              <ul><li>though an PWP vision would push for “webby” URI schemes, i.e., HTTP(S) URLs</li></ul>
-            </li>
-            <li>But the <i>same</i> URI should be used in all states</li>
+            <li>An HTTP(S) URL <em>addresses</em> a PWP on the Web</li>
+            <li>A URI <em>(uniquely) identifies</em> a PWP</li>
           </ul>
         </li>
-        <li><em>Secondary resource:</em> IDPF has adopted the CFI standard for EPUB3</li>
-      </ol>
+        <li>The two “roles” are different!</li>
+        <li>A PWP needs both; it can have, e.g.:
+          <ul>
+            <li><code>http://www.ex.org/ex.pwp</code> URL as an address</li>
+            <li><code>URN:ISBN:1-56592-521-1</code> URI as an identifier</li>
+          </ul>
+          although, in some cases, these two can coincide
+        </li>
+      </ul>
     </div></section>
 
     <section class="slide"><div>
-      <h2>Identification: the PWP case </h2>
-      <figure>
-        <img class="plain" src="figures/PWP-identification.svg" alt="EPUB3 identification showing the primary and secondary resourses (the latter with epubcfi)" width="99%">
-      </figure>
+      <h2>What does an <code style="font-size: 120%">HTTP GET</code> return?</h2>
+
+      <ul>
+        <li>Possibilities may be
+          <ul>
+            <li>some sort of a manifest describing the PWP as a whole (e.g., metadata, content, etc.); or</li>
+            <li>some content with a link to a manifest through a <code>LINK:</code> in the HTTP response header; or</li>
+            <li>some HTML content with a link to a manifest through a <code>&lt;link&gt;</code> element</li>
+          </ul>
+        </li>
+        <li>Details of what a manifest contains are to be worked out
+          <ul><li>that may become a crucial constituent of a PWP</li></ul>
+        </li>
+      </ul>
     </div></section>
+
+    <section class="slide"><div>
+      <h2>What is the URL of a resource <em>within</em> a PWP?</h2>
+
+      <ul>
+        <li>Several possibilities should be considered:
+          <ul>
+            <li>based on some sort of a fragment identifier: <code>http://www.ex.org/doc.pwp#pwp(…)</code></li>
+            <li>explicit separator between the URL for the publication and the rest: <code>http://www.ex.org/doc.pwp!chapter1.html</code></li>
+            <li>simulate “tree” view of the publication’s content: <code>http://www.ex.org/doc.pwp/chapter1.html</code></li>
+          </ul>
+        </li>
+        <li>The third case is the most “webby”
+          <ul><li>it may need some extra information (“virtual redirection”) in, e.g., a manifest if the resources are spread all over the place</li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2>What about addressing <em>within</em> a resource?</h2>
+      <ul>
+        <li>This is exactly what <i>fragment identifiers</i> do on the Web</li>
+        <li>PWP-s should <em>not</em> define a different mechanism, but should rely on what is widely deployed
+          <ul>
+            <li>note that this pretty much excludes <code>http://www.ex.org/doc.pwp#pwp(…)</code> as an answer to the previous question</li>
+          </ul>
+        </li>
+      </ul>
+    </div></section>
+
 
     <section class="slide shout cover" id="presentation"><div>
       <img src="covers/choice.jpg">
