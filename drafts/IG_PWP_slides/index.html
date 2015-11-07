@@ -954,22 +954,27 @@
       </style>
     </div></section>
 
+    <section class="slide shout" ><div>
+      <h3>Lots of questions, working on the answers…</h3>
+      </style>
+    </div></section>
+
     <section class="slide"><div>
       <h2>Is it "Addressing" or is it "Identification"?</h2>
       <ul>
-        <li>These are not the same:
+        <li>These a two “roles” are different</li>
+        <li>The usual situation is that:
           <ul>
-            <li>An HTTP(S) URL <em>addresses</em> a PWP on the Web</li>
-            <li>A URI <em>(uniquely) identifies</em> a PWP</li>
+            <li>an HTTP(S) URL is used to <i>address</i> a resource on the Web</li>
+            <li>some form of a URI is used to <i>(uniquely) identify</i> a resource</li>
           </ul>
         </li>
-        <li>The two “roles” are different!</li>
-        <li>A PWP needs both; it can have, e.g.:
+        <li>In many cases the two roles coincide, but not always</li>
+        <li>E.g., for a Book Publication:
           <ul>
-            <li><code>http://www.ex.org/ex.pwp</code> URL as an address</li>
-            <li><code>URN:ISBN:1-56592-521-1</code> URI as an identifier</li>
+            <li><code>URN:ISBN:1-56592-521-1</code> identifies the publication</li>
+            <li><code>http://www.ex.org/ex.pwp</code> addresses my particular copy</li>
           </ul>
-          although, in some cases, these two can coincide
         </li>
       </ul>
     </div></section>
@@ -981,18 +986,18 @@
         <li>Possibilities may be
           <ul>
             <li>some sort of a manifest describing the PWP as a whole (e.g., metadata, content, etc.); or</li>
-            <li>some content with a link to a manifest through a <code>LINK:</code> in the HTTP response header; or</li>
+            <li>some content with a link to a manifest through a <code>LINK:</code> HTTP response header entry; or</li>
             <li>some HTML content with a link to a manifest through a <code>&lt;link&gt;</code> element</li>
           </ul>
         </li>
-        <li>Details of what a manifest contains are to be worked out
+        <li>Details of what a manifest contains should be worked out
           <ul><li>that may become a crucial constituent of a PWP</li></ul>
         </li>
       </ul>
     </div></section>
 
     <section class="slide"><div>
-      <h2>What is the URL of a resource <em>within</em> a PWP?</h2>
+      <h2>What is the URL of a resource <i>within</i> a PWP?</h2>
 
       <ul>
         <li>Several possibilities should be considered:
@@ -1003,12 +1008,14 @@
           </ul>
         </li>
         <li>The third case is the most “webby”
-          <ul><li>it may need some extra information (“virtual redirection”) in, e.g., a manifest if the resources are spread all over the place</li>
+          <ul><li>it may need some extra information (“virtual redirection”) in, e.g., a manifest if the resources are spread all over the place</li></ul>
+        </li>
+        <li>Decomposing such URLs would happen in the dedicated Service Worker</li> 
       </ul>
     </div></section>
 
     <section class="slide"><div>
-      <h2>What about addressing <em>within</em> a resource?</h2>
+      <h2>What about addressing <i>within</i> a resource?</h2>
       <ul>
         <li>This is exactly what <i>fragment identifiers</i> do on the Web</li>
         <li>PWP-s should <em>not</em> define a different mechanism, but should rely on what is widely deployed
@@ -1016,6 +1023,7 @@
             <li>note that this pretty much excludes <code>http://www.ex.org/doc.pwp#pwp(…)</code> as an answer to the previous question</li>
           </ul>
         </li>
+        <li>Although… new types of fragment identifers may be proposed by the publishing community to the Web community at large</li>
       </ul>
     </div></section>
 
@@ -1121,13 +1129,7 @@
           <dd><a target="_blank" href="https://github.com/w3c/dpub-pwp/issues"><code>https://github.com/w3c/dpub-pwp/issues</code></a></dd>
         <dt>This presentation:</dt>
           <dd><a target="_blank" href="http://w3c.github.io/dpub/????????/index.html"><code>http://w3c.github.io/dpub/????????/index.html</code></a> (<a href="http://w3c.github.io/dpub/????????/slides.pdf">PDF</a> is also available for download)</dd>
-      </dl>
-    </div></section>
-
-    <section class="slide"><div>
-      <h2>Direct Contact</h2>
-      <dl class="plain">
-        <dt>Ivan Herman, W3C</dt>
+        <dt>Contact me:</dt>
           <dd>ivan@w3.org</dd>
       </dl>
     </div></section>
