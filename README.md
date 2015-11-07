@@ -5,6 +5,7 @@ This repository stores the draft for public presentations and blogs prepared as 
 The materials on this (or adjacent) repo are:
 
 ## 2015
+* [Presentation of Ivan Herman](./markup-forum-2015-11/index.html) at the [Markup Forum 2015](http://www.markupforum.de/das-programm2015.html), in Stuttgart, Germany, in November 2015.
 * [Presentation of Ivan Herman](./beijing-2015/index.html) at meetings during his visit in Beijing, China, in November 2015.
 * [Presentation of Felix Sasaki](http://www.w3c.at/Events/2015/buchmesse-frankfurt-w3c-2015-10/) at the Frankfurter Buchmesse in 2015. (This is a German translation of [Ivan’s presentation in Madrid](./dia-del-w3c-2015-10/index.html))
 * [Presentation of Ivan Herman](./dia-del-w3c-2015-10/index.html) at the meeting at the [“Día del W3C en España 2015: el futuro de la edición digital”](http://www.w3c.es/Eventos/2015/DiaW3C/), October 2015, Madrid. (Sources in ``dia-del-w3c-2015-10``)
