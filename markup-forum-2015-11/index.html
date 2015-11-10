@@ -62,20 +62,6 @@
     </div></section>
 
     <section class="slide"><div>
-      <h2>About W3C: “Leading the Web to its Full Potential”</h2>
-      <figure class="right">
-        <img src="figures/timbl.jpg" width="80%" alt="Photo of Tim Berners-Lee"/>
-        <figcaption class="credit">LeFevre communications, 2001</figcaption>
-      </figure>
-      <ul>
-        <li>Founded in 1994, and directed by Tim Berners-Lee, the Inventor of the Web</li>
-        <li>Member organization with cca. 390 members</li>
-        <li>Cca. 80 staff bound to “hosts” in the USA (MIT), China (Beihang University), Japan (Keio University), and France (ERCIM)</li>
-        <li>Focuses on Web ecosystem: users, developers, browsers, as well as specific industry requirements brought by industry segments</li>
-      </ul>
-    </div></section>
-
-    <section class="slide"><div>
       <h2>DPUB IG Origins</h2>
       <ul>
         <li>The publishing industry is, probably, the most important user of W3C’s Web technologies after (traditional) browsers:
@@ -183,21 +169,6 @@
         <li>Another evolving document: <a href="http://w3c.github.io/dpub-pagination/">“Priorities for CSS from the DPUB IG”</a></li>
         <li>Provides a list of the top CSS priorities, and their current availability </li>
         <li>Also influences the work of the CSS Working Group</li>
-      </ul>
-    </div></section>
-
-    <section class="slide"><div>
-      <h2>Layout and Styling: Houdini Project &amp; pagination</h2>
-      <div style="font-size:80%">
-        <blockquote>
-          The CSS-TAG <a href="https://wiki.css-houdini.org/">“Houdini Project”</a>to […] explain existing CSS functionalities better and make development of CSS polyfills […] easier by defining low level APIs of styling and layout on the web
-        </blockquote>
-        <p style="font-size:40%; text-align:right">Credit: Vivliostyle blog, Toru Kawakubo</p>
-      </div>
-      <ul>
-        <li>The results may be essential for a proper (and standard) access to page-related information.</li>
-        <li>Pagination isn’t only books: slides, cards, and other “boxes” use the same functionality.</li>
-        <li>The DPUB Community have been involved from the start.</li>
       </ul>
     </div></section>
 
@@ -310,13 +281,13 @@
         <img src="figures/pwp.svg" width="100%" alt="Portable Web Publication at a glance"/>
       </figure>
       <ul>
-        <li>Separation between publishing “online”, as Web sites, and offline/packaged is diminished to zero</li>
+        <li>Separation between publishing “online”, as Web sites, and offline and/or packaged is diminished to zero</li>
         <li>This means:
           <ul>
-            <li>content authored for primarily offline use can be used online by loading it into a browser</li>
-            <li>content authored for primarily online use can be easily saved as a portable document for offline use</li>
-            <li>contents are mostly authored regardless of where they are used </li>
-            <li>these should be doable smoothly, solely based on the user’s interaction</li>
+            <li>publication content on the Web can be loaded into a browser or a specialized reader, whatever the user prefers</li>
+            <li>a publication on a local disc can be pushed onto the Web and used without any change</li>
+            <li>content are authored regardless of where they are used</li>
+            <li>these are done without any user interaction (or only very minimal one)</li>
           </ul>
         </li>
       </ul>
@@ -525,14 +496,14 @@
       <p class="credit">Catherine Kolodziej, Flickr</p>
     </div></section>
 
-    <section class="slide shout cover" id="arch"><div>
-      <img src="covers/architecture.jpg">
-      <h3>Technical Challenge: Overall Architecture</h3>
+    <section class="slide shout cover" id="terminology"><div>
+      <img src="covers/terminology.jpg">
+      <h3>Technical Challenge: Fundamental Terminology</h3>
       <style type="text/css">
-        #arch h3 {
-          color: #E9FB23;
+        #terminology h3 {
+          color: LightCoral;
           font-size: 2.2em;
-          background-color: hsla(181, 9%, 78%, 0.5);
+          background-color: hsla(181, 9%, 78%, 0.3);
         }
       </style>
     </div></section>
@@ -540,7 +511,7 @@
     <section class="slide"><div>
       <h2>Web Publications</h2>
       <ul>
-        <li>On the current web one has the notion of a Web “page”:
+        <li>On the current Web one has the notion of a “page”:
           <ul>
             <li>conceptually, a single entity that displays some content</li>
             <li>has its own URL</li>
@@ -585,7 +556,7 @@
       <h2>What kinds of documents are we talking about?</h2>
       <ul>
         <li>A journal or magazine article, including the relevant CSS files and images</li>
-        <li>An educational article, including the JavaScript to do interactive exersizes</li>
+        <li>An educational article, including the JavaScript to do interactive exercises</li>
         <li>A novel or a poem on the Web, including the necessary fonts, CSS files, etc, to provide the required aesthetics</li>
       </ul>
     </div></section>
@@ -618,6 +589,18 @@
           <td>PWP spread over several files on a local disc</td>
         </tr>
       </table>
+    </div></section>
+
+    <section class="slide shout cover" id="arch"><div>
+      <img src="covers/architecture.jpg">
+      <h3>Technical Challenge: Overall Architecture</h3>
+      <style type="text/css">
+        #arch h3 {
+          color: #E9FB23;
+          font-size: 2.2em;
+          background-color: hsla(181, 9%, 78%, 0.5);
+        }
+      </style>
     </div></section>
 
     <section class="slide"><div>
