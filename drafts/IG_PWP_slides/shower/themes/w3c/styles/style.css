@@ -320,10 +320,6 @@ hyphenation, on the other hand, justification can look very ugly.
             justify-content: center;
 }
 
-.slide.cover img {
-    width: 100%;
-}
-
 .slide .stamp {
     font-size: 5em;
     letter-spacing: 0.1em;
@@ -438,6 +434,10 @@ figure.right img.noborder {
     box-shadow: 0px 0px 0px #888 !important; 
 }
 
+.slide.cover img {
+    width: 100%;
+}
+
 .slide.cover .credit {
     margin-top: 3em;
     margin-bottom: 0px;
@@ -450,12 +450,25 @@ figure.right img.noborder {
 }
 
 .slide.cover h3 {
+    position: relative;
     background: hsla(181, 9%, 78%, 0.5);
     box-shadow: 0 0 0 1px hsla(0,0%,100%,.3) inset,
                 0 .5em 1em rgba(0, 0, 0, 0.6);
     text-shadow: 0 1px 1px hsla(0,0%,100%,.3);
-    border-radius: 10px;        
+    overflow: hidden;
+}
 
+@media screen {
+    h3::before {
+        content: "";
+        z-index: -1;
+
+        -webkit-filter: blur(10px);
+        filter: blur(10px);
+        margin: -10px;
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+    }                
 }
 
 figcaption.credit {
