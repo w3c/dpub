@@ -4,6 +4,9 @@ This repository stores the draft for public presentations and blogs prepared as 
 
 The materials on this (or adjacent) repo are:
 
+## 2016
+* [Presentation of Ivan Herman](./ministere-2016/index.html) at the Ministry of Education in Paris.
+
 ## 2015
 * [Presentation of Ivan Herman](./markup-forum-2015-11/index.html) at the [Markup Forum 2015](http://www.markupforum.de/das-programm2015.html), in Stuttgart, Germany, in November 2015.
 * [Presentation of Ivan Herman](./beijing-2015/index.html) at meetings during his visit in Beijing, China, in November 2015.
