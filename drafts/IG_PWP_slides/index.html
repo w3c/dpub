@@ -105,7 +105,7 @@
       </figure>
       <ul>
         <li>Founded in 1994, and directed by Tim Berners-Lee, the Inventor of the Web</li>
-        <li>Member organization with cca. 390 members</li>
+        <li>Member organization with cca. 410 members</li>
         <li>Cca. 80 staff bound to “hosts” in the USA (MIT), China (Beihang University), Japan (Keio University), and France (ERCIM)</li>
         <li>Focuses on Web ecosystem: users, developers, browsers, as well as specific industry requirements brought by industry segments</li>
       </ul>
@@ -721,6 +721,18 @@
     </div></section>
 
     <section class="slide"><div>
+      <h2>What is a Portable Web Publication? (simplified)</h2>
+      <ul>
+        <li>A <em>collection</em> of Web resources considered as one unit
+          <ul><li>this means there is a Web address for the <em>collection</em> (as opposed to a single constituent)</li></ul>
+        </li>
+       <li>The user agent can render its “essential content” by relying  on the Web Resources <em>within</em> the same Web Publication
+          <ul><li>this ensures that it can also be considered offline without the danger of dangling links</li></ul>
+       </li>
+       <li>The <em>same</em> PWP can be offline, online, archived or not archived…</li>
+    </div></section>
+
+    <section class="slide"><div>
       <h2>What kinds of documents are we talking about?</h2>
       <ul>
         <li>A journal or magazine article, including the relevant CSS files and images</li>
@@ -759,19 +771,6 @@
       </table>
     </div></section>
 
-    <section class="slide"><div>
-      <h2>Advances in modern browsers: Web and Service Workers</h2>
-      <ul>
-        <li>Web Worker: a truly parallel thread within the browser</li>
-        <li>A Service Worker is a special type of Web Worker, with additional features:
-          <ul>
-            <li>it is a <i>programmable network proxy</i>: the main thread’s network calls are caught and the request/answer can be modified on-the-fly behind the scenes</li>
-            <li>it has an interface to handle a local cache for networked data</li>
-            <li>it will stay alive even if the user moves away from the main page, and can be accessed later if he/she returns to it</li>
-          </ul>
-        </li>
-      </ul>
-    </div></section>
 
     <section class="slide shout cover" id="arch"><div>
       <img src="covers/architecture.jpg">
@@ -966,7 +965,6 @@
 
     <section class="slide shout" ><div>
       <h3>Lots of questions, working on the answers…</h3>
-      </style>
     </div></section>
 
     <section class="slide"><div>
