@@ -2,14 +2,13 @@
 <html prefix="talk: http://w3c.github.io/dpub/idpf-digital-book-2015/index.html ore: http://www.openarchives.org/ore/terms/" lang="fr">
   <head about="talk:">
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
-    <title property="dc:title">Documents numériques &amp; W3C&#x202F;: construire la convergence</title>
+    <title property="dc:title">Documents numériques &amp; le Web&#x202F;: construire la convergence</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="ore:describes" resource="talk:#talk">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=792, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="shower/themes/w3c/styles/style.css">
-    <!-- These styles should be adapted to the details on where and what ribbon should be used, and how large the copyright is -->
     <style type="text/css">
       .slide:after {
         padding: 60px 0 0 !important;
@@ -26,7 +25,7 @@
 
     <header class="caption">
       <h1 property="dc:title" rel="dc:subject" resource="http://id.loc.gov/authorities/subjects/sh85042368#concept">
-        Documents numériques &amp; W3C&#x202F;: construire la convergence</h1>
+        Documents numériques &amp; le Web&#x202F;: construire la convergence</h1>
       <h3>12 janvier 2015</h3>
       <h2> <span rel="bibo:authorList" inlist=""> <span resource="http://www.ivan-herman.net/foaf#me" typeof="foaf:Person"> <span property="foaf:name">Ivan Herman</span>, <span property="rdfs:seeAlso" resource="http://www.ivan-herman.net/foaf">W3C</span></span> </span> </h2>
       <p class="c1"><a href="http://creativecommons.org/licenses/by-nd/3.0/"><img class="plain" alt="Creative Commons License in French" src="figures/80x15.png"></a>&#x202F;Cette œuvre est mise à disposition selon les termes de la Licence <a rel="cc:license"
@@ -35,9 +34,8 @@
       </p>
     </header>
 
-
     <section class="slide titlepage"><div>
-      <h2>Documents numériques &amp; W3C&#x202F;: construire la convergence</h2>
+      <h2>Documents numériques &amp; le Web&#x202F;: construire la convergence</h2>
       <h3>Ivan Herman, W3C </h3>
       <h4></h4>
       <h4>2016-01-12</h4>
@@ -46,12 +44,9 @@
         Copyright <sup>©</sup>2016&#x202F;W3C<sup>®</sup> (MIT, ERCIM, Keio, Beihang)</p>
     </div></section>
 
-
     <section class="slide"><div>
       <h2>La présentation est disponible en ligne</h2>
-      <p>Voire : <br>
-        <span style="font-size:90%"><a href="http://w3c.github.io/dpub/ministere-2016/index.html"><code>https://w3c.github.io/dpub/ministere-2016/index.html</code></a></span></p>
-      <p>(Présentation en HTML)</p>
+      <p>La présentation est en HTML, avec des liens actifs&#x202F;: <code style="font-size:80%">http://w3c.github.io/dpub/ministere-2016/</code></p>
     </div></section>
 
     <section class="slide"><div>
@@ -447,7 +442,7 @@
       <h3>Défi technologique : Terminologie de base</h3>
       <style type="text/css">
         #terminology h3 {
-          color: hsla(240, 69%, 50%, 1);
+          color: yellow;
           font-size: 2.2em;
         }
       </style>
@@ -697,27 +692,325 @@
           <li>Mais c‘est une perspective enthousiasmante&#x202F;!</li>
         </ul>
         <div style="text-align:center; height:45%; position: relative; top: -45px">
-          <img src="figures/contents.jpg" height="100%"> </div>
+          <img src="figures/contents.jpg" height="100%">
+        </div>
       </div>
     </section>
+
+    <section class="slide shout cover" id="edupub"><div>
+      <img src="covers/sorbonne.jpg">
+      <h3>EDUPUB</h3>
+      <style type="text/css">
+        #edupub h3 {
+          color: yellow;
+          margin-top:  1.5em;
+        }
+      </style>
+    </div></section>
+
+    <section class="slide shout cover" id="edupub_what"><div>
+      <img src="covers/sorbonne.jpg">
+      <h3>EDUPUB<br><br> Un profil de EPUB centré sur l'Éducation</h3>
+      <style type="text/css">
+        #edupub_what h3 {
+          color: yellow;
+          margin-top: 1.5em;
+        }
+      </style>
+    </div></section>
+
+    <section class="slide shout"><div>
+      <h3>Pourquoi&#x202F;?</h3>      
+    </div></section>
+
+    <section class="slide shout"><div>
+      <h3>Les documents pour l'éducation sont parmi les plus complexes…</h3>      
+    </div></section>
+
+    <section class="slide"><div>
+      <h2>Qu’est-ce que EDUPUB&#x202F;?</h2>
+      <ul>
+        <li>Un <a href="http://www.idpf.org/epub/profiles/edu/spec/">profil de EPUB</a> centré sur l'Education
+          <ul>
+            <li>développé en 2014-15</li>
+            <li>basé, à l‘origine, sur des soumissions de O’Reilly et Pearson</li>
+            <li>aujourd’hui en «&#x202F;<span lang="en">public draft</span>&#x202F;»</li>
+            <li>implémentations sont en cours</li>
+          </ul>
+        </li>
+        <li>Un modèle complet pour l’échange et le déploiement de contenus éducationnels 
+          <ul>
+            <li>…basé sur les technologies Web du W3C</li>
+            <li>…exprimé à travers d’une famille intégrée de spécifications, y compris EPUB&nbsp;3 (de IDPF) et LTI, QTI (de IMS Global), LRMI, etc.</li>
+            <li>…a aussi généré des fonctionnalités nouvelles pour EPUB&nbsp;3 </li>
+        </li>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2>L’alliance EDUPUB</h2>
+      <ul>
+        <li>Formée par IDPF, IMS Global, BISG, W3C, et DAISY</li>
+        <li>Une communauté globale, avec un focus sur la coopération des organisations</li>
+        <li>Une <i>alliance</i>, et pas une nouvelle organisation&#x202F;!</li>
+
+        <div style="text-align:center; height:45%; position: relative; top: 35px">
+          <img src="figures/edupub-logos.jpg" height="229" width="600" height="100%">
+        </div>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2><span style="font-size:smaller">Les fonctionnalités essentielles d’EDUPUB</span><br/>Qu’est-ce EDUPUB apporte à EPUB&#x202F;?</h2>
+      <ol>
+        <li>Métadonnées</li>
+        <li>Structure du contenu</li>
+        <li>Composants pour scripts</li>
+        <li>Annotations ouvertes</li>
+        <li>Intégration avec des systèmes éducationnels (LTI, Caliper, QTI)</li>
+      </ol>      
+    </div></section>
+
+    <section class="slide"><div>
+      <h2><span style="font-size:smaller">Les fonctionnalités essentielles  d’EDUPUB</span><br/>1. Métadonnées</h2>
+      <ul>
+        <li>Métadonnées d’éducation
+          <ul>
+            <li>basées sur les termes éducationnelles de schema.org</li>
+            <li>par exemple&#x202F;:
+              <ul>
+                <li><code>audienceType</code>: corporate, higher-ed, professional, schools</li>
+                <li><code>learningResourceType</code>: activity, assessment, discussion…</li>
+                <li><code>typicalAgeRange</code>: 5-8, 8-10, 10-12…</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <pre style="font-size:smaller">&lt;dc:type&gt;edupub&lt;/dc:type&gt;
+&lt;meta property="schema:learningResourceType"&gt;activity&lt;/meta&gt;
+&lt;meta property="schema:timeRequired"&gt;P90M&lt;/meta&gt;</pre>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2><span style="font-size:smaller">Les fonctionnalités essentielles  d’EDUPUB</span><br/>1. Métadonnées</h2>
+      <ul>
+        <li>Métadonnées pour l‘accessibilité
+          <ul>
+            <li>basées sur les termes de schema.org pour l‘accessibilité</li>
+            <li>par exemple&#x202F;:
+              <ul>
+                <li><code>accessibilityFeature</code>: <code>alternativeText</code>, <code>printPageNumbers</code></li>
+                <li><code>accessibilityControl</code>: <code>fullKeyboardControl</code>, <code>fullVoiceControl…</code></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <pre style="font-size:smaller">&lt;dc:type&gt;edupub&lt;/dc:type&gt;
+&lt;meta property="schema:typicalAgeRange"&gt;18+&lt;/meta&gt;
+&lt;meta property="schema:accessibilityFeature"&gt;alternativeText&lt;/meta&gt;
+&lt;meta property="schema:accessibilityFeature"&gt;printPageNumbers&lt;/meta&gt;
+&lt;meta property="schema:accessibilityFeature"&gt;readingOrder&lt;/meta&gt;
+&lt;meta property="schema:accessibilityFeature"&gt;structuralNavigation&lt;/meta&gt;
+&lt;meta property="schema:accessibilityFeature"&gt;tableOfContents&lt;/meta&gt;</pre> 
+    </div></section>
+
+    <section class="slide"><div>
+      <h2><span style="font-size:smaller">Les fonctionnalités essentielles  d’EDUPUB</span><br/>1. Métadonnées</h2>
+      <ul>
+        <li>Possibilité d’identifier que le document est&#x202F;:
+          <ul>
+            <li>une version destinée à l‘éducateur (avec plus de détails et d‘informations)</li>
+            <li><i>guide</i> pour l‘éducateur (contient des instructions pour l’enseignement du cours)</li>
+            <li>version pour les étudiants (version par défaut, naturellement)</li>
+          </ul>
+        </li>
+      </ul>
+      <pre style="font-size:smaller">&lt;dc:type&gt;edupub&lt;/dc:type&gt;  
+&lt;dc:type&gt;teacher-edition&lt;/dc:type&gt;
+&lt;dc:source&gt;urn:isbn:9780000000001&lt;/dc:source&gt;</pre> 
+    </div></section>
+
+    <section class="slide"><div>
+      <h2><span style="font-size:smaller">Les fonctionnalités essentielles  d’EDUPUB</span><br/>2. Structure du contenu</h2>
+      <ul>
+        <li>Définit une structure et une sémantique de contenu HTML (c.à.d. un profile HTML spécifique)</li>
+        <li>Renforce l’utilisation d’une structure (sections, en-tête, etc.)</li>
+        <li>Encourage l‘utilisation des information structurelles (aujourd’hui exprimés par l‘utilisation de <code>epub:type</code>)
+          <ul>
+            <li><code>assessment</code>, <code>footnote</code>, <code>bibliography</code>, <code>qna</code></li>
+            <li>dans le futur il y aura un changement vers les attributs ARIA</li>
+          </ul>
+        </li>
+      </ul>
+      <pre style="font-size:smaller">&lt;section epub:type="appendix"&gt;
+    &lt;h1>Appendix A. Historical Timeline&lt;/h1&gt;
+     …
+&lt;/section&gt;</pre>     
+    </div></section>
+
+    <section class="slide"><div>
+      <h2><span style="font-size:smaller">Les fonctionnalités essentielles  d’EDUPUB</span><br/>2. Structure du contenu</h2>
+
+      <ul>
+        <li>Des recommandations sur l‘utilisation d‘images&#x202F;
+          <ul>
+            <li>sRGB pour les couleurs</li>
+            <li>utilisations de PNG ou JPG avec qualité de 80% pour des images</li>
+            <li>SVG pour des images vectorielles</li>
+          </ul>
+        </li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2><span style="font-size:smaller">Les fonctionnalités essentielles  d’EDUPUB</span><br/>2. Structure du contenu</h2>
+      <ul>
+        <li>Définition de «&#x202F;<span lang="en"><a href="http://www.idpf.org/epub/do/">EPUB Distributable Objects</a></span>&#x202F;»
+          <ul>
+            <li>un moyen de transport et de réutilisation d‘un contenu EPUB</li>
+            <li>par exemple&#x202F;: un chapitre, des exercices produits séparément par un système d’éducation,…</li></ul>
+          </ul>
+        </li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2><span style="font-size:smaller">Les fonctionnalités essentielles  d’EDUPUB</span><br/>3. Composants pour scripts</h2>
+      <ul>
+        <li>Définition de «&#x202F;<span lang="en"><a href="http://www.idpf.org/epub/sc/api/">EPUB Scriptable Components</a></span>&#x202F;»
+        <ul>
+          <li>un API et un format d‘archivage pour des composantes interactives en EPUB</li>
+          <li>intégration plus facile de composantes produites par d‘autres institutions ou compagnies
+            <ul><li>par exemple, des widgets interactifs</li></ul>
+          </li>
+          <li>facilite une sécurité accrue et de meilleurs performances</li>
+        </ul>
+      </li>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2><span style="font-size:smaller">Les fonctionnalités essentielles  d’EDUPUB</span><br/>4. Annotations ouvertes</h2>
+      <ul>
+        <li>Les annotations sont essentiels en éducation</li>
+        <li>Ils peuvent être&#x202F;:
+          <ul>
+            <li>étudient ⬄ étudient</li>
+            <li>étudient ⬄ éducateur</li>
+            <li>parent ⬄ professeur</li>
+            <li>etc.</li>
+          </ul>
+        </li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2><span style="font-size:smaller">Les fonctionnalités essentielles  d’EDUPUB</span><br/>4. Annotations ouvertes</h2>
+
+      <ul>
+        <li>L’élément central qui manque&#x202F;: un format standard pour l’échange d’annotations</li>
+        <li>EPUB reprend un format créé par un «&#x202F;Community Group&#x202F;» de W3C
+          <ul>
+            <li>une version de standard formel est en préparation dans un groupe de travail au W3C</li>
+          </ul>
+        </li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2><span style="font-size:smaller">Les fonctionnalités essentielles  d’EDUPUB</span><br/>5. Intégration avec des systèmes éducationnels</h2>
+      <ul>
+        <li>Intégration avec des spécifications de IMS Global&#x202F;:
+          <ul>
+            <li>«&#x202F;<a href="http://www.imsglobal.org/activity/learning-tools-interoperability">Learning Tools Interoperability (LTI)</a>&#x202F;»
+              <ul>
+                <li>connexion avec des applications éducationnelles hébergées sur le Web</li>
+              </ul>
+            </li>
+            <li>«&#x202F;<a href="http://www.imsglobal.org/question/index.html">Question and Test Interoperability (QTI)</a> framework&#x202F;»
+              <ul>
+                <li>échanges de d’objets spécifiques, comme des testes ou leurs résultats</li>
+              </ul>
+            </li>
+            <li>«&#x202F;<a href="http://www.imsglobal.org/activity/caliperram">Caliper Analytics Framework</a>&#x202F;»</li>
+          </ul>
+        </li>
+        <li>La première phase de l’intégration se concentre sur LTI&#x202F;; les étapes suivantes viendront plus tard</li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2><span style="font-size:smaller">…et, naturellement</span><br/>6. Utilisation d’autres fonctionnalités d‘EPUB</h2>
+      <ul>
+        <li>Outils de navigation d‘EPUB</li>
+        <li>Plusieurs formes de rendus d’un contenu EPUB
+          <ul>
+            <li>le même document peut contenir des versions en langues différentes, des version audio pour malentendants, etc.</li>
+          </ul>
+        </li>
+        <li>etc.</li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2>Le futur&#x202F;: 2015-16</h2>
+
+      <ul>
+        <li>L‘attention immédiate est sur les implémentations et la certification d‘une version 1&#x202F;:
+          <ul>
+            <li>contenu via epubcheck (la nouvelle version fonctionne avec EDUPUB)</li>
+            <li>les liseuses via EPUBTest.org</li>
+            <li>intégration avec des systèmes éducationnels via des serveurs teste de IMS</li>
+          </ul>
+        </li>
+        <li>Rassembler des demandes pour une deuxième version</li>
+        <li>Il y aura, sans doute, un changement de nom, comme par exemple &#x202F;: «&#x202F;EPUB for Éducation&#x202F;»</li>
+        <li>Projet de IDPF+DAISY pour la certification de contenu au niveau d‘accessibilité</li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2>Exemple&#x202F;: cours sur EDUPUB</h2>
+      <figure class="center">
+       <img src="figures/edupub_course.png" height="432" width="338">
+       <figcaption style="font-size:smaller"><code><a href="https://www.bisg.org/publications/getting-started-edupub">https://www.bisg.org/publications/getting-started-edupub</a></code></figcaption>
+     </figure>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2>Exemples de documents EDUPUB</h2>
+      <figure class="center">
+       <img src="figures/edupub_examples.png" height="400" >
+       <figcaption style="font-size:smaller"><code><a href="https://idpf.github.io/edupub/samples.html">https://idpf.github.io/edupub/samples.html</a></code></figcaption>
+     </figure>      
+    </div></section>
 
     <section class="slide">
       <div>
         <h2>Quelques références</h2>
         <dl>
-        <dt>DPUB IG Wiki :</dt>
+        <dt>DPUB IG Wiki&#x202F;:</dt>
           <dd><a target="_blank" href="https://www.w3.org/dpub/IG/wiki/Main_Page"><code>https://www.w3.org/dpub/IG/wiki/Main_Page</code></a></dd>
         <dt>Le dernier draft de PWP :</dt>
           <dd><a target="_blank" href="http://www.w3.org/TR/pwp/"><code>http://www.w3.org/TR/pwp/</code></a></dd>
         <dt>Listes des problèmes à considérer pour le PWP&#x202F;:</dt>
           <dd><a target="_blank" href="https://github.com/w3c/dpub-pwp/issues"><code>https://github.com/w3c/dpub-pwp/issues</code></a></dd>
-        <dt>Cette présentation est disponible en ligne&#x202F;:</dt>
-          <dd><a target="_blank" href="http://w3c.github.io/dpub/ministere-2016/index.html"><code>http://w3c.github.io/dpub/ministere/2016.html</code></a> (<a href="http://w3c.github.io/dpub/ministere-2016/slides.pdf">une
-              version PDF est aussi disponible</a>)</dd>
+        <dt>Site dédié à EDUPUB&#x202F;:</dt>
+          <dd><a target="_blank" href="http://idpf.org/edupub"><code>http://idpf.org/edupub</code></a></dd>
         </dl>
-        <p style="font-size:40% ; margin-top:2em">(Je tiens à remercier Flore Piacentino, SNE, et Laurent Le Meur, EDRLab, pour leur contribution à la traduction française de cette présentation.)</p>
       </div>
     </section>
+
+    <section class="slide"><div>
+      <h2>La présentation est disponible en ligne</h2>
+      <dl>
+        <dt>Version HTML&#x202F;:</dt>
+          <dd><a target="_blank" href="http://w3c.github.io/dpub/ministere-2016/index.html"  style="font-size:80%"><code>http://w3c.github.io/dpub/ministere-2016/index.html</code></a></dd>
+        <dt>Version PDF&#x202F;:</dt>
+          <dd><a target="_blank" href="http://w3c.github.io/dpub/ministere-2016/slides.pdf" style="font-size:80%"><code>http://w3c.github.io/dpub/ministere-2016/slides.pdf</code></a></dd>
+      </dl>
+
+      <p style="font-size:40% ; margin-top:2em">(Je tiens à remercier Flore Piacentino, SNE, et Laurent Le Meur, EDRLab, pour leur contribution à la traduction française de cette présentation.)</p>
+    </div></section>
 
     <section class="slide">
       <div>
@@ -732,7 +1025,7 @@
     
     <section class="slide shout">
       <div>
-        <h2> Je vous remercie pour votre attention&#x202F;! </h2>
+        <h3> Je vous remercie pour votre attention&#x202F;! </h3>
       </div>
     </section>
 
