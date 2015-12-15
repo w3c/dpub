@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=792, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="shower/themes/w3c/styles/style.css">
+    <script src="js/hyphenate.js" type="text/javascript"></script>
     <style type="text/css">
       .slide:after {
         padding: 60px 0 0 !important;
@@ -18,10 +19,14 @@
       .titlepage p.copyright {
         left: 10em;
       }
+      li, blockquote {
+        hyphens: auto;
+        text-align: justify;
+      }
      </style>
   </head>
 
-  <body class="list" about="talk:#talk" prefix="bibo: http://purl.org/ontology/bibo/ event: http://purl.org/NET/c4dm/event.owl#" typeof="cc:Work bibo:Slideshow">
+  <body class="list hyphenate" about="talk:#talk" prefix="bibo: http://purl.org/ontology/bibo/ event: http://purl.org/NET/c4dm/event.owl#" typeof="cc:Work bibo:Slideshow">
 
     <header class="caption">
       <h1 property="dc:title" rel="dc:subject" resource="http://id.loc.gov/authorities/subjects/sh85042368#concept">
@@ -141,9 +146,9 @@
         <img src="figures/latinreq.png" alt="Screen dump of the latinreq document" width="88%">
       </figure>
       <ul>
-        <li>Un document qui évolue&#x202F;: <a href="http://w3c.github.io/dpub-pagination/">«&#x202F;Requirements for Latin Text Layout and Pagination&#x202F;»</a></li>
+        <li>Un document qui évolue&#x202F;: <a href="http://w3c.github.io/dpub-pagination/" lang="en">«&#x202F;Requirements for Latin Text Layout and Pagination&#x202F;»</a></li>
         <li>Décrit des problèmes comme césure, pagination, etc.</li>
-        <li>A eu une influence importante sur le travail du groupe CSS, comme par exemple sur les documents <a href="http://www.w3.org/TR/css-inline-3/">«&#x202F;CSS Inline Layout Module Level 3&#x202F;»</a> ou <a href="http://www.w3.org/TR/css-gcpm-3/">«&#x202F;CSS Generated Content for Paged Media Module&#x202F;»</a></li>
+        <li>A eu une influence importante sur le travail du groupe CSS, comme par exemple sur les documents <a href="http://www.w3.org/TR/css-inline-3/" lang="en">«&#x202F;CSS Inline Layout Module Level 3&#x202F;»</a> ou <a href="http://www.w3.org/TR/css-gcpm-3/" lang="en">«&#x202F;CSS Generated Content for Paged Media Module&#x202F;»</a></li>
       </ul>
     </div></section>
 
@@ -153,7 +158,7 @@
         <img src="figures/css_priorities.png" class="noborder" alt="Screen dumps of the CSS Priorities' document" width="100%">
       </figure>
       <ul>
-        <li>Un autre document du groupe qui évolue aussi&nbsp: <a href="http://w3c.github.io/dpub-pagination/">«&#x202F;Priorities for CSS from the DPUB IG&#x202F;»</a></li>
+        <li>Un autre document du groupe qui évolue aussi&nbsp: <a href="http://w3c.github.io/dpub-pagination/" lang="en">«&#x202F;Priorities for CSS from the DPUB IG&#x202F;»</a></li>
         <li>A aussi une influence importante sur le travail de groupe CSS</li>
       </ul>
     </div></section>
@@ -182,7 +187,7 @@
           <ul>
             <li>définit des attributs spéciaux en HTML</li>
             <li>les valeurs de ces attributs reflètent les sémantiques voulus</li>
-            <li>les valeurs sont transférés aux «&#x202F;<span lang="fr">Accessibility API</span>&#x202F;» du système</li>
+            <li>les valeurs sont transférés aux «&#x202F;<span lang="en">Accessibility API</span>&#x202F;» du système</li>
           </ul>
         </li>
         <li><i>Une technologie de base pour la création de sites accessibles</i></li>
@@ -198,7 +203,7 @@
         <li><a href="http://www.w3.org/TR/dpub-aria-1.0/" lang="en">«&#x202F;Digital Publishing WAI-ARIA module&#x202F;»</a> est en développement
           <ul><li>les termes de publications feront donc partie d’ARIA</li></ul>
         </li>
-        <li>Un autre <a href='http://www.w3.org/TR/dpub-aam-1.0/'>document</a> spécifie l’application de ces termes sur le  «&#x202F;<span lang="fr">Accessibility API</span>&#x202F;»</li>
+        <li>Un autre <a href='http://www.w3.org/TR/dpub-aam-1.0/'>document</a> spécifie l’application de ces termes sur le  «&#x202F;<span lang="en">Accessibility API</span>&#x202F;»</li>
       </ul>
       <pre>&lt;section <mark>role="doc-appendix"</mark>&gt;
   &lt;h1>Appendix A. Historical Timeline&lt;/h1&gt;
@@ -319,10 +324,10 @@
       <h2>Exemple d‘édition scientifique </h2>
       <figure class="right"> 
         <img src="figures/f1000.png" alt="Page d'un article sur le site F1000" width="98%"> 
-          <figcaption class="credit">Image de l‘article <a target="_blank" href="http://bit.ly/1wFcfWC">“Sub-strains of Drosophila Canton-S…”</a> sur F1000</figcaption> 
+          <figcaption class="credit">Image de l‘article <a target="_blank" href="http://bit.ly/1wFcfWC" lang="en">“Sub-strains of Drosophila Canton-S…”</a> sur F1000</figcaption> 
         </figure>
       <ul>
-        <li>Mon article est publié en ligne mais des utilisateurs veulent le télécharger</li>
+        <li class="donthyphenate">Mon article est publié en ligne mais des utilisateurs veulent le télécharger</li>
         <li>Le format de ce document doit s‘adapter à mon environnement de lecture&#x202F;:
           <ul>
             <li>exemple&#x202F;: ne pas afficher deux colonnes, pas de mise en page fixe…</li>
@@ -340,7 +345,7 @@
       <h2> Exemple du matériel éducatif</h2>
       <figure class="right">
         <img src="figures/auditorium.jpg" alt="Amphitéatre avec des étudiants avec, pour la pluspart, de tablettes" width="90%"> 
-        <figcaption class="credit">Photo: <a target="_blank" href="http://j.mp/1t7Gpie">Merrill College of Journalism</a>, Flickr</figcaption> 
+        <figcaption class="credit">Photo: <a target="_blank" href="http://j.mp/1t7Gpie" lang="en">Merrill College of Journalism</a>, Flickr</figcaption> 
       </figure>
       <ul>
         <li>Qu‘est-ce qu‘une publication éducative&#x202F;?</li>
@@ -461,7 +466,7 @@
       <ul>
         <li>Une application de messagerie sur le Web</li>
         <li>Un site de réseau social, comme Facebook, Renren, ou Twitter</li>
-        <li>Une page dynamique qui dépend, par exemple, d’un ficher Javascript quelque-part sur le cloud</li>
+        <li class="donthyphenate">Une page dynamique qui dépend, par exemple, d’un ficher Javascript quelque-part sur le cloud</li>
       </ul>
     </div></section>
 
@@ -477,7 +482,7 @@
     </div></section>
 
     <section class="slide"><div>
-      <h2>Nouvelle approche pour les navigateurs modernes&#x202F;: «&#x202F;Web and Service Workers&#x202F;»</h2>
+      <h2>Nouvelle approche pour les navigateurs modernes&#x202F;: «&#x202F;<span lang="en">Web and Service Workers</span>&#x202F;»</h2>
       <ul>
         <li>Un navigateur peut contenir un «&#x202F;moteur&#x202F;» interne, <i>véritablement parallèle</i> 
         <li>Le moteur «&#x202F;attrape&#x202F;» les demandes d’accès vers le Web, et peut choisir
@@ -493,7 +498,7 @@
     </div></section>
 
     <section class="slide"><div>
-      <h2>Nouvelle approche pour les navigateurs modernes&#x202F;: «&#x202F;Web and Service Workers&#x202F;»</h2>
+      <h2>Nouvelle approche pour les navigateurs modernes&#x202F;: «&#x202F;<span lang="en">Web and Service Workers</span>&#x202F;»</h2>
       <ul>
         <li>Un navigateur peut contenir un «&#x202F;moteur&#x202F;» interne, <i>véritablement parallèle</i> 
         <li>Le moteur «&#x202F;attrape&#x202F;» les demandes d’accès vers le Web, et peut choisir
@@ -780,7 +785,7 @@
           <ul>
             <li>basées sur les termes éducationnelles de schema.org</li>
             <li>par exemple&#x202F;:
-              <ul>
+              <ul lang="en">
                 <li><code>audienceType</code>: corporate, higher-ed, professional, schools</li>
                 <li><code>learningResourceType</code>: activity, assessment, discussion,…</li>
                 <li><code>typicalAgeRange</code>: 5-8, 8-10, 10-12…</li>
@@ -801,7 +806,7 @@
           <ul>
             <li>basées sur les termes de schema.org pour l‘accessibilité</li>
             <li>par exemple&#x202F;:
-              <ul>
+              <ul lang="en">
                 <li><code>accessibilityFeature</code>: <code>alternativeText</code>, <code>printPageNumbers</code></li>
                 <li><code>accessibilityControl</code>: <code>fullKeyboardControl</code>, <code>fullVoiceControl,…</code></li>
               </ul>
@@ -927,12 +932,12 @@
       <ul>
         <li>Intégration avec des spécifications de IMS Global&#x202F;:
           <ul>
-            <li>«&#x202F;<a href="http://www.imsglobal.org/activity/learning-tools-interoperability">Learning Tools Interoperability (LTI)</a>&#x202F;»
+            <li>«&#x202F;<a href="http://www.imsglobal.org/activity/learning-tools-interoperability" lang="en">Learning Tools Interoperability (LTI)</a>&#x202F;»
               <ul>
                 <li>connexion avec des applications éducationnelles hébergées sur le Web</li>
               </ul>
             </li>
-            <li>«&#x202F;<a href="http://www.imsglobal.org/question/index.html">Question and Test Interoperability (QTI)</a> framework&#x202F;»
+            <li>«&#x202F;<a href="http://www.imsglobal.org/question/index.html" lang="en">Question and Test Interoperability (QTI)</a> framework&#x202F;»
               <ul>
                 <li>échanges de d’objets spécifiques, comme des testes ou leurs résultats</li>
               </ul>
