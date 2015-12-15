@@ -35,6 +35,7 @@ body {
     font-family: myfont;
     /* line-height: 2.8em; */
     line-height: 1.25;
+    font-variant-ligatures: common-ligatures no-discretionary-ligatures no-historical-ligatures;
 }
 
 ul ul li, ol ul li {
@@ -43,6 +44,11 @@ ul ul li, ol ul li {
 
 ul li, ol li    { 
     padding-bottom: 0.3em !important
+}
+
+li, blockquote {
+    hyphens: auto;
+    text-align: justify;
 }
 
 /* Header part (in toc mode) */
