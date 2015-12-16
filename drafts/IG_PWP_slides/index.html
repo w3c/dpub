@@ -794,6 +794,20 @@
           </ul>
         </li>
       </ul>
+    </div></section>
+
+    <section class="slide stamped"><div>
+      <h2>Advances in modern browsers: Web and Service Workers</h2>
+      <ul>
+        <li>Web Worker: a truly parallel thread within the browser</li>
+        <li>A Service Worker is a special type of Web Worker, with additional features:
+          <ul>
+            <li>it is a <i>programmable network proxy</i>: the renderer’s network calls are caught and the request/answer can be modified on-the-fly behind the scenes</li>
+            <li>it has an interface to handle a local cache for networked data</li>
+            <li>it will stay alive even if the user moves away from the main page, and can be accessed later if he/she returns to it</li>
+          </ul>
+        </li>
+      </ul>
       <p class="stamp small">Work in progress</p>
     </div></section>
 
@@ -813,7 +827,7 @@
       </ul>
     </div></section>
 
-    <section class="slide"><div>
+    <section class="slide stamped"><div>
       <h2>Advances in modern browsers: Web and Service Workers (Simplified)</h2>
       <ul>
         <li>A browser has a hidden, <i>truly parallel</i> engine attached to it</li>
@@ -851,7 +865,7 @@
       </figure>
     </div></section>
 
-    <section class="slide"><div>
+    <section class="slide stamped"><div>
       <h2>Envisioned Architecture: <br/>packed state</h2>
       <figure>
         <img class="plain" src="figures/Workers-package.svg" alt="Document consumed through a Service Worker, possibly unpacked" width="99%">
@@ -924,7 +938,7 @@
 
     <section class="slide"><div>
       <h2>Actually…</h2>
-      <ul>
+      <ul class="donthyphenate">
         <li>Moving to the Web would probably require to rethink the format of the administrative files
           <ul><li>E.g., change formats from XML to JSON</li></ul>
         </li>
