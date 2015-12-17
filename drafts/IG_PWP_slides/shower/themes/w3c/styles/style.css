@@ -450,6 +450,7 @@ figure.right {
     float:       right; 
     margin-left: 1em; 
     width:       40%;
+    max-width: min-content;
 }
 
 figure.right img {
@@ -462,6 +463,17 @@ figure.right img.noborder {
     border: 0px solid #CCC !important; 
     border-radius: 0px !important; 
     box-shadow: 0px 0px 0px #888 !important; 
+}
+
+figure > figcaption {
+    font-size: 30%;
+    padding-top:0;
+    margin-top:0;
+    padding-left:1em;
+}
+
+figcaption.credit::before, .credit::before {
+    content: "Credit: ";
 }
 
 .slide.cover .credit {
@@ -484,17 +496,6 @@ figure.right img.noborder {
 
 }
 
-figcaption.credit {
-    font-size: 25%;
-    padding-top:0;
-    margin-top:0;
-    padding-left:1em;
-    line-height: 0.3em
-}
-
-figcaption.credit::before, .credit::before {
-    content: "Credit: ";
-}
 
 @media print {
     figure.right img {
