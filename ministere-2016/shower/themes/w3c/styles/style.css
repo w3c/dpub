@@ -449,11 +449,12 @@ figure.center, figure.centre {
 figure.right {
     float:       right; 
     margin-left: 1em; 
-    width:       40%;
-    /* max-width: min-content; */
+    max-width: 300px;
 }
 
 figure.right img {
+    max-width: inherit;
+    width: 300px;    
     border: 1px solid #CCC; 
     border-radius: 10px; 
     box-shadow: 7px 7px 5px #888; 
@@ -472,7 +473,7 @@ figure > figcaption {
     padding-left:1em;
 }
 
-figcaption.credit::before, .credit::before {
+.credit::before {
     content: "Credit: ";
 }
 
