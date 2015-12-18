@@ -22,7 +22,7 @@
 }
 
 @font-face {
-    font-family: "myfont";
+    font-family: "myfont"; 
     src: url(fonts/PTSans.Italic.woff) format('woff');
     font-style: italic;
 }
@@ -35,6 +35,7 @@ body {
     font-family: myfont;
     /* line-height: 2.8em; */
     line-height: 1.25;
+    font-variant-ligatures: common-ligatures no-discretionary-ligatures no-historical-ligatures;
 }
 
 ul ul li, ol ul li {
@@ -43,6 +44,19 @@ ul ul li, ol ul li {
 
 ul li, ol li    { 
     padding-bottom: 0.3em !important
+}
+
+li, blockquote, td {
+    /* This does not work in Chrome, 'cause it does not do hyphenation. Without
+    hyphenation, on the other hand, justification can look very ugly.
+    Ie, this should be switched on only if the hyphenate.js is also used 
+    as a polyfill */
+    -webkit-hyphens: auto; 
+       -moz-hyphens: auto; 
+        -ms-hyphens: auto;
+            hyphens: auto; 
+
+    text-align: justify;
 }
 
 /* Header part (in toc mode) */
@@ -84,17 +98,6 @@ header p, header h1, header h2, header h3   {
     font-family: myfont;
     font-size: 30px;
     color: #333333; 
-
-/* This does not work in Chrome, 'cause it does not do hyphenation. Without
-hyphenation, on the other hand, justification can look very ugly.
-
-    -webkit-hyphens: auto; 
-       -moz-hyphens: auto; 
-        -ms-hyphens: auto;
-            hyphens: auto; 
-
-    text-align: justify;
-*/
 }
 
 .slide:after {
@@ -112,6 +115,11 @@ hyphenation, on the other hand, justification can look very ugly.
     font-size: 20px;
 }
 
+.slide h1, .slide h2, .slide h3, .slide h4, .slide li, .slide p, 
+.slide td, .slide th, .slide blockquote, .slide dt, .slide dd,
+.slide figcaption {
+    cursor: default;
+}
 
 .slide h1, .slide h2, .slide h3, .slide h4 { 
     margin: 0 0 0px;
@@ -222,7 +230,12 @@ hyphenation, on the other hand, justification can look very ugly.
 
 .slide em {
     /* text-decoration: underline; */
-    color: red;
+    
+    /* A Lea Verou trick for a nicer underline...*/
+    background: linear-gradient(gray, gray) no-repeat;
+    background-size: 100% 1px;
+    background-position: 0 1.15em;
+
 }
 
 .slide ol li:before, .slide ul li:before {
@@ -324,6 +337,7 @@ hyphenation, on the other hand, justification can look very ugly.
     width: 100%;
 }
 
+/* Stamp */
 .slide .stamp {
     font-size: 5em;
     letter-spacing: 0.1em;
@@ -336,13 +350,17 @@ hyphenation, on the other hand, justification can look very ugly.
          -o-transform:rotate(-20deg);
             transform:rotate(-20deg);
     color: hsla(0, 100%, 55%, 1.0);
-    border-width: 0.08em;
+    background: hsla(0,0%,100%,0.6);
+    border-width: 0.1em;
     border-style: solid;
     border-radius: 0.2em;
-    padding-left: 0.05em;
-    padding-right: 0.05em;
+    padding-left: 0.07em;
+    padding-right: 0.07em;
     box-shadow: 0.05em 0.05em 0.05em #888; 
-    text-shadow: 0.05em 0.05em 0.05em #888;
+    /* box-shadow: 0.05em 0.05em 0.05em #888, 0 0 0 50vmax hsla(0,0%,0%,0.2); */
+    text-shadow: 0.05em 0.05em 0.05em gray;
+    -webkit-filter: none;
+            filter: none;
 }
 
 .slide .stamp.small {
@@ -351,7 +369,15 @@ hyphenation, on the other hand, justification can look very ugly.
     position:absolute;
     top: 3.3em;
     left: 15%;
+    filter: none;
 }
+
+.slide.stamped h2, .slide.stamped ul, .slide.stamped ol, .slide.stamped::after,
+.slide.stamped figure, .slide.stamped p:not(.stamp) {
+    -webkit-filter: blur(2px) contrast(.8) brightness(.8); 
+            filter: blur(2px) contrast(.8) brightness(.8); 
+}
+
 
 /* The first, "title" page */
 .titlepage h1, .titlepage h2, .titlepage h3, .titlepage h4 {
@@ -424,6 +450,7 @@ figure.right {
     float:       right; 
     margin-left: 1em; 
     width:       40%;
+    max-width: min-content;
 }
 
 figure.right img {
@@ -436,6 +463,17 @@ figure.right img.noborder {
     border: 0px solid #CCC !important; 
     border-radius: 0px !important; 
     box-shadow: 0px 0px 0px #888 !important; 
+}
+
+figure > figcaption {
+    font-size: 30%;
+    padding-top:0;
+    margin-top:0;
+    padding-left:1em;
+}
+
+figcaption.credit::before, .credit::before {
+    content: "Credit: ";
 }
 
 .slide.cover .credit {
@@ -458,17 +496,6 @@ figure.right img.noborder {
 
 }
 
-figcaption.credit {
-    font-size: 25%;
-    padding-top:0;
-    margin-top:0;
-    padding-left:1em;
-    line-height: 0.3em
-}
-
-figcaption.credit::before, .credit::before {
-    content: "Credit: ";
-}
 
 @media print {
     figure.right img {
