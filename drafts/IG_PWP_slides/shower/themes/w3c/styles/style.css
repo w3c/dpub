@@ -449,12 +449,12 @@ figure.center, figure.centre {
 figure.right {
     float:       right; 
     margin-left: 1em; 
-    max-width: 300px;
+    max-width: 250px;
 }
 
 figure.right img {
     max-width: inherit;
-    width: 300px;    
+    width: 250px;    
     border: 1px solid #CCC; 
     border-radius: 10px; 
     box-shadow: 7px 7px 5px #888; 
