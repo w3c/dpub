@@ -450,7 +450,7 @@ figure.right {
     float:       right; 
     margin-left: 1em; 
     width:       40%;
-    max-width: min-content;
+    /* max-width: min-content; */
 }
 
 figure.right img {
