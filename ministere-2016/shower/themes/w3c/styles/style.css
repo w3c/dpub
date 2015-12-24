@@ -209,6 +209,11 @@ header p, header h1, header h2, header h3   {
     border-radius: 5px;
 }
 
+.slide a:visited {
+    background: transparent;
+    border: none;
+}
+
 .slide kbd,.slide code,.slide samp {
     background: transparent;
     color: inherit;
