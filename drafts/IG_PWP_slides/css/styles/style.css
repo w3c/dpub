@@ -4,28 +4,35 @@
 /* Playing with fonts, just for the sake of it...*/
 @font-face {
     font-family: "myfont";
-    src: url(http://www.w3.org/People/Ivan/Fonts/PTSans.woff) format('woff');
+    src: url(../fonts/PTSans.woff) format('woff');
     font-weight: normal;
 }
 
 @font-face {
     font-family: "myfont";
-    src: url(http://www.w3.org/People/Ivan/Fonts/PTSans.Bold.woff) format('woff');
+    src: url(../fonts/PTSans.Bold.woff) format('woff');
     font-weight: bold;
 }
 
 @font-face {
     font-family: "myfont";
-    src: url(http://www.w3.org/People/Ivan/Fonts/PTSans.Bold.Italic.woff) format('woff');
+    src: url(../fonts/PTSans.Bold.Italic.woff) format('woff');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: "myfont"; 
-    src: url(http://www.w3.org/People/Ivan/Fonts/PTSans.Italic.woff) format('woff');
+    src: url(../fonts/PTSans.Italic.woff) format('woff');
     font-style: italic;
 }
+
+@font-face {
+    font-family: "blackboard"; 
+    src: url(../fonts/ArchitectsDaughter.woff) format('woff');
+    font-style: normal;
+}
+
 
 /* --------------------- */
 /* Generic setups        */
