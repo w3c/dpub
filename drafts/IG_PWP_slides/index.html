@@ -932,85 +932,6 @@
       </ul>
     </div></section>
 
-    <section class="slide shout cover" id="pack"><div>
-      <img src="covers/package.jpg">
-      <h3 class="donthyphenate">Technical Challenge: Archival Format </h3>
-      <style type="text/css">
-      #pack h3 {
-        color: hsla(240, 69%, 50%, 1);
-        font-size: 2.3em;
-        margin-top: 1em;
-      }
-      </style>
-    </div></section>
-
-    <section class="slide"><div>
-      <h2 class="donthyphenate">Rough structure of an EPUB3 file</h2>
-      <figure>
-        <img class="plain" src="figures/EPUB3-Package-Structure.svg" alt="EPUB Packaging structure diagram" width="99%">
-      </figure>
-    </div></section>
-
-    <section class="slide"><div>
-      <h2 class="donthyphenate">Archival Format </h2>
-      <ul>
-        <li>There is an interest among some W3C members for a Web friendly packaging format:
-          <ul>
-            <li>should be streamable</li>
-            <li>should rely, as much as possible, on existing Web technologies (e.g., HTTP)</li>
-          </ul>
-        </li>
-        <li>Use cases include:
-          <ul>
-            <li>retrieve an HTML file with related CSS files, images</li>
-            <li>access Web Applications (“Widgets”) with all libraries involved</li>
-            <li><i>Portable Web Publications are a clear use case</i></li>
-          </ul>
-        </li>
-        <li>But: current Web Packaging proposal is <i>not</i> OPF based
-          <ul>
-             <li>this <i>may</i> lead to a different packaging in future for Digital Publishing</li>
-          </ul>
-        </li>
-      </ul>
-    </div></section>
-
-    <section class="slide"><div>
-      <h2 class="donthyphenate">PWP packaging structure</h2>
-      <figure>
-        <img class="plain" src="figures/PWP-Package-Structure.svg" alt="PWP Packaging structure diagram" width="99%">
-      </figure>
-    </div></section>
-
-    <section class="slide"><div>
-      <h2 class="donthyphenate">Actually…</h2>
-      <ul class="donthyphenate">
-        <li>Moving to the Web would probably require to rethink the format of the administrative files
-          <ul><li>E.g., change formats from XML to JSON</li></ul>
-        </li>
-        <!-- <li>Note that this is already considered for EPUB3.1</li> -->
-      </ul>
-    </div></section>
-
-    <section class="slide"><div>
-      <h2 class="donthyphenate">PWP packaging structure</h2>
-      <figure>
-        <img class="plain" src="figures/PWP-Package-Structure-2.svg" alt="PWP Packaging structure diagram with admin file in JSON" width="99%">
-      </figure>
-    </div></section>
-
-    <section class="slide"><div>
-      <h2 class="donthyphenate">However…</h2>
-      <ul>
-        <li>There isn‘t yet a full agreement to develop such Web Packaging format
-          <ul><li>a caching architecture based on Service Workers may be enough for the use cases</li></ul>
-        </li>
-        <li>If no packaging format is defined, the Publishing Community may not move away from OPF
-          <ul><li>technical advantages of a new format must be weighted against existing deployment</li></ul>
-        </li>
-      </ul>
-    </div></section>
-
     <section class="slide shout cover" id="ident"><div>
       <img src="covers/library.jpg">
       <h3 class="donthyphenate">Technical Challenge: Addressing, identification</h3>
@@ -1094,6 +1015,84 @@
       </ul>
     </div></section>
 
+    <section class="slide shout cover" id="pack"><div>
+      <img src="covers/package.jpg">
+      <h3 class="donthyphenate">Technical Challenge: Archival Format </h3>
+      <style type="text/css">
+      #pack h3 {
+        color: hsla(240, 69%, 50%, 1);
+        font-size: 2.3em;
+        margin-top: 1em;
+      }
+      </style>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Rough structure of an EPUB3 file</h2>
+      <figure>
+        <img class="plain" src="figures/EPUB3-Package-Structure.svg" alt="EPUB Packaging structure diagram" width="99%">
+      </figure>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Archival Format </h2>
+      <ul>
+        <li>There is an interest among some W3C members for a Web friendly packaging format:
+          <ul>
+            <li>should be streamable</li>
+            <li>should rely, as much as possible, on existing Web technologies (e.g., HTTP)</li>
+          </ul>
+        </li>
+        <li>Use cases include:
+          <ul>
+            <li>retrieve an HTML file with related CSS files, images</li>
+            <li>access Web Applications (“Widgets”) with all libraries involved</li>
+            <li><i>Portable Web Publications are a clear use case</i></li>
+          </ul>
+        </li>
+        <li>But: current Web Packaging proposal is <i>not</i> OPF based
+          <ul>
+             <li>this <i>may</i> lead to a different packaging in future for Digital Publishing</li>
+          </ul>
+        </li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">PWP packaging structure</h2>
+      <figure>
+        <img class="plain" src="figures/PWP-Package-Structure.svg" alt="PWP Packaging structure diagram" width="99%">
+      </figure>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Actually…</h2>
+      <ul class="donthyphenate">
+        <li>Moving to the Web would probably require to rethink the format of the administrative files
+          <ul><li>E.g., change formats from XML to JSON</li></ul>
+        </li>
+        <!-- <li>Note that this is already considered for EPUB3.1</li> -->
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">PWP packaging structure</h2>
+      <figure>
+        <img class="plain" src="figures/PWP-Package-Structure-2.svg" alt="PWP Packaging structure diagram with admin file in JSON" width="99%">
+      </figure>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">However…</h2>
+      <ul>
+        <li>There isn‘t yet a full agreement to develop such Web Packaging format
+          <ul><li>a caching architecture based on Service Workers may be enough for the use cases</li></ul>
+        </li>
+        <li>If no packaging format is defined, the Publishing Community may not move away from OPF
+          <ul><li>technical advantages of a new format must be weighted against existing deployment</li></ul>
+        </li>
+      </ul>
+    </div></section>
 
     <section class="slide shout cover" id="presentation"><div>
       <img src="covers/choice.jpg">
