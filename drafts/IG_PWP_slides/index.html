@@ -358,7 +358,7 @@
    </div></section>
 
     <!-- Beware: this does not work on Chrome when the screen is too large.
-          but is reported on github
+          bug is reported on github
      -->
     <section class="slide"><div>
       <div>
@@ -786,7 +786,6 @@
       </table>
     </div></section>
 
-
     <section class="slide shout cover" id="arch"><div>
       <img src="covers/architecture.jpg">
       <h3 class="donthyphenate">Technical Challenge: Overall Architecture</h3>
@@ -798,67 +797,27 @@
       </style>
     </div></section>
 
-    <section class="slide"><div>
-      <h2 class="donthyphenate">Advances in modern browsers: Web and Service Workers</h2>
-      <ul>
-        <li>Web Worker: a truly parallel thread within the browser</li>
-        <li>A Service Worker is a special type of Web Worker, with additional features:
-          <ul>
-            <li>it is a <i>programmable network proxy</i>: the renderer’s network calls are caught and the request/answer can be modified on-the-fly behind the scenes</li>
-            <li>it has an interface to handle a local cache for networked data</li>
-            <li>it will stay alive even if the user moves away from the main page, and can be accessed later if he/she returns to it</li>
-          </ul>
-        </li>
-      </ul>
-    </div></section>
 
-    <section class="slide stamped"><div>
-      <h2 class="donthyphenate">Advances in modern browsers: Web and Service Workers</h2>
-      <ul>
-        <li>Web Worker: a truly parallel thread within the browser</li>
-        <li>A Service Worker is a special type of Web Worker, with additional features:
-          <ul>
-            <li>it is a <i>programmable network proxy</i>: the renderer’s network calls are caught and the request/answer can be modified on-the-fly behind the scenes</li>
-            <li>it has an interface to handle a local cache for networked data</li>
-            <li>it will stay alive even if the user moves away from the main page, and can be accessed later if he/she returns to it</li>
-          </ul>
-        </li>
-      </ul>
-      <p class="stamp small">Work in progress</p>
-    </div></section>
+    <section class="slide">
+        <div>
+            <h2 class="donthyphenate">Envisioned Architecture: <br/>“PWP Processor”</h2>
 
-    <section class="slide"><div>
-      <h2 class="donthyphenate">Advances in modern browsers: Web and Service Workers (Simplified)</h2>
-      <ul>
-        <li>A browser has a hidden, <i>truly parallel</i> engine attached to it</li>
-        <li>That engine “catches” all calls out to the Web, and:
-          <ul>
-            <li>either lets it through and the original request happens;</li>
-            <li>or performs local processing (e.g., gets content from a cache) and returns that content instead</li>
-          </ul>
-        </li>
-        <li>The “main” rendering engine is unaware of the underlying proxy process
-        <ul><li>it operates as if it was connected to the Web in a traditional way</li></ul>
-        </li>
-      </ul>
-    </div></section>
+            <ul>
+                <li>
+                    A conceptual, client-side processor that “hides” the PWP state differences from rendering
+                </li>
+                <li>
+                    The “main” rendering engine operates as if it was connected to the Web in a traditional way, accessing resources through HTTP(S)
+                    <ul>
+                        <li>
+                            The PWP Processor hides the state differences, possibly caches resources, etc.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
 
-    <section class="slide stamped"><div>
-      <h2 class="donthyphenate">Advances in modern browsers: Web and Service Workers (Simplified)</h2>
-      <ul>
-        <li>A browser has a hidden, <i>truly parallel</i> engine attached to it</li>
-        <li>That engine “catches” all calls out to the Web, and:
-          <ul>
-            <li>either lets it through and the original request happens;</li>
-            <li>or performs local processing (e.g., gets content from a cache) and returns that content instead</li>
-          </ul>
-        </li>
-        <li>The “main” rendering engine is unaware of the underlying proxy process
-        <ul><li>it operates as if it was connected to the Web in a traditional way</li></ul>
-        </li>
-      </ul>
-      <p class="stamp small">Work in progress</p>
-    </div></section>
+        </div>
+    </section>
 
     <section class="slide"><div>
       <h2 class="donthyphenate">Envisioned Architecture: <br/>unpacked state</h2>
@@ -889,8 +848,79 @@
        <p class="stamp" style="left:20%">Draft…</p>
     </div></section>
 
+    <section class="slide shout"><div>
+      <h3>Is this approach at all feasible?</h3>
+    </div></section>
+
     <section class="slide"><div>
-      <h2 class="donthyphenate">Draft indeed, but…</h2>
+      <h2 class="donthyphenate">Advances in modern browsers: Web and Service Workers</h2>
+      <ul>
+        <li>Web Worker: a truly parallel thread within the browser</li>
+        <li>A Service Worker is a special type of Web Worker, with additional features:
+          <ul>
+            <li>it is a <i>programmable network proxy</i>: the renderer’s network calls are caught and the request/answer can be modified on-the-fly behind the scenes</li>
+            <li>it has an interface to handle a local cache for networked data</li>
+            <li>it will stay alive even if the user moves away from the main page, and can be accessed later if he/she returns to it</li>
+          </ul>
+        </li>
+      </ul>
+    </div></section>
+
+    <section class="slide stamped"><div>
+      <h2 class="donthyphenate">Advances in modern browsers: Web and Service Workers</h2>
+      <ul>
+        <li>Web Worker: a truly parallel thread within the browser</li>
+        <li>A Service Worker is a special type of Web Worker, with additional features:
+          <ul>
+            <li>it is a <i>programmable network proxy</i>: the renderer’s network calls are caught and the request/answer can be modified on-the-fly behind the scenes</li>
+            <li>it has an interface to handle a local cache for networked data</li>
+            <li>it will stay alive even if the user moves away from the main page, and can be accessed later if he/she returns to it</li>
+          </ul>
+        </li>
+      </ul>
+      <p class="stamp small">Work in progress</p>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Advances in modern browsers: Web and Service Workers (Simplified)</h2>
+      <ul>
+        <li>A browser has a hidden, <i>truly parallel</i> engine attached to it</li>
+        <li>That engine “catches” all calls out to the Web, and:
+          <ul>
+            <li>either lets it through and the original request happens;</li>
+            <li>or performs local processing (e.g., gets content from a cache) and returns that content instead</li>
+          </ul>
+        </li>
+        <li>The “main” rendering engine is unaware of the underlying proxy process
+        <ul><li>it operates as if it was connected to the Web in a traditional way</li></ul>
+        </li>
+      </ul>
+    </div></section>
+
+    <section class="slide stamped"><div>
+      <h2 class="donthyphenate">Advances in modern browsers: Web and Service Workers (Simplified)</h2>
+      <ul>
+        <li>A browser has a hidden, <i>truly parallel</i> engine attached to it</li>
+        <li>That engine “catches” all calls out to the Web, and:
+          <ul>
+            <li>either lets it through and the original request happens;</li>
+            <li>or performs local processing (e.g., gets content from a cache) and returns that content instead</li>
+          </ul>
+        </li>
+        <li>The “main” rendering engine is unaware of the underlying proxy process
+        <ul><li>it operates as if it was connected to the Web in a traditional way</li></ul>
+        </li>
+      </ul>
+      <p class="stamp small">Work in progress</p>
+    </div></section>
+
+    <section class="slide shout"><div>
+      <h3>A PWP Processor could be implemented as a Service Worker</h3>
+    </div></section>
+
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Work in progress indeed, but…</h2>
       <ul>
         <li>Some prior art exists (e.g., experimentation by the Readium Consortium with Service Workers)</li>
         <li>An early mock-up of the current architecture has also be done
