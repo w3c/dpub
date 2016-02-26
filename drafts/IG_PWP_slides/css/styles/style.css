@@ -4,26 +4,30 @@
 /* Playing with fonts, just for the sake of it...*/
 @font-face {
     font-family: "myfont";
-    src: url(../fonts/PTSans.woff) format('woff');
+    /*src: url(../fonts/PTSans.woff) format('woff');*/
+    src: url(/People/Ivan/Fonts/Roboto-Light-webfont.woff) format('woff');
     font-weight: normal;
 }
 
 @font-face {
     font-family: "myfont";
-    src: url(../fonts/PTSans.Bold.woff) format('woff');
+    /*src: url(../fonts/PTSans.Bold.woff) format('woff');*/
+    src: url(/People/Ivan/Fonts/Roboto-Regular-webfont.woff) format('woff');
     font-weight: bold;
 }
 
 @font-face {
     font-family: "myfont";
-    src: url(../fonts/PTSans.Bold.Italic.woff) format('woff');
+    /*src: url(../fonts/PTSans.Bold.Italic.woff) format('woff');*/
+    src: url(/People/Ivan/Fonts/Roboto-BoldItalic-webfont.woff) format('woff');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: "myfont";
-    src: url(../fonts/PTSans.Italic.woff) format('woff');
+    /*src: url(../fonts/PTSans.Italic.woff) format('woff');*/
+    src: url(/People/Ivan/Fonts/Roboto-LightItalic-webfont.woff) format('woff');
     font-style: italic;
 }
 
