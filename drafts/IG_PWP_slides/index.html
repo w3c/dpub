@@ -20,6 +20,16 @@
       .titlepage p.copyright {
         left: 10em;
       }
+      .slidequote {
+          font-size:70%;
+          margin-left:2em;
+          margin-right:2em;
+          border: thin solid;
+          padding-left:1.5em;
+          padding-right: 1em;
+          border-radius:5px;
+          box-shadow: 7px 7px 5px #888;
+      }
       </style>
   </head>
 
@@ -803,14 +813,10 @@
             <h2 class="donthyphenate">Envisioned Architecture: <br/>“PWP Processor”</h2>
 
             <ul>
-                <li>
-                    A conceptual, client-side processor that “hides” the PWP state differences from rendering
+                <li>A conceptual, client-side processor that “hides” the PWP state differences from rendering
                 </li>
-                <li>
-                    The “main” rendering engine operates as if it was connected to the Web in a traditional way, accessing resources through HTTP(S)
-                    <ul>
-                        <li>
-                            The PWP Processor hides the state differences, possibly caches resources, etc.
+                <li>The “main” rendering engine operates as if it was connected to the Web in a traditional way, accessing resources through HTTP(S)
+                    <ul><li>The PWP Processor hides the state differences, possibly caches resources, etc.
                         </li>
                     </ul>
                 </li>
@@ -918,7 +924,6 @@
       <h3>A PWP Processor could be implemented as a Service Worker</h3>
     </div></section>
 
-
     <section class="slide"><div>
       <h2 class="donthyphenate">Work in progress indeed, but…</h2>
       <ul>
@@ -943,75 +948,124 @@
       </style>
     </div></section>
 
-    <section class="slide shout" ><div>
-      <h3 class="donthyphenate">Lots of questions, working on the answers…</h3>
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Is it "Addressing" or is it "Identification"?</h2>
+      <ul>
+        <li><i>These two “roles” are different</i></li>
+        <li>The usual situation:
+          <ul>
+              <li>some form of a URI is used to <i>(uniquely) identify</i> a resource</li>
+              <li>an HTTP(S) URL is used to <i>address</i> a resource on the Web</li>
+          </ul>
+        </li>
+        <li>In many cases the two roles coincide, but not always.
+            <ul>
+                <li>E.g., for a Book Publication:
+                    <ul>
+                      <li><code>URN:ISBN:1-56592-521-1</code> identifies the publication</li>
+                      <li><code>http://www.ex.org/ex.pwp</code> addresses a particular copy</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+      </ul>
     </div></section>
 
     <section class="slide"><div>
       <h2 class="donthyphenate">Is it "Addressing" or is it "Identification"?</h2>
       <ul>
-        <li>These a two “roles” are different</li>
-        <li>The usual situation is that:
-          <ul>
-            <li>an HTTP(S) URL is used to <i>address</i> a resource on the Web</li>
-            <li>some form of a URI is used to <i>(uniquely) identify</i> a resource</li>
-          </ul>
-        </li>
-        <li>In many cases the two roles coincide, but not always</li>
-        <li>E.g., for a Book Publication:
-          <ul>
-            <li><code>URN:ISBN:1-56592-521-1</code> identifies the publication</li>
-            <li><code>http://www.ex.org/ex.pwp</code> addresses my particular copy</li>
-          </ul>
-        </li>
+          <li>Issues on identification are handled by a number of other organizations (<a href="http://www.doi.org">DOI foundation</a>, <a href="https://www.isbn-international.org/">International ISBN Agency</a>, etc.)
+          </li>
+          <li>We have to concentrate on addressing (or “locators”)
+          </li>
       </ul>
     </div></section>
 
     <section class="slide"><div>
-      <h2 class="donthyphenate">What does an <code style="font-size: 120%">HTTP GET</code> return?</h2>
-
-      <ul>
-        <li>Possibilities may be
-          <ul>
-            <li>some sort of a manifest describing the PWP as a whole (e.g., metadata, content, etc.); or</li>
-            <li>some content with a link to a manifest through a <code>LINK:</code> HTTP response header entry; or</li>
-            <li>some HTML content with a link to a manifest through a <code>&lt;link&gt;</code> element</li>
-          </ul>
-        </li>
-        <li>Details of what a manifest contains should be worked out
-          <ul><li>that may become a crucial constituent of a PWP</li></ul>
-        </li>
+      <h2 class="donthyphenate">Three levels of addressing</h2>
+              <ol>
+                  <li>Locator for the PWP itself: <br /><code>http://www.ex.org/MyPWP/</code>
+                  </li>
+                  <li>Locating a resource <i>within</i> a PWP:<br /><code>http://www.ex.org/MyPWP/Chapter1.html</code>
+                  </li>
+                  <li>Locating a resource within a resource: <br/><code>http://www.ex.org/MyPWP/Chapter1.html#section1</code>
+                  </li>
+              </ol>
+              <ul>
+                  <li>#3 is the “fragment identification”, handled by many grops for different media types
+                  </li>
+                  <li>#2 <i>should</i> be just like any other resources on the Web, to allow for a smooth state transition
+                  </li>
+              </ul>
       </ul>
     </div></section>
 
     <section class="slide"><div>
-      <h2 class="donthyphenate">What is the URL of a resource <i>within</i> a PWP?</h2>
-
+      <h2 class="donthyphenate">Locating the different “states”</h2>
       <ul>
-        <li>Several possibilities should be considered:
-          <ul>
-            <li>based on some sort of a fragment identifier: <code>http://www.ex.org/doc.pwp#pwp(…)</code></li>
-            <li>explicit separator between the URL for the publication and the rest: <code>http://www.ex.org/doc.pwp!chapter1.html</code></li>
-            <li>simulate “tree” view of the publication’s content: <code>http://www.ex.org/doc.pwp/chapter1.html</code></li>
-          </ul>
-        </li>
-        <li>The third case is the most “webby”
-          <ul><li>it may need some extra information (“virtual redirection”) in, e.g., a manifest if the resources are spread all over the place</li></ul>
-        </li>
-        <li>Decomposing such URLs would happen in the dedicated Service Worker</li>
+          <li>There are, in practice, two different locators
+              <ul>
+                  <li>to the unpacked version on the Web (<b>L<sub>u</sub></b>):<br /> <code>http://www.ex.org/MyPWP/dir/</code></li>
+                  <li>to the package  (<b>L<sub>p</sub></b>):<br/> <code>http://www.ex.org/MyPWP.pwp</code>
+                  </li>
+              </ul>
+          </li>
+          <li>Which locators should one use? How would intra-resource addressing happen? </li>
       </ul>
     </div></section>
 
+    <section class="slide">
+        <div>
+            <h2 class="donthyphenate">Canonical Locators</h2>
+            <ul>
+                <li>A PWP <em>must have a Canonical Locator</em> (<b>L</b>)
+                    <ul><li>a state agnostic locator: <code>http://www.ex.org/MyPWP</code></li></ul>
+                </li>
+                <li>A published PWP <em>must</em> provide metadata that includes <b>L</b>, <b>L<sub>p</sub></b>, and <b>L<sub>u</sub></b>
+                </li>
+                <li>A PWP Processor <em>must</em> have access to the full metadata
+                </li>
+                <li>A resource within a PWP (and, possibly, the world at large) should use <b>L</b> only for internal cross-references
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2 class="donthyphenate">The PWP Processor can take care of the rest…</h2>
+            <ul>
+                <li>The processor has an access to <b>L</b>, <b>L<sub>p</sub></b>, and <b>L<sub>u</sub></b></li>
+                <li>It can convert, if needed, among URI requests coming from the renderer</li>
+                <li>Remember:</li>
+            </ul>
+            <ul class="slidequote">
+                <li>A conceptual, client-side processor that “hides” the PWP state differences from rendering
+                </li>
+                <li>The “main” rendering engine operates as if it was connected to the Web in a traditional way, accessing resources through HTTP(S)
+                    <ul><li>The PWP Processor hides the state differences, possibly caches resources, etc.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
     <section class="slide"><div>
-      <h2 class="donthyphenate">What about addressing <i>within</i> a resource?</h2>
+      <h2 class="donthyphenate">What does an <code style="font-size: 120%">HTTP GET</code> return for <b>L</b>?</h2>
+
       <ul>
-        <li>This is exactly what <i>fragment identifiers</i> do on the Web</li>
-        <li>PWP-s should <i>not</i> define a different mechanism, but should rely on what is widely deployed
-          <ul>
-            <li>note that this pretty much excludes <code>http://www.ex.org/doc.pwp#pwp(…)</code> as an answer to the previous question</li>
-          </ul>
+        <li>Possibilities may be:
+            <ul>
+                <li>the full metadata (in some format)</li>
+                <li>the package that includes the metadata at some predefined place</li>
+                <li>an HTML, SVG, etc., with metadata provided through the <code>Link</code> header of the <code>HTTP</code> Response</li>
+                <li>an (X)HTML file containing the <code>&lt;link&gt;</code> element referring to metadata</li>
+            </ul>
         </li>
-        <li>Although… new types of fragment identifers may be proposed by the publishing community to the Web community at large</li>
+        <li>These possibilities are not mutually exclusive, and can be combined
+        </li>
+        <li>Different server setups are possible; a PWP specification would leave that open</li>
       </ul>
     </div></section>
 
@@ -1218,7 +1272,8 @@
 
     <!-- ===================================== -->
     <div class="progress"><div></div> </div>
-    <script src="https://www.w3.org/scripts/shower/1.0.7/shower.min.js"></script>
+<!--    <script src="https://www.w3.org/scripts/shower/1.0.7/shower.min.js"></script> -->
+    <script src="/scripts/shower/1.0.7/shower.min.js"></script>
 
   </body>
 </html>
