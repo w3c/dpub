@@ -4,35 +4,34 @@
 /* Playing with fonts, just for the sake of it...*/
 @font-face {
     font-family: "myfont";
-    src: url(../fonts/PTSans.woff) format('woff');
+    src: url(../fonts/Roboto-Light-webfont.woff) format('woff');
     font-weight: normal;
 }
 
 @font-face {
     font-family: "myfont";
-    src: url(../fonts/PTSans.Bold.woff) format('woff');
+    src: url(../fonts/Roboto-Regular-webfont.woff) format('woff');
     font-weight: bold;
 }
 
 @font-face {
     font-family: "myfont";
-    src: url(../fonts/PTSans.Bold.Italic.woff) format('woff');
+    src: url(../fonts/Roboto-BoldItalic-webfont.woff) format('woff');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
-    font-family: "myfont"; 
-    src: url(../fonts/PTSans.Italic.woff) format('woff');
+    font-family: "myfont";
+    src: url(../fonts/Roboto-LightItalic-webfont.woff) format('woff');
     font-style: italic;
 }
 
 @font-face {
-    font-family: "blackboard"; 
+    font-family: "blackboard";
     src: url(../fonts/ArchitectsDaughter.woff) format('woff');
     font-style: normal;
 }
-
 
 /* --------------------- */
 /* Generic setups        */
@@ -49,19 +48,19 @@ ul ul li, ol ul li {
     font-size: 80% !important
 }
 
-ul li, ol li    { 
+ul li, ol li    {
     padding-bottom: 0.3em !important
 }
 
 li, blockquote, td {
     /* This does not work in Chrome, 'cause it does not do hyphenation. Without
     hyphenation, on the other hand, justification can look very ugly.
-    Ie, this should be switched on only if the hyphenate.js is also used 
+    Ie, this should be switched on only if the hyphenate.js is also used
     as a polyfill */
-    -webkit-hyphens: auto; 
-       -moz-hyphens: auto; 
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
         -ms-hyphens: auto;
-            hyphens: auto; 
+            hyphens: auto;
 
     text-align: justify;
 }
@@ -92,19 +91,12 @@ header p, header h1, header h2, header h3   {
 /* ----------------------- */
 /*  Styles for slides      */
 /* ----------------------- */
-.slide {
-    background: #add9e4;
-    background: -moz-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f7fbfc), color-stop(100%, #add9e4));
-    background: -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-    background: -o-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-    background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-    background: radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-    background-color: #f7fbfc; 
 
+.slide {
+    background: snow;
     font-family: myfont;
     font-size: 30px;
-    color: #333333; 
+    color: hsla(200,0%,0%,.75);
 }
 
 .slide:after {
@@ -120,23 +112,26 @@ header p, header h1, header h2, header h3   {
     content: counter(slide);
     text-align: center;
     font-size: 20px;
-}
+    -webkit-transform: translateY(-15%) scale(0.7);
+        -ms-transform: translateY(-15%) scale(0.7);
+            transform: translateY(-15%) scale(0.7);
+}}
 
-.slide h1, .slide h2, .slide h3, .slide h4, .slide li, .slide p, 
+.slide h1, .slide h2, .slide h3, .slide h4, .slide li, .slide p,
 .slide td, .slide th, .slide blockquote, .slide dt, .slide dd,
 .slide figcaption {
     cursor: default;
 }
 
-.slide h1, .slide h2, .slide h3, .slide h4 { 
+.slide h1, .slide h2, .slide h3, .slide h4 {
     margin: 0 0 0px;
     padding-bottom: 2.2px;
     border-bottom:  2px solid #004480;
     color: #004480;
-    -webkit-hyphens: none; 
-       -moz-hyphens: none; 
+    -webkit-hyphens: none;
+       -moz-hyphens: none;
         -ms-hyphens: none;
-            hyphens: none; 
+            hyphens: none;
     text-align: center;
     font-weight: normal;
     /* text-transform: uppercase; */
@@ -157,15 +152,15 @@ header p, header h1, header h2, header h3   {
 
 .slide h2 {
     font-size: 1.5em;
-    text-shadow: 0 1px 1px black; /* #ffff; */ 
+    text-shadow: 0 1px 1px black; /* #ffff; */
 }
 
-.slide h3 { 
-    font-size: 1.1em 
+.slide h3 {
+    font-size: 1.1em
 }
 
-.slide h4 { 
-    font-size: 1em; 
+.slide h4 {
+    font-size: 1em;
 }
 
 .slide h1.title {
@@ -182,7 +177,7 @@ header p, header h1, header h2, header h3   {
 }
 
 .slide.shout h2, .slide.shout h3 {
-    text-shadow: 0 1px 1px black; /* #ffff; */ 
+    text-shadow: 0 1px 1px black; /* #ffff; */
     border-bottom: none;
     width: 100%;
 }
@@ -193,7 +188,7 @@ header p, header h1, header h2, header h3   {
     text-align: center;
     line-height: 1;
     padding-right: 0em;
-    padding-left: 0em;       
+    padding-left: 0em;
 }
 
 .slide.shout h2 {
@@ -224,20 +219,20 @@ header p, header h1, header h2, header h3   {
 .slide pre {
     font-family: monospace;
     font-size: 80%;
-    line-height: 1.1em;    
+    line-height: 1.1em;
     white-space: pre !important;
     color: green;
 }
 
 .slide code {
     font-family: monospace;
-    font-size: 80%; 
+    font-size: 80%;
     color: green;
 }
 
 .slide em {
     /* text-decoration: underline; */
-    
+
     /* A Lea Verou trick for a nicer underline...*/
     background: linear-gradient(gray, gray) no-repeat;
     background-size: 100% 1px;
@@ -248,18 +243,18 @@ header p, header h1, header h2, header h3   {
 .slide ol li:before, .slide ul li:before {
     display: inline-block;
     width: 2em;
-    color: #333333; 
+    color: #333333;
     text-align: right;
 }
 
-.slide table  { 
+.slide table  {
     border-collapse: separate;
-    border-spacing: 0.1em 
+    border-spacing: 0.1em
     border: none !important;
 }
 
 .slide table td {
-    border: 1px solid #CCC; 
+    border: 1px solid #CCC;
     padding:0.3em
 }
 
@@ -281,15 +276,15 @@ header p, header h1, header h2, header h3   {
 
 .slide table th.headertop {
     text-align: center;
-    border-left: 1px solid #CCC; 
-    border-right: 1px solid #CCC; 
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #CCC;
 }
 
 .slide table th.headerleft {
-    padding-right: 1em; 
+    padding-right: 1em;
     text-align:right
-    border-top: 1px solid #CCC; 
-    border-bottom: 1px solid #CCC; 
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
 }
 
 .slide table td {
@@ -327,7 +322,7 @@ header p, header h1, header h2, header h3   {
     display: -moz-box;     /* Old firefox */
     display: -ms-flexbox;  /* IE 10 */
     display: -webkit-flex; /* Chrome 21-28, Safari 6.1+ */
-    display: flex;         /* IE 11, Chrome 29+, */                                
+    display: flex;         /* IE 11, Chrome 29+, */
     -webkit-box-align: flex-start;
        -moz-box-align: flex-start;
        -ms-flex-align: flex-start;
@@ -363,7 +358,7 @@ header p, header h1, header h2, header h3   {
     border-radius: 0.2em;
     padding-left: 0.07em;
     padding-right: 0.07em;
-    box-shadow: 0.05em 0.05em 0.05em #888; 
+    box-shadow: 0.05em 0.05em 0.05em #888;
     /* box-shadow: 0.05em 0.05em 0.05em #888, 0 0 0 50vmax hsla(0,0%,0%,0.2); */
     text-shadow: 0.05em 0.05em 0.05em gray;
     -webkit-filter: none;
@@ -371,7 +366,7 @@ header p, header h1, header h2, header h3   {
 }
 
 .slide .stamp.small {
-    font-size:2.5em; 
+    font-size:2.5em;
     letter-spacing: 0.1em;
     position:absolute;
     top: 3.3em;
@@ -381,8 +376,8 @@ header p, header h1, header h2, header h3   {
 
 .slide.stamped h2, .slide.stamped ul, .slide.stamped ol, .slide.stamped::after,
 .slide.stamped figure, .slide.stamped p:not(.stamp) {
-    -webkit-filter: blur(2px) contrast(.8) brightness(.8); 
-            filter: blur(2px) contrast(.8) brightness(.8); 
+    -webkit-filter: blur(2px) contrast(.8) brightness(.8);
+            filter: blur(2px) contrast(.8) brightness(.8);
 }
 
 
@@ -395,7 +390,7 @@ header p, header h1, header h2, header h3   {
 .slide.titlepage h2 {
     font-size: 2em;
     margin-top:2em;
-    text-shadow: 0 1px 1px black; /* #ffff; */ 
+    text-shadow: 0 1px 1px black; /* #ffff; */
 }
 
 .titlepage h3 {
@@ -454,23 +449,23 @@ figure.center, figure.centre {
 }
 
 figure.right {
-    float:       right; 
-    margin-left: 1em; 
+    float:       right;
+    margin-left: 1em;
     max-width: 250px;
 }
 
 figure.right img {
     max-width: inherit;
-    width: 250px;    
-    border: 1px solid #CCC; 
-    border-radius: 10px; 
-    box-shadow: 7px 7px 5px #888; 
+    width: 250px;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    box-shadow: 7px 7px 5px #888;
 }
 
 figure.right img.noborder {
-    border: 0px solid #CCC !important; 
-    border-radius: 0px !important; 
-    box-shadow: 0px 0px 0px #888 !important; 
+    border: 0px solid #CCC !important;
+    border-radius: 0px !important;
+    box-shadow: 0px 0px 0px #888 !important;
 }
 
 figure > figcaption {
@@ -500,19 +495,19 @@ figure > figcaption {
     box-shadow: 0 0 0 1px hsla(0,0%,100%,.3) inset,
                 0 .5em 1em rgba(0, 0, 0, 0.6);
     text-shadow: 0 1px 1px hsla(0,0%,100%,.3);
-    border-radius: 10px;        
+    border-radius: 10px;
 
 }
 
 
 @media print {
     figure.right img {
-        border: 0px solid #CCC !important; 
-        border-radius: 0px !important; 
-        box-shadow: 0px 0px 0px #888 !important; 
+        border: 0px solid #CCC !important;
+        border-radius: 0px !important;
+        box-shadow: 0px 0px 0px #888 !important;
     }
     .slide .stamp {
-        box-shadow: 0em 0em 0em #888; 
+        box-shadow: 0em 0em 0em #888;
         text-shadow: 0em 0em 0em #888;
     }
 }

@@ -12,13 +12,23 @@
     <link rel="stylesheet" href="css/styles/style.css">
     <!-- These styles should be adapted to the details on where and what ribbon should be used, and how large the copyright is -->
     <style type="text/css">
-      .slide:after {
+      /*.slide:after {
         padding: 60px 0 0 !important;
         height: 150px ;
-        background: url(figures/W3C_ribbon.png) no-repeat ;
-      }
+        background: url(css/images/ribbon_w3c.svg) no-repeat ;
+      }*/
       .titlepage p.copyright {
         left: 10em;
+      }
+      .slidequote {
+          font-size:70%;
+          margin-left:2em;
+          margin-right:2em;
+          border: thin solid;
+          padding-left:1.5em;
+          padding-right: 1em;
+          border-radius:5px;
+          box-shadow: 7px 7px 5px #888;
       }
       </style>
   </head>
@@ -37,10 +47,10 @@
           <span property="dc:title"><a href="http://www.boersenverein.de/buchtage">Some Event</a></span>, <span property="event:place">At some place</span>
         </span>
       </h3>
-      <h3 property="dc:date">2015-??-??</h3>
+      <h3 property="dc:date">2016-??-??</h3>
       <p class="copyright">
         <a href="http://creativecommons.org/licenses/by-nd/4.0/"><img class="plain" alt="Creative Commons License" src="figures/80x15.png"></a>&nbsp;
-        This work is licensed under a <a rel="cc:license" href="http://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution-NoDerivatives 4.0 International License</a>,
+        This work is licensed under a <a rel="cc:license" href="http://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution 4.0 License</a>,
         with attribution to <a rel="cc:attributionURL" href="http://www.w3.org" property="cc:attributionName">W3C</a></p>
       <p class="copyright">Copyright <sup>©</sup>2016 W3C<sup>®</sup> (MIT, ERCIM, Keio, Beihang)</p>
     </header>
@@ -62,20 +72,20 @@
       </h3>
       <h3 property="dc:date">2015-??-??</h3>
       <p class="copyright">
-        <a href="http://creativecommons.org/licenses/by-nd/3.0/"><img class="plain" alt="Creative Commons License" src="figures/80x15.png"></a>&nbsp;
-        This work is licensed under a <a rel="cc:license" href="http://creativecommons.org/licenses/by-nd/3.0/">Creative Commons Attribution 3.0 License</a>,
+        <a href="http://creativecommons.org/licenses/by-nd/4.0/"><img class="plain" alt="Creative Commons License" src="figures/80x15.png"></a>&nbsp;
+        This work is licensed under a <a rel="cc:license" href="http://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution 4.0 License</a>,
         with attribution to <a rel="cc:attributionURL" href="http://www.w3.org" property="cc:attributionName">W3C</a> and <a rel="cc:attributionURL" href="http://www.idpf.org" property="cc:attributionName">IDPF</a></p>
-      <p class="copyright">Copyright <sup>©</sup>2015 IDPF<sup>®</sup> and <sup>©</sup>2015 W3C<sup>®</sup> (MIT, ERCIM, Keio, Beihang)</p>
+      <p class="copyright">Copyright <sup>©</sup>2016 IDPF<sup>®</sup> and <sup>©</sup>2016 W3C<sup>®</sup> (MIT, ERCIM, Keio, Beihang)</p>
     </header>
     -->
 
     <section class="slide titlepage"><div>
-      <h2 class="donthyphenate">The Convergence of EPUB and the Web</h2>
+      <h2 class="donthyphenate">Digital Publishing and Web Standards</h2>
       <h3>Ivan Herman, W3C </h3>
       <h4><a href="??????">Some Event, Somewhere</a></h4>
-      <h4>2015-??-??</h4>
+      <h4>2016-??-??</h4>
 
-      <p class="copyright">This work is licensed under a <a target="_blank" href="http://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution-NoDerivatives 4.0 International License</a>, with attribution to <a target="_blank" href="http://www.w3.org">W3C</a>.<br />
+      <p class="copyright">This work is licensed under a <a target="_blank" href="http://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution 4.0 License</a>, with attribution to <a target="_blank" href="http://www.w3.org">W3C</a>.<br />
         Copyright <sup>©</sup>2016&nbsp;W3C<sup>®</sup> (MIT, ERCIM, Keio, Beihang)</p>
     </div></section>
 
@@ -148,10 +158,11 @@
 
     <section class="slide"><div>
       <h2 class="donthyphenate">DPUB IG Origins (cont.)</h2>
+
       <ul>
-        <li>W3C and IDPF organized a series of exploratory workshops in 2012 to create a missing synergy among communities</li>
-        <li>The W3C <a target="_blank"  href="https://www.w3.org/dpub/IG/">Digital Publishing Interest Group</a> was formally created in May 2013</li>
-        <li>DPUB IG has weekly teleconferences and bi-annual face to face meetings</li>
+          <li>W3C and IDPF organized a series of workshops in 2012 to create a missing synergy among communities</li>
+          <li>The W3C Digital Publishing Interest Group was set up in May 2013</li>
+          <li>DPUB IG has weekly teleconferences and bi-annual face to face meetings</li>
       </ul>
     </div></section>
 
@@ -208,10 +219,10 @@
       <h2 class="donthyphenate">Relationships to some other organizations</h2>
 
       <ul>
-        <li><strong>BISG</strong>: represented in the Interest Group; joint discussions in the areas of metadata and accessibility.</li>
-        <li><strong>EDItEUR</strong>: represented in the Interest Group.</li>
-        <li><strong>IPTC</strong>: not a member of W3C yet, but there are some new activites on right expressions at W3C where they may participate.</li>
-        <li><strong>Daisy Consortium</strong>: one of the most active members of the W3C Accessibility work.</li>
+        <li><strong>BISG</strong>: represented in the Interest Group</li>
+        <li><strong>EDItEUR</strong>: represented in the Interest Group</li>
+        <li><strong>Daisy Consortium</strong>: one of the most active members of the W3C Accessibility work</li>
+        <li><strong>IPTC</strong>: not a member of W3C (yet?), but they may participate in the new activites on right expressions at W3C</li>
       </ul>
     </div></section>
 
@@ -227,7 +238,7 @@
     </div></section>
 
     <section class="slide"><div>
-      <h2 class="donthyphenate">Layout and Styling</h2>
+      <h2 class="donthyphenate">Layout and styling</h2>
       <figure class="right">
         <img src="figures/latinreq.png" alt="Screen dump of the latinreq document">
       </figure>
@@ -251,22 +262,22 @@
     </div></section>
 
     <section class="slide"><div>
-      <h2 class="donthyphenate">Layout and Styling: Houdini Project &amp; pagination</h2>
+      <h2 class="donthyphenate">Layout and styling: the Houdini project &amp; pagination</h2>
       <div style="font-size:80%">
         <blockquote>
-          The CSS-TAG <a href="https://wiki.css-houdini.org/">“Houdini Project”</a>to […] explain existing CSS functionalities better and make development of CSS polyfills […] easier by defining low level APIs of styling and layout on the web
+          The CSS-TAG <a href="https://wiki.css-houdini.org/">“Houdini Project”</a> […] explain[s] existing CSS functionalities better and make development of CSS polyfills […] easier by defining low level APIs of styling and layout on the web
         </blockquote>
         <p style="font-size:40%; text-align:right">Credit: Vivliostyle blog, Toru Kawakubo</p>
       </div>
       <ul>
-        <li>The results may be essential for a proper (and standard) access to page-related information.</li>
-        <li>Pagination isn’t only books: slides, cards, and other “boxes” use the same functionality.</li>
-        <li>The DPUB Community have been involved from the start.</li>
+        <li>The results may be essential for a proper (and standard) access to page-related information</li>
+        <li>Pagination isn’t only books: slides, cards, and other “boxes” use the same functionality</li>
+        <li>The DPUB Community have been involved from the start</li>
       </ul>
     </div></section>
 
     <section class="slide"><div>
-      <h2 class="donthyphenate">Content and Markup</h2>
+      <h2 class="donthyphenate">Content and markup</h2>
       <ul>
         <li>Goal: identify the semantics of the HTML elements
           <ul><li>“abstract”, “indexed term”, “footnote”, "chapter", …</li></ul>
@@ -283,7 +294,7 @@
     </div></section>
 
     <section class="slide"><div>
-      <h2 class="donthyphenate">Content and Markup: Approach Chosen</h2>
+      <h2 class="donthyphenate">Content and markup: the approach chosen</h2>
       <ul>
         <li>Use <a href="http://www.w3.org/TR/wai-aria/">“Accessible Rich Internet Applications (WAI-ARIA)”</a> as a basic mechanism:
           <ul>
@@ -297,7 +308,7 @@
     </div></section>
 
     <section class="slide"><div>
-      <h2 class="donthyphenate">Content and Markup: DPUB ARIA module</h2>
+      <h2 class="donthyphenate">Content and markup: DPUB ARIA module</h2>
       <figure class="right">
         <img src="figures/dpub-aria.png" alt="Screen dump of the DPUB ARIA document">
       </figure>
@@ -320,9 +331,11 @@
       </figure>
       <ul>
         <li>Published an <a target="_blank"  href ="http://w3c.github.io/dpub-annotation/">Annotation Use Cases</a></li>
-        <li>Activity and work has shifted to the <a target="_blank"  href="http://www.w3.org/annotation/">Web Annotations Working Group</a>
+        <li>Activity and work has shifted to the <a target="_blank"  href="http://www.w3.org/annotation/">Web Annotations Working Group</a>, which develops:
           <ul>
-            <li>the work aims at annotation <i>for all forms of Web Documents</i>, whether in a browser or an eBook</li>
+            <li>a standard <i>data model</i> and <i>serialization in JSON</i> to describe and mantain annotations</li>
+            <li>a <i>protocol</i> to exchange annotations between an annotation client and a server</li>
+            <li>the work aims at annotations <i>for all forms of Web Documents</i>, whether in a browser or an eBook</li>
            </ul>
         </li>
       </ul>
@@ -335,12 +348,15 @@
       </figure>
       <ul>
         <li>Interviewed publishing experts in metadata</li>
-        <li>Published <a target="_blank"  href ="http://w3c.github.io/dpub-metadata/">“DPUB IG Metadata Task Force Report”</a></li>
+        <li>Published a <a target="_blank"  href ="http://w3c.github.io/dpub-metadata/">“DPUB IG Metadata Task Force Report”</a>:</li>
         <ul>
           <li>a note summarizing findings in interviews</li>
           <li>discovered that OWP has the tools that publishers seek, but many in publishing are not familiar with tools</li>
           <li>this group can aid the publishing industry in using OWP tools to implement existing vocabularies </li>
-          <li>a standard for right expression might be an important work at W3C</li>
+          <li>a standard for right expression is important for the community
+              <ul><li>a WG on the subject has just started!</li>
+              </ul>
+          </li>
         </ul>
       </ul>
     </div></section>
@@ -358,7 +374,7 @@
    </div></section>
 
     <!-- Beware: this does not work on Chrome when the screen is too large.
-          but is reported on github
+          bug is reported on github
      -->
     <section class="slide"><div>
       <div>
@@ -426,16 +442,16 @@
         <img src="figures/pwp.svg" alt="Portable Web Publication at a glance"/>
       </figure>
       <ul>
-        <li>Separation between publishing “online”, as Web sites, and offline and/or packaged is diminished to zero</li>
+        <li>Separation between publishing “online”, as Web sites, and offline and/or packaged should be diminished to zero</li>
         <li>This means:
           <ul>
             <li>publication content on the Web can be loaded into a browser or a specialized reader, whatever the user prefers</li>
             <li>a publication on a local disc can be pushed onto the Web and used without any change</li>
             <li>content are authored regardless of where they are used</li>
             <li>these are done without any user interaction, possibly automatically</li>
-            <li>similar situation: we are used to the same Web site displayed differently when moving from a desktop to a mobile…</li>
           </ul>
         </li>
+        <!-- <li>An analogy: Web site displayed on a desktop or on a mobile…</li> -->
       </ul>
     </div></section>
 
@@ -453,7 +469,7 @@
     </div></section>
 
     <section class="slide"><div>
-      <h2 class="donthyphenate">For Example: Book in a Browser</h2>
+      <h2 class="donthyphenate">For example: book in a browser</h2>
       <figure class="right">
         <img src="figures/joseph-web.png" alt="Joseph Reagle's book as a web page">
         <figcaption class="credit"><a target="_blank" href="http://reagle.org/joseph/2010/gfc/chapter-4.html">Extract of Joseph Reagle’s Book</a></figcaption>
@@ -462,7 +478,7 @@
         <li>On a desktop I may want to read a book just like a Web page:
           <ul>
             <li>easily follow a link “out” of the book</li>
-            <li>create bookmarks “into” a page in a book</li>
+            <li>create bookmarks to “within” a page in a book</li>
             <li>use useful plugins and tools that my browser may have</li>
             <li>create annotations</li>
             <li>sometimes I may need the computing power of my desk-top for, e.g., interactive 3D content</li>
@@ -472,19 +488,19 @@
     </div></section>
 
     <section class="slide"><div>
-      <h2 class="donthyphenate">For Example: Book in a Browser (cont.)</h2>
+      <h2 class="donthyphenate">For example: book in a browser</h2>
       <figure class="right">
         <img src="figures/joseph-book.png" alt="Joseph Reagle's book as an ebook in reader">
         <figcaption class="credit"><a target="_blank" href="http://reagle.org/joseph/2010/gfc/chapter-4.html">Extract of Joseph Reagle’s Book</a> as ePUB</figcaption>
       </figure>
       <ul>
-        <li>But, at other times I may also want to use a small dedicated reader device to read the book on the beach…</li>
+        <li>But, at other times, I may also want to use a small dedicated reader device to read the book on the beach…</li>
         <li>All these on <i>the same</i> book (not conversions from one format to the other)!</li>
       </ul>
     </div></section>
 
     <section class="slide"><div>
-      <h2 class="donthyphenate">For Example: I May Not Be Online…</h2>
+      <h2 class="donthyphenate">For example: I may not ne online…</h2>
       <figure class="right">
         <img src="figures/commute.jpg" alt="Person sitting in a station with a mobile in hand">
         <figcaption class="credit"><a target="_blank" href="http://j.mp/1t7BxJN">Bryan Ong</a>, Flickr</figcaption>
@@ -493,23 +509,19 @@
         <li>I may find an article on the Web that I want to review, annotate, etc., while commuting home on a train</li>
         <li>I want the results of the annotations to be back online, when I am back on the Internet</li>
         <ul>
-          <li>Note: some browsers have an “archiving” possibility, but they are not interoperable
-            <ul>
-              <li>the content can definitely not be read on a dedicated reader</li>
-            </ul>
-          </li>
+          <li>note: some browsers have an “archiving” possibility, but they are not interoperable</li>
         </ul>
       </ul>
     </div></section>
 
     <section class="slide"><div>
-      <h2 class="donthyphenate">For Example: Scholarly Publishing</h2>
+      <h2 class="donthyphenate">For example: scholarly publishing</h2>
       <figure class="right">
         <img src="figures/f1000.png" alt="Screen dump of an article on F1000">
         <figcaption class="credit">Screen dump of an article <a target="_blank" href="http://bit.ly/1wFcfWC">“Sub-strains of Drosophila Canton-S…”</a> on F1000</figcaption>
       </figure>
       <ul>
-        <li>My paper is published, primarily, on-line, but people may want to download it for offline use</li>
+        <li>My paper may be published on-line, but people may want to download it for offline use</li>
         <li>The format of the paper should be adaptable to my reading environment
           <ul><li>do not want a two column, fixed layout file that I cannot handle on my iPad…</li></ul>
         </li>
@@ -520,13 +532,13 @@
     </div></section>
 
     <section class="slide"><div>
-      <h2 class="donthyphenate">For Example: In-house Publishing</h2>
+      <h2 class="donthyphenate">For example: in-house publishing</h2>
       <figure class="right">
         <img src="figures/manuals.jpg" alt="Bookshelf full of documentation">
         <figcaption class="credit"><a target="_blank" href="http://j.mp/1t7B4HH">Peliro Agüera</a>, Flickr</figcaption>
       </figure>
       <ul>
-        <li>Major companies (IBM, Intel, Boeing, FAO, Renault,…) are specialized publishers through the publication of huge amount of documentation</li>
+        <li>Major companies (IBM, Intel, Boeing, FAO, Renault,…) are specialized “publishers” publishing a huge amount of documentation</li>
         <li>Delivering it on paper is not an option any more</li>
         <li>Fast refresh time is needed</li>
         <li>The <i>same</i> document should be available offline (e.g., in the cockpit) or online (e.g., on the work floor): there should be no difference between the two</li>
@@ -534,7 +546,7 @@
     </div></section>
 
     <section class="slide"><div>
-      <h2 class="donthyphenate">For Example: Educational Materials</h2>
+      <h2 class="donthyphenate">For example: educational publications</h2>
       <figure class="right">
         <img src="figures/auditorium.jpg" alt="University hall with students, most of them with a tablet">
         <figcaption class="credit"><a target="_blank" href="http://j.mp/1t7Gpie">Merrill College of Journalism</a>, Flickr</figcaption>
@@ -547,7 +559,7 @@
           <li><i>a Web client</i> reaching out to Web services for assessing test results, to encyclopedia,&nbsp;…?</li>
           <li><i>an interactive data container</i> storing various data for, e.g., demonstrations?</li>
         </ul>
-        <li>The borderline between a “book” and a “(Web) Application” are becoming blurred!</li>
+        <li>The borderline between a “book” and a “(Web) Application” is becoming blurred…</li>
       </ul>
     </div></section>
 
@@ -566,26 +578,30 @@
     </div></section>
 
     <section class="slide"><div>
-      <h2 class="donthyphenate">Advantage for Publishers‘ Community </h2>
+      <h2 class="donthyphenate">Advantage for the publishers‘ community </h2>
       <figure class="right">
         <img src="figures/javascript.jpg" alt="Photo of two javascript books">
         <figcaption class="credit"><a target="_blank" href="http://j.mp/1CP4M41">Nathan Smith</a>, Flickr</figcaption>
       </figure>
       <ul>
-        <li>Publishers want to concentrate on what <i>they</i> know better: how to produce, edit, curate, etc, great content</li>
+        <li>Publishers want to concentrate on what <em>they</em> know better: how to produce, edit, curate, etc, great content</li>
         <li>Publishers are <i>not</i> technology companies, nor do they intend to be; they want instead to rely on the vibrant Web community!</li>
       </ul>
     </div></section>
 
     <section class="slide">
       <div>
-        <h2 class="donthyphenate">Advantage for Publishers‘ Community (cont.)</h2>
+        <h2 class="donthyphenate">Advantage for publishers‘ community</h2>
+        <figure class="right">
+          <img src="figures/javascript.jpg" alt="Photo of two javascript books">
+          <figcaption class="credit"><a target="_blank" href="http://j.mp/1CP4M41">Nathan Smith</a>, Flickr</figcaption>
+        </figure>
         <ul>
           <li>OWP is more than “just” HTML, CSS, MathML, etc.</li>
           <li>It also defines a large number of facilities that provide access to, e.g., system resources or utilities
             <ul><li>index database, Web storage, battery status API, real-time communication, geolocation,…</li></ul>
           </li>
-          <li>Aligning more on OWP means that publishing oriented devices, software, services, etc, can rely on those
+          <li>Aligning more on OWP means that specialized readers or Web sites, software, services, etc, can rely on those
             <ul><li>instead of possibly re-inventing the wheel…</li></ul>
           </li>
         </ul>
@@ -593,10 +609,10 @@
     </section>
 
     <section class="slide"><div>
-      <h2 class="donthyphenate">Advantage for the Web Community</h2>
+      <h2 class="donthyphenate">Advantage for the Web community</h2>
       <figure class="right">
-        <img src="figures/manuscript.jpg" alt="image of a medieval manuscript">
-        <figcaption class="credit"><a target="_blank" href="http://j.mp/ZMp3KM">e-codices</a>, Flickr</figcaption>
+        <img src="figures/euclid.png" alt="image of a medieval manuscript">
+        <figcaption class="credit"><a href="http://www.math.ubc.ca/~cass/Euclid/byrne.html">Oliver Byrne's edition of Euclid</a>, University of British Columbia</figcaption>
       </figure>
       <ul>
         <li>Publishers have a long experience in ergonomics, typography, paging,&nbsp;…</li>
@@ -606,7 +622,7 @@
     </div></section>
 
     <section class="slide"><div>
-      <h2 class="donthyphenate">Some Communities That May Be Affected</h2>
+      <h2 class="donthyphenate">Some communities that may be affected</h2>
       <div class="doublelist">
         <ul>
           <li>(Trade) Publishers</li>
@@ -624,13 +640,13 @@
     </div></section>
 
     <section class="slide shout"><div>
-      <h3 class="donthyphenate">But… why not rely <i>only</i> on the Web? <br>(I.e., forget about downloaded content!)</h3>
+      <h3 class="donthyphenate">But… why not rely <em>only</em> on the Web? <br>(i.e., forget about downloaded content, it is outdated!)</h3>
     </div></section>
 
     <section class="slide"><div>
       <h2 class="donthyphenate">Several reasons…</h2>
       <ul>
-        <li>The future may be that everyone is always connected… but the reality is different
+        <li>The future may be that everyone is always connected… but the reality is different for many years to come
           <ul>
             <li>slow connections, e.g., or on a plane or bus or even in some areas</li>
             <li>huge roaming prices among countries</li>
@@ -663,7 +679,6 @@
         <li>Technical challenges must be identified
           <ul><li>note that some of the challenges are not PWP specific, but Digital Publishing in general (e.g., pagination control)</li></ul>
         </li>
-        <li>Some examples follow…</li>
       </ul>
     </div>
     </section>
@@ -694,7 +709,7 @@
     <section class="slide"><div>
       <h2 class="donthyphenate">Web Publications</h2>
       <ul>
-        <li>On the current Web one has the notion of a “page”:
+        <li>On the current Web we have the notion of a “page”:
           <ul>
             <li>conceptually, a single entity that displays some content</li>
             <li>has its own URL</li>
@@ -702,8 +717,8 @@
         </li>
         <li>But publishers need the concept of a <i>(Web) Publication</i>:
           <ul>
-            <li>a <i>collection</i> of pages, CSS files, images, video, etc.</li>
-            <li>it is the <i>collection</i> that has a distinct identity, not its constituents</li>
+            <li>a <em>collection</em> of pages, together with the relevant CSS, images, video, etc., files</li>
+            <li>it is the <em>collection</em> that has a real distinct identity, not its constituents</li>
           </ul>
         </li>
       </ul>
@@ -712,7 +727,7 @@
     <section class="slide"><div>
       <h2 class="donthyphenate">Formally</h2>
       <ul>
-        <li>A <strong><i>Web Publication</i></strong> is an <em>aggregated set of interrelated Web Resources</em>, and which is intended to be considered as a single, and which <em>can be addressed on the Web as a unit</em> (is itself a Web Resource)</li>
+        <li>A <strong><i>Web Publication</i></strong> is an <em>aggregated set of interrelated Web Resources</em>, and which is intended to be considered as a single entity, and which <em>can be addressed on the Web as a unit</em> (is itself a Web Resource)</li>
       </ul>
     </div></section>
 
@@ -720,11 +735,11 @@
       <h2 class="donthyphenate">Portable Web Publications</h2>
       <ul>
         <li>A Web Publication may consist of resources spread all over the place (HTML on one site, CSS somewhere else)
-          <ul><li>the owner of the Web Publication is only a “user” and not necessarily the owner of all resources!</li></ul>
+          <ul><li>the owner of the Web Publication is only a “user” and not necessarily the owner of some of those resources!</li></ul>
         </li>
         <li>But a publishers may want to, create, curate, move the <i>whole</i> publication, as a single unit</li>
         <li>The Web Publication should be, in some sense, “self consistent”, not relying on external entities.</li>
-        <li>A “self-consistent” Web Publication is <i>Portable</i></li>
+        <li>A “self-consistent” Web Publication is therefore <em>Portable</em></li>
       </ul>
     </div></section>
 
@@ -752,7 +767,7 @@
       <ul>
         <li>A journal or magazine article, including the relevant CSS files and images</li>
         <li>An educational article, including the JavaScript to do interactive exercises</li>
-        <li>A novel or a poem on the Web, including the necessary fonts, CSS files, etc, to provide the required aesthetics</li>
+        <li>A novel or a poem on the Web, including the necessary fonts, CSS files, etc., to provide the required aesthetics</li>
       </ul>
     </div></section>
 
@@ -760,9 +775,18 @@
       <h2 class="donthyphenate">What kinds of documents are we <i>not</i> talking about?</h2>
       <ul>
         <li>A Web mail application</li>
-        <li>A social Web site like Facebook, Renren, or Twitter</li>
+        <li>A social Web site like Facebook, VK, Renren, or Twitter</li>
         <li>A dynamic page that depends on, say, a Javascript library hosted somewhere on the cloud</li>
       </ul>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="donthyphenate">But there are of course differences</h2>
+        <ul>
+            <li>We do talk about the “unity” of Web sites and their downloaded alternative, but they are obviously not the absolutely the same</li>
+            <li>This differentiation must be made somehow</li>
+            <li>We refer to different <em>states</em> of the same PWP</li>
+        </ul>
     </div></section>
 
     <section class="slide"><div>
@@ -774,22 +798,21 @@
           <th style="border-left: 1px solid #CCC; border-right: 1px solid #CCC; width:40%" class="headertop">File Access</th>
         </tr>
         <tr>
-          <th class="headerleft">Packed</th>
+          <th class="headerleft donthyphenate">Packed</th>
           <td>PWP as one archive on a server</td>
           <td>PWP as one archive on a local disc</td>
         </tr>
         <tr>
-          <th class="headerleft">Unpacked</th>
+          <th class="headerleft donthyphenate">Unpacked</th>
           <td>PWP spread over several files on a server</td>
           <td>PWP spread over several files on a local disc</td>
         </tr>
       </table>
     </div></section>
 
-
     <section class="slide shout cover" id="arch"><div>
       <img src="covers/architecture.jpg">
-      <h3 class="donthyphenate">Technical Challenge: Overall Architecture</h3>
+      <h3 class="donthyphenate">Technical challenge: an overall architecture to handle PWP-s</h3>
       <style type="text/css">
         #arch h3 {
           color: hsla(240, 69%, 50%, 1);
@@ -798,99 +821,127 @@
       </style>
     </div></section>
 
-    <section class="slide"><div>
-      <h2 class="donthyphenate">Advances in modern browsers: Web and Service Workers</h2>
-      <ul>
-        <li>Web Worker: a truly parallel thread within the browser</li>
-        <li>A Service Worker is a special type of Web Worker, with additional features:
-          <ul>
-            <li>it is a <i>programmable network proxy</i>: the renderer’s network calls are caught and the request/answer can be modified on-the-fly behind the scenes</li>
-            <li>it has an interface to handle a local cache for networked data</li>
-            <li>it will stay alive even if the user moves away from the main page, and can be accessed later if he/she returns to it</li>
-          </ul>
-        </li>
-      </ul>
-    </div></section>
 
-    <section class="slide stamped"><div>
-      <h2 class="donthyphenate">Advances in modern browsers: Web and Service Workers</h2>
-      <ul>
-        <li>Web Worker: a truly parallel thread within the browser</li>
-        <li>A Service Worker is a special type of Web Worker, with additional features:
-          <ul>
-            <li>it is a <i>programmable network proxy</i>: the renderer’s network calls are caught and the request/answer can be modified on-the-fly behind the scenes</li>
-            <li>it has an interface to handle a local cache for networked data</li>
-            <li>it will stay alive even if the user moves away from the main page, and can be accessed later if he/she returns to it</li>
-          </ul>
-        </li>
-      </ul>
-      <p class="stamp small">Work in progress</p>
-    </div></section>
+    <section class="slide">
+        <div>
+            <h2 class="donthyphenate">Envisioned architecture: <br/>a “PWP Processor”</h2>
+
+            <ul>
+                <li>A conceptual, client-side processor that “hides” the PWP state differences from the rendering engine
+                </li>
+                <li>The “main” rendering engine operates <i>as if</i> it was connected to the Web:
+                    <ul>
+                        <li>accessing resources through HTTP(S)</li>
+                        <li>all resources are “unpacked”</li>
+                    </ul>
+                </li>
+                <li>The PWP Processor should hide the state differences, possibly cache resources, etc.</li>
+            </ul>
+
+        </div>
+    </section>
 
     <section class="slide"><div>
-      <h2 class="donthyphenate">Advances in modern browsers: Web and Service Workers (Simplified)</h2>
-      <ul>
-        <li>A browser has a hidden, <i>truly parallel</i> engine attached to it</li>
-        <li>That engine “catches” all calls out to the Web, and:
-          <ul>
-            <li>either lets it through and the original request happens;</li>
-            <li>or performs local processing (e.g., gets content from a cache) and returns that content instead</li>
-          </ul>
-        </li>
-        <li>The “main” rendering engine is unaware of the underlying proxy process
-        <ul><li>it operates as if it was connected to the Web in a traditional way</li></ul>
-        </li>
-      </ul>
-    </div></section>
-
-    <section class="slide stamped"><div>
-      <h2 class="donthyphenate">Advances in modern browsers: Web and Service Workers (Simplified)</h2>
-      <ul>
-        <li>A browser has a hidden, <i>truly parallel</i> engine attached to it</li>
-        <li>That engine “catches” all calls out to the Web, and:
-          <ul>
-            <li>either lets it through and the original request happens;</li>
-            <li>or performs local processing (e.g., gets content from a cache) and returns that content instead</li>
-          </ul>
-        </li>
-        <li>The “main” rendering engine is unaware of the underlying proxy process
-        <ul><li>it operates as if it was connected to the Web in a traditional way</li></ul>
-        </li>
-      </ul>
-      <p class="stamp small">Work in progress</p>
-    </div></section>
-
-    <section class="slide"><div>
-      <h2 class="donthyphenate">Envisioned Architecture: <br/>unpacked state</h2>
+      <h2 class="donthyphenate">Envisioned architecture: <br/>unpacked state</h2>
       <figure>
         <img class="plain" src="figures/Workers-basic.svg" alt="Document consumed through the Web in a traditional way" width="99%">
       </figure>
     </div></section>
 
     <section class="slide"><div>
-      <h2 class="donthyphenate">Envisioned Architecture: <br/>cached state</h2>
+      <h2 class="donthyphenate">Envisioned architecture: <br/>cached state</h2>
       <figure>
         <img class="plain" src="figures/Workers-cache.svg" alt="Document consumed through a Service Worker, possibly cached" width="99%">
       </figure>
     </div></section>
 
     <section class="slide"><div>
-      <h2 class="donthyphenate">Envisioned Architecture: <br/>packed state</h2>
+      <h2 class="donthyphenate">Envisioned architecture: <br/>packed state</h2>
       <figure>
         <img class="plain" src="figures/Workers-package.svg" alt="Document consumed through a Service Worker, possibly unpacked" width="99%">
       </figure>
     </div></section>
 
     <section class="slide stamped"><div>
-      <h2 class="donthyphenate">Envisioned Architecture: <br/>packed state</h2>
+      <h2 class="donthyphenate">Envisioned architecture: <br/>packed state</h2>
       <figure>
         <img class="plain" src="figures/Workers-package.svg" alt="Document consumed through a Service Worker, possibly unpacked" width="99%">
       </figure>
        <p class="stamp" style="left:20%">Draft…</p>
     </div></section>
 
+    <section class="slide shout"><div>
+      <h3>Is this approach at all feasible?</h3>
+    </div></section>
+
     <section class="slide"><div>
-      <h2 class="donthyphenate">Draft indeed, but…</h2>
+      <h2 class="donthyphenate">Advances in modern browsers: Web and Service Workers</h2>
+      <ul>
+        <li>Web Worker: a truly parallel thread within the browser</li>
+        <li>A Service Worker is a special type of Web Worker, with additional features:
+          <ul>
+            <li>it is a <i>programmable network proxy</i>: the renderer’s network calls are caught and the request/answer can be modified on-the-fly behind the scenes</li>
+            <li>it has an interface to handle a local cache for networked data</li>
+            <li>it will stay alive even if the user moves away from the main page, and can be accessed later if he/she returns to it</li>
+          </ul>
+        </li>
+      </ul>
+    </div></section>
+
+    <section class="slide stamped"><div>
+      <h2 class="donthyphenate">Advances in modern browsers: Web and Service Workers</h2>
+      <ul>
+        <li>Web Worker: a truly parallel thread within the browser</li>
+        <li>A Service Worker is a special type of Web Worker, with additional features:
+          <ul>
+            <li>it is a <i>programmable network proxy</i>: the renderer’s network calls are caught and the request/answer can be modified on-the-fly behind the scenes</li>
+            <li>it has an interface to handle a local cache for networked data</li>
+            <li>it will stay alive even if the user moves away from the main page, and can be accessed later if he/she returns to it</li>
+          </ul>
+        </li>
+      </ul>
+      <p class="stamp small">Work in progress</p>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Advances in modern browsers: Web and Service Workers (Simplified)</h2>
+      <ul>
+        <li>A browser has a hidden, <i>truly parallel</i> engine attached to it</li>
+        <li>That engine “catches” all calls out to the Web, and:
+          <ul>
+            <li>either lets it through and the original request happens;</li>
+            <li>or performs local processing (e.g., gets content from a cache) and returns that content instead</li>
+          </ul>
+        </li>
+        <li>The “main” rendering engine is unaware of the underlying proxy process
+        <ul><li>it operates as if it was connected to the Web in a traditional way</li></ul>
+        </li>
+      </ul>
+    </div></section>
+
+    <section class="slide stamped"><div>
+      <h2 class="donthyphenate">Advances in modern browsers: Web and Service Workers (Simplified)</h2>
+      <ul>
+        <li>A browser has a hidden, <i>truly parallel</i> engine attached to it</li>
+        <li>That engine “catches” all calls out to the Web, and:
+          <ul>
+            <li>either lets it through and the original request happens;</li>
+            <li>or performs local processing (e.g., gets content from a cache) and returns that content instead</li>
+          </ul>
+        </li>
+        <li>The “main” rendering engine is unaware of the underlying proxy process
+        <ul><li>it operates as if it was connected to the Web in a traditional way</li></ul>
+        </li>
+      </ul>
+      <p class="stamp small">Work in progress</p>
+    </div></section>
+
+    <section class="slide shout"><div>
+      <h3>A PWP Processor could be implemented as a Service Worker</h3>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Not only a wild idea…</h2>
       <ul>
         <li>Some prior art exists (e.g., experimentation by the Readium Consortium with Service Workers)</li>
         <li>An early mock-up of the current architecture has also be done
@@ -902,9 +953,164 @@
       </ul>
     </div></section>
 
+    <section class="slide shout cover" id="ident"><div>
+      <img src="covers/library.jpg">
+      <h3 class="donthyphenate">Technical challenge: addressing, identification</h3>
+      <style type="text/css">
+        #ident h3 {
+          color:snow;
+          margin-top: 0.8em;
+        }
+      </style>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Is it "addressing" or is it "identification"?</h2>
+      <ul>
+        <li><em>These two “roles” are different</em></li>
+        <li>The usual situation:
+          <ul>
+              <li>some form of a URI is used to <em>(uniquely) identify</em> a resource</li>
+              <li>an HTTP(S) URL is used to <em>address</em> (or “locate”) a resource on the Web</li>
+          </ul>
+        </li>
+        <li>In many cases the two roles coincide, but not always
+            <ul>
+                <li>e.g., for a digital Book :
+                    <ul>
+                      <li><code>URN:ISBN:1-56592-521-1</code> identifies the publication</li>
+                      <li><code>http://www.ex.org/ex.epub</code> addresses a particular copy</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Is it "addressing" or is it "identification"?</h2>
+      <ul>
+          <li>Identification issues are handled by a number of other organizations (<a href="http://www.doi.org">DOI foundation</a>, <a href="https://www.isbn-international.org/">International ISBN Agency</a>, etc.)
+          </li>
+          <li>We (i.e., W3C, IDPF, etc.) have to concentrate on locators (i.e., addressing)
+          </li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Three layers of addressing</h2>
+          <ol>
+              <li>Locator for the PWP itself: <br /><code>http://www.ex.org/MyPWP/</code>
+              </li>
+              <li>Locating a resource <i>within</i> a PWP:<br /><code>http://www.ex.org/MyPWP/Chapter1.html</code>
+              </li>
+              <li>Locating a target within a resource: <br/><code>http://www.ex.org/MyPWP/Chapter1.html#section1</code>
+              </li>
+          </ol>
+          <ul>
+              <li>#3, i.e., “fragments” is defined for specific media types
+              </li>
+              <li>#2 <i>should</i> be just like any other resources on the Web, to allow for a smooth state transition
+              </li>
+          </ul>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Locating the different PWP “states”</h2>
+      <ul>
+          <li>There are, in practice, two different locators
+              <ul>
+                  <li>to the unpacked version on the Web (<b>L<sub>u</sub></b>):<br /> <code>http://www.ex.org/MyPWP/dir/</code></li>
+                  <li>to the package  (<b>L<sub>p</sub></b>):<br/> <code>http://www.ex.org/MyPWP.pwp</code>
+                  </li>
+              </ul>
+          </li>
+          <li>Which locators should one use? How would intra-resource addressing happen?
+              <ul>
+                  <li>i.e., how should <code>chapter1</code> refer to <code>chapter2</code>?</li>
+              </ul>
+
+          </li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="donthyphenate">Canonical locators</h2>
+        <ul>
+            <li>A PWP must have a <em>Canonical Locator</em> (<b>L</b>)
+                <ul><li>a state agnostic locator: <code>http://www.ex.org/MyPWP</code></li></ul>
+            </li>
+            <li>A published PWP <em>must</em> provide metadata that includes <b>L</b>, <b>L<sub>p</sub></b>, and <b>L<sub>u</sub></b>
+            </li>
+            <li>A PWP Processor <em>must</em> have access to the full metadata
+            </li>
+            <li>A resource within a PWP (and, in general, resources in general) should use <b>L</b> only for internal cross-references (or use relative URL-s)
+            </li>
+        </ul>
+    </div></section>
+
+    <section class="slide">
+        <div>
+            <h2 class="donthyphenate">The PWP Processor can take care of the rest…</h2>
+            <ul>
+                <li>The processor has an access to <b>L</b>, <b>L<sub>p</sub></b>, and <b>L<sub>u</sub></b></li>
+                <li>It can, if needed, convert among URI requests coming from the renderer</li>
+                <li>Remember:</li>
+            </ul>
+
+            <ul class="slidequote">
+                <li>A conceptual, client-side processor that “hides” the PWP state differences from the rendering engine
+                </li>
+                <li>The “main” rendering engine operates <i>as if</i> it was connected to the Web:
+                    <ul>
+                        <li>accessing resources through HTTP(S)</li>
+                        <li>all resources are “unpacked”</li>
+                    </ul>
+                </li>
+                <li>The PWP Processor should hide the state differences, possibly cache resources, etc.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">What does an <code style="font-size: 120%">HTTP GET</code> return for <b>L</b>?</h2>
+      <ul>
+        <li>Possibilities may be:
+            <ul>
+                <li>the full metadata (in some format)</li>
+                <li>the package that includes the metadata at some predefined place</li>
+                <li>an HTML, SVG, etc., with metadata provided through the <code>Link</code> header of the <code>HTTP</code> Response</li>
+                <li>an (X)HTML file containing the <code>&lt;link&gt;</code> element referring to metadata</li>
+            </ul>
+        </li>
+        <li>These possibilities are not mutually exclusive, and can be combined
+        </li>
+        <li>Different server setups are possible; a PWP specification would leave that open</li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="donthyphenate">Manifests</h2>
+
+        <ul>
+            <li>Note the crucial importance of the metadata</li>
+            <li>Some sort of a “manifest” format should be defined to hold (among others) this metadata</li>
+            <li>The manifest will be used for other, more traditional reasons, too:
+                <ul>
+                    <li>“traditional” metadata like author(s), right expressions, publication dates,…</li>
+                    <li><em>identifiers</em></li>
+                    <li>correct reading order for the publication content</li>
+                    <li>etc.</li>
+                </ul>
+            </li>
+        </ul>
+
+    </div></section>
+
     <section class="slide shout cover" id="pack"><div>
       <img src="covers/package.jpg">
-      <h3 class="donthyphenate">Technical Challenge: Archival Format </h3>
+      <h3 class="donthyphenate">Technical challenge: archival format </h3>
       <style type="text/css">
       #pack h3 {
         color: hsla(240, 69%, 50%, 1);
@@ -922,7 +1128,7 @@
     </div></section>
 
     <section class="slide"><div>
-      <h2 class="donthyphenate">Archival Format </h2>
+      <h2 class="donthyphenate">Archival format </h2>
       <ul>
         <li>There is an interest among some W3C members for a Web friendly packaging format:
           <ul>
@@ -934,7 +1140,7 @@
           <ul>
             <li>retrieve an HTML file with related CSS files, images</li>
             <li>access Web Applications (“Widgets”) with all libraries involved</li>
-            <li><i>Portable Web Publications are a clear use case</i></li>
+            <li><em>Portable Web Publications are a clear use case</em></li>
           </ul>
         </li>
         <li>But: current Web Packaging proposal is <i>not</i> OPF based
@@ -981,93 +1187,9 @@
       </ul>
     </div></section>
 
-    <section class="slide shout cover" id="ident"><div>
-      <img src="covers/library.jpg">
-      <h3 class="donthyphenate">Technical Challenge: Addressing, identification</h3>
-      <style type="text/css">
-        #ident h3 {
-          color:snow;
-          margin-top: 0.2em;
-        }
-      </style>
-    </div></section>
-
-    <section class="slide shout" ><div>
-      <h3 class="donthyphenate">Lots of questions, working on the answers…</h3>
-    </div></section>
-
-    <section class="slide"><div>
-      <h2 class="donthyphenate">Is it "Addressing" or is it "Identification"?</h2>
-      <ul>
-        <li>These a two “roles” are different</li>
-        <li>The usual situation is that:
-          <ul>
-            <li>an HTTP(S) URL is used to <i>address</i> a resource on the Web</li>
-            <li>some form of a URI is used to <i>(uniquely) identify</i> a resource</li>
-          </ul>
-        </li>
-        <li>In many cases the two roles coincide, but not always</li>
-        <li>E.g., for a Book Publication:
-          <ul>
-            <li><code>URN:ISBN:1-56592-521-1</code> identifies the publication</li>
-            <li><code>http://www.ex.org/ex.pwp</code> addresses my particular copy</li>
-          </ul>
-        </li>
-      </ul>
-    </div></section>
-
-    <section class="slide"><div>
-      <h2 class="donthyphenate">What does an <code style="font-size: 120%">HTTP GET</code> return?</h2>
-
-      <ul>
-        <li>Possibilities may be
-          <ul>
-            <li>some sort of a manifest describing the PWP as a whole (e.g., metadata, content, etc.); or</li>
-            <li>some content with a link to a manifest through a <code>LINK:</code> HTTP response header entry; or</li>
-            <li>some HTML content with a link to a manifest through a <code>&lt;link&gt;</code> element</li>
-          </ul>
-        </li>
-        <li>Details of what a manifest contains should be worked out
-          <ul><li>that may become a crucial constituent of a PWP</li></ul>
-        </li>
-      </ul>
-    </div></section>
-
-    <section class="slide"><div>
-      <h2 class="donthyphenate">What is the URL of a resource <i>within</i> a PWP?</h2>
-
-      <ul>
-        <li>Several possibilities should be considered:
-          <ul>
-            <li>based on some sort of a fragment identifier: <code>http://www.ex.org/doc.pwp#pwp(…)</code></li>
-            <li>explicit separator between the URL for the publication and the rest: <code>http://www.ex.org/doc.pwp!chapter1.html</code></li>
-            <li>simulate “tree” view of the publication’s content: <code>http://www.ex.org/doc.pwp/chapter1.html</code></li>
-          </ul>
-        </li>
-        <li>The third case is the most “webby”
-          <ul><li>it may need some extra information (“virtual redirection”) in, e.g., a manifest if the resources are spread all over the place</li></ul>
-        </li>
-        <li>Decomposing such URLs would happen in the dedicated Service Worker</li>
-      </ul>
-    </div></section>
-
-    <section class="slide"><div>
-      <h2 class="donthyphenate">What about addressing <i>within</i> a resource?</h2>
-      <ul>
-        <li>This is exactly what <i>fragment identifiers</i> do on the Web</li>
-        <li>PWP-s should <i>not</i> define a different mechanism, but should rely on what is widely deployed
-          <ul>
-            <li>note that this pretty much excludes <code>http://www.ex.org/doc.pwp#pwp(…)</code> as an answer to the previous question</li>
-          </ul>
-        </li>
-        <li>Although… new types of fragment identifers may be proposed by the publishing community to the Web community at large</li>
-      </ul>
-    </div></section>
-
-
     <section class="slide shout cover" id="presentation"><div>
       <img src="covers/choice.jpg">
-      <h3 class="donthyphenate">Technical Challenge: Presentation Control </h3>
+      <h3 class="donthyphenate">Technical challenge: presentation control <br>(a.k.a. Personalization) </h3>
       <style type="text/css">
         #presentation h3 {
           color: hsla(240, 69%, 50%, 1);
@@ -1083,7 +1205,7 @@
           <ul>
             <li>in a browser, the Web designer is in full control
               <ul>
-                <li>CSS alternate style sheets are hardly in use</li>
+                <li>CSS alternate style sheets or user style sheets are hardly in use</li>
                 <li>some user interface aspects can be controlled but only for the browser as a whole</li>
               </ul>
             </li>
@@ -1139,7 +1261,12 @@
       <ul>
         <li>PWP does <i>not</i> replace EPUB&nbsp;3 (and upcoming EPUB&nbsp;3.1) at this moment</li>
         <li>Many of the new features may also be part of EPUB&nbsp;3.1 (e.g., structural semantics)</li>
-        <li>The vision is a convergence of the EPUB&nbsp;3.* specifications and PWP, eventually</li>
+        <li>The vision is a convergence of the EPUB&nbsp;3.* specifications and PWP, eventually
+            <ul>
+                <li>in many aspects, EPUB&nbsp;3.1 is already a first step towards a PWP</li>
+            </ul>
+
+        </li>
       </ul>
     </div></section>
 
@@ -1158,14 +1285,12 @@
       <dl>
         <dt>DPUB IG Wiki</dt>
           <dd><a target="_blank" href="https://www.w3.org/dpub/IG/wiki/Main_Page"><code>https://www.w3.org/dpub/IG/wiki/Main_Page</code></a></dd>
-        <dt>Latest PWP Draft:</dt>
+        <dt>Latest PWP Official Draft:</dt>
           <dd><a target="_blank" href="http://www.w3.org/TR/pwp/"><code>http://www.w3.org/TR/pwp/</code></a></dd>
+        <dt>PWP Editors’ draft:</dt>
+            <dd><a target="_blank" href="https://w3c.github.io/dpub-pwp/"><code>https://w3c.github.io/dpub-pwp/</code></a></dd>
         <dt>PWP Issue list:</dt>
           <dd><a target="_blank" href="https://github.com/w3c/dpub-pwp/issues"><code>https://github.com/w3c/dpub-pwp/issues</code></a></dd>
-        <dt>This presentation:</dt>
-          <dd><a target="_blank" href="http://www.w3.org/2016/Talks/???????????/"><code>http://www.w3.org/2016/Talks/???????????/</code></a> (<a href="http://www.w3.org/2016/Talks/???????????/slides.pdf">PDF</a> is also available for download)</dd>
-        <dt>Contact me:</dt>
-          <dd>ivan@w3.org</dd>
       </dl>
     </div></section>
 
@@ -1183,13 +1308,18 @@
     </div></section>
 -->
 
-    <section class="slide shout"><div>
-      <h3>Thank you for your attention!</h3>
+    <section class="slide"><div>
+      <h2>Thank you for your attention!</h2>
+      <dl>
+        <dt>This presentation:</dt>
+          <dd><a target="_blank" href="http://www.w3.org/2016/Talks/???????????/"><code>http://www.w3.org/2016/Talks/???????????/</code></a> <br>(<a href="http://www.w3.org/2016/Talks/???????????/slides.pdf">PDF</a> is also available for download)</dd>
+        <dt>My contact:</dt>
+          <dd>ivan@w3.org</dd>
+      </dl>
     </div></section>
 
     <!-- ===================================== -->
     <div class="progress"><div></div> </div>
-    <script src="https://www.w3.org/scripts/shower/1.0.7/shower.min.js"></script>
-
+    <script src="js/shower.min.js"></script>
   </body>
 </html>
