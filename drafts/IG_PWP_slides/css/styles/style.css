@@ -444,6 +444,24 @@ p.copyright {font-size:70%}
 
 ul ul li {padding-bottom: 0em !important}
 
+div.flexleft {
+    display: flex;
+    flex-flow: row;
+}
+
+div.flexleft figure {
+    margin-right: 2em;
+}
+
+div.flexright {
+    display: flex;
+    flex-flow: row-reverse;
+}
+
+div.flexright figure {
+    margin-left: 1em;
+}
+
 figure.center, figure.centre {
     text-align: center;
 }
@@ -451,10 +469,22 @@ figure.center, figure.centre {
 figure.right {
     float:       right;
     margin-left: 1em;
+}
+
+figure.left {
+    float:       left;
+    margin-right: 2em;
+}
+
+figure.right, figure.left, div.flexleft figure, div.flexright figure {
     max-width: 250px;
 }
 
-figure.right img {
+figure.right.larger, figure.left.larger, div.flexleft figure, div.flexright figure {
+    max-width: 300px;
+}
+
+figure.right img, figure.left img, div.flexleft img, div.flexright img {
     max-width: inherit;
     width: 250px;
     border: 1px solid #CCC;
@@ -462,7 +492,11 @@ figure.right img {
     box-shadow: 7px 7px 5px #888;
 }
 
-figure.right img.noborder {
+figure.larger img {
+    width: 300px;
+}
+
+figure.right img.noborder, figure.left img.noborder, div.flexleft img.noborder, div.flexright img.noborder {
     border: 0px solid #CCC !important;
     border-radius: 0px !important;
     box-shadow: 0px 0px 0px #888 !important;

@@ -251,7 +251,7 @@
 
     <section class="slide"><div>
       <h2 class="donthyphenate">Priorities for CSS</h2>
-      <figure class="right">
+      <figure class="left">
         <img src="figures/css_priorities.png" class="noborder" alt="Screen dumps of the CSS Priorities' document">
       </figure>
       <ul>
@@ -263,16 +263,19 @@
 
     <section class="slide"><div>
       <h2 class="donthyphenate">Layout and styling: the Houdini project &amp; pagination</h2>
-      <div style="font-size:80%">
-        <blockquote>
-          The CSS-TAG <a href="https://wiki.css-houdini.org/">“Houdini Project”</a> […] explain[s] existing CSS functionalities better and make development of CSS polyfills […] easier by defining low level APIs of styling and layout on the web
+      <figure class="right">
+        <img src="figures/houdini.jpg" alt="Full-length portrait of Houdini, in chains">
+        <figcaption class="credit">Harry Houdini, McManus-Young collection, LoC</figcaption>
+      </figure>
+      <div style="font-size:70%">
+        <blockquote style="margin-left:1em">
+          The CSS-TAG <a href="https://wiki.css-houdini.org/">“Houdini Project”</a> […] make[s] development of CSS polyfills […] easier by defining low level APIs of styling and layout on the web
         </blockquote>
         <p style="font-size:40%; text-align:right">Credit: Vivliostyle blog, Toru Kawakubo</p>
       </div>
       <ul>
-        <li>The results may be essential for a proper (and standard) access to page-related information</li>
+        <li>May lead to a standard access to page-related information</li>
         <li>Pagination isn’t only books: slides, cards, and other “boxes” use the same functionality</li>
-        <li>The DPUB Community have been involved from the start</li>
       </ul>
     </div></section>
 
@@ -309,11 +312,11 @@
 
     <section class="slide"><div>
       <h2 class="donthyphenate">Content and markup: DPUB ARIA module</h2>
-      <figure class="right">
+      <figure class="right larger">
         <img src="figures/dpub-aria.png" alt="Screen dump of the DPUB ARIA document">
       </figure>
       <ul>
-        <li>A <a href="http://www.w3.org/TR/dpub-aria-1.0/">Digital Publishing WAI-ARIA module</a> is in development
+        <li>A <a href="http://www.w3.org/TR/dpub-aria-1.0/">“Digital Publishing WAI-ARIA module”</a> is in development
           <ul><li>i.e., publishing terms become part of ARIA</li></ul>
         </li>
         <li>A separate <a href='http://www.w3.org/TR/dpub-aam-1.0/'>document</a> describes the mapping on the Accessibility API-s</li>
@@ -326,39 +329,43 @@
 
     <section class="slide"><div>
       <h2 class="donthyphenate">Annotations</h2>
-      <figure class="right">
-          <img src="figures/annotation.jpg" alt="Annotatated medieval manuscript"/>
-      </figure>
-      <ul>
-        <li>Published an <a target="_blank"  href ="http://w3c.github.io/dpub-annotation/">Annotation Use Cases</a></li>
-        <li>Activity and work has shifted to the <a target="_blank"  href="http://www.w3.org/annotation/">Web Annotations Working Group</a>, which develops:
+      <div class="flexright">
+        <figure class="larger" >
+          <img src="figures/annotation.jpg" alt="Annotatated medieval manuscript" />
+          </figure>
           <ul>
-            <li>a standard <i>data model</i> and <i>serialization in JSON</i> to describe and mantain annotations</li>
-            <li>a <i>protocol</i> to exchange annotations between an annotation client and a server</li>
-            <li>the work aims at annotations <i>for all forms of Web Documents</i>, whether in a browser or an eBook</li>
-           </ul>
-        </li>
-      </ul>
+            <li>The group published an <a target="_blank"  href ="http://w3c.github.io/dpub-annotation/">“Annotation Use Cases”</a> document</li>
+            <li>Activity and work has shifted to the <a target="_blank"  href="http://www.w3.org/annotation/">Web Annotations Working Group</a>, which develops:
+              <ul>
+                <li>a standard <i>data model</i> and <i>serialization in JSON</i> to describe and mantain annotations (for all forms of Web Documents)</li>
+                <li>a <i>protocol</i> to exchange annotations between an annotation client and a server</li>
+               </ul>
+            </li>
+          </ul>
+        </div>
     </div></section>
 
     <section class="slide"><div>
       <h2 class="donthyphenate">Metadata</h2>
-      <figure class="right">
-          <img src="figures/metadata_report.png" alt="Screen dump of the metadata report"/>
-      </figure>
-      <ul>
-        <li>Interviewed publishing experts in metadata</li>
-        <li>Published a <a target="_blank"  href ="http://w3c.github.io/dpub-metadata/">“DPUB IG Metadata Task Force Report”</a>:</li>
-        <ul>
-          <li>a note summarizing findings in interviews</li>
-          <li>discovered that OWP has the tools that publishers seek, but many in publishing are not familiar with tools</li>
-          <li>this group can aid the publishing industry in using OWP tools to implement existing vocabularies </li>
-          <li>a standard for right expression is important for the community
-              <ul><li>a WG on the subject has just started!</li>
-              </ul>
-          </li>
-        </ul>
-      </ul>
+      <div class="flexright">
+          <figure class="larger">
+              <img src="figures/metadata_report.png" alt="Screen dump of the metadata report"/>
+          </figure>
+          <ul>
+            <li>Interviewed publishing experts in metadata</li>
+            <li>Published a <a target="_blank"  href ="http://w3c.github.io/dpub-metadata/">“DPUB IG Metadata Task Force Report”</a>:</li>
+            <ul>
+              <li>a note summarizing findings in interviews</li>
+              <li>discovered that OWP has the tools that publishers seek, but many in publishing are not familiar with tools</li>
+              <li>this group can aid the publishing industry in using OWP tools to implement existing vocabularies </li>
+              <li>a standard for right expression is important for the community
+                  <ul><li>a WG on the subject has just started!</li>
+                  </ul>
+              </li>
+            </ul>
+          </ul>
+
+      </div>
     </div></section>
 
     <!-- ========================================================================= -->
@@ -438,11 +445,11 @@
 
     <section class="slide"><div>
       <h2 class="donthyphenate">What does this mean?</h2>
-      <figure class="right">
+      <figure class="left larger">
         <img src="figures/pwp.svg" alt="Portable Web Publication at a glance"/>
       </figure>
+      <p><i>Separation between publishing “online”, as Web sites, and offline and/or packaged should be diminished to zero</i></p>
       <ul>
-        <li>Separation between publishing “online”, as Web sites, and offline and/or packaged should be diminished to zero</li>
         <li>This means:
           <ul>
             <li>publication content on the Web can be loaded into a browser or a specialized reader, whatever the user prefers</li>
@@ -470,70 +477,80 @@
 
     <section class="slide"><div>
       <h2 class="donthyphenate">For example: book in a browser</h2>
-      <figure class="right">
-        <img src="figures/joseph-web.png" alt="Joseph Reagle's book as a web page">
-        <figcaption class="credit"><a target="_blank" href="http://reagle.org/joseph/2010/gfc/chapter-4.html">Extract of Joseph Reagle’s Book</a></figcaption>
-      </figure>
-      <ul>
-        <li>On a desktop I may want to read a book just like a Web page:
+      <div class="flexright">
+          <figure>
+            <img src="figures/joseph-web.png" alt="Joseph Reagle's book as a web page">
+            <figcaption class="credit"><a target="_blank" href="http://reagle.org/joseph/2010/gfc/chapter-4.html">Extract of Joseph Reagle’s Book</a></figcaption>
+          </figure>
           <ul>
-            <li>easily follow a link “out” of the book</li>
-            <li>create bookmarks to “within” a page in a book</li>
-            <li>use useful plugins and tools that my browser may have</li>
-            <li>create annotations</li>
-            <li>sometimes I may need the computing power of my desk-top for, e.g., interactive 3D content</li>
+            <li>On a desktop I may want to read a book just like a Web page:
+              <ul>
+                <li>easily follow a link “out” of the book</li>
+                <li>create bookmarks to “within” a page in a book</li>
+                <li>use useful plugins and tools that my browser may have</li>
+                <li>create annotations</li>
+                <li>sometimes I may need the computing power of my desk-top for, e.g., interactive 3D content</li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
+      </div>
     </div></section>
 
     <section class="slide"><div>
       <h2 class="donthyphenate">For example: book in a browser</h2>
-      <figure class="right">
-        <img src="figures/joseph-book.png" alt="Joseph Reagle's book as an ebook in reader">
-        <figcaption class="credit"><a target="_blank" href="http://reagle.org/joseph/2010/gfc/chapter-4.html">Extract of Joseph Reagle’s Book</a> as ePUB</figcaption>
-      </figure>
-      <ul>
-        <li>But, at other times, I may also want to use a small dedicated reader device to read the book on the beach…</li>
-        <li>All these on <i>the same</i> book (not conversions from one format to the other)!</li>
-      </ul>
+      <div class="flexleft">
+          <figure>
+            <img src="figures/joseph-book.png" alt="Joseph Reagle's book as an ebook in reader">
+            <figcaption class="credit"><a target="_blank" href="http://reagle.org/joseph/2010/gfc/chapter-4.html">Extract of Joseph Reagle’s Book</a> as ePUB</figcaption>
+          </figure>
+          <ul>
+            <li>But, at other times, I may also want to use a small dedicated reader device to read the book on the beach…</li>
+            <li>All these on <i>the same</i> book (not conversions from one format to the other)!</li>
+          </ul>
+      </div>
     </div></section>
 
     <section class="slide"><div>
       <h2 class="donthyphenate">For example: I may not ne online…</h2>
-      <figure class="right">
-        <img src="figures/commute.jpg" alt="Person sitting in a station with a mobile in hand">
-        <figcaption class="credit"><a target="_blank" href="http://j.mp/1t7BxJN">Bryan Ong</a>, Flickr</figcaption>
-      </figure>
-      <ul>
-        <li>I may find an article on the Web that I want to review, annotate, etc., while commuting home on a train</li>
-        <li>I want the results of the annotations to be back online, when I am back on the Internet</li>
-        <ul>
-          <li>note: some browsers have an “archiving” possibility, but they are not interoperable</li>
-        </ul>
-      </ul>
+      <div class="flexright">
+          <figure class="larger">
+            <img src="figures/commute.jpg" alt="Person sitting in a station with a mobile in hand">
+            <figcaption class="credit"><a target="_blank" href="http://j.mp/1t7BxJN">Bryan Ong</a>, Flickr</figcaption>
+          </figure>
+          <ul>
+            <li>I may find an article on the Web that I want to review, annotate, etc., while commuting home on a train</li>
+            <li>I want the results of the annotations to be back online, when I am back on the Internet</li>
+            <ul>
+              <li>note: some browsers have an “archiving” possibility, but they are not interoperable</li>
+            </ul>
+          </ul>
+      </div>
     </div></section>
 
     <section class="slide"><div>
       <h2 class="donthyphenate">For example: scholarly publishing</h2>
-      <figure class="right">
-        <img src="figures/f1000.png" alt="Screen dump of an article on F1000">
-        <figcaption class="credit">Screen dump of an article <a target="_blank" href="http://bit.ly/1wFcfWC">“Sub-strains of Drosophila Canton-S…”</a> on F1000</figcaption>
-      </figure>
-      <ul>
-        <li>My paper may be published on-line, but people may want to download it for offline use</li>
-        <li>The format of the paper should be adaptable to my reading environment
-          <ul><li>do not want a two column, fixed layout file that I cannot handle on my iPad…</li></ul>
-        </li>
-        <li>My “paper” may also contain video, audio, data, programs…
-          <ul><li>scholarly publishing is not text only any more!</li></ul>
-        </li>
-      </ul>
+      <div class="flexleft">
+          <figure>
+            <img src="figures/f1000.png" alt="Screen dump of an article on F1000">
+            <figcaption class="credit">Screen dump of an article <a target="_blank" href="http://bit.ly/1wFcfWC">“Sub-strains of Drosophila Canton-S…”</a> on F1000</figcaption>
+          </figure>
+          <ul>
+            <li>Paper may be published on-line, but people may want to download it for offline use</li>
+            <li>The format of the paper should be adaptable to <a href="#"></a> reading environment
+              <ul><li>no two column, fixed layout file that cannot be handled on an my iPad…</li></ul>
+            </li>
+            <li>The “paper” may also contain video, audio, data, programs…
+              <ul><li>scholarly publishing is not text only any more!</li></ul>
+            </li>
+          </ul>
+      </div>
+
+
     </div></section>
 
     <section class="slide"><div>
       <h2 class="donthyphenate">For example: in-house publishing</h2>
-      <figure class="right">
+      <figure class="right larger">
         <img src="figures/manuals.jpg" alt="Bookshelf full of documentation">
         <figcaption class="credit"><a target="_blank" href="http://j.mp/1t7B4HH">Peliro Agüera</a>, Flickr</figcaption>
       </figure>
@@ -547,18 +564,19 @@
 
     <section class="slide"><div>
       <h2 class="donthyphenate">For example: educational publications</h2>
-      <figure class="right">
+      <figure class="right larger">
         <img src="figures/auditorium.jpg" alt="University hall with students, most of them with a tablet">
         <figcaption class="credit"><a target="_blank" href="http://j.mp/1t7Gpie">Merrill College of Journalism</a>, Flickr</figcaption>
       </figure>
       <ul>
-        <li>What is an educational publication?</li>
-        <ul>
-          <li><i>a book</i> that requires offline access?</li>
-          <li><i>a packaged application</i> with built-in interactive tests, animated examples?</li>
-          <li><i>a Web client</i> reaching out to Web services for assessing test results, to encyclopedia,&nbsp;…?</li>
-          <li><i>an interactive data container</i> storing various data for, e.g., demonstrations?</li>
-        </ul>
+        <li>What is an educational publication?
+            <ul>
+              <li><i>a book</i> that requires offline access?</li>
+              <li><i>a packaged application</i> with built-in interactive tests, animated examples?</li>
+              <li><i>a Web client</i> reaching out to Web services for assessing test results, to encyclopedia,&nbsp;…?</li>
+              <li><i>an interactive data container</i> storing various data for, e.g., demonstrations?</li>
+            </ul>
+        </li>
         <li>The borderline between a “book” and a “(Web) Application” is becoming blurred…</li>
       </ul>
     </div></section>
@@ -579,47 +597,54 @@
 
     <section class="slide"><div>
       <h2 class="donthyphenate">Advantage for the publishers‘ community </h2>
-      <figure class="right">
-        <img src="figures/javascript.jpg" alt="Photo of two javascript books">
-        <figcaption class="credit"><a target="_blank" href="http://j.mp/1CP4M41">Nathan Smith</a>, Flickr</figcaption>
-      </figure>
-      <ul>
-        <li>Publishers want to concentrate on what <em>they</em> know better: how to produce, edit, curate, etc, great content</li>
-        <li>Publishers are <i>not</i> technology companies, nor do they intend to be; they want instead to rely on the vibrant Web community!</li>
-      </ul>
+      <div class="flexleft ">
+          <figure class="larger">
+            <img src="figures/zeldman.jpg" alt="Photo of a bookshelf with lots of technical books">
+            <figcaption class="credit"><a target="_blank" href="https://www.flickr.com/photos/zeldman/">Jeffrey Zeldman</a>, Flickr</figcaption>
+          </figure>
+          <ul>
+            <li>Publishers want to do what <em>they</em> know better: produce, edit, curate, etc, content</li>
+            <li>Publishers are <i>not</i> technology companies, nor do they intend to be; they should rely on the vibrant Web developers’ community!</li>
+          </ul>
+      </div>
     </div></section>
 
-    <section class="slide">
-      <div>
+    <section class="slide"><div>
         <h2 class="donthyphenate">Advantage for publishers‘ community</h2>
-        <figure class="right">
-          <img src="figures/javascript.jpg" alt="Photo of two javascript books">
-          <figcaption class="credit"><a target="_blank" href="http://j.mp/1CP4M41">Nathan Smith</a>, Flickr</figcaption>
-        </figure>
-        <ul>
-          <li>OWP is more than “just” HTML, CSS, MathML, etc.</li>
-          <li>It also defines a large number of facilities that provide access to, e.g., system resources or utilities
-            <ul><li>index database, Web storage, battery status API, real-time communication, geolocation,…</li></ul>
-          </li>
-          <li>Aligning more on OWP means that specialized readers or Web sites, software, services, etc, can rely on those
-            <ul><li>instead of possibly re-inventing the wheel…</li></ul>
-          </li>
-        </ul>
-      </div>
-    </section>
+        <div class="flexleft">
+            <figure class="larger">
+              <img src="figures/zeldman.jpg" alt="Photo of a bookshelf with lots of technical books">
+              <figcaption class="credit"><a target="_blank" href="https://www.flickr.com/photos/zeldman/">Jeffrey Zeldman</a>, Flickr</figcaption>
+            </figure>
+            <ul>
+              <li>OWP also defines API-s to access to, e.g., system resources or utilities
+                <ul><li>index database, Web storage, battery status API, real-time communication, geolocation,…</li></ul>
+              </li>
+              <li>Aligning more on OWP means that specialized readers or Web sites, software, services, etc, can rely on those
+              </li>
+            </ul>
+        </div>
+    </div></section>
 
     <section class="slide"><div>
       <h2 class="donthyphenate">Advantage for the Web community</h2>
-      <figure class="right">
-        <img src="figures/euclid.png" alt="image of a medieval manuscript">
-        <figcaption class="credit"><a href="http://www.math.ubc.ca/~cass/Euclid/byrne.html">Oliver Byrne's edition of Euclid</a>, University of British Columbia</figcaption>
-      </figure>
-      <ul>
-        <li>Publishers have a long experience in ergonomics, typography, paging,&nbsp;…</li>
-        <li>Publishing long texts, with the right aesthetics, readability, structure, etc., is an expertise the Web community can profit from</li>
-        <li>Experience of publishers in the complete workflow for producing content may become important for Web design</li>
-      </ul>
+      <div class="flexright">
+          <figure>
+            <img src="figures/euclid.png" alt="image of a medieval manuscript">
+            <figcaption class="credit"><a href="http://www.math.ubc.ca/~cass/Euclid/byrne.html">Oliver Byrne's edition of Euclid</a>, University of British Columbia</figcaption>
+          </figure>
+          <ul>
+              <li>Publishers have experience in:
+                  <ul>
+                        <li>ergonomics, typography, aesthetics…</li>
+                        <li>publishing long texts, with the right readability and structure</li>
+                  </ul>
+              </li>
+              <li>Workflow for producing complex content</li>
+          </ul>
+      </div>
     </div></section>
+
 
     <section class="slide"><div>
       <h2 class="donthyphenate">Some communities that may be affected</h2>
@@ -783,8 +808,7 @@
     <section class="slide"><div>
         <h2 class="donthyphenate">But there are of course differences</h2>
         <ul>
-            <li>We do talk about the “unity” of Web sites and their downloaded alternative, but they are obviously not the absolutely the same</li>
-            <li>This differentiation must be made somehow</li>
+            <li>Although the same content of a PWP whether offline or online, but they are obviously not absolutely the same</li>
             <li>We refer to different <em>states</em> of the same PWP</li>
         </ul>
     </div></section>
@@ -820,7 +844,6 @@
         }
       </style>
     </div></section>
-
 
     <section class="slide">
         <div>
