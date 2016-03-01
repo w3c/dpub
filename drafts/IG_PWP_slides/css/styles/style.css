@@ -444,6 +444,12 @@ p.copyright {font-size:70%}
 
 ul ul li {padding-bottom: 0em !important}
 
+
+/*
+Different ways of controlling figures. If the text should flow around the figure use, right or left; otherwise
+using flex boxes is probably the right way.
+*/
+
 div.flexleft {
     display: flex;
     flex-flow: row;
@@ -480,10 +486,6 @@ figure.right, figure.left, div.flexleft figure, div.flexright figure {
     max-width: 250px;
 }
 
-figure.right.larger, figure.left.larger, div.flexleft figure, div.flexright figure {
-    max-width: 300px;
-}
-
 figure.right img, figure.left img, div.flexleft img, div.flexright img {
     max-width: inherit;
     width: 250px;
@@ -492,14 +494,39 @@ figure.right img, figure.left img, div.flexleft img, div.flexright img {
     box-shadow: 7px 7px 5px #888;
 }
 
+figure.right.larger, figure.left.larger, div.flexleft figure.larger, div.flexright figure.larger {
+    max-width: 300px;
+}
+
 figure.larger img {
     width: 300px;
+}
+
+figure.right.large, figure.left.large, div.flexleft figure, div.flexright figure {
+    max-width: 350px;
+}
+
+figure.large img {
+    width: 350px;
 }
 
 figure.right img.noborder, figure.left img.noborder, div.flexleft img.noborder, div.flexright img.noborder {
     border: 0px solid #CCC !important;
     border-radius: 0px !important;
     box-shadow: 0px 0px 0px #888 !important;
+}
+
+div.flexdown {
+    display: flex;
+    flex-flow: column;
+}
+div.flexdown figure {
+    max-height: 300px;
+    margin-top: 0em;
+    transform: translateY(-40px);
+}
+div.flexdown img {
+    height: 300px
 }
 
 figure > figcaption {
