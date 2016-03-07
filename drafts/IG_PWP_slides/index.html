@@ -1012,7 +1012,7 @@
     </div></section>
 
     <section class="slide"><div>
-      <h2 class="donthyphenate">Is it "addressing" or is it "identification"?</h2>
+      <h2 class="donthyphenate">Is it "addressing" or "identification"?</h2>
       <ul>
         <li><em>These two “roles” are different</em></li>
         <li>The usual situation:
@@ -1035,9 +1035,12 @@
     </div></section>
 
     <section class="slide"><div>
-      <h2 class="donthyphenate">Is it "addressing" or is it "identification"?</h2>
+      <h2 class="donthyphenate">Is it "addressing" or "identification"?</h2>
       <ul>
-          <li>Identification issues are handled by a number of other organizations (<a href="http://www.doi.org">DOI foundation</a>, <a href="https://www.isbn-international.org/">International ISBN Agency</a>, etc.)
+          <li>Identification issues are handled by a number of other organizations
+              <ul>
+                  <li><a href="http://www.doi.org">DOI foundation</a>, <a href="https://www.isbn-international.org/">International ISBN Agency</a>, etc.</li>
+              </ul>
           </li>
           <li>We (i.e., W3C, IDPF, etc.) have to concentrate on locators (i.e., addressing)
           </li>
@@ -1047,30 +1050,25 @@
     <section class="slide"><div>
       <h2 class="donthyphenate">Three layers of addressing</h2>
           <ol>
-              <li>Locator for the PWP itself: <br /><code>http://www.ex.org/MyPWP/</code>
-              </li>
-              <li>Locating a resource <i>within</i> a PWP:<br /><code>http://www.ex.org/MyPWP/Chapter1.html</code>
-              </li>
-              <li>Locating a target within a resource: <br/><code>http://www.ex.org/MyPWP/Chapter1.html#section1</code>
-              </li>
+              <li>Locator for the PWP itself: <br /><code>http://www.ex.org/MyPWP/</code></li>
+              <li>Locating a resource <i>within</i> a PWP:<br /><code>http://www.ex.org/MyPWP/Chapter1.html</code></li>
+              <li>Locating a target within a resource: <br/><code>http://www.ex.org/MyPWP/Chapter1.html#section1</code></li>
           </ol>
           <ul>
-              <li>#3, i.e., “fragments” is defined for specific media types
-              </li>
-              <li>#2 <i>should</i> be just like any other resources on the Web, to allow for a smooth state transition
-              </li>
+              <li>#3, i.e., “fragments” is defined for specific media types</li>
+              <li>#2 <i>should</i> be just like any other resources on the Web, to allow for a smooth state transition</li>
+              <li><em>details of #1 is to be specified for PWP</em></li>
           </ul>
       </ul>
     </div></section>
 
     <section class="slide"><div>
-      <h2 class="donthyphenate">Locating the different PWP “states”</h2>
+      <h2 class="donthyphenate">The problem: locating the different PWP “states”</h2>
       <ul>
           <li>There are, in practice, two different locators
               <ul>
                   <li>to the unpacked version on the Web (<b>L<sub>u</sub></b>):<br /> <code>http://www.ex.org/MyPWP/dir/</code></li>
-                  <li>to the package  (<b>L<sub>p</sub></b>):<br/> <code>http://www.ex.org/MyPWP.pwp</code>
-                  </li>
+                  <li>to the package  (<b>L<sub>p</sub></b>):<br/> <code>http://www.ex.org/MyPWP.pwp</code></li>
               </ul>
           </li>
           <li>Which locators should one use? How would intra-resource addressing happen?
@@ -1083,12 +1081,12 @@
     </div></section>
 
     <section class="slide"><div>
-        <h2 class="donthyphenate">Canonical locators</h2>
+        <h2 class="donthyphenate">PWP’s canonical locator</h2>
         <ul>
             <li>A PWP must have a <em>Canonical Locator</em> (<b>L</b>)
                 <ul><li>a state agnostic locator: <code>http://www.ex.org/MyPWP</code></li></ul>
             </li>
-            <li>A published PWP <em>must</em> provide metadata that includes <b>L</b>, <b>L<sub>p</sub></b>, and <b>L<sub>u</sub></b>
+            <li>A published PWP <em>must</em> provide a metadata that includes <b>L</b>, <b>L<sub>p</sub></b>, and <b>L<sub>u</sub></b>
             </li>
             <li>A PWP Processor <em>must</em> have access to the full metadata
             </li>
@@ -1121,25 +1119,7 @@
     </section>
 
     <section class="slide"><div>
-      <h2 class="donthyphenate">What does an <code style="font-size: 120%">HTTP GET</code> return for <b>L</b>?</h2>
-      <ul>
-        <li>Possibilities may be:
-            <ul>
-                <li>the full metadata (in some format)</li>
-                <li>the package that includes the metadata at some predefined place</li>
-                <li>an HTML, SVG, etc., with metadata provided through the <code>Link</code> header of the <code>HTTP</code> Response</li>
-                <li>an (X)HTML file containing the <code>&lt;link&gt;</code> element referring to metadata</li>
-            </ul>
-        </li>
-        <li>These possibilities are not mutually exclusive, and can be combined
-        </li>
-        <li>Different server setups are possible; a PWP specification would leave that open</li>
-      </ul>
-    </div></section>
-
-    <section class="slide"><div>
         <h2 class="donthyphenate">Manifests</h2>
-
         <ul>
             <li>Note the crucial importance of the metadata</li>
             <li>Some sort of a “manifest” format should be defined to hold (among others) this metadata</li>
@@ -1152,7 +1132,38 @@
                 </ul>
             </li>
         </ul>
+    </div></section>
 
+    <section class="slide"><div>
+      <h2 class="donthyphenate">What does an <code style="font-size: 120%">HTTP GET</code> return for <b>L</b>?</h2>
+      <ul>
+        <li>Possibilities are:
+            <ul>
+                <li>the full manifest</li>
+                <li>the package that <i>includes</i> the manifest at some predefined place</li>
+                <li>an HTML file with a link to a manifest (through a <code>&lt;link&gt;</code> element)</li>
+                <li>an HTML file with an <i>embedded</i> manifest (through a <code>&lt;script&gt;</code> element)</li>
+                <li>some Web Resource, with a link to a manifest in the <code>Link</code> header of the <code>HTTP</code> response</li>
+            </ul>
+        </li>
+        <li>A PWP Processor should consider all these possibilities and <em>combine</em> the various sources</li>
+        <li>Different server setups are possible; a PWP specification should leave that open</li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="donthyphenate">Getting hold of all locators</h2>
+        <figure class="center" style="transform:translateY(-28px)">
+          <img class="plain" src="figures/PWPClient.svg" alt="Flow diagram on accessing and combining various sources of Metadata" width="97%">
+        </figure>
+    </div></section>
+
+    <section class="slide stamped"><div>
+        <h2 class="donthyphenate">Getting hold of all locators</h2>
+        <figure class="center" style="transform:translateY(-28px)">
+          <img class="plain" src="figures/PWPClient.svg" alt="Flow diagram on accessing and combining various sources of Metadata" width="97%">
+        </figure>
+        <p class="stamp small">Work in progress</p>
     </div></section>
 
     <section class="slide shout cover" id="pack"><div>
