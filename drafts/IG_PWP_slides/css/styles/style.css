@@ -249,7 +249,7 @@ header p, header h1, header h2, header h3   {
 
 .slide table  {
     border-collapse: separate;
-    border-spacing: 0.1em
+    border-spacing: 0.1em;
     border: none !important;
 }
 
@@ -282,7 +282,7 @@ header p, header h1, header h2, header h3   {
 
 .slide table th.headerleft {
     padding-right: 1em;
-    text-align:right
+    text-align:right;
     border-top: 1px solid #CCC;
     border-bottom: 1px solid #CCC;
 }
