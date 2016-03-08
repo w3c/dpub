@@ -452,8 +452,11 @@ header {
 /* Different ways of controlling figures. If the text should flow around the figure use, right or left; otherwise */
 /* using flex boxes is probably the right way.                                                                    */
 /* -------------------------------------------------------------------------------------------------------------- */
+/* Note: for webkit and mozilla the min-width seems to be unnecessary, but it is necessary for Safari... */
+
 @mixin normal-figure {
     max-width: $figure-normal;
+    min-width: $figure-normal;
     img {
         max-width: inherit;
         width: $figure-normal;
@@ -465,6 +468,7 @@ header {
 
 @mixin larger-figure {
     max-width: $figure-larger;
+    min-width: $figure-larger;
     img {
         width: $figure-larger;
     }
@@ -472,6 +476,7 @@ header {
 
 @mixin large-figure {
     max-width: $figure-large;
+    min-width: $figure-large;
     img {
         width: $figure-large;
     }
@@ -544,6 +549,7 @@ div.flexdown {
     flex-flow: column;
     figure {
         max-height: $figure-larger;
+        min-height: $figure-larger;
         margin-top: 0em;
         @include transY(-40px);
     }

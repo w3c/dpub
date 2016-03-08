@@ -428,19 +428,21 @@ header p, header h1, header h2, header h3 {
 /* Different ways of controlling figures. If the text should flow around the figure use, right or left; otherwise */
 /* using flex boxes is probably the right way.                                                                    */
 /* -------------------------------------------------------------------------------------------------------------- */
+/* Note: for webkit and mozilla the min-width seems to be unnecessary, but it is necessary for Safari... */
 /* ----------- */
-/* line 482, style.scss */
+/* line 487, style.scss */
 figure.center, figure.centre {
   text-align: center;
 }
 
-/* line 486, style.scss */
+/* line 491, style.scss */
 figure.right {
   float: right;
   margin-left: 1em;
   max-width: 250px;
+  min-width: 250px;
 }
-/* line 457, style.scss */
+/* line 460, style.scss */
 figure.right img {
   max-width: inherit;
   width: 250px;
@@ -449,13 +451,14 @@ figure.right img {
   box-shadow: 7px 7px 5px #888;
 }
 
-/* line 492, style.scss */
+/* line 497, style.scss */
 figure.left {
   float: left;
   margin-right: 2em;
   max-width: 250px;
+  min-width: 250px;
 }
-/* line 457, style.scss */
+/* line 460, style.scss */
 figure.left img {
   max-width: inherit;
   width: 250px;
@@ -464,35 +467,38 @@ figure.left img {
   box-shadow: 7px 7px 5px #888;
 }
 
-/* line 498, style.scss */
+/* line 503, style.scss */
 figure.right.larger, figure.left.larger {
   max-width: 350px;
+  min-width: 350px;
 }
-/* line 475, style.scss */
+/* line 480, style.scss */
 figure.right.larger img, figure.left.larger img {
   width: 350px;
 }
 
-/* line 502, style.scss */
+/* line 507, style.scss */
 figure.right.large, figure.left.large {
   max-width: 350px;
+  min-width: 350px;
 }
-/* line 475, style.scss */
+/* line 480, style.scss */
 figure.right.large img, figure.left.large img {
   width: 350px;
 }
 
-/* line 506, style.scss */
+/* line 511, style.scss */
 div.flexright {
   display: flex;
   flex-flow: row-reverse;
 }
-/* line 509, style.scss */
+/* line 514, style.scss */
 div.flexright figure {
   margin-left: 1em;
   max-width: 250px;
+  min-width: 250px;
 }
-/* line 457, style.scss */
+/* line 460, style.scss */
 div.flexright figure img {
   max-width: inherit;
   width: 250px;
@@ -500,34 +506,37 @@ div.flexright figure img {
   border-radius: 10px;
   box-shadow: 7px 7px 5px #888;
 }
-/* line 513, style.scss */
+/* line 518, style.scss */
 div.flexright figure.larger {
   max-width: 300px;
+  min-width: 300px;
 }
-/* line 468, style.scss */
+/* line 472, style.scss */
 div.flexright figure.larger img {
   width: 300px;
 }
-/* line 516, style.scss */
+/* line 521, style.scss */
 div.flexright figure.large {
   max-width: 350px;
+  min-width: 350px;
 }
-/* line 475, style.scss */
+/* line 480, style.scss */
 div.flexright figure.large img {
   width: 350px;
 }
 
-/* line 521, style.scss */
+/* line 526, style.scss */
 div.flexleft {
   display: flex;
   flex-flow: row;
 }
-/* line 524, style.scss */
+/* line 529, style.scss */
 div.flexleft figure {
   margin-right: 2em;
   max-width: 250px;
+  min-width: 250px;
 }
-/* line 457, style.scss */
+/* line 460, style.scss */
 div.flexleft figure img {
   max-width: inherit;
   width: 250px;
@@ -535,38 +544,41 @@ div.flexleft figure img {
   border-radius: 10px;
   box-shadow: 7px 7px 5px #888;
 }
-/* line 528, style.scss */
+/* line 533, style.scss */
 div.flexleft figure.larger {
   max-width: 300px;
+  min-width: 300px;
 }
-/* line 468, style.scss */
+/* line 472, style.scss */
 div.flexleft figure.larger img {
   width: 300px;
 }
-/* line 531, style.scss */
+/* line 536, style.scss */
 div.flexleft figure.large {
   max-width: 350px;
+  min-width: 350px;
 }
-/* line 475, style.scss */
+/* line 480, style.scss */
 div.flexleft figure.large img {
   width: 350px;
 }
 
-/* line 536, style.scss */
+/* line 541, style.scss */
 img.noborder {
   border: 0px solid #CCC !important;
   border-radius: 0px !important;
   box-shadow: 0px 0px 0px #888 !important;
 }
 
-/* line 542, style.scss */
+/* line 547, style.scss */
 div.flexdown {
   display: flex;
   flex-flow: column;
 }
-/* line 545, style.scss */
+/* line 550, style.scss */
 div.flexdown figure {
   max-height: 300px;
+  min-height: 300px;
   margin-top: 0em;
   -webkit-transform: translateY(-40px);
   -moz-transform: translateY(-40px);
@@ -574,12 +586,12 @@ div.flexdown figure {
   -ms-transform: translateY(-40px);
   transform: translateY(-40px);
 }
-/* line 550, style.scss */
+/* line 556, style.scss */
 div.flexdown img {
   height: 300px;
 }
 
-/* line 555, style.scss */
+/* line 561, style.scss */
 figure > figcaption {
   font-size: 30%;
   padding-top: 0;
@@ -587,7 +599,7 @@ figure > figcaption {
   padding-left: 1em;
 }
 
-/* line 562, style.scss */
+/* line 568, style.scss */
 .credit::before {
   content: "Credit: ";
 }
@@ -595,57 +607,57 @@ figure > figcaption {
 /* ---------------------*/
 /* Misc stuff           */
 /* ---------------------*/
-/* line 570, style.scss */
+/* line 576, style.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 571, style.scss */
+/* line 577, style.scss */
 dd {
   padding-left: 1.5em;
 }
 
-/* line 573, style.scss */
+/* line 579, style.scss */
 dl.plain dt {
   font-weight: inherit !important;
 }
 
-/* line 575, style.scss */
+/* line 581, style.scss */
 div.doublelist {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
 }
 
-/* line 581, style.scss */
+/* line 587, style.scss */
 div.doublelist ul li {
   list-style: none !important;
 }
 
-/* line 585, style.scss */
+/* line 591, style.scss */
 div.doublelist ul li:before {
   content: "" !important;
 }
 
-/* line 589, style.scss */
+/* line 595, style.scss */
 p.copyright {
   font-size: 70%;
 }
 
-/* line 591, style.scss */
+/* line 597, style.scss */
 ul ul li {
   padding-bottom: 0em !important;
 }
 
 @media print {
-  /* line 595, style.scss */
+  /* line 601, style.scss */
   figure.right img {
     border: 0px solid #CCC !important;
     border-radius: 0px !important;
     box-shadow: 0px 0px 0px #888 !important;
   }
 
-  /* line 600, style.scss */
+  /* line 606, style.scss */
   .slide .stamp {
     box-shadow: 0em 0em 0em #888;
     text-shadow: 0em 0em 0em #888;
