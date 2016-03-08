@@ -42,6 +42,27 @@ $figure-large:  350px;
             hyphens: $val;
 }
 
+// Take over from: Flexbox Mixins
+// http://philipwalton.github.io/solved-by-flexbox/
+// https://github.com/philipwalton/solved-by-flexbox
+
+@mixin flexbox {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+@mixin flex-flow($values: (row nowrap)) {
+	// No Webkit Box fallback.
+	-webkit-flex-flow: $values;
+	-moz-flex-flow: $values;
+	-ms-flex-flow: $values;
+	flex-flow: $values;
+}
+
+
 /* Import the original shower file */
 @import url("screen.css");
 
@@ -482,6 +503,47 @@ header {
     }
 }
 
+@mixin fbox($pos) {
+    @include flexbox;
+    @if $pos == right {
+        @include flex-flow(row-reverse);
+        figure {
+            @include figure-on-right;
+            @include normal-figure;
+        }
+        figure.larger {
+            @include larger-figure;
+        }
+        figure.large {
+            @include large-figure;
+        }
+
+    } @else if $pos == left {
+        @include flex-flow(row);
+        figure {
+            @include figure-on-left;
+            @include normal-figure;
+        }
+        figure.larger {
+            @include larger-figure;
+        }
+        figure.large {
+            @include large-figure;
+        }
+    } @else if $pos == bottom {
+        @include flex-flow(column);
+        figure {
+            max-height: $figure-larger;
+            min-height: $figure-larger;
+            margin-top: 0em;
+            @include transY(-40px);
+        }
+        img {
+            height: $figure-larger;
+        }
+    }
+}
+
 /* ----------- */
 
 figure.center, figure.centre {
@@ -509,53 +571,21 @@ figure.right.large, figure.left.large {
 }
 
 div.flexright {
-    display:   flex;
-    flex-flow: row-reverse;
-    figure {
-        @include figure-on-right;
-        @include normal-figure;
-    }
-    figure.larger {
-        @include larger-figure;
-    }
-    figure.large {
-        @include large-figure;
-    }
+    @include fbox(right);
 }
 
 div.flexleft {
-    display:   flex;
-    flex-flow: row;
-    figure {
-        @include figure-on-left;
-        @include normal-figure;
-    }
-    figure.larger {
-        @include larger-figure;
-    }
-    figure.large {
-        @include large-figure;
-    }
+    @include fbox(left);
+}
+
+div.flexdown {
+    @include fbox(bottom);
 }
 
 img.noborder {
     border: 0px solid #CCC !important;
     border-radius: 0px !important;
     box-shadow: 0px 0px 0px #888 !important;
-}
-
-div.flexdown {
-    display: flex;
-    flex-flow: column;
-    figure {
-        max-height: $figure-larger;
-        min-height: $figure-larger;
-        margin-top: 0em;
-        @include transY(-40px);
-    }
-    img {
-        height: $figure-larger;
-    }
 }
 
 figure > figcaption {
