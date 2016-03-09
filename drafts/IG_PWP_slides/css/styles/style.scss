@@ -628,7 +628,7 @@ ul ul li {padding-bottom: 0em !important}
 
 
 @media print {
-    figure.right img {
+    figure.right img, figure.left img, div.flexright img, div.flexleft img {
         border: 0px solid #CCC !important;
         border-radius: 0px !important;
         box-shadow: 0px 0px 0px #888 !important;
