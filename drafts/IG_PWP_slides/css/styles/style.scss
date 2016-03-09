@@ -13,24 +13,18 @@ $figure-large:  350px;
 
 @mixin transY($dist) {
     -webkit-transform: translateY($dist);
-       -moz-transform: translateY($dist);
-         -o-transform: translateY($dist);
         -ms-transform: translateY($dist);
             transform: translateY($dist);
 }
 
 @mixin transy-scale($dist, $sc) {
     -webkit-transform: translateY($dist) scale($sc);
-       -moz-transform: translateY($dist) scale($sc);
-         -o-transform: translateY($dist) scale($sc);
         -ms-transform: translateY($dist) scale($sc);
             transform: translateY($dist) scale($sc);
 }
 
 @mixin rot($angle) {
     -webkit-transform: rotate($angle);
-       -moz-transform: rotate($angle);
-         -o-transform: rotate($angle);
         -ms-transform: rotate($angle);
             transform: rotate($angle);
 }
@@ -42,24 +36,17 @@ $figure-large:  350px;
             hyphens: $val;
 }
 
-// Take over from: Flexbox Mixins
-// http://philipwalton.github.io/solved-by-flexbox/
-// https://github.com/philipwalton/solved-by-flexbox
-
 @mixin flexbox {
 	display: -webkit-box;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flexbox;
-	display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 @mixin flex-flow($values: (row nowrap)) {
-	// No Webkit Box fallback.
 	-webkit-flex-flow: $values;
-	-moz-flex-flow: $values;
-	-ms-flex-flow: $values;
-	flex-flow: $values;
+        -ms-flex-flow: $values;
+            flex-flow: $values;
 }
 
 
@@ -223,9 +210,12 @@ header {
 
     a {
         background: transparent;
-        transition-property: background;
-        transition-duration: 0.3s;
-        transition-timing-function: ease;
+        -webkit-transition-property: background;
+                transition-property: background;
+        -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease;
+                transition-timing-function: ease;
     }
 
     a:hover {
@@ -255,7 +245,6 @@ header {
         background: linear-gradient(gray, gray) no-repeat;
         background-size: 100% 1px;
         background-position: 0 1.15em;
-
     }
 
     ol li:before, ul li:before {
