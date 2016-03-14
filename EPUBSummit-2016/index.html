@@ -67,7 +67,7 @@
 
     <section class="slide"><div>
       <h2>These Slides are Available on the Web </h2>
-      <p>See: <br>
+      <p>See:≈
         <span style="font-size:90%"><a href="http://www.w3.org/2016/Talks/EPUBSummit-IH/"><code>http://www.w3.org/2016/Talks/EPUBSummit-IH/</code></a></span></p>
       <p>(Slides are in HTML)</p>
     </div></section>
@@ -80,15 +80,14 @@
       </figure>
       <ul>
         <li>Founded in 1994, and directed by Tim Berners-Lee, the Inventor of the Web</li>
-        <li>Member organization with cca. 410 members</li>
-        <li>Cca. 80 staff bound to “hosts” in the USA (MIT), China (Beihang University), Japan (Keio University), and France (ERCIM)</li>
+        <li>Member organization with cca. 420 members</li>
+        <li>Cca. 75 staff bound to “hosts” in the USA (MIT), China (Beihang University), Japan (Keio University), and France (ERCIM)</li>
         <li>Focuses on Web ecosystem: users, developers, browsers, as well as specific industry requirements brought by industry segments</li>
       </ul>
     </div></section>
 
-
     <section class="slide"><div>
-      <h2 class="donthyphenate">DPUB IG Origins</h2>
+      <h2 class="donthyphenate">Digital Publishing Interest Group (DPUB IG) Origins</h2>
       <ul>
           <li>W3C and IDPF organized a series of workshops in 2012 to create a missing synergy among the Web and Publishing communities</li>
           <li>The W3C Digital Publishing Interest Group was set up in May 2013</li>
@@ -192,6 +191,27 @@
           </ul>
         </div>
     </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Note on DPUB Accessibility</h2>
+      <div class="flexleft">
+          <figure>
+            <img src="figures/acc_note.png" alt="Screen dump of the Accessibility Note" />
+          </figure>
+          <ul>
+            <li>How do W3C guidelines (e.g., WCAG, UAAG) apply to Digital Publishing</li>
+            <li>Identifies areas that are not yet addressed, e.g.:
+                <ul>
+                    <li>authoring packaged documents</li>
+                    <li>pagination</li>
+                    <li>phonetic spelling of jargon terms</li>
+                </ul>
+            </li>
+            <li>Lists future work, e.g., issues around notes, mathematics,…</li>
+          </ul>
+        </div>
+    </div></section>
+
 
     <!-- ========================================================================= -->
 
@@ -310,11 +330,11 @@
       <h2 class="donthyphenate">For example: book in a browser</h2>
       <div class="flexleft">
           <figure>
-            <img src="figures/joseph-book.png" alt="Joseph Reagle's book as an ebook in reader">
+            <img src="figures/joseph-bluefire.png" alt="Joseph Reagle's book as an ebook in reader">
             <figcaption class="credit"><a target="_blank" href="http://reagle.org/joseph/2010/gfc/chapter-4.html">Extract of Joseph Reagle’s Book</a> as ePUB</figcaption>
           </figure>
           <ul>
-            <li>But, at other times, I may also want to use a small dedicated reader device to read the book on the beach…</li>
+            <li>But, at other times, I may also want to use a dedicated reader device or software to read the book on the beach…</li>
             <li>All these on <i>the same</i> book (not conversions from one format to the other)!</li>
           </ul>
       </div>
@@ -492,7 +512,7 @@
     <section class="slide"><div>
         <h2 class="donthyphenate">But there are of course differences</h2>
         <ul>
-            <li>Although the same content of a PWP whether offline or online, but they are obviously not absolutely the same</li>
+            <li>Although the we talk about the <i>same</i> PWP, whether offline or online, but they are obviously not 100% identical</li>
             <li>We refer to different <em>states</em> of the same PWP</li>
         </ul>
     </div></section>
@@ -502,8 +522,8 @@
       <table>
         <tr>
           <th class="headerleft" style="width: 20%; border:none"></th>
-          <th style="width:40%" class="headertop">Protocol Access</th>
-          <th style="border-left: 1px solid #CCC; border-right: 1px solid #CCC; width:40%" class="headertop">File Access</th>
+          <th style="width:40%" class="headertop">Online</th>
+          <th style="border-left: 1px solid #CCC; border-right: 1px solid #CCC; width:40%" class="headertop">Offline</th>
         </tr>
         <tr>
           <th class="headerleft donthyphenate">Packed</th>
@@ -582,7 +602,7 @@
     <section class="slide"><div>
       <h2 class="donthyphenate">Advances in modern browsers</h2>
       <ul>
-        <li>A browser has a hidden, <i>truly parallel</i> engine attached to it</li>
+        <li>A browser has a hidden, <i>truly parallel</i> engine (a.k.a. “Service Worker”) attached to it</li>
         <li>That engine “catches” all calls out to the Web, and:
           <ul>
             <li>either lets it through and the original request happens;</li>
@@ -598,7 +618,7 @@
     <section class="slide stamped"><div>
       <h2 class="donthyphenate">Advances in modern browsers</h2>
       <ul>
-        <li>A browser has a hidden, <i>truly parallel</i> engine attached to it</li>
+        <li>A browser has a hidden, <i>truly parallel</i> engine (a.k.a. “Service Worker”) attached to it</li>
         <li>That engine “catches” all calls out to the Web, and:
           <ul>
             <li>either lets it through and the original request happens;</li>
@@ -620,7 +640,7 @@
       <h2 class="donthyphenate">Not only a wild idea…</h2>
       <ul>
         <li>Some prior art exists (e.g., experimentation by the Readium Consortium)</li>
-        <li>An early mock-up of the current architecture has also be implemented</li>
+        <li>An early mock-up of the current architecture has also been implemented</li>
       </ul>
     </div></section>
 
@@ -663,7 +683,7 @@
       <ul>
           <li>Identification issues are handled by a number of other organizations (<a href="http://www.doi.org">DOI foundation</a>, <a href="https://www.isbn-international.org/">International ISBN Agency</a>, etc.)
           </li>
-          <li>We (i.e., W3C, IDPF, etc.) have to concentrate on locators (i.e., addressing)
+          <li>The work on PWP has to concentrate on locators (i.e., addressing)
           </li>
       </ul>
     </div></section>
@@ -827,10 +847,31 @@
       </ul>
     </div></section>
 
+    <section class="slide shout cover" id="what_about_epub"><div>
+        <img src="covers/sea_marseille.jpg">
+        <h3 class="donthyphenate">But what about<br/> EPUB???</h3>
+        <style type="text/css">
+          #what_about_epub h3 {
+            color:red;
+            padding-bottom: 0.1em;
+            margin-top: 2em;
+          }
+        </style>
+    </div></section>
+
     <section class="slide"><div>
-        <h2 class="donthyphenate">Most things are the same!</h2>
+      <h2 class="donthyphenate">PWP vs. EPUB3.1</h2>
+      <ul>
+        <li><em>PWP does <i>not</i> replace EPUB&nbsp;3.1</em></li>
+        <li>Many of the new features discussed as part of EPUB&nbsp;3.1 (e.g., structural semantics, usage of HTML5, manifests) already go in direction of something like PWP</li>
+        <li>Others (like the locator structure) from the work on PWP may <i>influence</i> the evolution of EPUB&nbsp;3.1, mainly in the area of BFF</li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="donthyphenate">Many things are the same!</h2>
         <ul>
-            <li>Important to note that the <em>content</em> of a PWP and EPUB&nbsp;3.1 are identical
+            <li>The <em>content</em> of a PWP and EPUB&nbsp;3.1 are identical
                 <ul>
                     <li>usage of HTML, CSS, SVG, SMIL, etc.</li>
                 </ul>
