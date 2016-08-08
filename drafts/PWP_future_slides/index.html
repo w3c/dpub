@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html prefix="talk: http://w3c.github.io/dpub/idpf-digital-book-2015/index.html ore: http://www.openarchives.org/ore/terms/" lang="en">
+  <head about="talk:">
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title property="dc:title">Portable Web Publications</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="ore:describes" resource="talk:#talk">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=792, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <script src="js/hyphenate.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/styles/style.min.css">
+    <!-- These styles should be adapted to the details on where and what ribbon should be used, and how large the copyright is -->
+    <style type="text/css">
+      /*.slide:after {
+        padding: 60px 0 0 !important;
+        height: 150px ;
+        background: url(css/images/ribbon_w3c.svg) no-repeat ;
+      }*/
+      .titlepage p.copyright {
+        left: 10em;
+      }
+      .slidequote {
+          font-size:70%;
+          margin-left:2em;
+          margin-right:2em;
+          border: thin solid;
+          padding-left:1.5em;
+          padding-right: 1em;
+          border-radius:5px;
+          box-shadow: 7px 7px 5px #888;
+      }
+
+      </style>
+  </head>
+
+  <body class="list hyphenate" about="talk:#talk" prefix="bibo: http://purl.org/ontology/bibo/ event: http://purl.org/NET/c4dm/event.owl#" typeof="cc:Work bibo:Slideshow">
+
+    <header class="caption">
+      <h1 property="dc:title" rel="dc:subject" resource="http://id.loc.gov/authorities/subjects/sh85042368#concept">Portable Web Publications (PWP)</h1>
+      <h2>
+        <span rel="bibo:authorList" inlist="">
+          <span resource="http://www.ivan-herman.net/foaf#me" typeof="foaf:Person"> <span property="foaf:name">Ivan Herman</span>, <span property="rdfs:seeAlso" resource="http://orcid.org/0000-0003-0782-2704">W3C</span></span>
+        </span>
+      </h2>
+      <h3 rel="bibo:presentedAt">
+        <span typeof="event:Event bibo:Conference">
+          <span property="dc:title"><a href="http://www.boersenverein.de/buchtage">Some Event</a></span>, <span property="event:place">At some place</span>
+        </span>
+      </h3>
+      <h3 property="dc:date">2016-??-??</h3>
+      <p class="copyright">
+        <a href="http://creativecommons.org/licenses/by-nd/4.0/"><img class="plain" alt="Creative Commons License" src="figures/80x15.png"></a>&nbsp;
+        This work is licensed under a <a rel="cc:license" href="http://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution 4.0 License</a>,
+        with attribution to <a rel="cc:attributionURL" href="http://www.w3.org" property="cc:attributionName">W3C</a></p>
+      <p class="copyright">Copyright <sup>©</sup>2016 W3C<sup>®</sup> (MIT, ERCIM, Keio, Beihang)</p>
+    </header>
+
+    <!--
+    <header class="caption">
+      <h1 property="dc:title" rel="dc:subject" resource="http://id.loc.gov/authorities/subjects/sh85042368#concept">Portable Web Publications (PWP)</h1>
+      <h2>
+        <span rel="bibo:authorList" inlist="">
+          <span typeof="foaf:Person"> <span property="foaf:name">Tzviya Siegman</span>, <span property="rdfs:seeAlso" resource="https://www.linkedin.com/in/tzviya">Wiley</span> and </span>
+          <span resource="http://www.ivan-herman.net/foaf#me" typeof="foaf:Person"> <span property="foaf:name">Ivan Herman</span>, <span property="rdfs:seeAlso" resource="http://orcid.org/0000-0003-0782-2704">W3C</span></span>
+        </span>
+      </h2>
+      <h3 rel="bibo:presentedAt">
+        <span typeof="event:Event bibo:Conference">
+          <span property="dc:title"><a href="http://www.boersenverein.de/buchtage">Some Event</a></span>, <span property="event:place">At some place</span>
+        </span>
+      </h3>
+      <h3 property="dc:date">2015-??-??</h3>
+      <p class="copyright">
+        <a href="http://creativecommons.org/licenses/by-nd/4.0/"><img class="plain" alt="Creative Commons License" src="figures/80x15.png"></a>&nbsp;
+        This work is licensed under a <a rel="cc:license" href="http://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution 4.0 License</a>,
+        with attribution to <a rel="cc:attributionURL" href="http://www.w3.org" property="cc:attributionName">W3C</a> and <a rel="cc:attributionURL" href="http://www.idpf.org" property="cc:attributionName">IDPF</a></p>
+      <p class="copyright">Copyright <sup>©</sup>2016 IDPF<sup>®</sup> and <sup>©</sup>2016 W3C<sup>®</sup> (MIT, ERCIM, Keio, Beihang)</p>
+    </header>
+    -->
+
+    <section class="slide titlepage"><div>
+      <h2 class="donthyphenate">Portable Web Publications (PWP)</h2>
+      <h3>Ivan Herman, W3C </h3>
+      <h4><a href="??????">Some Event, Somewhere</a></h4>
+      <h4>2016-??-??</h4>
+
+      <p class="copyright">This work is licensed under a <a target="_blank" href="http://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution 4.0 License</a>, with attribution to <a target="_blank" href="http://www.w3.org">W3C</a>.<br />
+        Copyright <sup>©</sup>2016&nbsp;W3C<sup>®</sup> (MIT, ERCIM, Keio, Beihang)</p>
+    </div></section>
+
+    <!--
+    <section class="slide titlepage"><div>
+      <h2>The Convergence of EPUB and the Web</h2>
+      <h3>Tzviya Siegman, Wiley, Markus Gylling, IDPF, and Ivan Herman, W3C </h3>
+      <h4><a href="??????">Some Event, Somewhere</a></h4>
+      <h4>2015-??-??</h4>
+
+      <p class="copyright">This work is licensed under a <a target="_blank" href="http://creativecommons.org/licenses/by-nd/3.0/">Creative Commons Attribution 3.0 License</a>, with attribution to <a target="_blank" href="http://www.w3.org">W3C</a> and <a target="_blank" href="http://www.idpf.org">IDPF</a>.
+        Copyright <sup>©</sup>2015&nbsp;IDPF<sup>®</sup> and <sup>©</sup>2015&nbsp;W3C<sup>®</sup> (MIT, ERCIM, Keio, Beihang)</p>
+    </div></section>
+    -->
+
+    <section class="slide"><div>
+      <h2>These Slides are Available on the Web </h2>
+      <p>See: <br>
+        <span style="font-size:90%"><a href="http://www.w3.org/2016/Talks/???????????/"><code>http://www.w3.org/2016/Talks/???????????/</code></a></span></p>
+      <p>(Slides are in HTML)</p>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">About W3C: “Leading the Web to its Full Potential”</h2>
+      <figure class="right">
+        <img src="figures/timbl.jpg" alt="Photo of Tim Berners-Lee"/>
+        <figcaption class="credit">LeFevre communications, 2001</figcaption>
+      </figure>
+      <ul>
+        <li>Founded in 1994, and directed by Tim Berners-Lee, the Inventor of the Web</li>
+        <li>Member organization with cca. 410 members</li>
+        <li>Cca. 80 staff bound to “hosts” in the USA (MIT), China (Beihang University), Japan (Keio University), and France (ERCIM)</li>
+        <li>Focuses on Web ecosystem: users, developers, browsers, as well as specific industry requirements brought by industry segments</li>
+      </ul>
+    </div></section>
+
+    <section class="slide shout"><div>
+        <h3>EPUB 3</h3>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="donthyphenate">EPUB 3 is a very mature specification</h2>
+
+        <ul>
+            <li>Widely used format for digital publication</li>
+            <li>The <em>only</em> truly portable format (and not bound to a particular environment)</li>
+            <li>Can be used for books, magazines, journal articles, documentation…</li>
+        </ul>
+    </div></section>
+
+    <section class="slide shout"><div>
+        <h3 class="donthyphenate">A wide variety of books can be created</h3>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="donthyphenate">Books with illustrations</h2>
+        <figure class="middle">
+            <img src="figures/eco.png" alt="An ebook page including a drawing" />
+        </figure>
+
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Books with <em>lots</em> of illustrations…</h2>
+        <figure class="left larger">
+            <img src="figures/petit_prince_1.png" class="noborder" alt="An extract of the 'Petit Prince' with a typical drawing" />
+        </figure>
+        <figure class="right larger">
+            <img src="figures/winnie_the_pooh.png" class="noborder" alt="An extract of Winnie the Pooh with a typical drawing" />
+        </figure>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Scientific presentations</h2>
+        <figure class="middle">
+            <img src="figures/math.png" alt="Slide-like page with lots of mathematical equations" />
+        </figure>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Art books</h2>
+        <figure class="middle">
+            <img src="figures/dutch_painting.png" alt="Page with an annotated high quality reproduction of a Dutch painting" />
+        </figure>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Mangas</h2>
+        <figure class="middle">
+            <img src="figures/manga.png" alt="Page of a typical Japanese manga" />
+        </figure>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Technical books</h2>
+        <figure class="middle">
+            <img src="figures/css.png" alt="Extract of a CSS book, with codes and figures" />
+        </figure>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="donthyphenate">Books with different character sets and writing directions</h2>
+        <figure class="left larger">
+            <img src="figures/arabic.png" class="noborder" alt="An extract of a text in arabic" />
+        </figure>
+        <figure class="right larger">
+            <img src="figures/vertical.png" class="noborder" alt="An extract a text in Japanese, written in vertical" />
+        </figure>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="donthyphenate">Books with different character sets and writing directions</h2>
+        <figure class="left larger">
+            <img src="figures/mahabharata.png" class="noborder" alt="An extract of a text in hindi" />
+        </figure>
+        <figure class="right larger">
+            <img src="figures/hebrew.png" class="noborder" alt="An extract a text in Hebrew" />
+        </figure>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="donthyphenate">Books may also include dynamic content</h2>
+        <figure class="middle">
+          <video controls width="90%">
+            <source src="videos/karnak.ogv" type="video/ogg">
+            <source src="videos/karnak.mp4" type="video/mp4">
+          </video>
+          <figcaption class="credit">"Une chapelle de Séstoris Ier à Karnak", ed. Soleb</figcaption>
+        </figure>
+    </div></section>
+
+    <section class="slide shout"><div>
+        <h3>It is not only for books! It can be…</h3>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="donthyphenate">…journals or magazines (articles)</h2>
+        <figure class="left larger">
+            <img src="figures/jep.png" class="noborder" alt="Cover of the JEP journal" />
+        </figure>
+        <figure class="right larger">
+            <img src="figures/jep1.png" class="noborder" alt="Table of content of the JEP journal" />
+        </figure>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="donthyphenate">…technical documentations, standards</h2>
+        <figure class="left larger">
+            <img src="figures/spec.png" class="noborder" alt="Cover of W3C spec (in epub)" />
+        </figure>
+        <figure class="right larger">
+            <img src="figures/epub.png" class="noborder" alt="Cover of the EPUB standard (in epub)" />
+        </figure>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="donthyphenate">In fact, just about anything!</h2>
+        <figure class="left larger">
+            <img src="figures/gdrive.png" class="noborder" alt="Screendump of gdrive saving a document as EPUB" />
+        </figure>
+        <figure class="right larger">
+            <img src="figures/pages.png" class="noborder" alt="Screendump of Apple Pages saving a document as EPUB" />
+        </figure>
+    </div></section>
+
+
+    <!-- ===================================== -->
+    <section class="slide shout"><div>
+        <h3>What is the secret?</h3>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="donthyphenate">Well, at least one of the secrets…</h2>
+        <ul>
+            <li>EPUB is based on Web Technologies like HTML, CSS, SVG, etc.
+                <ul>
+                    <li>collectively referred to as “Open Web Platform” (OWP)</li>
+                </ul>
+            </li>
+            <li>I.e., no rendering, formatting, etc, specification had to be defined</li>
+            <li>Instead, EPUB relies on specifications defined by W3C and deployed, e.g., in browsers</li>
+        </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Rough structure of an EPUB file</h2>
+      <figure>
+        <img class="plain" src="figures/EPUB3-Package-Structure.svg" alt="EPUB Packaging structure diagram" width="99%">
+      </figure>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="donthyphenate">A good example</h2>
+        <figure class="right larger">
+            <img src="figures/photo_css.png" alt="Figure with a complex image processing done, in fact, in CSS" />
+        </figure>
+        <ul>
+            <li>The image on the right is displayed through that translucent “screen”</li>
+            <li>This is <em>not</em> done through some separate image processing step</li>
+            <li>Instead, it is based on some complex CSS features (implemented in browsers but also in EPUB readers)</li>
+        </ul>
+    </div></section>
+
+    <section class="slide shout"><div>
+        <h3 class="donthyphenate">Bottom line: relationships of EPUB with OWP is vital</h3>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="donthyphenate">Are we all done? Ie, is OWP perfect for EPUB?</h2>
+        <p>
+            There are two major areas that need work:
+        </p>
+        <ol>
+            <li>bring OWP and Digital Publishing even closer</li>
+            <li>bring the <em>Web</em> and Digital Publishing even closer</li>
+        </ol>
+    </div></section>
+
+    <section class="slide shout"><div>
+        <h3>Bring OWP and Digital Publishing even closer</h3>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="donthyphenate">Missing OWP features</h2>
+        <ul>
+            <li>Some features, needed by publishing, are missing from OWP; examples:
+                <ul>
+                    <li>pagination, page controls for headings, page numbers</li>
+                    <li>graphics transition effects (needed in, e.g., mangas, cartoons, children books)</li>
+                    <li>accessibility oriented structuring of complex documents</li>
+                    <li>dynamic numbering of pages, index references, etc, over several (HTML) files</li>
+                </ul>
+            </li>
+            <li>W3C has a <a href="https://www.w3.org/dpub/IG/">Digital Publishing Interest Group</a> to look into these issues and cooperate with the relevant W3C groups</li>
+        </ul>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="donthyphenate">Bring OWP <em>features</em> to publishing</h2>
+        <ul>
+            <li>For example:
+                <ul>
+                    <li>dynamic tools, deployed on the Web, and would be beneficial in publishing</li>
+                    <li>educational publications reach out to external services on the Web via extra protocols</li>
+                    <li>new authentication methods could change the way publications are accessed</li>
+                    <li>etc.</li>
+                </ul>
+            </li>
+        </ul>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Examples for dynamic educational/scientific materials</h2>
+        <figure class="middle">
+          <video controls width="90%">
+            <source src="videos/f1000.ogv" type="video/ogg">
+            <source src="videos/f1000.mp4" type="video/mp4">
+          </video>
+          <figcaption class="credit"><a href="http://f1000research.com/articles/3-176/v2">Article on F1000Research</a></figcaption>
+        </figure>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Examples for dynamic educational/scientific materials</h2>
+        <figure class="middle">
+          <video controls width="70%">
+            <!-- <source src="videos/f1000.ogv" type="video/ogg"> -->
+            <source src="videos/Mike_Bostock.mp4" type="video/mp4">
+          </video>
+          <figcaption class="credit"><a href='https://bost.ocks.org/mike/algorithms/'>“Visualizing Algorithms”</a>, by Mike Bostock</figcaption>
+        </figure>
+    </div></section>
+
+
+    <section class="slide shout"><div>
+        <h3>Bring the <em>Web</em> and Digital Publishing even closer</h3>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>What is, in fact, a (digital) book?</h2>
+        <div style="font-size:70%">
+          <blockquote style="margin-left:1em">
+            A book is a discrete collection of text (and other media), that is designed by an author(s) as an internally complete representation of an idea, or set of ideas; emotion or set of emotions; and <em>transmitted to readers in various formats</em>.
+          </blockquote>
+          <p style="font-size:40%; text-align:right">“What books can learn from the Web / What the Web can learn from books”, from Hugh McGuire, <a href="http://bit.ly/1rOZWp8">Medium</a></p>
+        </div>
+
+        <ul>
+            <li>This is independent of format: the same “book” should be available in different format and media</li>
+            <li>Instead: a Digital Book is different than a Web page (conceptually and practically)</li>
+            <li><i>This should not be the case!</i></li>
+        </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">What does this mean?</h2>
+      <div class="flexleft">
+          <figure class="larger">
+            <img src="figures/pwp.svg" alt="Portable Web Publication at a glance"/>
+          </figure>
+      <p><i>Separation between publishing “online”, as Web sites, and offline and/or packaged should be diminished to zero</i></p>
+      </div>
+
+      <ul>
+          <li>This means:
+            <ul>
+            <li>publication content on the Web can be loaded into a browser or a specialized reader, whatever the user prefers</li>
+            <li>a publication on a local disc can be pushed onto the Web and used without any change</li>
+            <li>content are authored regardless of where they are used</li>
+            <li>these are done without any user interaction, possibly automatically</li>
+            </ul>
+        </li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">What does this mean?</h2>
+      <figure>
+        <img src="figures/pwp.svg" alt="Portable Web Publication at a glance">
+      </figure>
+    </div></section>
+
+    <section class="slide shout cover"><div>
+      <img src="covers/why.jpg">
+      <!-- <h3>Why Bother?</h3> -->
+      <p class="credit">ibta arabia</p>
+    </div></section>
+
+
+
+    <!-- ===================================== -->
+    <!--
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Direct Contact</h2>
+      <dl class="plain">
+        <dt>Tzviya Siegman, Wiley</dt>
+          <dd>tsiegman@wiley.com</dd>
+        <dt>Markus Gylling, IDPF</dt>
+          <dd>mgylling@idpf.org</dd>
+        <dt>Ivan Herman, W3C</dt>
+          <dd>ivan@w3.org</dd>
+      </dl>
+    </div></section>
+-->
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Some references</h2>
+      <dl>
+        <dt>DPUB IG Wiki</dt>
+          <dd><a target="_blank" href="https://www.w3.org/dpub/IG/wiki/Main_Page"><code>https://www.w3.org/dpub/IG/wiki/Main_Page</code></a></dd>
+        <dt>Latest PWP Official Draft:</dt>
+          <dd><a target="_blank" href="http://www.w3.org/TR/pwp/"><code>http://www.w3.org/TR/pwp/</code></a></dd>
+        <dt>PWP Editors’ draft:</dt>
+            <dd><a target="_blank" href="https://w3c.github.io/dpub-pwp/"><code>https://w3c.github.io/dpub-pwp/</code></a></dd>
+        <dt>PWP Issue list:</dt>
+          <dd><a target="_blank" href="https://github.com/w3c/dpub-pwp/issues"><code>https://github.com/w3c/dpub-pwp/issues</code></a></dd>
+      </dl>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2>Thank you for your attention!</h2>
+      <dl>
+        <dt>This presentation:</dt>
+          <dd><a target="_blank" href="http://www.w3.org/2016/Talks/???????????/"><code>http://www.w3.org/2016/Talks/???????????/</code></a> <br>(<a href="http://www.w3.org/2016/Talks/???????????/slides.pdf">PDF</a> is also available for download)</dd>
+        <dt>My contact:</dt>
+          <dd>ivan@w3.org</dd>
+      </dl>
+    </div></section>
+
+    <!-- ===================================== -->
+    <div class="progress"><div></div> </div>
+    <script src="js/shower.min.js"></script>
+  </body>
+</html>
