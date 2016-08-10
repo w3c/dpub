@@ -136,8 +136,18 @@
         </ul>
     </div></section>
 
-    <section class="slide shout"><div>
-        <h3 class="donthyphenate">A wide variety of books can be created</h3>
+    <section class="slide shout cover" id="bookshelf"><div>
+        <img src="covers/bookshelf.jpg">
+        <h3 class="donthyphenate">A wide variety of books have been created</h3>
+        <style type="text/css">
+          #bookshelf h3 {
+            margin-top: 3em;
+            background: hsla(181, 9%, 78%, 0.5);
+            padding-right: 0em;
+            padding-left: 0em;
+            color: black;
+          }
+        </style>
     </div></section>
 
     <section class="slide"><div>
@@ -196,23 +206,23 @@
     <section class="slide"><div>
         <h2 class="donthyphenate">Books with different character sets and writing directions</h2>
         <figure class="left larger">
-            <img src="figures/arabic.png" class="noborder" alt="An extract of a text in arabic" />
+            <img src="figures/arabic.png" alt="An extract of a text in arabic" />
             <figcaption class="credit">“Régime Anti-Cancer Arabic”, IDPF EPUB3 Sample</figcaption>
         </figure>
         <figure class="right larger">
-            <img src="figures/vertical.png" class="noborder" alt="An extract a text in Japanese, written in vertical" />
-            <figcaption class="credit">24bis6: “オオカバマダラ”</figcaption>
+            <img src="figures/japanese.jpg"  alt="An extract a text in Japanese, written in vertical" />
+            <figcaption class="credit">Murasaki Shikibu: “The tale of the Genji”, Aozora Bunko</figcaption>
         </figure>
     </div></section>
 
     <section class="slide"><div>
         <h2 class="donthyphenate">Books with different character sets and writing directions</h2>
         <figure class="left larger">
-            <img src="figures/mahabharata.png" class="noborder" alt="An extract of a text in hindi" />
+            <img src="figures/mahabharata.png"  alt="An extract of a text in hindi" />
             <figcaption class="credit">“The Mahabharata in Devanāgarī (देवनागरी)”, IDPF EPUB3 Sample</figcaption>
         </figure>
         <figure class="right larger">
-            <img src="figures/hebrew.png" class="noborder" alt="An extract a text in Hebrew" />
+            <img src="figures/hebrew.png"  alt="An extract a text in Hebrew" />
             <figcaption class="credit">“Israel sailing”, IDPF EPUB3 Sample</figcaption>
         </figure>
     </div></section>
@@ -220,7 +230,7 @@
     <section class="slide"><div>
         <h2 class="donthyphenate">Books may also include dynamic content</h2>
         <figure class="middle">
-          <video controls width="90%">
+          <video controls width="72%">
             <source src="videos/karnak.ogv" type="video/ogg">
             <source src="videos/karnak.mp4" type="video/mp4">
           </video>
@@ -245,20 +255,20 @@
     <section class="slide"><div>
         <h2 class="donthyphenate">…technical documentations, standards</h2>
         <figure class="left larger">
-            <img src="figures/spec.png" class="noborder" alt="Cover of W3C spec (in epub)" />
+            <img src="figures/spec.png" alt="Cover of W3C spec (in epub)" />
         </figure>
         <figure class="right larger">
-            <img src="figures/epub.png" class="noborder" alt="Cover of the EPUB standard (in epub)" />
+            <img src="figures/epub.png" alt="Cover of the EPUB standard (in epub)" />
         </figure>
     </div></section>
 
     <section class="slide"><div>
         <h2 class="donthyphenate">In fact, just about anything!</h2>
         <figure class="left larger">
-            <img src="figures/gdrive.png" class="noborder" alt="Screendump of gdrive saving a document as EPUB" />
+            <img src="figures/gdrive.png"  alt="Screendump of gdrive saving a document as EPUB" />
         </figure>
         <figure class="right larger">
-            <img src="figures/pages.png" class="noborder" alt="Screendump of Apple Pages saving a document as EPUB" />
+            <img src="figures/pages.png"  alt="Screendump of Apple Pages saving a document as EPUB" />
         </figure>
     </div></section>
 
@@ -529,15 +539,12 @@
       </ul>
     </div></section>
 
-
-
-
     <section class="slide shout"><div>
       <h3 class="donthyphenate">But… why not rely <em>only</em> on the Web? <br>(i.e., forget about downloaded content, it is outdated!)</h3>
     </div></section>
 
     <section class="slide"><div>
-      <h2 class="donthyphenate">Several reasons…</h2>
+      <h2 class="donthyphenate">Access issues</h2>
       <ul>
         <li>The future may be that everyone is always connected… but the reality is different for many years to come
           <ul>
@@ -556,7 +563,24 @@
     </div></section>
 
     <section class="slide"><div>
-        <h2 class="donthyphenate">It is not only a matter of access possibilities</h2>
+        <h2>Book reading needs a different approach to ergonomy</h2>
+        <figure class="right">
+          <img src="figures/war-and-peace.png" alt="Front page of the War and Peace ebook">
+          <figcaption class="credit">Lev Tolstoy: “War and Peace”, feedbooks</figcaption>
+        </figure>
+        <ul>
+            <li>Typical example: pagination
+                <ul>
+                    <li>For short text, pagination is not really important</li>
+                    <li>But what about reading, say, War and Peace?</li>
+                    <li>Currently not available or used on the Web</li>
+                </ul>
+            </li>
+        </ul>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="donthyphenate">Concept of a “publication” across many resources</h2>
         <ul>
             <li>A publication may consist of many resources (text, images, videos, etc), but <em>the abstract “work” should be available as a single, conceptual unit</em></li>
             <li>There are a number of use cases for that:
@@ -580,7 +604,6 @@
         </ul>
     </div></section>
 
-
     <section class="slide shout cover" id="synergy"><div>
       <img src="covers/synergy.jpg">
       <h3  class="donthyphenate">Synergy effects of convergence</h3>
@@ -598,7 +621,7 @@
     <section class="slide"><div>
       <h2 class="donthyphenate">Advantage for the publishers‘ community </h2>
       <div class="flexleft ">
-          <figure class="larger">
+          <figure class="large">
             <img src="figures/zeldman.jpg" alt="Photo of a bookshelf with lots of technical books">
             <figcaption class="credit"><a target="_blank" href="https://www.flickr.com/photos/zeldman/">Jeffrey Zeldman</a>, Flickr</figcaption>
           </figure>
@@ -659,6 +682,670 @@
         </div>
     </div></section>
 
+    <section class="slide shout cover" id="road_tech"><div>
+      <img src="covers/road.jpg">
+      <h3 class="donthyphenate"> How do we get there? (Technically)</h3>
+      <style type="text/css">
+        #road_tech h3 {
+          color:red;
+          background-color: hsla(181, 9%, 78%, 0.5);
+          padding-bottom: 0.1em;
+        }
+      </style>
+      <p class="credit">Moyan Brenn, Flickr</p>
+    </div></section>
+
+    <section class="slide shout cover" id="warning"><div>
+      <img src="covers/warning.jpg">
+      <h3 class="donthyphenate">Warning: everything I say is subject to change!</h3>
+      <style type="text/css">
+      #warning h3 {
+        margin-top: 0.5em;
+        color: hsla(0,100%,60%,1.0);
+      }
+      </style>
+      <p class="credit">Catherine Kolodziej, Flickr</p>
+    </div></section>
+
+    <section class="slide shout cover" id="terminology"><div>
+      <img src="covers/terminology.jpg">
+      <h3 class="donthyphenate">Technical Challenge: Fundamental Terminology</h3>
+      <style type="text/css">
+        #terminology h3 {
+          color: yellow;
+          font-size: 2.2em;
+        }
+      </style>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Web Publications</h2>
+      <div class="flexright">
+          <figure class="large">
+            <img src="figures/PWP-manyURL.svg" alt="a collection of resources with different URL pointer">
+          </figure>
+          <ul>
+            <li>The current Web has the notion of a single resource:
+              <ul>
+                <li>conceptually, a single piece of data
+                    <ul>
+                        <li>HTML source, metadata, CSS style sheet, etc.</li>
+                    </ul>
+                </li>
+                <li>each has its own URL</li>
+              </ul>
+            </li>
+            <li>Presentation is based on the interoperation of many such resources</li>
+          </ul>
+      </div>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Web Publications</h2>
+          <p>Remember?</p>
+              <ul class="slidequote">
+                  <li>A publication may consist of many resources (text, images, videos, etc), but <em>the abstract “work” should be available as a single, conceptual unit</em></li>
+                  <li>There are a number of use cases for that:
+                      <ul>
+                          <li>the whole book should be archived in a national library</li>
+                          <li>the publication has to be checked for integrity <em>as a whole</em> (e.g., a legal publication)</li>
+                          <li>sharing a publication with a friend requires the concept of the publication <i>as a whole</i> (whether offline or online)</li>
+                          <li>publishing business models are based on the concept of “works”</li>
+                      </ul>
+                  </li>
+                  <li>A simple Web address to a single page is not enough!</li>
+              </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Web Publications</h2>
+      <div class="flexright">
+          <figure class="large">
+            <img src="figures/PWP-oneURL.svg" alt="a collection of resources in a 'blob' with one URL pointer">
+          </figure>
+          <ul>
+              <li>What we need is a single URL for the “work” as a whole!</li>
+          </ul>
+      </div>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Formally</h2>
+      <div class="flexdown">
+          <ul>
+            <li>A <strong><i>Web Publication</i></strong>: an <em>aggregated set of interrelated Web Resources</em>, intended to be considered as a single entity, and which <em>can be addressed on the Web as a unit</em> (is itself a Web Resource)</li>
+          </ul>
+          <figure class="center"><img src="figures/PWP-oneURL.svg" alt="a collection of resources in a 'blob' with one URL pointer" /></figure>
+      </div>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Portable Web Publications</h2>
+      <ul>
+        <li>A Web Publication may consist of resources spread all over the place (HTML on one site, CSS somewhere else)
+          <ul><li>the owner of the Web Publication is only a “user” and not necessarily the owner of some of those resources!</li></ul>
+        </li>
+        <li>But users may want to, create, curate, move the <i>whole</i> publication, as a single unit.</li>
+        <li>The Web Publication should be, in some sense, “self consistent”, not relying on external entities.</li>
+        <li>A “self-consistent” Web Publication is therefore <em>Portable</em></li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">More Formally</h2>
+      <ul>
+        <li>A <strong><i>Portable Web Publication</i></strong> is such that a <em>user agent can render its essential content by relying  on the Web Resources within the same Web Publication</em></li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">What is a Portable Web Publication? (simplified)</h2>
+      <ul>
+        <li>A <em>collection of Web resources considered as one unit</em>
+          <ul><li>this means there is a Web address for the <i>collection</i> (as opposed to a single constituent)</li></ul>
+        </li>
+       <li>The <em>user agent can render its “essential content” by relying  on the Web Resources within the same Web Publication</em>
+          <ul><li>this ensures that it can also be considered offline without the danger of dangling links</li></ul>
+       </li>
+       <li>The <i>same</i> PWP can be offline, online, archived or not archived…</li>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">What kinds of documents are we talking about?</h2>
+      <ul>
+        <li>A journal or magazine article, including the relevant CSS files and images</li>
+        <li>An educational article, including the JavaScript to do interactive exercises</li>
+        <li>A novel or a poem on the Web, including the necessary fonts, CSS files, etc., to provide the required aesthetics</li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">What kinds of documents are we <i>not</i> talking about?</h2>
+      <ul>
+        <li>A Web mail application</li>
+        <li>A social Web site like Facebook, VK, Renren, or Twitter</li>
+        <li>A dynamic page that depends on, say, a Javascript library hosted somewhere on the cloud</li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="donthyphenate">But there are of course differences</h2>
+        <ul>
+            <li>Although the we talk about the <i>same</i> PWP, whether offline or online, but they are obviously not 100% identical</li>
+            <li>We refer to different <em>states</em> of the same PWP</li>
+        </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Envisioned “states” of a Portable Web Publication</h2>
+      <table>
+        <tr>
+          <th class="headerleft" style="width: 20%; border:none"></th>
+          <th style="width:40%" class="headertop">Protocol Access</th>
+          <th style="border-left: 1px solid #CCC; border-right: 1px solid #CCC; width:40%" class="headertop">File Access</th>
+        </tr>
+        <tr>
+          <th class="headerleft donthyphenate">Packed</th>
+          <td>PWP as one archive on a server</td>
+          <td>PWP as one archive on a local disc</td>
+        </tr>
+        <tr>
+          <th class="headerleft donthyphenate">Unpacked</th>
+          <td>PWP spread over several files on a server</td>
+          <td>PWP spread over several files on a local disc</td>
+        </tr>
+      </table>
+    </div></section>
+
+    <section class="slide shout cover" id="arch"><div>
+      <img src="covers/architecture.jpg">
+      <h3 class="donthyphenate">Technical challenge: an overall architecture to handle PWP-s</h3>
+      <style type="text/css">
+        #arch h3 {
+          color: hsla(240, 69%, 50%, 1);
+          font-size: 2.2em;
+        }
+      </style>
+    </div></section>
+
+    <section class="slide">
+        <div>
+            <h2 class="donthyphenate">Envisioned architecture: <br/>a “PWP Processor”</h2>
+
+            <ul>
+                <li>A conceptual, client-side processor that “hides” the PWP state differences from the rendering engine
+                </li>
+                <li>The “main” rendering engine operates <i>as if</i> it was connected to the Web:
+                    <ul>
+                        <li>accessing resources through HTTP(S)</li>
+                        <li>all resources are “unpacked”</li>
+                    </ul>
+                </li>
+                <li>The PWP Processor should hide the state differences, possibly cache resources, etc.</li>
+            </ul>
+
+        </div>
+    </section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Envisioned architecture: <br/>unpacked state</h2>
+      <figure>
+        <img class="plain" src="figures/Workers-basic.svg" alt="Document consumed through the Web in a traditional way" width="99%">
+      </figure>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Envisioned architecture: <br/>cached state</h2>
+      <figure>
+        <img class="plain" src="figures/Workers-cache.svg" alt="Document consumed through a Service Worker, possibly cached" width="99%">
+      </figure>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Envisioned architecture: <br/>packed state</h2>
+      <figure>
+        <img class="plain" src="figures/Workers-package.svg" alt="Document consumed through a Service Worker, possibly unpacked" width="99%">
+      </figure>
+    </div></section>
+
+    <section class="slide stamped"><div>
+      <h2 class="donthyphenate">Envisioned architecture: <br/>packed state</h2>
+      <figure>
+        <img class="plain" src="figures/Workers-package.svg" alt="Document consumed through a Service Worker, possibly unpacked" width="99%">
+      </figure>
+       <p class="stamp" style="left:20%">Draft…</p>
+    </div></section>
+
+    <section class="slide shout"><div>
+      <h3>Is this approach at all feasible?</h3>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Advances in modern browsers: Web and Service Workers</h2>
+      <ul>
+        <li>Web Worker: a truly parallel thread within the browser</li>
+        <li>A Service Worker is a special type of Web Worker, with additional features:
+          <ul>
+            <li>it is a <i>programmable network proxy</i>: the renderer’s network calls are caught and the request/answer can be modified on-the-fly behind the scenes</li>
+            <li>it has an interface to handle a local cache for networked data</li>
+            <li>it will stay alive even if the user moves away from the main page, and can be accessed later if he/she returns to it</li>
+          </ul>
+        </li>
+      </ul>
+    </div></section>
+
+    <section class="slide stamped"><div>
+      <h2 class="donthyphenate">Advances in modern browsers: Web and Service Workers</h2>
+      <ul>
+        <li>Web Worker: a truly parallel thread within the browser</li>
+        <li>A Service Worker is a special type of Web Worker, with additional features:
+          <ul>
+            <li>it is a <i>programmable network proxy</i>: the renderer’s network calls are caught and the request/answer can be modified on-the-fly behind the scenes</li>
+            <li>it has an interface to handle a local cache for networked data</li>
+            <li>it will stay alive even if the user moves away from the main page, and can be accessed later if he/she returns to it</li>
+          </ul>
+        </li>
+      </ul>
+      <p class="stamp small">Work in progress</p>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Advances in modern browsers: Web and Service Workers (Simplified)</h2>
+      <ul>
+        <li>A browser has a hidden, <i>truly parallel</i> engine attached to it</li>
+        <li>That engine “catches” all calls out to the Web, and:
+          <ul>
+            <li>either lets it through and the original request happens;</li>
+            <li>or performs local processing (e.g., gets content from a cache) and returns that content instead</li>
+          </ul>
+        </li>
+        <li>The “main” rendering engine is unaware of the underlying proxy process
+        <ul><li>it operates as if it was connected to the Web in a traditional way</li></ul>
+        </li>
+      </ul>
+    </div></section>
+
+    <section class="slide stamped"><div>
+      <h2 class="donthyphenate">Advances in modern browsers: Web and Service Workers (Simplified)</h2>
+      <ul>
+        <li>A browser has a hidden, <i>truly parallel</i> engine attached to it</li>
+        <li>That engine “catches” all calls out to the Web, and:
+          <ul>
+            <li>either lets it through and the original request happens;</li>
+            <li>or performs local processing (e.g., gets content from a cache) and returns that content instead</li>
+          </ul>
+        </li>
+        <li>The “main” rendering engine is unaware of the underlying proxy process
+        <ul><li>it operates as if it was connected to the Web in a traditional way</li></ul>
+        </li>
+      </ul>
+      <p class="stamp small">Work in progress</p>
+    </div></section>
+
+    <section class="slide shout"><div>
+      <h3>A PWP Processor could be implemented as a Service Worker</h3>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Not only a wild idea…</h2>
+      <ul>
+        <li>Some prior art exists (e.g., experimentation by the Readium Consortium with Service Workers)</li>
+        <li>An early mock-up of the current architecture has also be done
+          <ul>
+            <li>caveat for now: current Service Worker specification does not allow for direct, local file access</li>
+            <li>some extra tricks have to be found</li>
+          </ul>
+        </li>
+      </ul>
+    </div></section>
+
+    <section class="slide shout cover" id="ident"><div>
+      <img src="covers/library.jpg">
+      <h3 class="donthyphenate">Technical challenge: addressing, identification</h3>
+      <style type="text/css">
+        #ident h3 {
+          color:snow;
+          margin-top: 0.8em;
+        }
+      </style>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Is it “addressing” or “identification”?</h2>
+      <ul>
+        <li><em>These two “roles” are different</em></li>
+        <li>The usual situation:
+          <ul>
+              <li>some form of a URI is used to <em>(uniquely) identify</em> a resource</li>
+              <li>an HTTP(S) URL is used to <em>address</em> (or “locate”) a resource on the Web</li>
+          </ul>
+        </li>
+        <li>In many cases the two roles coincide, but not always
+            <ul>
+                <li>e.g., for a digital Book :
+                    <ul>
+                      <li><code>URN:ISBN:1-56592-521-1</code> identifies the publication</li>
+                      <li><code>http://www.ex.org/ex.epub</code> addresses a particular copy</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Is it “addressing” or “identification”?</h2>
+      <ul>
+          <li>Identification is handled by a number of other organizations (like the <a href="http://www.doi.org">DOI foundation</a>, the <a href="https://www.isbn-international.org/">International ISBN Agency</a>, etc.)</li>
+          <li>The work on PWP has to concentrate on locators (i.e., addressing)</li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Three layers of addressing</h2>
+          <ol>
+              <li>Locator for the PWP itself: <br /><code>http://www.ex.org/MyPWP/</code></li>
+              <li>Locating a resource <i>within</i> a PWP:<br /><code>http://www.ex.org/MyPWP/Chapter1.html</code></li>
+              <li>Locating a target within a resource: <br/><code>http://www.ex.org/MyPWP/Chapter1.html#section1</code></li>
+          </ol>
+          <ul>
+              <li>#3, i.e., “fragments” is defined for specific media types</li>
+              <li>#2 <i>should</i> be just like any other resources on the Web, to allow for a smooth state transition</li>
+              <li><em>details of #1 is to be specified for PWP</em></li>
+          </ul>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">The problem: locating the different PWP “states”</h2>
+      <ul>
+          <li>There are, in practice, two different locators
+              <ul>
+                  <li>to the unpacked version on the Web (<b>L<sub>u</sub></b>):<br /> <code>http://www.ex.org/MyPWP/dir/</code></li>
+                  <li>to the package  (<b>L<sub>p</sub></b>):<br/> <code>http://www.ex.org/MyPWP.pwp</code></li>
+              </ul>
+          </li>
+          <li>Which locators should one use? How would intra-resource addressing happen?
+              <ul>
+                  <li>i.e., how should <code>chapter1</code> refer to <code>chapter2</code>?</li>
+              </ul>
+
+          </li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="donthyphenate">PWP’s canonical locator</h2>
+        <ul>
+            <li>A PWP must have a <em>Canonical Locator</em> (<b>L</b>)
+                <ul><li>a state agnostic locator: <code>http://www.ex.org/MyPWP</code></li></ul>
+            </li>
+            <li>A published PWP <em>must</em> provide a metadata that includes <b>L</b>, <b>L<sub>p</sub></b>, and <b>L<sub>u</sub></b>
+            </li>
+            <li>A PWP Processor <em>must</em> have access to the full metadata</li>
+            <li>A resource within a PWP (and, in general, resources in general) should use <b>L</b> only for internal cross-references (or use relative URL-s)</li>
+        </ul>
+    </div></section>
+
+    <section class="slide">
+        <div>
+            <h2 class="donthyphenate">The PWP Processor can take care of the rest…</h2>
+            <ul>
+                <li>The processor has an access to <b>L</b>, <b>L<sub>p</sub></b>, and <b>L<sub>u</sub></b></li>
+                <li>It can, if needed, convert among URI requests coming from the renderer</li>
+                <li>Remember:</li>
+            </ul>
+
+            <ul class="slidequote">
+                <li>A conceptual, client-side processor that “hides” the PWP state differences from the rendering engine
+                </li>
+                <li>The “main” rendering engine operates <i>as if</i> it was connected to the Web:
+                    <ul>
+                        <li>accessing resources through HTTP(S)</li>
+                        <li>all resources are “unpacked”</li>
+                    </ul>
+                </li>
+                <li>The PWP Processor should hide the state differences, possibly cache resources, etc.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="slide"><div>
+        <h2 class="donthyphenate">Manifests</h2>
+        <ul>
+            <li>Note the crucial importance of extra information</li>
+            <li>Some sort of a “manifest” format should be defined to hold this data</li>
+            <li>The manifest should be used for other, more traditional reasons, too:
+                <ul>
+                    <li>“traditional” metadata like author(s), right expressions, publication dates,…</li>
+                    <li><em>identifiers</em></li>
+                    <li>correct reading order for the publication content</li>
+                    <li>etc.</li>
+                </ul>
+            </li>
+        </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">What does an <code style="font-size: 120%">HTTP GET</code> return for <b>L</b>?</h2>
+      <ul>
+        <li>Possibilities are:
+            <ul>
+                <li>the full manifest</li>
+                <li>the package that <i>includes</i> the manifest at some predefined place</li>
+                <li>an HTML file with a link to a manifest (through a <code>&lt;link&gt;</code> element)</li>
+                <li>an HTML file with an <i>embedded</i> manifest (through a <code>&lt;script&gt;</code> element)</li>
+                <li>some Web Resource, with a link to a manifest in the <code>Link</code> header of the <code>HTTP</code> response</li>
+            </ul>
+        </li>
+        <li>Different server setups are possible; a PWP specification should leave that open</li>
+      </ul>
+    </div></section>
+
+    <section class="slide shout cover" id="pack"><div>
+      <img src="covers/package.jpg">
+      <h3 class="donthyphenate">Technical challenge: archival format </h3>
+      <style type="text/css">
+      #pack h3 {
+        color: hsla(240, 69%, 50%, 1);
+        font-size: 2.3em;
+        margin-top: 1em;
+      }
+      </style>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Rough structure of an EPUB3 file</h2>
+      <figure>
+        <img class="plain" src="figures/EPUB3-Package-Structure.svg" alt="EPUB Packaging structure diagram" width="99%">
+      </figure>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Archival format </h2>
+      <ul>
+        <li>There is an interest among some W3C members for a Web friendly packaging format:
+          <ul>
+            <li>should be streamable</li>
+            <li>should rely, as much as possible, on existing Web technologies (e.g., HTTP)</li>
+          </ul>
+        </li>
+        <li>Use cases include:
+          <ul>
+            <li>retrieve an HTML file with related CSS files, images</li>
+            <li>access Web Applications (“Widgets”) with all libraries involved</li>
+            <li><em>Portable Web Publications are a clear use case</em></li>
+          </ul>
+        </li>
+        <li>But: current Web Packaging proposal is <i>not</i> OPF based
+          <ul>
+             <li>this <i>may</i> lead to a different packaging in future for Digital Publishing</li>
+          </ul>
+        </li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">PWP packaging structure</h2>
+      <figure>
+        <img class="plain" src="figures/PWP-Package-Structure.svg" alt="PWP Packaging structure diagram" width="99%">
+      </figure>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">Actually…</h2>
+      <ul class="donthyphenate">
+        <li>Moving to the Web would probably require to rethink the format of the administrative files
+          <ul><li>E.g., change formats from XML to JSON</li></ul>
+        </li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">PWP packaging structure</h2>
+      <figure>
+        <img class="plain" src="figures/PWP-Package-Structure-2.svg" alt="PWP Packaging structure diagram with admin file in JSON" width="99%">
+      </figure>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">However…</h2>
+      <ul>
+        <li>There isn‘t yet a full agreement whether to develop such Web Packaging format
+          <ul><li>a caching architecture based on Service Workers may be enough for the use cases</li></ul>
+        </li>
+        <li>If no Web Packaging format is defined, the Publishing Community may not move away from OPF
+          <ul>
+              <li>technical advantages of a new format must be weighted against existing deployment</li>
+          </ul>
+        </li>
+      </ul>
+    </div></section>
+
+    <section class="slide shout cover" id="presentation"><div>
+      <img src="covers/choice.jpg">
+      <h3 class="donthyphenate">Technical challenge: presentation control <br>(a.k.a. Personalization) </h3>
+      <style type="text/css">
+        #presentation h3 {
+          color: hsla(240, 69%, 50%, 1);
+          font-size: 2.4em;
+        }
+      </style>
+    </div></section>
+
+    <section class="slide"><div>
+      <ul class="notitle">
+        <li>What is the level of user control of the presentation? </li>
+        <li>The Web and eBook traditions are vastly different:
+          <ul>
+            <li>in a browser, the Web designer is in full control
+              <ul>
+                <li>CSS alternate style sheets or user style sheets are hardly in use</li>
+                <li>some user interface aspects can be controlled but only for the browser as a whole</li>
+              </ul>
+            </li>
+            <li>in an eBook reader, there is more user control
+              <ul>
+                <li>foreground/background color</li>
+                <li>choice of fonts</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>There is a need to reconcile these traditions</li>
+      </ul>
+    </div></section>
+
+    <section class="slide shout cover" id="road_pract"><div>
+      <img src="covers/road.jpg">
+      <h3 class="donthyphenate"> How do we get there? (Practically)</h3>
+      <style type="text/css">
+        #road_pract h3 {
+          color:hsla(240, 69%, 50%, 1);
+          padding-bottom: 0.1em;
+        }
+      </style>
+      <p class="credit">Moyan Brenn, Flickr</p>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>In the past…</h2>
+
+        <ul>
+            <li>EPUB was developed at the IDPF, Web Technologies were developed at the W3C</li>
+            <li>Strong cooperation exists since 2013 (e.g., in W3C’s Digital Publishing Interest Group)</li>
+            <li>The plan is that IDPF and W3C would <em>merge</em> starting 2017
+                <ul>
+                    <li>maintenance of EPUB&nbsp;3.1 will continue at W3C</li>
+                    <li>future development (of PWP and others) will be part of one or more W3C Working Groups</li>
+                    <li>a memorandum of understanding is being prepared to handle all the details</li>
+                </ul>
+            </li>
+        </ul>
+
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">PWP vs. EPUB3.1</h2>
+      <ul>
+        <li>PWP does <em>not</em> replace EPUB&nbsp;3</li>
+        <li>It is, instead, part of a future evolution for the years to come</li>
+      </ul>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2 class="donthyphenate">Most things are the same!</h2>
+        <ul>
+            <li>Important to note that the <em>content</em> of a PWP and EPUB&nbsp;3 are identical
+                <ul>
+                    <li>usage of HTML, CSS, SVG, SMIL, etc.</li>
+                </ul>
+            </li>
+            <li>The main change is the “administrative” aspect of the publication (locators, manifest, etc)</li>
+        </ul>
+    </div></section>
+
+    <section class="slide"><div>
+      <h2 class="donthyphenate">PWP vs. <i>future</i> EPUB-s</h2>
+      <ul>
+          <li>The structure of PWP is very general</li>
+          <li>Specific publication areas may need more restrictions and specifications
+              <ul>
+                  <li>metadata vocabularies, specific format for glossaries or indeces,…</li>
+                  <li>many of these features are already defined in EPUB&nbsp;3</li>
+              </ul>
+          </li>
+          <li>A <em>future</em> EPUB may be defined as a <em>profile</em> of PWP
+              <ul>
+                  <li>taking over or adapting a number of existing parts of EPUB&nbsp;3.1</li>
+              </ul>
+          </li>
+          <li>There may be other profiles for, e.g., online magazines</li>
+      </ul>
+    </div></section>
+
+    <section class="slide stamped"><div>
+      <h2 class="donthyphenate">PWP vs. <i>future</i> EPUB-s</h2>
+      <ul>
+          <li>The structure of PWP is very general</li>
+          <li>Specific publication areas may need more restrictions and specifications
+              <ul>
+                  <li>metadata vocabularies, specific format for glossaries or indeces,…</li>
+                  <li>many of these features are already defined in EPUB&nbsp;3</li>
+              </ul>
+          </li>
+          <li>A <em>future</em> EPUB may be defined as a <em>profile</em> of PWP
+              <ul>
+                  <li>taking over or adapting a number of existing parts of EPUB&nbsp;3.1</li>
+              </ul>
+          </li>
+          <li>There may be other profiles for, e.g., online magazines</li>
+      </ul>
+      <p class="stamp small">Topics for <br/>future work!</p>
+    </div></section>
+
+
+
     <!-- ===================================== -->
     <!--
     <section class="slide"><div>
@@ -666,8 +1353,6 @@
       <dl class="plain">
         <dt>Tzviya Siegman, Wiley</dt>
           <dd>tsiegman@wiley.com</dd>
-        <dt>Markus Gylling, IDPF</dt>
-          <dd>mgylling@idpf.org</dd>
         <dt>Ivan Herman, W3C</dt>
           <dd>ivan@w3.org</dd>
       </dl>
