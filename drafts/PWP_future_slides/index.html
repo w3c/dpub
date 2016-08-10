@@ -79,6 +79,26 @@
     </header>
     -->
 
+    <section class="slide" style="background: Bisque "><div>
+        <h2>These are <i>draft</i> slides!</h2>
+        <ul>
+            <li>These slides are <em>not</em> to be used by themselves; they are to be instantiated for a specific talk:
+                <ul>
+                    <li>change the title page, the header and the title element</li>
+                    <li>change the second and the last slides to update the final URI of the slide set</li>
+                    <li>trim the presentation, because it is way too long as is</li>
+                </ul>
+            </li>
+            <li>Some slides have their class set to "alternative" (the header is displayed with a different background color) to indicate that they may serve as an alternative to previous slides(s). Eg
+                <ul>
+                    <li>Chinese examples instead of Japanese and Hebrew; better used those when presented in China, for example</li>
+                    <li>The slide may be a summary for previous slides, a way to shorten the overall presentation</li>
+                </ul>
+            </li>
+        </ul>
+
+    </div></section>
+
     <section class="slide titlepage"><div>
       <h2 class="donthyphenate">Portable Web Publications (PWP)</h2>
       <h3>Ivan Herman, W3C </h3>
@@ -122,8 +142,10 @@
       </ul>
     </div></section>
 
-    <section class="slide shout"><div>
-        <h3>EPUB 3</h3>
+    <section class="slide shout cover"><div>
+        <img src="covers/epub_cover.jpg">
+        <h3 style="color:red">A format to represent digital publications: EPUB&nbsp;3</h3>
+        <p class="credit">Cloned Milkmen, Flickr</p>
     </div></section>
 
     <section class="slide"><div>
@@ -138,35 +160,29 @@
 
     <section class="slide shout cover" id="bookshelf"><div>
         <img src="covers/bookshelf.jpg">
-        <h3 class="donthyphenate">A wide variety of books have been created</h3>
-        <style type="text/css">
-          #bookshelf h3 {
-            margin-top: 3em;
-            background: hsla(181, 9%, 78%, 0.5);
-            padding-right: 0em;
-            padding-left: 0em;
-            color: black;
-          }
-        </style>
+        <h3 class="donthyphenate" id="lofasz">A wide variety of books have been created</h3>
     </div></section>
 
     <section class="slide"><div>
         <h2 class="donthyphenate">Books with illustrations</h2>
-        <figure class="middle">
+        <figure class="left larger">
             <img src="figures/eco.png" alt="An ebook page including a drawing" />
             <figcaption class="credit">Umberto Eco: “Le Cimetière de Prague”, Grasset</figcaption>
         </figure>
-
+        <figure class="right larger">
+            <img src="figures/krugman.png" alt="An extract of an ebook with a statistical figure in the middle of the page" />
+            <figcaption class="credit">Paul Krugman: “End this depression now!”, WW. Norton &amp; Co..</figcaption>
+        </figure>
     </div></section>
 
     <section class="slide"><div>
         <h2>Books with <em>lots</em> of illustrations…</h2>
         <figure class="left larger">
-            <img src="figures/petit_prince_1.png" class="noborder" alt="An extract of the 'Petit Prince' with a typical drawing" />
+            <img src="figures/petit_prince_1.png" alt="An extract of the 'Petit Prince' with a typical drawing" />
             <figcaption class="credit">Antoine de Sain-Exupéry: “Le Petit Prince”, Ebooks libres et gratuits</figcaption>
         </figure>
         <figure class="right larger">
-            <img src="figures/winnie_the_pooh.png" class="noborder" alt="An extract of Winnie the Pooh with a typical drawing" />
+            <img src="figures/winnie_the_pooh.png" alt="An extract of Winnie the Pooh with a typical drawing" />
             <figcaption class="credit">A.A. Milne: “Winnie-the-Pooh”, Egmont UK Ltd.</figcaption>
         </figure>
     </div></section>
@@ -197,9 +213,13 @@
 
     <section class="slide"><div>
         <h2>Technical books</h2>
-        <figure class="middle">
+        <figure class="left larger">
             <img src="figures/css.png" alt="Extract of a CSS book, with codes and figures" />
             <figcaption class="credit">Lea Verou: “CSS Secrets”, O'Reilly</figcaption>
+        </figure>
+        <figure class="right larger">
+            <img src="figures/func_js.png" alt="Extract of a Javascript book with figure and code" />
+            <figcaption class="credit">Michael Fogus: “Functional Programming”, O'Reilly</figcaption>
         </figure>
     </div></section>
 
@@ -215,6 +235,18 @@
         </figure>
     </div></section>
 
+    <section class="slide alternative"><div>
+        <h2 class="donthyphenate">Books with different character sets and writing directions</h2>
+        <figure class="left larger">
+            <img src="figures/arabic.png" alt="An extract of a text in arabic" />
+            <figcaption class="credit">“Régime Anti-Cancer Arabic”, IDPF EPUB3 Sample</figcaption>
+        </figure>
+        <figure class="right large" style="margin-top:3em">
+            <img src="figures/chinese-traditional.jpg" alt="A Chinese book with vertical writing" />
+            <figcaption class="credit">Hongshee Software</figcaption>
+        </figure>
+    </div></section>
+
     <section class="slide"><div>
         <h2 class="donthyphenate">Books with different character sets and writing directions</h2>
         <figure class="left larger">
@@ -222,8 +254,20 @@
             <figcaption class="credit">“The Mahabharata in Devanāgarī (देवनागरी)”, IDPF EPUB3 Sample</figcaption>
         </figure>
         <figure class="right larger">
-            <img src="figures/hebrew.png"  alt="An extract a text in Hebrew" />
+            <img src="figures/hebrew" alt="A book with hebrew characters" />
             <figcaption class="credit">“Israel sailing”, IDPF EPUB3 Sample</figcaption>
+        </figure>
+    </div></section>
+
+    <section class="slide alternative"><div>
+        <h2 class="donthyphenate">Books with different character sets and writing directions</h2>
+        <figure class="left larger">
+            <img src="figures/mahabharata.png"  alt="An extract of a text in hindi" />
+            <figcaption class="credit">“The Mahabharata in Devanāgarī (देवनागरी)”, IDPF EPUB3 Sample</figcaption>
+        </figure>
+        <figure class="right large" style="margin-top:3em">
+            <img src="figures/chinese-simplified.jpg" alt="A Chinese book with a drawing" />
+            <figcaption class="credit">Hongshee Software</figcaption>
         </figure>
     </div></section>
 
@@ -245,10 +289,10 @@
     <section class="slide"><div>
         <h2 class="donthyphenate">…journals or magazines (articles)</h2>
         <figure class="left larger">
-            <img src="figures/jep.png" class="noborder" alt="Cover of the JEP journal" />
+            <img src="figures/jep.png" alt="Cover of the JEP journal" />
         </figure>
         <figure class="right larger">
-            <img src="figures/jep1.png" class="noborder" alt="Table of content of the JEP journal" />
+            <img src="figures/jep1.png" alt="Table of content of the JEP journal" />
         </figure>
     </div></section>
 
@@ -264,18 +308,20 @@
 
     <section class="slide"><div>
         <h2 class="donthyphenate">In fact, just about anything!</h2>
-        <figure class="left larger">
-            <img src="figures/gdrive.png"  alt="Screendump of gdrive saving a document as EPUB" />
+        <figure class="left larger" style="margin-top:1.5em">
+            <img src="figures/gdrive.png" alt="Screendump of gdrive saving a document as EPUB" />
         </figure>
         <figure class="right larger">
-            <img src="figures/pages.png"  alt="Screendump of Apple Pages saving a document as EPUB" />
+            <img src="figures/pages.png" alt="Screendump of Apple Pages saving a document as EPUB" />
         </figure>
     </div></section>
 
 
     <!-- ===================================== -->
-    <section class="slide shout"><div>
+    <section class="slide shout cover"><div>
+        <img src="covers/secret.jpg">
         <h3>What is the secret?</h3>
+        <p class="credit">James Arboghast, flickr</p>
     </div></section>
 
     <section class="slide"><div>
@@ -316,18 +362,19 @@
     </div></section>
 
     <section class="slide"><div>
-        <h2 class="donthyphenate">Are we all done? Ie, is OWP perfect for EPUB?</h2>
+        <h2 class="donthyphenate">Are we all done? <br/>Ie, are OWP and EPUB a perfect match?</h2>
         <p>
             There are two major areas that need work:
         </p>
         <ol>
-            <li>bring OWP and Digital Publishing even closer</li>
-            <li>bring the <em>Web</em> and Digital Publishing even closer</li>
+            <li>bring OWP and Digital Publishing closer</li>
+            <li>bring the <em>Web</em> and Digital Publishing closer</li>
         </ol>
     </div></section>
 
-    <section class="slide shout"><div>
-        <h3>Bring OWP and Digital Publishing even closer</h3>
+    <section class="slide shout cover" id="owp_dpub"><div>
+        <img src="covers/bring_owp_dpub.jpg"/>
+        <h3>Bring OWP and Digital Publishing closer</h3>
     </div></section>
 
     <section class="slide"><div>
@@ -346,13 +393,14 @@
     </div></section>
 
     <section class="slide"><div>
-        <h2 class="donthyphenate">Bring OWP <em>features</em> to publishing</h2>
+        <h2 class="donthyphenate">Bring other OWP features to publishing</h2>
         <ul>
             <li>For example:
                 <ul>
-                    <li>dynamic tools deployed on the Web would be beneficial in publishing</li>
+                    <li>dynamic tools, libraries, etc, deployed on the Web would be beneficial in publishing</li>
                     <li>educational publications should use external services on the Web via extra protocols</li>
                     <li>new authentication methods could change the way publications are accessed</li>
+                    <li>whole array of device API-s could be used by dedicated software on devices</li>
                     <li>etc.</li>
                 </ul>
             </li>
@@ -381,8 +429,9 @@
         </figure>
     </div></section>
 
-    <section class="slide shout"><div>
-        <h3>Bring the <em>Web</em> and Digital Publishing even closer</h3>
+    <section class="slide shout cover" id="web_dpub"><div>
+        <img src="covers/bring_web_dpub.jpg"/>
+        <h3>Bring the <em>Web</em> and Digital Publishing closer</h3>
     </div></section>
 
     <section class="slide"><div>
@@ -539,8 +588,14 @@
       </ul>
     </div></section>
 
-    <section class="slide shout"><div>
-      <h3 class="donthyphenate">But… why not rely <em>only</em> on the Web? <br>(i.e., forget about downloaded content, it is outdated!)</h3>
+    <section class="slide shout cover"><div>
+      <img src="covers/why_not_web.jpg">
+      <h3 class="donthyphenate" style="color:darkblue">But… why not simply rely <em>only</em> on the current Web?</h3>
+    </div></section>
+
+    <section class="slide shout cover"><div>
+      <img src="covers/why_not_web.jpg">
+      <h3 class="donthyphenate" style="color:darkblue">The web already provides all we need!</h3>
     </div></section>
 
     <section class="slide"><div>
@@ -609,10 +664,6 @@
       <h3  class="donthyphenate">Synergy effects of convergence</h3>
       <style type="text/css">
         #synergy h3 {
-          margin-top: 3em;
-          background: hsla(181, 9%, 78%, 0.5);
-          padding-right: 0em;
-          padding-left: 0em;
           color: hsla(240,50%,30%,1);
         }
       </style>
@@ -688,8 +739,6 @@
       <style type="text/css">
         #road_tech h3 {
           color:red;
-          background-color: hsla(181, 9%, 78%, 0.5);
-          padding-bottom: 0.1em;
         }
       </style>
       <p class="credit">Moyan Brenn, Flickr</p>
@@ -713,7 +762,6 @@
       <style type="text/css">
         #terminology h3 {
           color: yellow;
-          font-size: 2.2em;
         }
       </style>
     </div></section>
@@ -798,8 +846,8 @@
       </ul>
     </div></section>
 
-    <section class="slide"><div>
-      <h2 class="donthyphenate">What is a Portable Web Publication? (simplified)</h2>
+    <section class="slide alternative"><div>
+      <h2 class="donthyphenate">What is a Portable Web Publication?</h2>
       <ul>
         <li>A <em>collection of Web resources considered as one unit</em>
           <ul><li>this means there is a Web address for the <i>collection</i> (as opposed to a single constituent)</li></ul>
@@ -863,7 +911,6 @@
       <style type="text/css">
         #arch h3 {
           color: hsla(240, 69%, 50%, 1);
-          font-size: 2.2em;
         }
       </style>
     </div></section>
@@ -949,8 +996,8 @@
       <p class="stamp small">Work in progress</p>
     </div></section>
 
-    <section class="slide"><div>
-      <h2 class="donthyphenate">Advances in modern browsers: Web and Service Workers (Simplified)</h2>
+    <section class="slide alternative"><div>
+      <h2 class="donthyphenate">Advances in modern browsers: Web and Service Workers</h2>
       <ul>
         <li>A browser has a hidden, <i>truly parallel</i> engine attached to it</li>
         <li>That engine “catches” all calls out to the Web, and:
@@ -965,8 +1012,8 @@
       </ul>
     </div></section>
 
-    <section class="slide stamped"><div>
-      <h2 class="donthyphenate">Advances in modern browsers: Web and Service Workers (Simplified)</h2>
+    <section class="slide stamped alternative"><div>
+      <h2 class="donthyphenate">Advances in modern browsers: Web and Service Workers</h2>
       <ul>
         <li>A browser has a hidden, <i>truly parallel</i> engine attached to it</li>
         <li>That engine “catches” all calls out to the Web, and:
@@ -1148,7 +1195,6 @@
       <style type="text/css">
       #pack h3 {
         color: hsla(240, 69%, 50%, 1);
-        font-size: 2.3em;
         margin-top: 1em;
       }
       </style>
@@ -1228,7 +1274,6 @@
       <style type="text/css">
         #presentation h3 {
           color: hsla(240, 69%, 50%, 1);
-          font-size: 2.4em;
         }
       </style>
     </div></section>
@@ -1262,7 +1307,6 @@
       <style type="text/css">
         #road_pract h3 {
           color:hsla(240, 69%, 50%, 1);
-          padding-bottom: 0.1em;
         }
       </style>
       <p class="credit">Moyan Brenn, Flickr</p>

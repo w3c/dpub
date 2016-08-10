@@ -316,6 +316,13 @@ header {
         }
     }
 }
+/* ---------------------------------------------------------------------------------------------- */
+/* "Alternative" slides, ie, slides that are an alternative for one (or several) previous slides  */
+/* ---------------------------------------------------------------------------------------------- */
+
+.slide.alternative h2 {
+    background: AntiqueWhite !important;
+}
 
 /* ------------------------------------------------------------------------------------------- */
 /* "Shout" slides, ie, with one single message placed centrally                                */
@@ -449,11 +456,16 @@ header {
     }
 
     h3 {
-        background: hsla(181, 9%, 78%, 0.5);
+        background: hsla(181, 9%, 78%, 0.75);
         box-shadow: 0 0 0 1px hsla(0,0%,100%,.3) inset,
                     0 .5em 1em rgba(0, 0, 0, 0.6);
         text-shadow: 0 1px 1px hsla(0,0%,100%,.3);
         border-radius: 10px;
+        padding-right: 0em;
+        padding-left: 0em;
+        padding-bottom: 0.1em;
+        color: inherit;
+        margin-top: 3em;
     }
 }
 
@@ -538,7 +550,9 @@ figure.middle {
     text-align: center;
     img {
         max-height: $figure-middle;
-        min-height: $figure-middle;
+        min-height: $figure-middle;  /* 7px 7px 5px #888 */
+        border: 1px solid #CCC;
+        box-shadow: 3px 3px 2px #888;
     }
     video {
         border: 1px solid #CCC;
