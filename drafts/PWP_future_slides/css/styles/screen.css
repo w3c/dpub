@@ -4,16 +4,14 @@
  * @copyright 2010–2016 Vadim Makeev, http://pepelsbey.net/
  * @license MIT
  */
-
 @charset "UTF-8";
-/*
 @font-face {
     font-family: PT Sans;
     src: url(../fonts/pt-sans-regular.woff) format("woff")
 }
 
 @font-face {
-    font-weight: 700;
+    font-weight: bold;
     font-family: PT Sans;
     src: url(../fonts/pt-sans-bold.woff) format("woff")
 }
@@ -26,14 +24,14 @@
 
 @font-face {
     font-style: italic;
-    font-weight: 700;
+    font-weight: bold;
     font-family: PT Sans;
     src: url(../fonts/pt-sans-bold-italic.woff) format("woff")
 }
 
 @font-face {
     font-family: PT Sans Narrow;
-    font-weight: 700;
+    font-weight: bold;
     src: url(../fonts/pt-sans-narrow-bold.woff) format("woff")
 }
 
@@ -41,114 +39,34 @@
     font-family: PT Mono;
     src: url(../fonts/pt-mono-regular.woff) format("woff")
 }
-*/
 
-*,
-::after,
-::before {
+*, *::before, *::after {
     box-sizing: border-box
 }
 
-a,
-abbr,
-acronym,
-address,
-applet,
-article,
-aside,
-audio,
-b,
-big,
-blockquote,
-body,
-canvas,
-caption,
-center,
-cite,
-code,
-dd,
-del,
-details,
-dfn,
-div,
-dl,
-dt,
-em,
-embed,
-fieldset,
-figcaption,
-figure,
-footer,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-hgroup,
-html,
-i,
-iframe,
-img,
-ins,
-kbd,
-label,
-legend,
-li,
-mark,
-menu,
-nav,
-object,
-ol,
-output,
-p,
-pre,
-q,
-ruby,
-s,
-samp,
-section,
-small,
-span,
-strike,
-strong,
-sub,
-summary,
-sup,
-table,
-tbody,
-td,
-tfoot,
-th,
-thead,
-time,
-tr,
-tt,
-u,
-ul,
-var,
-video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
+    font-size: 100%;
     font: inherit;
     vertical-align: baseline
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
     display: block
 }
 
@@ -156,20 +74,17 @@ body {
     line-height: 1
 }
 
-ol,
-ul {
+ol, ul {
     list-style: none
 }
 
-blockquote,
-q {
+blockquote, q {
     quotes: none
 }
 
-blockquote::after,
-blockquote::before,
-q::after,
-q::before {
+blockquote::before, blockquote::after,
+q::before, q::after {
+    content: '';
     content: none
 }
 
@@ -188,7 +103,7 @@ a {
 }
 
 .shower {
-    color: #000;
+    color: black;
     counter-reset: slide;
     font: 25px/2 PT Sans, sans-serif;
     -webkit-print-color-adjust: exact;
@@ -206,38 +121,38 @@ a {
 .caption {
     font-size: 25px;
     display: none;
-    margin-top: -.2em;
-    padding: 0 1em .93em;
+    margin-top: -0.2em;
+    padding: 0 1em 0.93em;
     width: 100%;
-    color: #3c3d40;
-    text-shadow: 0 1px 0 #8d8e90
+    color: #3C3D40;
+    text-shadow: 0 1px 0 #8D8E90
 }
 
-@media (min-width:1174px) {
+@media (min-width: 1174px) {
     .caption {
         font-size: 50px
     }
 }
 
-@media (min-width:2348px) {
+@media (min-width: 2348px) {
     .caption {
         font-size: 100px
     }
 }
 
 .caption h1 {
-    padding-bottom: .15em;
-    font: 700 1em/1 PT Sans Narrow, sans-serif
+    padding-bottom: 0.15em;
+    font: bold 1em/1 PT Sans Narrow, sans-serif
 }
 
 .caption p {
     line-height: 1;
-    font-size: .6em
+    font-size: 0.6em
 }
 
 .caption a {
-    color: #4b86c2;
-    text-shadow: 0 -1px 0 #1f3f60
+    color: #4B86C2;
+    text-shadow: 0 -1px 0 #1F3F60
 }
 
 .slide {
@@ -247,7 +162,7 @@ a {
     padding: 106px 100px 0;
     width: 1024px;
     height: 640px;
-    background: #fff;
+    background: #FFF;
     font-size: 25px
 }
 
@@ -259,7 +174,7 @@ a {
     width: 50px;
     height: 100px;
     background: url(../images/ribbon.svg) no-repeat;
-    color: #fff;
+    color: #FFF;
     counter-increment: slide;
     content: counter(slide);
     text-align: center
@@ -267,8 +182,8 @@ a {
 
 .slide h2 {
     margin-bottom: 34px;
-    color: #585a5e;
-    font: 700 50px/1 PT Sans Narrow, sans-serif
+    color: #585A5E;
+    font: bold 50px/1 PT Sans Narrow, sans-serif
 }
 
 .slide p {
@@ -280,112 +195,100 @@ a {
 }
 
 .slide a {
-    background: -webkit-linear-gradient(bottom, currentColor .09em, transparent .09em) repeat-x;
-    background: linear-gradient(to top, currentColor .09em, transparent .09em) repeat-x;
-    color: #4b86c2
+    background: -webkit-linear-gradient(bottom, currentColor 0.09em, transparent 0.09em) repeat-x;
+    background: linear-gradient(to top, currentColor 0.09em, transparent 0.09em) repeat-x;
+    color: #4B86C2
 }
 
-.slide b,
-.slide strong {
-    font-weight: 700
+.slide b, .slide strong {
+    font-weight: bold
 }
 
-.slide blockquote,
-.slide dfn,
-.slide em,
-.slide i {
+.slide i, .slide em, .slide dfn {
     font-style: italic
 }
 
-.slide code,
-.slide kbd,
-.slide mark,
-.slide samp {
-    padding: .1em .3em;
-    border-radius: .2em
+.slide code, .slide kbd, .slide mark, .slide samp {
+    padding: 0.1em 0.3em;
+    border-radius: 0.2em
 }
 
-.slide code,
-.slide kbd,
-.slide samp {
-    background: rgba(88, 90, 94, .1);
+.slide code, .slide kbd, .slide samp {
+    background: rgba(88, 90, 94, 0.1);
     line-height: 1;
     font-family: PT Mono, monospace, monospace
 }
 
 .slide mark {
-    background: #fafaa2
+    background: #FAFAA2
 }
 
-.slide sub,
-.slide sup {
+.slide sub, .slide sup {
     position: relative;
     line-height: 0;
     font-size: 75%
 }
 
 .slide sub {
-    bottom: -.25em
+    bottom: -0.25em
 }
 
 .slide sup {
-    top: -.5em
+    top: -0.5em
+}
+
+.slide blockquote {
+    font-style: italic
 }
 
 .slide blockquote::before {
     position: absolute;
-    margin: -.15em 0 0 -.43em;
-    color: #ccc;
+    margin: -0.15em 0 0 -0.43em;
+    color: #CCC;
     line-height: 1;
     font-size: 8em;
     content: '\201C'
 }
 
-.slide blockquote+figcaption {
+.slide blockquote + figcaption {
     margin: -1em 0 1em;
     font-style: italic;
-    font-weight: 700
+    font-weight: bold
 }
 
-.slide ol,
-.slide ul {
+.slide ol, .slide ul {
     margin-bottom: 1em;
     counter-reset: list
 }
 
-.slide ol li,
-.slide ul li {
+.slide ol li, .slide ul li {
     page-break-inside: avoid;
     text-indent: -2em
 }
 
-.slide ol li::before,
-.slide ul li::before {
+.slide ol li::before, .slide ul li::before {
     display: inline-block;
     width: 2em;
     color: #979a9e;
     text-align: right
 }
 
-.slide ol ol,
-.slide ol ul,
-.slide ul ol,
-.slide ul ul {
+.slide ol ol, .slide ol ul, .slide ul ol, .slide ul ul {
     margin-bottom: 0;
     margin-left: 2em
 }
 
-.slide ul>li::before {
-    padding-right: .5em;
+.slide ul > li::before {
+    padding-right: 0.5em;
     content: '•'
 }
 
-.slide ul>li:lang(ru)::before {
+.slide ul > li:lang(ru)::before {
     content: '—'
 }
 
-.slide ol>li::before {
-    padding-right: .4em;
+.slide ol > li::before {
+    padding-right: 0.4em;
     counter-increment: list;
     content: counter(list) "."
 }
@@ -396,31 +299,31 @@ a {
     width: calc(100% + 100px + 100px)
 }
 
-.slide table td:first-child,
-.slide table th:first-child {
+.slide table th:first-child,
+.slide table td:first-child {
     padding-left: 96px
 }
 
-.slide table td:last-child,
-.slide table th:last-child {
+.slide table th:last-child,
+.slide table td:last-child {
     padding-right: 96px
 }
 
 .slide table th {
     text-align: left;
-    font-weight: 700
+    font-weight: bold
 }
 
-.slide table tr:not(:last-of-type)>* {
-    background: -webkit-linear-gradient(bottom, rgba(88, 90, 94, .5) .055em, transparent .055em) repeat-x;
-    background: linear-gradient(to top, rgba(88, 90, 94, .5) .055em, transparent .055em) repeat-x
+.slide table tr:not(:last-of-type) > * {
+    background: -webkit-linear-gradient(bottom, rgba(88, 90, 94, 0.5) 0.055em, transparent 0.055em) repeat-x;
+    background: linear-gradient(to top, rgba(88, 90, 94, 0.5) 0.055em, transparent 0.055em) repeat-x
 }
 
 .slide table.striped tr:nth-child(even) {
-    background: rgba(88, 90, 94, .1)
+    background: rgba(88, 90, 94, 0.1)
 }
 
-.slide table.striped tr>* {
+.slide table.striped tr > * {
     background-image: none
 }
 
@@ -436,16 +339,16 @@ a {
     padding: 0 0 0 100px;
     width: calc(100% + 100px + 100px);
     border-radius: 0;
-    background: 0 0;
+    background: none;
     line-height: 2;
     white-space: pre;
     -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4
+      -o-tab-size: 4;
+         tab-size: 4
 }
 
 .slide pre code:not(:only-child).mark {
-    background: rgba(88, 90, 94, .1)
+    background: rgba(88, 90, 94, 0.1)
 }
 
 .slide pre code:not(:only-child)::before {
@@ -459,12 +362,12 @@ a {
 .slide pre mark {
     position: relative;
     z-index: -1;
-    margin: 0 -.3em
+    margin: 0 -0.3em
 }
 
 .slide pre mark.important {
-    background: #c00;
-    color: #fff
+    background: #C00;
+    color: #FFF
 }
 
 .slide pre .comment {
@@ -479,16 +382,16 @@ a {
     display: none;
     padding: 41px 100px 8px;
     background: #fbfbba;
-    box-shadow: 0 1px 0 #fafaa2 inset;
-    -webkit-transition: bottom .3s;
-    transition: bottom .3s
+    box-shadow: 0 1px 0 #FAFAA2 inset;
+    -webkit-transition: bottom 0.3s;
+    transition: bottom 0.3s
 }
 
 .slide footer mark {
-    background: rgba(255, 255, 255, .8)
+    background: rgba(255, 255, 255, 0.8)
 }
 
-.slide:hover>footer {
+.slide:hover > footer {
     bottom: 0
 }
 
@@ -500,8 +403,7 @@ a {
     image-rendering: pixelated
 }
 
-@media (-webkit-min-device-pixel-ratio:2),
-(min-resolution:2dppx) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .slide.grid {
         background-image: url(../images/grid@2x.png);
         background-size: 1024px auto
@@ -512,35 +414,38 @@ a {
     background-color: #000
 }
 
-.slide.black::after,
-.slide.white::after {
+.slide.black::after {
     visibility: hidden
 }
 
 .slide.white {
-    background-color: #fff
+    background-color: #FFF
+}
+
+.slide.white::after {
+    visibility: hidden
 }
 
 .slide .double,
 .slide .triple {
     -webkit-column-gap: 75px;
-    -moz-column-gap: 75px;
-    column-gap: 75px;
+       -moz-column-gap: 75px;
+            column-gap: 75px;
     -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto
+        -ms-hyphens: auto;
+            hyphens: auto
 }
 
 .slide .double {
     -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2
+       -moz-column-count: 2;
+            column-count: 2
 }
 
 .slide .triple {
     -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3
+       -moz-column-count: 3;
+            column-count: 3
 }
 
 .slide .shout {
@@ -552,12 +457,12 @@ a {
     line-height: 1;
     font-size: 150px;
     -webkit-transform: translateY(-50%);
-    transform: translateY(-50%)
+            transform: translateY(-50%)
 }
 
 .slide .shout a {
-    background: -webkit-linear-gradient(bottom, currentColor .11em, transparent .11em) repeat-x;
-    background: linear-gradient(to top, currentColor .11em, transparent .11em) repeat-x
+    background: -webkit-linear-gradient(bottom, currentColor 0.11em, transparent 0.11em) repeat-x;
+    background: linear-gradient(to top, currentColor 0.11em, transparent 0.11em) repeat-x
 }
 
 .slide .cover {
@@ -566,40 +471,38 @@ a {
     left: 50%;
     z-index: -1;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     max-width: 100%;
     max-height: 100%
 }
 
-.slide .cover.w,
-.slide .cover.width {
+.slide .cover.width, .slide .cover.w {
     width: 100%;
     max-height: none
 }
 
-.slide .cover.h,
-.slide .cover.height {
+.slide .cover.height, .slide .cover.h {
     height: 100%;
     max-width: none
 }
 
-.slide .cover+figcaption {
+.slide .cover + figcaption {
     position: absolute;
     bottom: 20px;
     right: 10px;
     font-size: 12px;
-    opacity: .7;
+    opacity: 0.7;
     -webkit-transform-origin: 0 100%;
-    transform-origin: 0 100%;
+            transform-origin: 0 100%;
     -webkit-transform: translateX(100%) rotate(-90deg);
-    transform: translateX(100%) rotate(-90deg)
+            transform: translateX(100%) rotate(-90deg)
 }
 
-.slide .cover+figcaption.white {
-    color: #fff
+.slide .cover + figcaption.white {
+    color: #FFF
 }
 
-.slide .cover+figcaption a {
+.slide .cover + figcaption a {
     color: currentcolor
 }
 
@@ -608,67 +511,44 @@ a {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%)
+            transform: translate(-50%, -50%)
 }
 
-.slide .place.b.l,
-.slide .place.b.r,
-.slide .place.bottom.left,
-.slide .place.bottom.right,
-.slide .place.t.l,
-.slide .place.t.r,
-.slide .place.top.left,
-.slide .place.top.right {
+.slide .place.top.left, .slide .place.t.l, .slide .place.top.right, .slide .place.t.r, .slide .place.bottom.right, .slide .place.b.r, .slide .place.bottom.left, .slide .place.b.l {
     -webkit-transform: none;
-    transform: none
+            transform: none
 }
 
-.slide .place.b,
-.slide .place.bottom,
-.slide .place.t,
-.slide .place.top {
+.slide .place.top, .slide .place.t, .slide .place.bottom, .slide .place.b {
     -webkit-transform: translate(-50%, 0);
-    transform: translate(-50%, 0)
+            transform: translate(-50%, 0)
 }
 
-.slide .place.l,
-.slide .place.left,
-.slide .place.r,
-.slide .place.right {
+.slide .place.left, .slide .place.l, .slide .place.right, .slide .place.r {
     -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%)
+            transform: translate(0, -50%)
 }
 
-.slide .place.t,
-.slide .place.t.r,
-.slide .place.top,
-.slide .place.top.left,
-.slide .place.top.right {
+.slide .place.top, .slide .place.t, .slide .place.top.left, .slide .place.top.right, .slide .place.t.r {
     top: 0
 }
 
-.slide .place.r,
-.slide .place.right {
+.slide .place.right, .slide .place.r {
     right: 0;
     left: auto
 }
 
-.slide .place.b,
-.slide .place.b.l,
-.slide .place.b.r,
-.slide .place.bottom,
-.slide .place.bottom.left,
-.slide .place.bottom.right {
+.slide .place.bottom, .slide .place.b, .slide .place.bottom.right, .slide .place.b.r, .slide .place.bottom.left, .slide .place.b.l {
     top: auto;
     bottom: 0
 }
 
-.slide .place.l,
-.slide .place.left {
+.slide .place.left, .slide .place.l {
     left: 0
 }
 
 .progress {
+    position: absolute;
     left: -20px;
     bottom: 0;
     z-index: 1;
@@ -676,10 +556,10 @@ a {
     width: 0;
     height: 0;
     box-sizing: content-box;
-    border: 10px solid #4b86c2;
+    border: 10px solid #4B86C2;
     border-right-color: transparent;
-    -webkit-transition: width .2s linear;
-    transition: width .2s linear;
+    -webkit-transition: width 0.2s linear;
+    transition: width 0.2s linear;
     clip: rect(10px, 1044px, 20px, 20px)
 }
 
@@ -687,49 +567,45 @@ a {
     padding-left: 10px
 }
 
-.badge,
-.badge a,
-.progress {
-    position: absolute
-}
-
 .badge {
     font-size: 10px;
+    position: absolute;
     top: 0;
+    right: 0;
     z-index: 1;
     overflow: hidden;
+    visibility: hidden;
     display: none;
     width: 9em;
-    height: 9em;
-    right: 0;
-    visibility: hidden
+    height: 9em
 }
 
-@media (min-width:1174px) {
+@media (min-width: 1174px) {
     .badge {
         font-size: 20px
     }
 }
 
-@media (min-width:2348px) {
+@media (min-width: 2348px) {
     .badge {
         font-size: 40px
     }
 }
 
 .badge a {
+    position: absolute;
     right: -50%;
     bottom: 50%;
     left: -50%;
     visibility: visible;
-    background: #4b86c2;
-    color: #fff;
+    background: #4B86C2;
+    color: #FFF;
     text-align: center;
     line-height: 2;
     -webkit-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
     -webkit-transform: rotate(45deg);
-    transform: rotate(45deg)
+            transform: rotate(45deg)
 }
 
 .region {
@@ -741,23 +617,25 @@ a {
         padding-top: 25px;
         width: 100%;
         display: -webkit-box;
+        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        background: #585a5e;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        background: #585A5E;
         position: absolute;
         clip: rect(0, auto, auto, 0)
     }
 }
 
-@media screen and (min-width:1174px) {
+@media screen and (min-width: 1174px) {
     .shower.list {
         padding-top: 50px
     }
 }
 
-@media screen and (min-width:2348px) {
+@media screen and (min-width: 2348px) {
     .shower.list {
         padding-top: 100px
     }
@@ -769,43 +647,45 @@ a {
     }
     .shower.list .slide {
         -webkit-transform-origin: 0 0;
-        transform-origin: 0 0;
+                transform-origin: 0 0;
         margin: 0 -768px -455px 25px;
-        -webkit-transform: scale(.25);
-        transform: scale(.25);
+        -webkit-transform: scale(0.25);
+                transform: scale(0.25);
         border-radius: 2px;
-        box-shadow: 0 20px 50px rgba(0, 0, 0, .3)
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3)
     }
 }
 
-@media screen and (min-width:1174px) {
+@media screen and (min-width: 1174px) {
     .shower.list .slide {
         margin: 0 -512px -270px 50px;
-        -webkit-transform: scale(.5);
-        transform: scale(.5)
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5)
     }
 }
 
-@media screen and (min-width:2348px) {
+@media screen and (min-width: 2348px) {
     .shower.list .slide {
-        margin: 0 0 100px 100px;
+        margin: 0 0px 100px 100px;
         -webkit-transform: scale(1);
-        transform: scale(1)
+                transform: scale(1)
     }
 }
 
 @media screen {
     .shower.list .slide:hover {
-        box-shadow: 0 0 0 20px rgba(0, 0, 0, .1), 0 20px 50px rgba(0, 0, 0, .3)
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.1), 0 20px 50px rgba(0, 0, 0, 0.3)
     }
     .shower.list .slide:target {
-        box-shadow: 0 0 0 1px #376da3, 0 0 0 20px #4b86c2, 0 20px 50px rgba(0, 0, 0, .3)
+        box-shadow: 0 0 0 1px #376da3, 0 0 0 20px #4B86C2, 0 20px 50px rgba(0, 0, 0, 0.3)
     }
     .shower.list .slide * {
         pointer-events: none
     }
-    .shower.list .badge,
     .shower.list .slide footer {
+        display: block
+    }
+    .shower.list .badge {
         display: block
     }
     .shower.full {
@@ -831,10 +711,10 @@ a {
     }
     .shower.full .slide pre code:not(:only-child).mark.next {
         visibility: visible;
-        background: 0 0
+        background: none
     }
     .shower.full .slide pre code:not(:only-child).mark.next.active {
-        background: rgba(88, 90, 94, .1)
+        background: rgba(88, 90, 94, 0.1)
     }
     .shower.full .slide .next {
         visibility: hidden
@@ -842,33 +722,32 @@ a {
     .shower.full .slide .next.active {
         visibility: visible
     }
-    .shower.full .slide .shout.grow,
-    .shower.full .slide .shout.shrink {
+    .shower.full .slide .shout.grow, .shower.full .slide .shout.shrink {
         opacity: 0;
-        -webkit-transition: .4s ease-out;
-        transition: .4s ease-out;
+        -webkit-transition: 0.4s ease-out;
+        transition: 0.4s ease-out;
         -webkit-transition-property: opacity, -webkit-transform;
+        transition-property: opacity, -webkit-transform;
         transition-property: opacity, transform;
         transition-property: opacity, transform, -webkit-transform
     }
     .shower.full .slide .shout.grow {
-        -webkit-transform: scale(.1) translateY(-50%);
-        transform: scale(.1) translateY(-50%)
+        -webkit-transform: scale(0.1) translateY(-50%);
+                transform: scale(0.1) translateY(-50%)
     }
     .shower.full .slide .shout.shrink {
         -webkit-transform: scale(10) translateY(-50%);
-        transform: scale(10) translateY(-50%)
+                transform: scale(10) translateY(-50%)
     }
-    .shower.full .slide:target .shout.grow,
-    .shower.full .slide:target .shout.shrink {
+    .shower.full .slide:target .shout.grow, .shower.full .slide:target .shout.shrink {
         opacity: 1;
         -webkit-transform: scale(1) translateY(-50%);
-        transform: scale(1) translateY(-50%)
+                transform: scale(1) translateY(-50%)
     }
     .shower.full .progress {
         display: block;
         -webkit-transform: translateZ(0);
-        transform: translateZ(0)
+                transform: translateZ(0)
     }
     .shower.full .region {
         position: absolute;
