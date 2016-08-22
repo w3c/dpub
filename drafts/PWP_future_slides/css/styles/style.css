@@ -212,6 +212,10 @@ header p, header h1, header h2, header h3 {
   text-align: right;
 }
 /* line 258, style.scss */
+.slide ul.smaller, .slide ol.smaller {
+  font-size: 90%;
+}
+/* line 262, style.scss */
 .slide table {
   /* General Tables */
   font-size: 90%;
@@ -224,50 +228,50 @@ header p, header h1, header h2, header h3 {
   -ms-transform: translateX(-15px);
   transform: translateX(-15px);
 }
-/* line 269, style.scss */
+/* line 273, style.scss */
 .slide table td {
   border: 1px solid #CCC;
   padding: 0.3em;
   padding-right: 0.5em;
   text-align: left;
 }
-/* line 276, style.scss */
+/* line 280, style.scss */
 .slide table th.headertop {
   text-align: center;
   border-left: 1px solid #CCC;
   border-right: 1px solid #CCC;
 }
-/* line 282, style.scss */
+/* line 286, style.scss */
 .slide table th.headerleft {
   padding-right: 1em;
   text-align: right;
   border-top: 1px solid #CCC;
   border-bottom: 1px solid #CCC;
 }
-/* line 290, style.scss */
+/* line 294, style.scss */
 .slide table.striped {
   /* "Striped" (sometimes called 'zebra') Tables */
   border-right: none;
   border-left: none;
 }
-/* line 294, style.scss */
+/* line 298, style.scss */
 .slide table.striped tr:nth-child(even) {
   background: #d2feef;
 }
-/* line 298, style.scss */
+/* line 302, style.scss */
 .slide table.striped td, .slide table.striped th {
   border-top: none;
   border-bottom: none;
 }
-/* line 303, style.scss */
+/* line 307, style.scss */
 .slide table.striped tr td::first-child, .slide table.striped tr th::first-child {
   border-left: none;
 }
-/* line 307, style.scss */
+/* line 311, style.scss */
 .slide table.striped tr td::last-child, .slide table.striped tr th:last-child {
   border-right: none;
 }
-/* line 312, style.scss */
+/* line 316, style.scss */
 .slide table.comparison {
   /* "Comparison" tables */
   padding-left: 0em !important;
@@ -276,15 +280,15 @@ header p, header h1, header h2, header h3 {
   font-size: 90%;
   table-layout: fixed;
 }
-/* line 320, style.scss */
+/* line 324, style.scss */
 .slide table.comparison th {
   text-align: center;
 }
-/* line 323, style.scss */
+/* line 327, style.scss */
 .slide table.comparison td {
   padding: 0.3em;
 }
-/* line 328, style.scss */
+/* line 332, style.scss */
 .slide .slidequote {
   font-size: 65%;
   margin-left: 2em;
@@ -299,7 +303,7 @@ header p, header h1, header h2, header h3 {
 /* ---------------------------------------------------------------------------------------------- */
 /* "Alternative" slides, ie, slides that are an alternative for one (or several) previous slides  */
 /* ---------------------------------------------------------------------------------------------- */
-/* line 343, style.scss */
+/* line 347, style.scss */
 .slide.alternative h2 {
   background: AntiqueWhite !important;
 }
@@ -308,34 +312,29 @@ header p, header h1, header h2, header h3 {
 /* "Shout" slides, ie, with one single message placed centrally                                */
 /* In many of the slides this is combined with a background image and additional translations  */
 /* ------------------------------------------------------------------------------------------- */
-/* line 352, style.scss */
+/* line 356, style.scss */
 .slide.shout h2, .slide.shout h3 {
   text-shadow: 0 1px 1px black;
   border-bottom: none;
   width: 100%;
 }
-/* line 358, style.scss */
+/* line 362, style.scss */
 .slide.shout h3 {
-  font-size: 3em;
-  margin-top: 1em;
+  font-size: 2em;
+  margin-top: 1.5em;
   text-align: center;
   line-height: 1;
   padding-right: 0em;
   padding-left: 0em;
 }
-/* line 367, style.scss */
+/* line 371, style.scss */
 .slide.shout h2 {
   font-size: 2.8em;
   margin-top: -1em;
   text-align: left;
   line-height: 1;
 }
-/* line 374, style.scss */
-.slide.shout h3 {
-  margin-top: 1.5em;
-  font-size: 2em;
-}
-/* line 379, style.scss */
+/* line 378, style.scss */
 .slide.shout h2 {
   -webkit-transform: translateY(25%);
   -ms-transform: translateY(25%);
@@ -343,7 +342,7 @@ header p, header h1, header h2, header h3 {
 }
 
 /* Stamp */
-/* line 385, style.scss */
+/* line 384, style.scss */
 .slide .stamp {
   font-size: 5em;
   letter-spacing: 0.1em;
@@ -364,7 +363,7 @@ header p, header h1, header h2, header h3 {
   text-shadow: 0.05em 0.05em 0.05em gray;
 }
 
-/* line 403, style.scss */
+/* line 402, style.scss */
 .slide .stamp.small {
   font-size: 2.5em;
   letter-spacing: 0.1em;
@@ -373,41 +372,41 @@ header p, header h1, header h2, header h3 {
   left: 15%;
 }
 
-/* line 411, style.scss */
+/* line 410, style.scss */
 .slide.stamped::after, .slide.stamped h2, .slide.stamped ul, .slide.stamped ol, .slide.stamped figure, .slide.stamped p:not(.stamp), .slide.stamped blockquote {
   -webkit-filter: blur(2px) contrast(0.8) brightness(0.8);
   filter: blur(2px) contrast(0.8) brightness(0.8);
 }
 
 /* The first, "title" page */
-/* line 424, style.scss */
+/* line 423, style.scss */
 .slide.titlepage h1, .slide.titlepage h2, .slide.titlepage h3, .slide.titlepage h4 {
   border-bottom: none !important;
   text-align: center;
 }
-/* line 429, style.scss */
+/* line 428, style.scss */
 .slide.titlepage h2 {
   font-size: 2em;
   margin-top: 2em;
   text-shadow: 0 1px 1px black;
 }
-/* line 435, style.scss */
+/* line 434, style.scss */
 .slide.titlepage h3 {
   font-size: 1em;
   text-transform: none;
   margin-bottom: 0.1em;
 }
-/* line 441, style.scss */
+/* line 440, style.scss */
 .slide.titlepage h4 {
   font-size: 0.8em;
   margin-bottom: 0.15em;
   text-transform: none;
 }
-/* line 447, style.scss */
+/* line 446, style.scss */
 .slide.titlepage p {
   font-size: 0.5em;
 }
-/* line 451, style.scss */
+/* line 450, style.scss */
 .slide.titlepage p.copyright {
   position: absolute;
   bottom: 0.3em;
@@ -418,7 +417,7 @@ header p, header h1, header h2, header h3 {
   line-height: 1.3em;
 }
 
-/* line 463, style.scss */
+/* line 462, style.scss */
 .slide.cover img {
   position: absolute;
   top: 0;
@@ -430,7 +429,7 @@ header p, header h1, header h2, header h3 {
   min-height: 100%;
   z-index: -1;
 }
-/* line 475, style.scss */
+/* line 474, style.scss */
 .slide.cover .credit {
   margin-top: 3em;
   margin-bottom: 0px;
@@ -441,7 +440,7 @@ header p, header h1, header h2, header h3 {
   bottom: 0px;
   color: snow;
 }
-/* line 486, style.scss */
+/* line 485, style.scss */
 .slide.cover h3 {
   background: rgba(194, 204, 204, 0.75);
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3) inset, 0 0.5em 1em rgba(0, 0, 0, 0.6);
@@ -460,11 +459,11 @@ header p, header h1, header h2, header h3 {
 /* using flex boxes is probably the right way.                                                                    */
 /* -------------------------------------------------------------------------------------------------------------- */
 /* Note: for webkit and mozilla the min-width seems to be unnecessary, but it is necessary for Safari... */
-/* line 578, style.scss */
+/* line 577, style.scss */
 figure.middle {
   text-align: center;
 }
-/* line 580, style.scss */
+/* line 579, style.scss */
 figure.middle img {
   max-height: 460px;
   min-height: 460px;
@@ -472,26 +471,26 @@ figure.middle img {
   border: 1px solid #CCC;
   box-shadow: 3px 3px 2px #888;
 }
-/* line 586, style.scss */
+/* line 585, style.scss */
 figure.middle video {
   border: 1px solid #CCC;
   box-shadow: 3px 3px 2px #888;
 }
 
 /* ----------- */
-/* line 594, style.scss */
+/* line 593, style.scss */
 figure.center, figure.centre {
   text-align: center;
 }
 
-/* line 598, style.scss */
+/* line 597, style.scss */
 figure.right {
   float: right;
   margin-left: 1em;
   max-width: 250px;
   min-width: 250px;
 }
-/* line 511, style.scss */
+/* line 510, style.scss */
 figure.right img {
   max-width: inherit;
   width: 250px;
@@ -499,14 +498,14 @@ figure.right img {
   box-shadow: 7px 7px 5px #888;
 }
 
-/* line 604, style.scss */
+/* line 603, style.scss */
 figure.left {
   float: left;
   margin-right: 1.3em;
   max-width: 250px;
   min-width: 250px;
 }
-/* line 511, style.scss */
+/* line 510, style.scss */
 figure.left img {
   max-width: inherit;
   width: 250px;
@@ -514,29 +513,29 @@ figure.left img {
   box-shadow: 7px 7px 5px #888;
 }
 
-/* line 610, style.scss */
+/* line 609, style.scss */
 figure.right.larger, figure.left.larger {
   max-width: 300px;
   min-width: 300px;
 }
-/* line 522, style.scss */
+/* line 521, style.scss */
 figure.right.larger img, figure.left.larger img {
   width: 300px;
   box-shadow: 3px 3px 2px #888;
 }
 
-/* line 614, style.scss */
+/* line 613, style.scss */
 figure.right.large, figure.left.large {
   max-width: 350px;
   min-width: 350px;
 }
-/* line 531, style.scss */
+/* line 530, style.scss */
 figure.right.large img, figure.left.large img {
   width: 350px;
   box-shadow: 3px 3px 2px #888;
 }
 
-/* line 618, style.scss */
+/* line 617, style.scss */
 div.flexright {
   display: -webkit-box;
   display: -webkit-flex;
@@ -546,41 +545,41 @@ div.flexright {
   -ms-flex-flow: row-reverse;
   flex-flow: row-reverse;
 }
-/* line 541, style.scss */
+/* line 540, style.scss */
 div.flexright figure {
   margin-left: 1em;
   max-width: 250px;
   min-width: 250px;
 }
-/* line 511, style.scss */
+/* line 510, style.scss */
 div.flexright figure img {
   max-width: inherit;
   width: 250px;
   border: 1px solid #CCC;
   box-shadow: 7px 7px 5px #888;
 }
-/* line 545, style.scss */
+/* line 544, style.scss */
 div.flexright figure.larger {
   max-width: 300px;
   min-width: 300px;
 }
-/* line 522, style.scss */
+/* line 521, style.scss */
 div.flexright figure.larger img {
   width: 300px;
   box-shadow: 3px 3px 2px #888;
 }
-/* line 548, style.scss */
+/* line 547, style.scss */
 div.flexright figure.large {
   max-width: 350px;
   min-width: 350px;
 }
-/* line 531, style.scss */
+/* line 530, style.scss */
 div.flexright figure.large img {
   width: 350px;
   box-shadow: 3px 3px 2px #888;
 }
 
-/* line 622, style.scss */
+/* line 621, style.scss */
 div.flexleft {
   display: -webkit-box;
   display: -webkit-flex;
@@ -590,41 +589,41 @@ div.flexleft {
   -ms-flex-flow: row;
   flex-flow: row;
 }
-/* line 554, style.scss */
+/* line 553, style.scss */
 div.flexleft figure {
   margin-right: 1.3em;
   max-width: 250px;
   min-width: 250px;
 }
-/* line 511, style.scss */
+/* line 510, style.scss */
 div.flexleft figure img {
   max-width: inherit;
   width: 250px;
   border: 1px solid #CCC;
   box-shadow: 7px 7px 5px #888;
 }
-/* line 558, style.scss */
+/* line 557, style.scss */
 div.flexleft figure.larger {
   max-width: 300px;
   min-width: 300px;
 }
-/* line 522, style.scss */
+/* line 521, style.scss */
 div.flexleft figure.larger img {
   width: 300px;
   box-shadow: 3px 3px 2px #888;
 }
-/* line 561, style.scss */
+/* line 560, style.scss */
 div.flexleft figure.large {
   max-width: 350px;
   min-width: 350px;
 }
-/* line 531, style.scss */
+/* line 530, style.scss */
 div.flexleft figure.large img {
   width: 350px;
   box-shadow: 3px 3px 2px #888;
 }
 
-/* line 626, style.scss */
+/* line 625, style.scss */
 div.flexdown {
   display: -webkit-box;
   display: -webkit-flex;
@@ -634,7 +633,7 @@ div.flexdown {
   -ms-flex-flow: column;
   flex-flow: column;
 }
-/* line 566, style.scss */
+/* line 565, style.scss */
 div.flexdown figure {
   max-height: 300px;
   min-height: 300px;
@@ -643,19 +642,19 @@ div.flexdown figure {
   -ms-transform: translateY(-40px);
   transform: translateY(-40px);
 }
-/* line 572, style.scss */
+/* line 571, style.scss */
 div.flexdown img {
   height: 300px;
 }
 
-/* line 630, style.scss */
+/* line 629, style.scss */
 img.noborder {
   border: 0px solid #CCC !important;
   border-radius: 0px !important;
   box-shadow: 0px 0px 0px #888 !important;
 }
 
-/* line 636, style.scss */
+/* line 635, style.scss */
 figure > figcaption {
   font-size: 25%;
   padding-top: 0;
@@ -664,7 +663,7 @@ figure > figcaption {
   text-align: center;
 }
 
-/* line 644, style.scss */
+/* line 643, style.scss */
 .credit::before {
   content: "Credit: ";
   font-style: italic;
@@ -673,57 +672,57 @@ figure > figcaption {
 /* ---------------------*/
 /* Misc stuff           */
 /* ---------------------*/
-/* line 653, style.scss */
+/* line 652, style.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 654, style.scss */
+/* line 653, style.scss */
 dd {
   padding-left: 1.5em;
 }
 
-/* line 656, style.scss */
+/* line 655, style.scss */
 dl.plain dt {
   font-weight: inherit !important;
 }
 
-/* line 658, style.scss */
+/* line 657, style.scss */
 div.doublelist {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
 }
 
-/* line 664, style.scss */
+/* line 663, style.scss */
 div.doublelist ul li {
   list-style: none !important;
 }
 
-/* line 668, style.scss */
+/* line 667, style.scss */
 div.doublelist ul li::before {
   content: "" !important;
 }
 
-/* line 672, style.scss */
+/* line 671, style.scss */
 p.copyright {
   font-size: 70%;
 }
 
-/* line 674, style.scss */
+/* line 673, style.scss */
 ul ul li {
   padding-bottom: 0em !important;
 }
 
 @media print {
-  /* line 678, style.scss */
+  /* line 677, style.scss */
   figure.right img, figure.left img, div.flexright img, div.flexleft img {
     border: 0px solid #CCC !important;
     border-radius: 0px !important;
     box-shadow: 0px 0px 0px #888 !important;
   }
 
-  /* line 683, style.scss */
+  /* line 682, style.scss */
   .slide .stamp {
     box-shadow: 0em 0em 0em #888;
     text-shadow: 0em 0em 0em #888;
