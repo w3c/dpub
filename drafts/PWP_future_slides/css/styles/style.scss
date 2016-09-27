@@ -413,7 +413,7 @@ header {
 
 }
 .slide.stamped {
-    h2, ul, ol, figure, p:not(.stamp), blockquote {
+    h2, ul, ol, figure, dl, p:not(.stamp), blockquote {
         @extend .slide.stamped::after;
     }
 }
