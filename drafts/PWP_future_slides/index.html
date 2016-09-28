@@ -48,7 +48,6 @@
                 </ul>
             </li>
         </ul>
-
     </section>
 
     <section class="slide titlepage">
@@ -60,18 +59,6 @@
       <p class="copyright">This work is licensed under a <a target="_blank" href="http://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution 4.0 License</a>, with attribution to <a target="_blank" href="http://www.w3.org">W3C</a>.<br />
         Copyright&nbsp;<sup>©</sup>2016&nbsp;W3C<sup>®</sup> (MIT, ERCIM, Keio, Beihang)</p>
     </section>
-
-    <!--
-    <section class="slide titlepage">
-      <h2>The Convergence of EPUB and the Web</h2>
-      <h3>Tzviya Siegman, Wiley, and Ivan Herman, W3C </h3>
-      <h4><a href="??????">Some Event, Somewhere</a></h4>
-      <h4>2015-??-??</h4>
-
-      <p class="copyright">This work is licensed under a <a target="_blank" href="http://creativecommons.org/licenses/by-nd/3.0/">Creative Commons Attribution 3.0 License</a>, with attribution to <a target="_blank" href="http://www.w3.org">W3C</a> and <a target="_blank" href="http://www.idpf.org">IDPF</a>.
-        Copyright&nbsp;<sup>©</sup>2015&nbsp;IDPF<sup>®</sup> and <sup>©</sup>2015&nbsp;W3C<sup>®</sup> (MIT, ERCIM, Keio, Beihang)</p>
-    </section>
-    -->
 
     <section class="slide">
       <h2>These Slides are Available on the Web </h2>
@@ -650,7 +637,7 @@
 
     <section class="slide shout cover">
       <img src="covers/why_not_web.jpg">
-      <h3 class="donthyphenate" style="color:darkblue; margin-top:1.5em">But… why not simply rely <em>only</em> on the current Web<br> (with some facility for offline)?</h3>
+      <h3 class="donthyphenate" style="color:darkblue; margin-top:1.5em">But… why not simply rely <em>only</em> on the current Web?<br> <span style="font-size:75%">(with some facility for offline)</span></h3>
     </section>
 
     <section class="slide shout cover">
@@ -660,8 +647,23 @@
 
     <section class="slide shout cover">
       <img src="covers/why_not_not_quite.jpg">
-      <h3 class="donthyphenate" style="color:darkblue; margin-top:2.8em">Not quite…</h3>
+      <h3 class="donthyphenate" style="color:darkblue; margin-top:2em">Not quite… <br><span style="font-size:75%">(even when considering the Web only, i.e., no packaging)</span></h3>
     </section>
+
+<!--
+    <section class="slide shout cover" id="warning">
+      <img src="covers/warning.jpg">
+      <h3 class="donthyphenate">Warning: everything I say is subject to change!</h3>
+      <style type="text/css">
+      #warning h3 {
+        margin-top: 0.5em;
+        color: hsla(0,100%,60%,1.0);
+      }
+      </style>
+      <p class="credit">Catherine Kolodziej, Flickr</p>
+    </section> -->
+
+
 
     <section class="slide">
         <h2>Lots of use cases</h2>
@@ -671,11 +673,11 @@
             </figure>
             <ul>
                 <li>Several use cases and requirements have been collected, that need to be honored</li>
-                <li>Mentioning just three of these:
+                <li>Mentioning just some of these:
                     <ul>
                         <li>many resources should make up <i>one</i> publication</li>
+                        <li>“online” vs. “offline”</li>
                         <li>differences in ergonomy</li>
-                        <li>of course, the “online” vs. “offline” problem…</li>
                     </ul>
                 </li>
             </ul>
@@ -704,79 +706,20 @@
     <section class="slide">
         <h2 class="donthyphenate">Why do we need the WP concept?</h2>
         <ul>
-            <li>Value counters (page counters, section numbering, footnotes, endnotes, etc.) should be consistent across the publication</li>
+            <li>Value counters (counters, section numbering, footnotes, endnotes, etc.) should be consistent across the publication</li>
             <li>Any search, text analysis, etc., facility for a book should have access to the full publication</li>
             <li>User preferences should apply to the “work” rather than to a single Web page</li>
         </ul>
     </section>
 
     <section class="slide">
-        <h2>Book reading needs a different approach to ergonomy</h2>
-        <figure class="right">
-          <img src="figures/war-and-peace.png" alt="Front page of the War and Peace ebook">
-          <figcaption class="credit">Lev Tolstoy: “War and Peace”, feedbooks</figcaption>
-        </figure>
-        <ul>
-            <li>Typical example: pagination
-                <ul>
-                    <li>for short text, pagination is not really important</li>
-                    <li>but what about reading, say, War and Peace?</li>
-                    <li>currently not available or used on the Web</li>
-                </ul>
-            </li>
-            <li>Another example: personalization (setting the font, background color…)</p>
-        </ul>
-    </section>
-
-    <section class="slide">
-        <h2>The “online” vs. “offline” issue</h2>
-        <ul>
-            <li>That may be indeed be solved more easily in the future, due to the evolution of browser technology</li>
-            <li>But some adjustments are necessary to get it working with a Web Publications</p>
-        </ul>
-    </section>
-
-    <section class="slide shout cover" id="road_tech">
-      <img src="covers/road.jpg">
-      <h3 class="donthyphenate"> How do we get there? (Technically)</h3>
-      <style type="text/css">
-        #road_tech h3 {
-          color:red;
-        }
-      </style>
-      <p class="credit">Moyan Brenn, Flickr</p>
-    </section>
-
-    <section class="slide shout cover" id="warning">
-      <img src="covers/warning.jpg">
-      <h3 class="donthyphenate">Warning: everything I say is subject to change!</h3>
-      <style type="text/css">
-      #warning h3 {
-        margin-top: 0.5em;
-        color: hsla(0,100%,60%,1.0);
-      }
-      </style>
-      <p class="credit">Catherine Kolodziej, Flickr</p>
-    </section>
-
-    <section class="slide shout cover" id="terminology">
-      <img src="covers/terminology.jpg">
-      <h3 class="donthyphenate">Web Publications</h3>
-      <style type="text/css">
-        #terminology h3 {
-          color: yellow;
-        }
-      </style>
-    </section>
-
-    <section class="slide">
-      <h2 class="donthyphenate">Web Publications</h2>
+      <h2 class="donthyphenate">How does that translate to the Web?</h2>
       <div class="flexright">
           <figure class="large">
             <img src="figures/WP-manyURL.svg" alt="a collection of resources with different URL pointer">
           </figure>
           <ul>
-            <li>The current Web builds on the notion of a single resource:
+            <li>The current Web builds on the notion of a many resources:
               <ul>
                 <li>HTML source, metadata, CSS style sheet, etc.
                 </li>
@@ -789,24 +732,14 @@
     </section>
 
     <section class="slide">
-      <h2 class="donthyphenate">Web Publications</h2>
-          <p>Remember?</p>
-          <ul class="slidequote">
-              <li>A publication may consist of many resources (text, images, videos, etc)</li>
-              <li>On the Web, these are linked together, but they keep their complete “independence”</li>
-              <li>For publishing the abstract “work” should be a <em>single, conceptual unit on the Web</em>: a <strong>Web Publication (WP)</strong></li>
-          </ul>
-    </section>
-
-    <section class="slide">
-      <h2 class="donthyphenate">Web Publications</h2>
+      <h2 class="donthyphenate">How does that translate to the Web?</h2>
       <div class="flexright">
           <figure class="large">
             <img src="figures/WP-oneURL.svg" alt="a collection of resources in a 'blob' with one URL pointer">
           </figure>
           <ul>
-              <li>What we need is a <em>single URL</em> for the “work” <em>as a whole</em></li>
-              <li>The <i>same</i> WP can be consumed offline or online</li>
+              <li>What we need is the concept of a <em>single Web resource, with its own URL</em> for the “work” as a whole</li>
+              <li>This is a “Web Publication”</li>
           </ul>
       </div>
     </section>
@@ -822,41 +755,48 @@
     </section>
 
     <section class="slide">
-        <h2 class="donthyphenate">This may have consequences on the internal representation</h2>
+        <div>
+            <h2 class="donthyphenate">An abstract concept: <br/>a “WP Processor”</h2>
+            <ul>
+                <li>A conceptual, client-side processor (add-on, extension, etc.) that performs WP specific operations
+                    <ul>
+                        <li>search, unified counters and section numbers, displaying table of contents, publication-specific interactions,…</li>
+                    </ul>
+                </li>
+                <li>It “hides” the WP online/offline state
+                    <ul>
+                        <li>the main rendering part operates <i>as if</i> it was connected to the Web</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2 class="donthyphenate">An internal representation may also be needed</h2>
         <ul>
-            <li>At the moment, the internal representation is the concept of “Document” in the “Document Object Model (DOM)”
+            <li>At the moment, the internal representation of (HTML) resources is based on the concept of a “Document” in the “Document Object Model (DOM)”
                 <ul>
                     <li>this underpins all programmatic access to content on the Web</li>
                 </ul>
             </li>
-            <li>There may be a need for a concept on top of this in the DOM, representing a <em>section</em> of documents</li>
+            <li>There may be a need for a programmatic interface on top of Documents in the DOM, representing a <em>collection</em> of documents</li>
         </ul>
     </section>
 
     <section class="slide stamped">
-        <h2 class="donthyphenate">This may have consequences on the internal representation</h2>
+        <h2 class="donthyphenate">An internal representation may also be needed</h2>
         <ul>
-            <li>At the moment, the internal representation is the concept of “Document” in the “Document Object Model (DOM)”
+            <li>At the moment, the internal representation of (HTML) resources is based on the concept of a “Document” in the “Document Object Model (DOM)”
                 <ul>
                     <li>this underpins all programmatic access to content on the Web</li>
                 </ul>
             </li>
-            <li>There may be a need for a concept on top of this in the DOM, representing a <em>section</em> of documents</li>
+            <li>There may be a need for a programmatic interface on top of Documents in the DOM, representing a <em>collection</em> of documents</li>
         </ul>
         <p class="stamp small" style="left:5%">
             Lots of work ahead…
         </p>
-    </section>
-
-
-    <section class="slide alternative">
-        <h2 class="donthyphenate">What is a Web Publication?</h2>
-        <ul>
-            <li>A <em>collection of Web resources considered as one unit</em>
-              <ul><li>this means there is a Web address for the <i>collection</i> (as opposed to a single constituent)</li></ul>
-            </li>
-            <li>The <i>same</i> WP can be offline, online, archived or not…</li>
-        </ul>
     </section>
 
     <section class="slide">
@@ -879,23 +819,12 @@
 
     <section class="slide shout cover" id="arch">
       <img src="covers/architecture.jpg">
-      <h3 class="donthyphenate">Technical challenge: an overall architecture to handle WP-s</h3>
+      <h3 class="donthyphenate">Technical challenge: handling online <em>and</em> offline</h3>
       <style type="text/css">
         #arch h3 {
           color: hsla(240, 69%, 50%, 1);
         }
       </style>
-    </section>
-
-    <section class="slide">
-        <div>
-            <h2 class="donthyphenate">An abstract concept: <br/>a “WP Processor”</h2>
-            <ul>
-                <li>A conceptual, client-side processor (add-on, extension, etc.) that “hides” the WP online/offline state</li>
-                <li>The main rendering part operates <i>as if</i> it was connected to the Web</li>
-                <li>The WP Processor should hide the state differences, take care of displaying table of contents, publication-specific interactions, etc.</li>
-            </ul>
-        </div>
     </section>
 
     <section class="slide">
@@ -1284,14 +1213,16 @@
             </ul>
 
             <ul class="slidequote">
-                <li>A conceptual, client-side processor that “hides” the WP online/offline state</li>
-                <li>The “main” rendering engine operates <i>as if</i> it was connected to the Web:
-                    <ul>
-                        <li>accessing resources through HTTP(S)</li>
-                        <li>all resources are “unpacked”</li>
-                    </ul>
-                </li>
-                <li>The WP Processor should hide the state differences, take care of displaying table of contents, publication-specific interactions, etc.</li>
+                    <li>A conceptual, client-side processor (add-on, extension, etc.) that performs WP specific operations
+                        <ul>
+                            <li>search, unified counters and section numbers, displaying table of contents, publication-specific interactions,…</li>
+                        </ul>
+                    </li>
+                    <li>It “hides” the WP online/offline state
+                        <ul>
+                            <li>the main rendering part operates <i>as if</i> it was connected to the Web</li>
+                        </ul>
+                    </li>
             </ul>
         </div>
     </section>
@@ -1329,10 +1260,9 @@
       </p>
     </section>
 
-
     <section class="slide shout cover" id="presentation">
       <img src="covers/choice.jpg">
-      <h3 class="donthyphenate">Technical challenge: presentation control <br>(a.k.a. Personalization) </h3>
+      <h3 class="donthyphenate">Ergonomy differences</h3>
       <style type="text/css">
         #presentation h3 {
           color: hsla(240, 69%, 50%, 1);
@@ -1341,26 +1271,61 @@
     </section>
 
     <section class="slide">
-      <ul class="notitle">
-        <li>What is the level of user control of the presentation? </li>
-        <li>The Web and eBook traditions are vastly different:
-          <ul>
-            <li>in a browser, the Web designer is in full control
-              <ul>
-                <li>CSS alternate style sheets or user style sheets are hardly in use</li>
-                <li>some user interface aspects can be controlled but only for the browser as a whole</li>
-              </ul>
+        <h2>Book reading needs a different approach to ergonomy</h2>
+        <figure class="right">
+          <img src="figures/war-and-peace.png" alt="Front page of the War and Peace ebook">
+          <figcaption class="credit">Lev Tolstoy: “War and Peace”, feedbooks</figcaption>
+        </figure>
+        <ul>
+            <li>Typical example: pagination
+                <ul>
+                    <li>for short text, pagination is not really important</li>
+                    <li>but what about reading, say, War and Peace?</li>
+                    <li>currently not available or used on the Web</li>
+                </ul>
             </li>
-            <li>in an eBook reader, there is more user control
-              <ul>
-                <li>foreground/background color</li>
-                <li>choice of fonts</li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>There is a need to reconcile these traditions</li>
+        </ul>
+    </section>
+    <section class="slide">
+      <h2 class="donthyphenate">The Houdini project &amp; pagination</h2>
+      <figure class="right">
+        <img src="figures/houdini.jpg" alt="Full-length portrait of Houdini, in chains">
+        <figcaption class="credit">Harry Houdini, McManus-Young collection, LoC</figcaption>
+      </figure>
+      <div style="font-size:70%">
+        <blockquote style="margin-left:1em">
+          The CSS-TAG <a href="https://wiki.css-houdini.org/">“Houdini Project”</a> […] make[s] development of CSS polyfills […] easier by defining low level APIs of styling and layout on the web
+        </blockquote>
+        <p style="font-size:40%; text-align:right">Credit: Vivliostyle blog, Toru Kawakubo</p>
+      </div>
+      <ul>
+        <li>May lead to a standard access to page-related information</li>
+        <li>Pagination isn’t only books: slides, cards, and other “boxes” use the same functionality</li>
       </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Personalization</h2>
+        <ul>
+            <li>What is the level of user control of the presentation? </li>
+            <li>The Web and eBook traditions are vastly different:
+                <ul>
+                    <li>in a browser, the Web designer is in full control
+                        <ul>
+                            <li>CSS alternate style sheets or user style sheets are hardly in use</li>
+                            <li>some user interface aspects can be controlled but only for the browser as a whole</li>
+                        </ul>
+                    </li>
+                    <li>in an eBook reader, there is more user control
+                        <ul>
+                            <li>foreground/background color</li>
+                            <li>choice of fonts</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>There is a need to reconcile these traditions</li>
+        </ul>
     </section>
 
     <section class="slide shout cover" id="what_about_epub">
@@ -1409,7 +1374,7 @@
 
     <section class="slide shout cover" id="road_pract">
       <img src="covers/road.jpg">
-      <h3 class="donthyphenate"> How do we get there? (Practically)</h3>
+      <h3 class="donthyphenate"> How do we get there?</h3>
       <style type="text/css">
         #road_pract h3 {
           color:hsla(240, 69%, 50%, 1);
