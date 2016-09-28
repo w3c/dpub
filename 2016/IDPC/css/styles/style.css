@@ -373,7 +373,7 @@ header p, header h1, header h2, header h3 {
 }
 
 /* line 410, style.scss */
-.slide.stamped::after, .slide.stamped h2, .slide.stamped ul, .slide.stamped ol, .slide.stamped figure, .slide.stamped p:not(.stamp), .slide.stamped blockquote {
+.slide.stamped::after, .slide.stamped h2, .slide.stamped ul, .slide.stamped ol, .slide.stamped figure, .slide.stamped dl, .slide.stamped p:not(.stamp), .slide.stamped blockquote {
   -webkit-filter: blur(2px) contrast(0.8) brightness(0.8);
   filter: blur(2px) contrast(0.8) brightness(0.8);
 }
