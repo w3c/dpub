@@ -361,52 +361,56 @@ header p, header h1, header h2, header h3 {
   padding-right: 0.07em;
   box-shadow: 0.05em 0.05em 0.05em #888;
   text-shadow: 0.05em 0.05em 0.05em gray;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
 }
 
-/* line 402, style.scss */
+/* line 403, style.scss */
 .slide .stamp.small {
-  font-size: 2.5em;
+  font-size: 2em;
   letter-spacing: 0.1em;
   position: absolute;
   top: 3.3em;
   left: 15%;
 }
 
-/* line 410, style.scss */
+/* line 411, style.scss */
 .slide.stamped::after, .slide.stamped h2, .slide.stamped ul, .slide.stamped ol, .slide.stamped figure, .slide.stamped dl, .slide.stamped p:not(.stamp), .slide.stamped blockquote {
   -webkit-filter: blur(2px) contrast(0.8) brightness(0.8);
   filter: blur(2px) contrast(0.8) brightness(0.8);
 }
 
 /* The first, "title" page */
-/* line 423, style.scss */
+/* line 424, style.scss */
 .slide.titlepage h1, .slide.titlepage h2, .slide.titlepage h3, .slide.titlepage h4 {
   border-bottom: none !important;
   text-align: center;
 }
-/* line 428, style.scss */
+/* line 429, style.scss */
 .slide.titlepage h2 {
   font-size: 2em;
   margin-top: 2em;
   text-shadow: 0 1px 1px black;
 }
-/* line 434, style.scss */
+/* line 435, style.scss */
 .slide.titlepage h3 {
   font-size: 1em;
   text-transform: none;
   margin-bottom: 0.1em;
 }
-/* line 440, style.scss */
+/* line 441, style.scss */
 .slide.titlepage h4 {
   font-size: 0.8em;
   margin-bottom: 0.15em;
   text-transform: none;
 }
-/* line 446, style.scss */
+/* line 447, style.scss */
 .slide.titlepage p {
   font-size: 0.5em;
 }
-/* line 450, style.scss */
+/* line 451, style.scss */
 .slide.titlepage p.copyright {
   position: absolute;
   bottom: 0.3em;
@@ -417,7 +421,7 @@ header p, header h1, header h2, header h3 {
   line-height: 1.3em;
 }
 
-/* line 462, style.scss */
+/* line 463, style.scss */
 .slide.cover img {
   position: absolute;
   top: 0;
@@ -429,7 +433,7 @@ header p, header h1, header h2, header h3 {
   min-height: 100%;
   z-index: -1;
 }
-/* line 474, style.scss */
+/* line 475, style.scss */
 .slide.cover .credit {
   margin-top: 3em;
   margin-bottom: 0px;
@@ -440,7 +444,7 @@ header p, header h1, header h2, header h3 {
   bottom: 0px;
   color: snow;
 }
-/* line 485, style.scss */
+/* line 486, style.scss */
 .slide.cover h3 {
   background: rgba(194, 204, 204, 0.75);
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3) inset, 0 0.5em 1em rgba(0, 0, 0, 0.6);
@@ -459,11 +463,11 @@ header p, header h1, header h2, header h3 {
 /* using flex boxes is probably the right way.                                                                    */
 /* -------------------------------------------------------------------------------------------------------------- */
 /* Note: for webkit and mozilla the min-width seems to be unnecessary, but it is necessary for Safari... */
-/* line 577, style.scss */
+/* line 578, style.scss */
 figure.middle {
   text-align: center;
 }
-/* line 579, style.scss */
+/* line 580, style.scss */
 figure.middle img {
   max-height: 460px;
   min-height: 460px;
@@ -471,26 +475,26 @@ figure.middle img {
   border: 1px solid #CCC;
   box-shadow: 3px 3px 2px #888;
 }
-/* line 585, style.scss */
+/* line 586, style.scss */
 figure.middle video {
   border: 1px solid #CCC;
   box-shadow: 3px 3px 2px #888;
 }
 
 /* ----------- */
-/* line 593, style.scss */
+/* line 594, style.scss */
 figure.center, figure.centre {
   text-align: center;
 }
 
-/* line 597, style.scss */
+/* line 598, style.scss */
 figure.right {
   float: right;
   margin-left: 1em;
   max-width: 250px;
   min-width: 250px;
 }
-/* line 510, style.scss */
+/* line 511, style.scss */
 figure.right img {
   max-width: inherit;
   width: 250px;
@@ -498,14 +502,14 @@ figure.right img {
   box-shadow: 7px 7px 5px #888;
 }
 
-/* line 603, style.scss */
+/* line 604, style.scss */
 figure.left {
   float: left;
   margin-right: 1.3em;
   max-width: 250px;
   min-width: 250px;
 }
-/* line 510, style.scss */
+/* line 511, style.scss */
 figure.left img {
   max-width: inherit;
   width: 250px;
@@ -513,29 +517,29 @@ figure.left img {
   box-shadow: 7px 7px 5px #888;
 }
 
-/* line 609, style.scss */
+/* line 610, style.scss */
 figure.right.larger, figure.left.larger {
   max-width: 300px;
   min-width: 300px;
 }
-/* line 521, style.scss */
+/* line 522, style.scss */
 figure.right.larger img, figure.left.larger img {
   width: 300px;
   box-shadow: 3px 3px 2px #888;
 }
 
-/* line 613, style.scss */
+/* line 614, style.scss */
 figure.right.large, figure.left.large {
   max-width: 350px;
   min-width: 350px;
 }
-/* line 530, style.scss */
+/* line 531, style.scss */
 figure.right.large img, figure.left.large img {
   width: 350px;
   box-shadow: 3px 3px 2px #888;
 }
 
-/* line 617, style.scss */
+/* line 618, style.scss */
 div.flexright {
   display: -webkit-box;
   display: -webkit-flex;
@@ -545,41 +549,41 @@ div.flexright {
   -ms-flex-flow: row-reverse;
   flex-flow: row-reverse;
 }
-/* line 540, style.scss */
+/* line 541, style.scss */
 div.flexright figure {
   margin-left: 1em;
   max-width: 250px;
   min-width: 250px;
 }
-/* line 510, style.scss */
+/* line 511, style.scss */
 div.flexright figure img {
   max-width: inherit;
   width: 250px;
   border: 1px solid #CCC;
   box-shadow: 7px 7px 5px #888;
 }
-/* line 544, style.scss */
+/* line 545, style.scss */
 div.flexright figure.larger {
   max-width: 300px;
   min-width: 300px;
 }
-/* line 521, style.scss */
+/* line 522, style.scss */
 div.flexright figure.larger img {
   width: 300px;
   box-shadow: 3px 3px 2px #888;
 }
-/* line 547, style.scss */
+/* line 548, style.scss */
 div.flexright figure.large {
   max-width: 350px;
   min-width: 350px;
 }
-/* line 530, style.scss */
+/* line 531, style.scss */
 div.flexright figure.large img {
   width: 350px;
   box-shadow: 3px 3px 2px #888;
 }
 
-/* line 621, style.scss */
+/* line 622, style.scss */
 div.flexleft {
   display: -webkit-box;
   display: -webkit-flex;
@@ -589,41 +593,41 @@ div.flexleft {
   -ms-flex-flow: row;
   flex-flow: row;
 }
-/* line 553, style.scss */
+/* line 554, style.scss */
 div.flexleft figure {
   margin-right: 1.3em;
   max-width: 250px;
   min-width: 250px;
 }
-/* line 510, style.scss */
+/* line 511, style.scss */
 div.flexleft figure img {
   max-width: inherit;
   width: 250px;
   border: 1px solid #CCC;
   box-shadow: 7px 7px 5px #888;
 }
-/* line 557, style.scss */
+/* line 558, style.scss */
 div.flexleft figure.larger {
   max-width: 300px;
   min-width: 300px;
 }
-/* line 521, style.scss */
+/* line 522, style.scss */
 div.flexleft figure.larger img {
   width: 300px;
   box-shadow: 3px 3px 2px #888;
 }
-/* line 560, style.scss */
+/* line 561, style.scss */
 div.flexleft figure.large {
   max-width: 350px;
   min-width: 350px;
 }
-/* line 530, style.scss */
+/* line 531, style.scss */
 div.flexleft figure.large img {
   width: 350px;
   box-shadow: 3px 3px 2px #888;
 }
 
-/* line 625, style.scss */
+/* line 626, style.scss */
 div.flexdown {
   display: -webkit-box;
   display: -webkit-flex;
@@ -633,7 +637,7 @@ div.flexdown {
   -ms-flex-flow: column;
   flex-flow: column;
 }
-/* line 565, style.scss */
+/* line 566, style.scss */
 div.flexdown figure {
   max-height: 300px;
   min-height: 300px;
@@ -642,19 +646,19 @@ div.flexdown figure {
   -ms-transform: translateY(-40px);
   transform: translateY(-40px);
 }
-/* line 571, style.scss */
+/* line 572, style.scss */
 div.flexdown img {
   height: 300px;
 }
 
-/* line 629, style.scss */
+/* line 630, style.scss */
 img.noborder {
   border: 0px solid #CCC !important;
   border-radius: 0px !important;
   box-shadow: 0px 0px 0px #888 !important;
 }
 
-/* line 635, style.scss */
+/* line 636, style.scss */
 figure > figcaption {
   font-size: 25%;
   padding-top: 0;
@@ -663,7 +667,7 @@ figure > figcaption {
   text-align: center;
 }
 
-/* line 643, style.scss */
+/* line 644, style.scss */
 .credit::before {
   content: "Credit: ";
   font-style: italic;
@@ -672,57 +676,57 @@ figure > figcaption {
 /* ---------------------*/
 /* Misc stuff           */
 /* ---------------------*/
-/* line 652, style.scss */
+/* line 653, style.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 653, style.scss */
+/* line 654, style.scss */
 dd {
   padding-left: 1.5em;
 }
 
-/* line 655, style.scss */
+/* line 656, style.scss */
 dl.plain dt {
   font-weight: inherit !important;
 }
 
-/* line 657, style.scss */
+/* line 658, style.scss */
 div.doublelist {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
 }
 
-/* line 663, style.scss */
+/* line 664, style.scss */
 div.doublelist ul li {
   list-style: none !important;
 }
 
-/* line 667, style.scss */
+/* line 668, style.scss */
 div.doublelist ul li::before {
   content: "" !important;
 }
 
-/* line 671, style.scss */
+/* line 672, style.scss */
 p.copyright {
   font-size: 70%;
 }
 
-/* line 673, style.scss */
+/* line 674, style.scss */
 ul ul li {
   padding-bottom: 0em !important;
 }
 
 @media print {
-  /* line 677, style.scss */
+  /* line 678, style.scss */
   figure.right img, figure.left img, div.flexright img, div.flexleft img {
     border: 0px solid #CCC !important;
     border-radius: 0px !important;
     box-shadow: 0px 0px 0px #888 !important;
   }
 
-  /* line 682, style.scss */
+  /* line 683, style.scss */
   .slide .stamp {
     box-shadow: 0em 0em 0em #888;
     text-shadow: 0em 0em 0em #888;

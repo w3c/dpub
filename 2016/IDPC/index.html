@@ -96,14 +96,6 @@
     </section>
 
     <section class="slide">
-        <h2>Scientific presentations</h2>
-        <figure class="middle">
-            <img src="figures/math.png" alt="Slide-like page with lots of mathematical equations" />
-            <figcaption class="credit">David Mao: “Calculus”</figcaption>
-        </figure>
-    </section>
-
-    <section class="slide">
         <h2>Art books</h2>
         <figure class="middle">
             <img src="figures/dutch_painting.png" alt="Page with an annotated high quality reproduction of a Dutch painting" />
@@ -154,16 +146,6 @@
         </figure>
         <figure class="right larger">
             <img src="figures/jep1.png" alt="Table of content of the JEP journal" />
-        </figure>
-    </section>
-
-    <section class="slide">
-        <h2 class="donthyphenate">…technical documentations, standards</h2>
-        <figure class="left larger">
-            <img src="figures/spec.png" alt="Cover of W3C spec (in epub)" />
-        </figure>
-        <figure class="right larger">
-            <img src="figures/epub.png" alt="Cover of the EPUB standard (in epub)" />
         </figure>
     </section>
 
@@ -260,22 +242,8 @@
                     <li>dynamic numbering of pages, index references, etc., over <i>several</i> (HTML) files</li>
                 </ul>
             </li>
+            <li>Bring extra Web facilities, libraries, services, etc., closer to publishing</li>
             <li>W3C has a <a href="https://www.w3.org/dpub/IG/">Digital Publishing Interest Group</a> to look into these issues and cooperate with the relevant W3C groups</li>
-        </ul>
-    </section>
-
-    <section class="slide">
-        <h2 class="donthyphenate">Bring other OWP features to publishing</h2>
-        <ul>
-            <li>For example:
-                <ul>
-                    <li>dynamic tools and libraries, deployed on the Web, would be beneficial in publishing</li>
-                    <li>use external services on the Web via extra protocols</li>
-                    <li>new Web authentication or payment methods could change the way publications are accessed</li>
-                    <li>new device API-s could be used by dedicated software on devices</li>
-                    <li>etc.</li>
-                </ul>
-            </li>
         </ul>
     </section>
 
@@ -357,9 +325,6 @@
           <ul>
             <li>I may find an article on the Web that I want to review, annotate, etc., while commuting home on a train</li>
             <li>I want the results of the annotations to be back online, when I am back on the Internet</li>
-            <ul>
-              <li>note: browsers may have an “archiving” possibility, but they are not interoperable</li>
-            </ul>
           </ul>
       </div>
     </section>
@@ -394,28 +359,8 @@
       <p class="credit">Moyan Brenn, Flickr</p>
     </section>
 
-    <section class="slide">
-        <h2>Lots of use cases</h2>
-        <div class="flexleft">
-            <figure class="left large">
-              <img src="figures/pwp-ucr.png" alt="Front page of the W3C PWP-UCR document">
-            </figure>
-            <ul>
-                <li>Several use cases and requirements have been collected, that need to be honored</li>
-                <li>Mentioning just three of these:
-                    <ul>
-                        <li>many resources should make up <i>one</i> publication</li>
-                        <li>“online” vs. “offline”</li>
-                        <li>differences in ergonomy</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </section>
-
     <section class="shout slide">
         <h3>Let us concentrate on the Web only for now<br>(forget about “traditional” e-books)</h3>
-
     </section>
 
     <section class="slide">
@@ -424,25 +369,6 @@
             <li>A publication may consist of many resources (text, images, videos, etc)</li>
             <li>On the Web, these are linked together, but they keep their complete “independence”</li>
             <li>For publishing the abstract “work” should be a <em>single, conceptual unit on the Web</em>: a <strong>Web Publication (WP)</strong></li>
-        </ul>
-    </section>
-
-    <section class="slide">
-        <h2 class="donthyphenate">Why do we need the WP concept?</h2>
-        <ul>
-            <li>The whole book should be archived in a national library</li>
-            <li>The publication has to be checked for integrity <em>as a whole</em> (e.g., in a legal publication)</li>
-            <li>Sharing a publication with a friend requires the concept of the publication <em>as a whole</em> </li>
-            <li>Publishing and library business models are based on the concept of “works”</li>
-        </ul>
-    </section>
-
-    <section class="slide">
-        <h2 class="donthyphenate">Why do we need the WP concept?</h2>
-        <ul>
-            <li>Value counters (counters, section numbering, footnotes, endnotes, etc.) should be consistent across the publication</li>
-            <li>Any search, text analysis, etc., facility for a book should have access to the full publication</li>
-            <li>User preferences should apply to the “work” rather than to a single Web page</li>
         </ul>
     </section>
 
@@ -472,12 +398,35 @@
               <img src="figures/WP-oneURL.svg" alt="a collection of resources in a 'blob' with one URL pointer">
             </figure>
             <ul>
-                <li>A <em>collection of Web resources considered as one unit</em>
-                  <ul><li>this means there is a Web address for the <i>collection</i> (as opposed to a single constituent)</li></ul>
+                <li>A WP is <em>collection of Web resources considered as one unit</em>
+                  <ul>
+                      <li>this means there is a Web address for the <i>collection</i> (as opposed to a single constituent)</li>
+                      <li>the <i>same</i> WP can be offline or online</li>
+                  </ul>
                 </li>
-                <li>The <i>same</i> WP can be offline, online, archived or not…</li>
+                <li>WP-s are <em>part of the Web</em>!</li>
             </ul>
         </div>
+    </section>
+
+
+    <section class="slide">
+        <h2 class="donthyphenate">Why do we need the WP concept?</h2>
+        <ul>
+            <li>The whole book should be archived in a national library</li>
+            <li>The publication has to be checked for integrity <em>as a whole</em> (e.g., in a legal publication)</li>
+            <li>Sharing a publication with a friend requires the concept of the publication <em>as a whole</em> </li>
+            <li>Publishing and library business models are based on the concept of “works”</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2 class="donthyphenate">Why do we need the WP concept?</h2>
+        <ul>
+            <li>Value counters (counters, section numbering, footnotes, endnotes, etc.) should be consistent across the publication</li>
+            <li>Any search, text analysis, etc., facility for a book should have access to the full publication</li>
+            <li>User preferences should apply to the “work” rather than to a single Web page</li>
+        </ul>
     </section>
 
 
@@ -495,9 +444,31 @@
     <section class="slide">
         <h2>The “online” vs. “offline” issue</h2>
         <ul>
-            <li>That may be indeed be solved more easily in the future, due to the evolution of browser technology</li>
+            <li>In fact, that will become solved in the future, due to the evolution of browser technology
+                <ul>
+                    <li>modern browsers will have possibilities of offline vs. online built in</li>
+                </ul>
+            </li>
             <li>But some adjustments are necessary to get it working with a Web Publications</p>
         </ul>
+    </section>
+
+    <section class="slide">
+      <h2 class="donthyphenate">What kinds of documents are we talking about?</h2>
+      <ul>
+        <li>A journal or magazine article, including the relevant CSS files and images</li>
+        <li>An educational article, including the JavaScript to do interactive exercises</li>
+        <li>A novel or a poem on the Web, including the necessary fonts, CSS files, etc., to provide the required aesthetics</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2 class="donthyphenate">What kinds of documents are we <i>not</i> talking about?</h2>
+      <ul>
+        <li>A Web mail application</li>
+        <li>A social Web site like Facebook, VK, Renren, or Twitter</li>
+        <li>A stock exchange page</li>
+      </ul>
     </section>
 
     <!-- =================================================================================== --->
@@ -539,42 +510,6 @@
         </div>
     </section>
 
-    <section class="slide">
-      <h2 class="donthyphenate">What kinds of documents are we talking about?</h2>
-      <ul>
-        <li>A journal or magazine article, including the relevant CSS files and images</li>
-        <li>An educational article, including the JavaScript to do interactive exercises</li>
-        <li>A novel or a poem on the Web, including the necessary fonts, CSS files, etc., to provide the required aesthetics</li>
-      </ul>
-    </section>
-
-    <section class="slide">
-      <h2 class="donthyphenate">What kinds of documents are we <i>not</i> talking about?</h2>
-      <ul>
-        <li>A Web mail application</li>
-        <li>A social Web site like Facebook, VK, Renren, or Twitter</li>
-        <li>A stock exchange page</li>
-      </ul>
-    </section>
-
-    <section class="slide">
-        <h2>Book reading needs a different approach to ergonomy</h2>
-        <figure class="right">
-          <img src="figures/war-and-peace.png" alt="Front page of the War and Peace ebook">
-          <figcaption class="credit">Lev Tolstoy: “War and Peace”, feedbooks</figcaption>
-        </figure>
-        <ul>
-            <li>Typical example: pagination
-                <ul>
-                    <li>for short text, pagination is not really important</li>
-                    <li>but what about reading, say, War and Peace?</li>
-                    <li>currently not available or used on the Web</li>
-                </ul>
-            </li>
-            <li>Another example: personalization (setting the font, background color…)</p>
-        </ul>
-    </section>
-
     <section class="slide shout cover" id="what_about_epub">
         <img src="covers/sea_marseille.jpg">
         <h3 class="donthyphenate" style="color:red">But what about<br/> EPUB???</h3>
@@ -583,8 +518,8 @@
     <section class="slide">
       <h2 class="donthyphenate">PWP vs. EPUB3.1</h2>
       <ul>
-        <li>PWP does <em>not</em> replace EPUB&nbsp;3</li>
-        <li>It is, instead, part of a future evolution for the years to come</li>
+        <li>PWP does <em>not</em> replace EPUB&nbsp;3 today</li>
+        <li>It is, instead, part of a future evolution, or a vision, for the years to come</li>
       </ul>
     </section>
 
@@ -598,25 +533,6 @@
             </li>
             <li>The main change is the “administrative” aspect of the publication (locators, manifest, etc)</li>
         </ul>
-    </section>
-
-    <section class="slide">
-      <h2 class="donthyphenate">PWP vs. <i>future</i> EPUB-s</h2>
-      <ul>
-          <li>The structure of PWP is very general</li>
-          <li>Specific publication areas may need more restrictions and specifications
-              <ul>
-                  <li>metadata vocabularies, specific format for glossaries or indeces,…</li>
-                  <li>many of these features are already defined in EPUB&nbsp;3</li>
-              </ul>
-          </li>
-          <li>A <em>future</em> EPUB may be defined as a <em>profile</em> of PWP
-              <ul>
-                  <li>taking over or adapting a number of existing parts of EPUB&nbsp;3.1</li>
-              </ul>
-          </li>
-          <li>There may be other profiles for, e.g., online magazines</li>
-      </ul>
     </section>
 
     <section class="slide shout cover" id="road_pract">
@@ -671,7 +587,7 @@
                     <li>future development (of PWP, EPUB, etc.) will be part of one or more W3C Groups</li>
                 </ul>
             </li>
-            <li>A memorandum of understanding is under review by the W3C and IDPF members, respectively</li>
+            <li>A memorandum of understanding is under review by the W3C and IDPF members</li>
         </ul>
     </section>
 
@@ -697,7 +613,7 @@
         <dt>PWP Issue list:</dt>
           <dd><a target="_blank" href="https://github.com/w3c/dpub-pwp/issues"><code>https://github.com/w3c/dpub-pwp/issues</code></a></dd>
       </dl>
-      <p class="stamp small">Frequently <br>out of date…</p>
+      <p class="stamp small" class="donthyphenate" style="font-size:2em;">Constantly evolving…</p>
     </section>
 
     <section class="slide">

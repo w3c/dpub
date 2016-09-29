@@ -397,6 +397,7 @@ header {
     padding-right: 0.07em;
     box-shadow: 0.05em 0.05em 0.05em #888;
     text-shadow: 0.05em 0.05em 0.05em gray;
+    @include hyphen(none);
 }
 
 .slide .stamp.small {
@@ -413,7 +414,7 @@ header {
 
 }
 .slide.stamped {
-    h2, ul, ol, figure, p:not(.stamp), blockquote {
+    h2, ul, ol, figure, dl, p:not(.stamp), blockquote {
         @extend .slide.stamped::after;
     }
 }
