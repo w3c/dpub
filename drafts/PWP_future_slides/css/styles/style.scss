@@ -1,8 +1,9 @@
 /* SCSS declaration and such... */
-$figure-normal: 250px;
-$figure-larger: 300px;
-$figure-large:  350px;
-$figure-middle: 460px;
+$figure-normal:      250px;
+$figure-larger:      300px;
+$figure-large:       350px;
+$figure-extra-large: 400px;
+$figure-middle:      460px;
 
 @mixin figure-on-left {
     margin-right: 1.3em;
@@ -534,6 +535,15 @@ header {
     }
 }
 
+@mixin extra-large-figure {
+    max-width: $figure-extra-large;
+    min-width: $figure-extra-large;
+    img {
+        width: $figure-extra-large;
+        box-shadow: 3px 3px 2px #888;
+    }
+}
+
 @mixin fbox($pos) {
     @include flexbox;
     @if $pos == right {
@@ -548,6 +558,9 @@ header {
         figure.large {
             @include large-figure;
         }
+        figure.extra-large {
+            @include extra-large-figure;
+        }
 
     } @else if $pos == left {
         @include flex-flow(row);
@@ -558,8 +571,8 @@ header {
         figure.larger {
             @include larger-figure;
         }
-        figure.large {
-            @include large-figure;
+        figure.extra-large {
+            @include extra-large-figure;
         }
     } @else if $pos == bottom {
         @include flex-flow(column);
