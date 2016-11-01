@@ -8,6 +8,7 @@ The materials on this (or adjacent) repo are:
 2016
 ----
 
+-	[Presentation of Ivan Herman](./2016/SWIB/index.html) at the Semantic Web in Libraries (SWIB16) Conference, Bonn, Germany, 2016-11-29.
 -	[Presentation of Ivan Herman](./2016/CNCC-Taiyuan/index.html) at 2016 China National Computer Congress (2016中国计算机大会), Taiyuan, China, 2016-10-21.
 -	[Presentation of Ivan Herman](./2016/IDPC/index.html) at the Interinstitutional Digital Publishing Committee plenary meeting, Brussels, Belgium, 2016-10-11.
 -	[Presentation of Ivan Herman](./2016/W3CTrack-2016/index.html) at the [W3C Track @ WWW2016](https://www.w3.org/2016/04/w3c-track.html), Montréal, Canada, 2016-04-13. The final slides are on [the W3C site](http://www.w3.org/2016/Talks/W3CTrack-IH/)

@@ -104,6 +104,17 @@
 .markdown-preview del::after { border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: black; content: ""; left: 0px; position: absolute; right: 0px; top: 50%; }
 .markdown-preview .flash { animation: flash 1s ease-out 1; outline: rgba(255, 0, 0, 0) solid 1px; }
 .markdown-preview .flash:not(li) { display: block; }
+.gutter .line-number {
+  background-size: 0px;
+  transition: background-size 0.5s;
+}
+.gutter .line-number.quickfix {
+  background-image: url(atom://atom-typescript/images/light-bulb.png);
+  background-size: 16.66666667px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
 .bracket-matcher .region {
   border-bottom: 1px dotted lime;
   position: absolute;
@@ -111,6 +122,9 @@
 
 .spell-check-misspelling .region {
   border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
 }
 
 pre.editor-colors,
@@ -329,6 +343,7 @@ pre.editor-colors .markdown .link .string,
 <p>The materials on this (or adjacent) repo are:</p>
 <h2>2016</h2>
 <ul>
+<li><a href="./2016/SWIB/index.html">Presentation of Ivan Herman</a> at the Semantic Web in Libraries (SWIB16) Conference, Bonn, Germany, 2016-11-29.</li>
 <li><a href="./2016/CNCC-Taiyuan/index.html">Presentation of Ivan Herman</a> at 2016 China National Computer Congress (2016中国计算机大会), Taiyuan, China, 2016-10-21.</li>
 <li><a href="./2016/IDPC/index.html">Presentation of Ivan Herman</a> at the Interinstitutional Digital Publishing Committee plenary meeting, Brussels, Belgium, 2016-10-11.</li>
 <li><a href="./2016/W3CTrack-2016/index.html">Presentation of Ivan Herman</a> at the <a href="https://www.w3.org/2016/04/w3c-track.html">W3C Track @ WWW2016</a>, Montréal, Canada, 2016-04-13. The final slides are on <a href="http://www.w3.org/2016/Talks/W3CTrack-IH/">the W3C site</a></li>
