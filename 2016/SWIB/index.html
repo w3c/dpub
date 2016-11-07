@@ -16,6 +16,18 @@
         height: 130px ;
         background: url(css/images/ribbon_w3c.svg) no-repeat ;
       }*/
+      figure.namivan {
+        text-align: center;
+      }
+      figure.namivan img {
+        max-height: 460px;
+        min-height: 460px;
+        /* 7px 7px 5px #888 */
+        border: 1px solid #CCC;
+        box-shadow: 3px 3px 2px #888;
+        transform: translateY(-40px);
+      }
+
       </style>
   </head>
 
@@ -47,6 +59,20 @@
       <p>(Slides are in HTML)</p>
     </section>
 
+    <section class="slide">
+      <h2 class="donthyphenate">About W3C: “Leading the Web to its Full Potential”</h2>
+      <figure class="right">
+        <img src="../../drafts/PWP_future_slides/figures/timbl.jpg" alt="Photo of Tim Berners-Lee"/>
+        <figcaption class="credit">LeFevre communications, 2001</figcaption>
+      </figure>
+      <ul class="smaller">
+        <li>Founded in 1994, and directed by the inventor of the Web, Tim Berners-Lee</li>
+        <li>Member organization with cca. 420 members</li>
+        <li>Cca. 80 staff bound to “hosts” in the USA (MIT), China (Beihang University), Japan (Keio University), and France (ERCIM)</li>
+        <li>Focuses on Web ecosystem: users, developers, browsers, as well as specific industry requirements brought by industry segments</li>
+      </ul>
+    </section>
+
     <section class="slide shout cover">
         <img src="../../drafts/PWP_future_slides/covers/epub_cover.jpg">
         <h3  class="donthyphenate" style="color:red">A format to represent digital publications: EPUB&nbsp;3</h3>
@@ -69,14 +95,14 @@
     </section>
 
     <section class="slide">
-        <h2 class="donthyphenate">Books with illustrations</h2>
+        <h2>Books with <em>lots</em> of illustrations…</h2>
         <figure class="left larger">
-            <img src="../../drafts/PWP_future_slides/figures/eco.png" alt="An ebook page including a drawing" />
-            <figcaption class="credit">Umberto Eco: “Le Cimetière de Prague”, Grasset</figcaption>
+            <img src="../../drafts/PWP_future_slides/figures/petit_prince_1.png" alt="An extract of the 'Petit Prince' with a typical drawing" />
+            <figcaption class="credit">Antoine de Sain-Exupéry: “Le Petit Prince”, Ebooks libres et gratuits</figcaption>
         </figure>
         <figure class="right larger">
-            <img src="../../drafts/PWP_future_slides/figures/krugman.png" alt="An extract of an ebook with a statistical figure in the middle of the page" />
-            <figcaption class="credit">Paul Krugman: “End this depression now!”, WW. Norton &amp; Co..</figcaption>
+            <img src="../../drafts/PWP_future_slides/figures/winnie_the_pooh.png" alt="An extract of Winnie the Pooh with a typical drawing" />
+            <figcaption class="credit">A.A. Milne: “Winnie-the-Pooh”, Egmont UK Ltd.</figcaption>
         </figure>
     </section>
 
@@ -123,8 +149,8 @@
             <figcaption class="credit">“The Mahabharata in Devanāgarī (देवनागरी)”, IDPF EPUB3 Sample</figcaption>
         </figure>
         <figure class="right larger">
-            <img src="../../drafts/PWP_future_slides/figures/steve_jobs_zh.png" alt="Extract of the book on Steve Jobs, in simplified Chinese" />
-            <figcaption class="credit">W. Isaacson, Steve Jobs (in simplified Chinese)</figcaption>
+            <img src="../../drafts/PWP_future_slides/figures/hebrew.png" alt="A book with hebrew characters" />
+            <figcaption class="credit">“Israel sailing”, IDPF EPUB3 Sample</figcaption>
         </figure>
     </section>
 
@@ -318,7 +344,7 @@
               <figcaption class="credit">Dump from <a href="http://publications.europa.eu/en/web/general-report">EU publications' page</a></figcaption>
             </figure>
             <ul style="margin-top:3.5em;">
-              <li>…but access a different (and possibly nicer) Web page online…</li>
+              <li>…but one can access a different (and possibly nicer) Web page online…</li>
               <li><em>This should not be the case!</em></li>
             </ul>
         </div>
@@ -423,7 +449,7 @@
 
     <section class="slide shout cover">
       <img src="../../drafts/PWP_future_slides/covers/why_not_web.jpg">
-      <h3 class="donthyphenate" style="color:darkblue; margin-top:1.5em">But… why not simply rely <em>only</em> on the current Web?<br> <span style="font-size:75%">(with some facility for offline)</span></h3>
+      <h3 class="donthyphenate" style="color:darkblue; margin-top:1.5em">But… why not simply rely <em>only</em> on the current Web?<br> <span style="font-size:75%">(with some facilities for offline)</span></h3>
     </section>
 
     <section class="slide shout cover">
@@ -604,9 +630,18 @@
                     <li>a major technology to reconcile Mobile Applications and Web Developments</li>
                 </ul>
             </li>
-            <li>I.e, Web Publications build on an evolution that is already happening
+            <li>I.e, Web Publications may build on an evolution that is already happening
             </li>
         </ul>
+    </section>
+
+    <section class="slide">
+        <h2>An example of online/offline book with Service Workers</h2>
+        <a href="https://hpbn.co">
+            <figure class="single_screendump">
+              <img src="../../drafts/PWP_future_slides/figures/hpbn.co.png" alt="Screen dump the book “High Performance Browser Networking”">
+            </figure>
+        </a>
     </section>
 
     <section class="slide">
@@ -626,6 +661,7 @@
         </ul>
     </section>
 
+<!--
     <section class="slide">
         <h2>Work on “Web App Manifests”</h2>
         <figure class="right large">
@@ -642,7 +678,7 @@
             </li>
             <li>A WP manifest can build on this evolution as well!</li>
         </ul>
-    </section>
+    </section> -->
 
     <section class="slide shout cover" id="pack">
       <img src="../../drafts/PWP_future_slides/covers/package.jpg">
@@ -707,38 +743,8 @@
           <ul>
               <li>e.g., manifest would be in JSON</li>
               <li>structure of metadata may different</li>
+              <li>maybe re-think the packaging format itself</li>
               <li>etc.</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-
-    <section class="slide">
-      <h2 class="donthyphenate">PWP packaging structure</h2>
-      <figure>
-        <img class="plain" src="../../drafts/PWP_future_slides/figures/PWP-Package-Structure.svg" alt="EPUB Packaging structure diagram with admin file in JSON" width="99%">
-      </figure>
-    </section>
-
-    <section class="slide">
-      <h2 class="donthyphenate">Web Archival format?</h2>
-      <ul>
-        <li>There is an interest among some W3C members for a Web friendly packaging format:
-          <ul>
-            <li>streamable</li>
-            <li>rely, as much as possible, on existing Web technologies (e.g., HTTP)</li>
-          </ul>
-        </li>
-        <li>Use cases include:
-          <ul>
-            <li>retrieve an HTML file with related CSS files, images</li>
-            <li>access Web Applications (“Widgets”) with all libraries involved</li>
-            <li><em>Packaged Web Publications are a clear use case</em></li>
-          </ul>
-        </li>
-        <li>This Web Packaging proposal is <i>not</i> OPF based, though
-          <ul>
-             <li>this <i>may</i> lead to a different packaging in future for Digital Publishing</li>
           </ul>
         </li>
       </ul>
@@ -749,20 +755,6 @@
       <figure>
         <img class="plain" src="../../drafts/PWP_future_slides/figures/PWP-Package-Structure-2.svg" alt="PWP Packaging structure diagram with admin file in JSON" width="99%">
       </figure>
-    </section>
-
-    <section class="slide">
-      <h2 class="donthyphenate">However…</h2>
-      <ul>
-        <li>There isn‘t yet a full agreement whether to develop such Web Packaging format
-          <ul><li>a caching architecture based on Service Workers may be enough for the use cases</li></ul>
-        </li>
-        <li>The Publishing Community may not move away from OPF
-          <ul>
-              <li>technical advantages of a new format must be weighted against existing deployment</li>
-          </ul>
-        </li>
-      </ul>
     </section>
 
     <section class="slide">
@@ -831,7 +823,7 @@
     <section class="slide">
       <h2 class="donthyphenate">Three layers of addressing</h2>
           <ol>
-              <li>Locator for the WP/PWP itself, e.g.: <br /><code>http://www.ex.org/MyWP/</code></li>
+              <li>Locator for the (P)WP itself, e.g.: <br /><code>http://www.ex.org/MyWP/</code></li>
               <li>Locating a resource <i>within</i> a (P)WP, e.g.:<br /><code>http://www.ex.org/MyWP/Chapter1.html</code>
               <br>just like any other resources on the Web, allowing for a smooth state transition</li>
               <li>Locating a target within a resource, e.g.: <br/><code>http://www.ex.org/MyWP/Chapter1.html#section1</code>
@@ -841,7 +833,7 @@
     </section>
 
     <section class="slide">
-      <h2 class="donthyphenate">The problem: locating the different PWP states</h2>
+      <h2 class="donthyphenate">The problem: locating the different PWP “states”</h2>
       <ul>
           <li>There are, in practice, two different locators
               <ul>
@@ -863,9 +855,8 @@
             <li>A PWP must have a <em>Canonical Locator</em> (<b>L</b>)
                 <ul><li>a state agnostic locator: <code>http://www.ex.org/MyWP</code></li></ul>
             </li>
-            <li>A published PWP must provide a manifest data that includes <b>L</b>, <b>L<sub>p</sub></b>, and <b>L<sub>u</sub></b>
+            <li>A published PWP must provide data that includes <b>L</b>, <b>L<sub>p</sub></b>, and <b>L<sub>u</sub></b>
             </li>
-            <li>A PWP Processor must have access to the full metadata</li>
             <li>A resource within a PWP (and, in general, resources in general) should use <b>L</b> only for internal cross-references (or use relative URL-s)</li>
         </ul>
     </section>
@@ -875,9 +866,8 @@
             <li>A PWP must have a <em>Canonical Locator</em> (<b>L</b>)
                 <ul><li>a state agnostic locator: <code>http://www.ex.org/MyWP</code></li></ul>
             </li>
-            <li>A published PWP must provide a manifest data that includes <b>L</b>, <b>L<sub>p</sub></b>, and <b>L<sub>u</sub></b>
+            <li>A published PWP must provide data that includes <b>L</b>, <b>L<sub>p</sub></b>, and <b>L<sub>u</sub></b>
             </li>
-            <li>A PWP Processor must have access to the full metadata</li>
             <li>A resource within a PWP (and, in general, resources in general) should use <b>L</b> only for internal cross-references (or use relative URL-s)</li>
         </ul>
         <p class="stamp small">
@@ -886,34 +876,18 @@
     </section>
 
     <section class="slide">
-      <h2 class="donthyphenate">What does an <code style="font-size: 120%">HTTP GET</code> return for <b>L</b>?</h2>
+      <h2 class="donthyphenate">What does a Web request return for <b>L</b>?</h2>
       <ul>
         <li>Possibilities are:
             <ul>
-                <li>the package that <i>includes</i> the manifest at some predefined place</li>
+                <li>the package that <i>includes</i> the manifest at some predefined place (in case this is a Packaged Web Publication)</li>
                 <li>an HTML file with a link to a manifest (through a <code>&lt;link&gt;</code> element)</li>
                 <li>an HTML file with an <i>embedded</i> manifest (through a <code>&lt;script&gt;</code> element)</li>
                 <li>an HTML file with a link to a manifest in the <code>Link</code> header of the <code>HTTP</code> response</li>
             </ul>
         </li>
+        <li>Unclear whether all of these are necessary and/or feasible</li>
       </ul>
-    </section>
-
-    <section class="slide stamped">
-      <h2 class="donthyphenate">What does an <code style="font-size: 120%">HTTP GET</code> return for <b>L</b>?</h2>
-      <ul>
-        <li>Possibilities are:
-            <ul>
-                <li>the package that <i>includes</i> the manifest at some predefined place</li>
-                <li>an HTML file with a link to a manifest (through a <code>&lt;link&gt;</code> element)</li>
-                <li>an HTML file with an <i>embedded</i> manifest (through a <code>&lt;script&gt;</code> element)</li>
-                <li>an HTML file with a link to a manifest in the <code>Link</code> header of the <code>HTTP</code> response</li>
-            </ul>
-        </li>
-      </ul>
-      <p class="stamp small">
-          To be discussed…
-      </p>
     </section>
 
     <section class="slide shout cover" id="presentation">
@@ -936,29 +910,12 @@
             <li>Typical example: pagination
                 <ul>
                     <li>for short text, pagination is not really important</li>
-                    <li>but what about reading, say, the Story of the Stone?</li>
+                    <li>but what about reading, say, the War and Peace?</li>
                     <li>currently not available or used on the Web</li>
                 </ul>
             </li>
+            <li>Pagination isn’t only books: slides, cards, and other “boxes” use the same functionality</li>
         </ul>
-    </section>
-
-    <section class="slide">
-      <h2 class="donthyphenate">The Houdini project &amp; pagination</h2>
-      <figure class="right">
-        <img src="../../drafts/PWP_future_slides/figures/houdini.jpg" alt="Full-length portrait of Houdini, in chains">
-        <figcaption class="credit">Harry Houdini, McManus-Young collection, LoC</figcaption>
-      </figure>
-      <div style="font-size:70%">
-        <blockquote style="margin-left:1em">
-          The CSS-TAG <a href="https://wiki.css-houdini.org/">“Houdini Project”</a> […] make[s] development of CSS polyfills […] easier by defining low level APIs of styling and layout on the web
-        </blockquote>
-        <p style="font-size:40%; text-align:right">Credit: Vivliostyle blog, Toru Kawakubo</p>
-      </div>
-      <ul>
-        <li>May lead to a standard access to page-related information</li>
-        <li>Pagination isn’t only books: slides, cards, and other “boxes” use the same functionality</li>
-      </ul>
     </section>
 
     <section class="slide">
@@ -1094,16 +1051,6 @@
       </div>
     </section>
 
-    <section class="slide notitle">
-        <div>
-          <blockquote style="margin-left:1em; font-size:90%; margin-top:4em">
-              Books can learn from the web how to be bounded, but open.<br/>
-              The web can learn from books how to be open, but bounded.
-          </blockquote>
-          <p style="font-size:40%; text-align:right">Hugh McGuire: <a href="http://bit.ly/1rOZWp8">“What books can learn from the Web / What the Web can learn from books”</a>, Medium</a></p>
-        </div>
-    </section>
-
     <section class="slide shout cover" id="conclusion">
       <img src="../../drafts/PWP_future_slides/covers/new_conclusion.jpg">
       <h3 class="donthyphenate">To conclude:<br><i>Let us create real publications on the Web!</i></h3>
@@ -1113,6 +1060,16 @@
           margin-top: -1.2em;
         }
       </style>
+    </section>
+
+    <section class="slide notitle">
+        <div>
+          <blockquote style="margin-left:1em; font-size:90%; margin-top:4em">
+              Books can learn from the web how to be bounded, but open.<br/>
+              The web can learn from books how to be open, but bounded.
+          </blockquote>
+          <p style="font-size:40%; text-align:right">Hugh McGuire: <a href="http://bit.ly/1rOZWp8">“What books can learn from the Web / What the Web can learn from books”</a>, Medium</a></p>
+        </div>
     </section>
 
     <section class="slide">

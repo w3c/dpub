@@ -75,8 +75,8 @@
       </figure>
       <ul class="smaller">
         <li>Founded in 1994, and directed by the inventor of the Web, Tim Berners-Lee</li>
-        <li>Member organization with cca. 430 members</li>
-        <li>Cca. 75 staff bound to “hosts” in the USA (MIT), China (Beihang University), Japan (Keio University), and France (ERCIM)</li>
+        <li>Member organization with cca. 420 members</li>
+        <li>Cca. 80 staff bound to “hosts” in the USA (MIT), China (Beihang University), Japan (Keio University), and France (ERCIM)</li>
         <li>Focuses on Web ecosystem: users, developers, browsers, as well as specific industry requirements brought by industry segments</li>
       </ul>
     </section>
@@ -453,7 +453,7 @@
               <figcaption class="credit">Dump from <a href="http://publications.europa.eu/en/web/general-report">EU publications' page</a></figcaption>
             </figure>
             <ul style="margin-top:3.5em;">
-              <li>…but access a different (and possibly nicer) Web page online…</li>
+              <li>…but one can access a different (and possibly nicer) Web page online…</li>
               <li><em>This should not be the case!</em></li>
             </ul>
         </div>
@@ -673,7 +673,7 @@
 
     <section class="slide shout cover">
       <img src="covers/why_not_web.jpg">
-      <h3 class="donthyphenate" style="color:darkblue; margin-top:1.5em">But… why not simply rely <em>only</em> on the current Web?<br> <span style="font-size:75%">(with some facility for offline)</span></h3>
+      <h3 class="donthyphenate" style="color:darkblue; margin-top:1.5em">But… why not simply rely <em>only</em> on the current Web?<br> <span style="font-size:75%">(with some facilities for offline)</span></h3>
     </section>
 
     <section class="slide shout cover">
@@ -937,7 +937,7 @@
                     <li>a major technology to reconcile Mobile Applications and Web Developments</li>
                 </ul>
             </li>
-            <li>I.e, Web Publications build on an evolution that is already happening
+            <li>I.e, Web Publications may build on an evolution that is already happening
                 <ul>
                     <li>some prior art exists (e.g., experimentation by the Readium Consortium with Service Workers)</li>
                 </ul>
@@ -1165,7 +1165,7 @@
     <section class="slide">
       <h2 class="donthyphenate">Three layers of addressing</h2>
           <ol>
-              <li>Locator for the WP/PWP itself, e.g.: <br /><code>http://www.ex.org/MyWP/</code></li>
+              <li>Locator for the (P)WP itself, e.g.: <br /><code>http://www.ex.org/MyWP/</code></li>
               <li>Locating a resource <i>within</i> a WP, e.g.:<br /><code>http://www.ex.org/MyWP/Chapter1.html</code>
               <br>just like any other resources on the Web, allowing for a smooth state transition</li>
               <li>Locating a target within a resource, e.g.: <br/><code>http://www.ex.org/MyWP/Chapter1.html#section1</code>
@@ -1175,7 +1175,7 @@
     </section>
 
     <section class="slide">
-      <h2 class="donthyphenate">The problem: locating the different PWP states</h2>
+      <h2 class="donthyphenate">The problem: locating the different PWP “states”</h2>
       <ul>
           <li>There are, in practice, two different locators
               <ul>
@@ -1199,7 +1199,6 @@
             </li>
             <li>A published PWP must provide a manifest data that includes <b>L</b>, <b>L<sub>p</sub></b>, and <b>L<sub>u</sub></b>
             </li>
-            <li>A PWP Processor must have access to the full metadata</li>
             <li>A resource within a PWP (and, in general, resources in general) should use <b>L</b> only for internal cross-references (or use relative URL-s)</li>
         </ul>
     </section>
@@ -1233,7 +1232,7 @@
       <ul>
         <li>Possibilities are:
             <ul>
-                <li>the package that <i>includes</i> the manifest at some predefined place</li>
+                <li>the package that <i>includes</i> the manifest at some predefined place (in case this is a Packaged Web Publication)</li>
                 <li>an HTML file with a link to a manifest (through a <code>&lt;link&gt;</code> element)</li>
                 <li>an HTML file with an <i>embedded</i> manifest (through a <code>&lt;script&gt;</code> element)</li>
                 <li>an HTML file with a link to a manifest in the <code>Link</code> header of the <code>HTTP</code> response</li>
@@ -1283,6 +1282,7 @@
                     <li>currently not available or used on the Web</li>
                 </ul>
             </li>
+            <li>Pagination isn’t only books: slides, cards, and other “boxes” use the same functionality</li>
         </ul>
     </section>
     <section class="slide">
@@ -1299,7 +1299,6 @@
       </div>
       <ul>
         <li>May lead to a standard access to page-related information</li>
-        <li>Pagination isn’t only books: slides, cards, and other “boxes” use the same functionality</li>
       </ul>
     </section>
 
