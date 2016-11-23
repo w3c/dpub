@@ -750,8 +750,6 @@
       </figure>
     </section>
 
-
-
     <section class="slide shout cover" id="ident">
       <img src="../../drafts/PWP_future_slides/covers/library.jpg">
       <h3 class="donthyphenate">Technical challenge: addressing, identification</h3>
@@ -792,61 +790,6 @@
           <li>Identification is handled by a number of other organizations (like the <a href="http://www.doi.org">DOI foundation</a>, the <a href="https://www.isbn-international.org/">International ISBN Agency</a>, etc.)</li>
           <li>The work on (P)WP has to concentrate on locators (i.e., addressing)</li>
       </ul>
-    </section>
-
-    <section class="slide">
-      <h2 class="donthyphenate">Three layers of addressing</h2>
-          <ol>
-              <li>Locator for the (P)WP itself, e.g.: <br /><code>http://www.ex.org/MyWP/</code></li>
-              <li>Locating a resource <i>within</i> a (P)WP, e.g.:<br /><code>http://www.ex.org/MyWP/Chapter1.html</code>
-              <br>just like any other resources on the Web, allowing for a smooth state transition</li>
-              <li>Locating a target within a resource, e.g.: <br/><code>http://www.ex.org/MyWP/Chapter1.html#section1</code>
-              <br>these “fragments” are widely used on the Web already</li>
-          </ol>
-      </ul>
-    </section>
-
-    <section class="slide">
-      <h2 class="donthyphenate">The problem: locating the different PWP “states”</h2>
-      <ul>
-          <li>There are, in practice, two different locators
-              <ul>
-                  <li>to the WP on the Web (<b>L<sub>u</sub></b>) (whether offline or online):<br /> <code>http://www.ex.org/MyWP/dir/</code></li>
-                  <li>to the Packaged version (<b>L<sub>p</sub></b>):<br/> <code>http://www.ex.org/MyWP.pwp</code></li>
-              </ul>
-          </li>
-          <li>Which locators should one use? How would intra-resource addressing happen?
-              <ul>
-                  <li>i.e., how should <code>chapter1</code> refer to <code>chapter2</code>?</li>
-              </ul>
-          </li>
-      </ul>
-    </section>
-
-    <section class="slide">
-        <h2 class="donthyphenate">PWP’s canonical locator</h2>
-        <ul>
-            <li>A PWP must have a <em>Canonical Locator</em> (<b>L</b>)
-                <ul><li>a state agnostic locator: <code>http://www.ex.org/MyWP</code></li></ul>
-            </li>
-            <li>A published PWP must provide data that includes <b>L</b>, <b>L<sub>p</sub></b>, and <b>L<sub>u</sub></b>
-            </li>
-            <li>A resource within a PWP (and, in general, resources in general) should use <b>L</b> only for internal cross-references (or use relative URL-s)</li>
-        </ul>
-    </section>
-    <section class="slide stamped">
-        <h2 class="donthyphenate">PWP’s canonical locator</h2>
-        <ul>
-            <li>A PWP must have a <em>Canonical Locator</em> (<b>L</b>)
-                <ul><li>a state agnostic locator: <code>http://www.ex.org/MyWP</code></li></ul>
-            </li>
-            <li>A published PWP must provide data that includes <b>L</b>, <b>L<sub>p</sub></b>, and <b>L<sub>u</sub></b>
-            </li>
-            <li>A resource within a PWP (and, in general, resources in general) should use <b>L</b> only for internal cross-references (or use relative URL-s)</li>
-        </ul>
-        <p class="stamp small">
-            To be discussed…
-        </p>
     </section>
 
     <section class="slide">
