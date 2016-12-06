@@ -773,24 +773,6 @@
     </section>
 
     <section class="slide">
-        <div>
-            <h2 class="donthyphenate">An additional concept: <br/>a “WP Processor”</h2>
-            <ul>
-                <li>A conceptual, client-side processor (add-on, extension, etc.) that performs WP specific operations
-                    <ul>
-                        <li>search, unified counters and section numbers, displaying table of contents, publication-specific interactions,…</li>
-                    </ul>
-                </li>
-                <li>It “hides” the WP online/offline state
-                    <ul>
-                        <li>the main rendering part operates <i>as if</i> it was connected to the Web</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="slide">
         <h2 class="donthyphenate">An internal representation may also be needed</h2>
         <ul>
             <li>At the moment, the internal representation of (HTML) resources is based on the concept of a “Document” in the “Document Object Model (DOM)”
@@ -923,7 +905,7 @@
     </section>
 
     <section class="slide shout">
-      <h3 class="donthyphenate">A WP Processor can be implemented using Service Workers</h3>
+      <h3 class="donthyphenate">A WP-aware user agent can be implemented using Service Workers</h3>
     </section>
 
     <section class="slide">
@@ -1111,10 +1093,9 @@
     </section>
 
     <section class="slide">
-        <h2>A PWP Processor</h2>
+        <h2>A PWP-aware user agent</h2>
         <ul>
-            <li>PWP-s may be handled by dedicated applications</li>
-            <li>But the concept of a WP processor can be extended to a PWP processor, unpacking content on the fly
+            <li>A user agent can be adapted by unpacking content on the fly
                 <ul>
                     <li>security considerations must be handled, though</li>
                 </ul>
@@ -1123,7 +1104,7 @@
     </section>
 
     <section class="slide">
-      <h2 class="donthyphenate">A PWP Processor</h2>
+      <h2 class="donthyphenate">A PWP-aware user agent</h2>
       <figure>
         <img class="plain" src="figures/Workers-package.svg" alt="Document consumed through a Service Worker, possibly unpacked" width="99%">
       </figure>
@@ -1214,7 +1195,7 @@
 
     <section class="slide">
         <div>
-            <h2 class="donthyphenate">The rest is for the PWP Processor to handle…</h2>
+            <h2 class="donthyphenate">The rest is for the user agent to handle…</h2>
             <ul>
                 <li>The processor has an access to <b>L</b>, <b>L<sub>p</sub></b>, and <b>L<sub>u</sub></b></li>
                 <li>It can, if needed, convert among URI requests coming from the renderer</li>
